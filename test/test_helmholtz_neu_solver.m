@@ -19,7 +19,7 @@ chnkr = chunkerfunc(@(t) chnk.curves.bymode(t,modes,ctr),cparams,pref);
 
 
 assert(checkadjinfo(chnkr) == 0);
-refopts = []; refopts.maxchunklen = 1.0;
+refopts = []; refopts.maxchunklen = 0.0625;
 chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
 % plot geometry and data
@@ -74,20 +74,11 @@ fprintf('Error in solution: %5.2e\n',err);
 
 
 % Now use direct solver to do the same test
-wts = weights(chnkr);
-opts = [];
-opts.nonsmoothonly = true;
-spmat = chunkermat(chnkr,fkern,opts);
-spmat = spmat + 0.5*speye(chnkr.k*chnkr.nch);
+dval = 0.5;
+opts_flam = [];
+opts_flam.flamtype = 'rskelf';
 
-xflam = chnkr.r(:,:);
-opdims = [1 1];
-matfun = @(i,j) chnk.flam.kernbyindex(i,j,chnkr,wts,fkern,opdims,spmat);
-ifaddtrans = true;
-pxyfun = @(x,slf,nbr,l,ctr) chnk.flam.proxyfun(slf,nbr,l,ctr,chnkr,wts, ...
-    fkern,opdims,pr,ptau,pw,pin,ifaddtrans);
-start = tic; F = rskelf(matfun,xflam,200,1e-14,pxyfun); t1 = toc(start);
-
+F = chunkerflam(chnkr,fkern,dval,opts_flam);
 sol2 = rskelf_sv(F,rhs);
 
 fprintf('Error in solution by fds: %5.2e\n',err);
