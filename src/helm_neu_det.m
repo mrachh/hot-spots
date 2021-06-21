@@ -28,26 +28,19 @@ if isfield(opts,'eps'); eps = opts.eps; end
     
     
 fkern = @(s,t) 2*chnk.helm2d.kern(zk,s,t,'D',1);
-opdims = [1 1];
+dval = 1.0;
+opts_flam = [];
+opts_flam.flamtype = 'rskelf';
+opts_flam.rank_or_tol = eps;
+
+
 
 if ~flam
     dmat = chunkermat(chnkr,fkern);
     sys = eye(chnkr.k*chnkr.nch) + dmat;
     detfun = det(sys);
 else
-    wts = weights(chnkr);
-    optsquad = [];
-    optsquad.nonsmoothonly = true;
-    spmat = chunkermat(chnkr,fkern,optsquad);
-    spmat = spmat + speye(chnkr.k*chnkr.nch);
-
-    xflam = chnkr.r(:,:);
-    opdims = [1 1];
-    matfun = @(i,j) chnk.flam.kernbyindex(i,j,chnkr,wts,fkern,opdims,spmat);
-    ifaddtrans = true;
-    pxyfun = @(x,slf,nbr,l,ctr) chnk.flam.proxyfun(slf,nbr,l,ctr,chnkr,wts, ...
-        fkern,opdims,pr,ptau,pw,pin,ifaddtrans);
-    F = rskelf(matfun,xflam,200,1e-14,pxyfun); 
+    F = chunkerflam(chnkr,fkern,dval,opts_flam);
     varargout{1} = F;
     detfun = exp(rskelf_logdet(F));
 end
