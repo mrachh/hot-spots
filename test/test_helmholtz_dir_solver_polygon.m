@@ -1,7 +1,8 @@
-% Set max chunk length
+% Global parameters
 MAX_CHUNK_LEN = 1
+NUM_VERTS = 3
 
-% Create the unit disk
+% Create the polygon
 
 cparams = [];
 cparams.eps = 1.0e-5;
@@ -9,16 +10,19 @@ pref = [];
 pref.k = 16;
 
 zk = 1.1 + 0.1*1j;
-% modes and center define the unit disk
-modes = 1;
+% modes and center of polygon
 ctr = [0 0];
+modes = 1
+vert_angles = 0.1 : (2 * pi - 0.1)/(NUM_VERTS-1) : (2 * pi)
+vert_coords = cat(1, cos(vert_angles), sin(vert_angles))
+
 
 % Create source and target location
 src0 = [0.3;0.21];
 targ0 = [0.7;1.8];
 
 % Create the chunked geometry
-chnkr = chunkerfunc(@(t) chnk.curves.bymode(t,modes,ctr),cparams,pref);
+chnkr = chunkerpoly(vert_coords, cparams, pref);
 
 
 assert(checkadjinfo(chnkr) == 0);
