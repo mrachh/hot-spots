@@ -17,3 +17,4 @@ This project contains test scripts for testing the hot-spots conjecture
 
 ### helm_dir_det
 1. The only change is I-2D, which assumes simply connectedness.
+2. Checked error with bessel function is -3.58e-10

@@ -52,7 +52,7 @@ opts = [];
 opts.flam = true;
 opts.eps = eps;
 
-detfun = @(zk) helm_neu_det(zk,chnkr,opts);
+detfun = @(zk) helm_dir_det(zk,chnkr,opts);
 
 detchebs = chebfun(detfun,chebabs,p);
 figure(2)
@@ -62,7 +62,7 @@ rts = roots(detchebs,'complex');
 rts_real = rts(abs(imag(rts))<eps*10);
 
 zk = real(rts_real(1));
-[d,F] = helm_neu_det(zk,chnkr,opts);
+[d,F] = helm_dir_det(zk,chnkr,opts);
 nsys = chnkr.nch*chnkr.k;
 xnull = rskelf_nullvec(F,nsys,1,4);
 xnrm = norm(xnull,'fro');
@@ -101,3 +101,7 @@ zztarg = nan(size(xxtarg));
 zztarg(in) = real(Dsol);
 h=surf(xxtarg,yytarg,zztarg);
 set(h,'EdgeColor','none')
+
+% compare to analytic value
+
+fprintf('evaluate bessel function J_0(z_k): %5.2e\n', besselj(0, zk));
