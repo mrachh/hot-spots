@@ -13,7 +13,8 @@ zk = 1.1 + 0.1*1j;
 % modes and center of polygon
 ctr = [0 0];
 modes = 1
-vert_angles = 0.1 : (2 * pi - 0.1)/(NUM_VERTS-1) : (2 * pi)
+vert_angles = 0 : 2*pi/NUM_VERTS : 2*pi
+vert_angles = vert_angles(1:NUM_VERTS)
 vert_coords = cat(1, cos(vert_angles), sin(vert_angles))
 
 
@@ -124,7 +125,7 @@ err_fds =  norm(uex-ucomputed)/norm(uex);
 % report results
 refopts.maxchunklen
 fprintf('Max chunk length: %5.2e\n',refopts.maxchunklen);
-fprintf('Error in solution: %5.2e\n',err_gmres);
-fprintf('Error between sol_gmres and sol_fds: %5.2e\n',err_fds);
+fprintf('Error of sol_gmres: %5.2e\n',err_gmres);
+fprintf('Error og sol_fds: %5.2e\n',err_fds);
 
 
