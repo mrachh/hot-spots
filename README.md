@@ -15,3 +15,5 @@ This project contains test scripts for testing the hot-spots conjecture
 
 ## Determinant
 
+### helm_dir_det
+1. The only change is I-2D, which assumes simply connectedness.
