@@ -15,7 +15,7 @@ ctr = [0 0];
 modes = 1
 vert_angles = 0 : 2*pi/NUM_VERTS : 2*pi
 vert_angles = vert_angles(1:NUM_VERTS)
-vert_coords = cat(1, cos(vert_angles), sin(vert_angles))
+vert_coords = ctr.' + modes .* cat(1, cos(vert_angles), sin(vert_angles))
 
 
 % Create source and target location
