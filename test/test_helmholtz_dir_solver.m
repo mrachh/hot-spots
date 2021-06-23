@@ -1,3 +1,6 @@
+% Set max chunk length
+MAX_CHUNK_LEN = 1
+
 % Create the unit disk
 
 cparams = [];
@@ -19,7 +22,7 @@ chnkr = chunkerfunc(@(t) chnk.curves.bymode(t,modes,ctr),cparams,pref);
 
 
 assert(checkadjinfo(chnkr) == 0);
-refopts = []; refopts.maxchunklen = 0.0625;
+refopts = []; refopts.maxchunklen = MAX_CHUNK_LEN;
 chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
 % plot geometry and data
@@ -43,7 +46,7 @@ t1 = toc(start);
 
 fprintf('%5.2e s : time to assemble matrix\n',t1)
 
-% Everything above is the same as the neu code
+% Everything above is the same as in the neu code
 
 % construct matrix "-I/2 + D"
 sys = - 0.5*eye(chnkr.k*chnkr.nch) + dmat;
@@ -68,12 +71,14 @@ ubdry = chnk.helm2d.kern(zk,srcinfo,targinfo,'s');
 rhs = ubdry; rhs = rhs(:);
 start = tic; sol = gmres(sys,rhs,[],1e-14,100); t1 = toc(start);
 
-% compute D[sigma](x_in) (chunker weight missing...)
+% compute D[sigma](x_in)
 srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = chnkr.r;
 targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
 targinfo.d = chnkr.d;
 targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
 temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'sprime')
+
+% compute quadrature weights
 ws = weights(chnkr)
 ws = reshape(ws,chnkr.k*chnkr.nch, 1)
 ucomputed = sum(sol .* temp .* ws)
@@ -83,8 +88,7 @@ srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = targ0;
 uex = chnk.helm2d.kern(zk,srcinfo,targinfo,'s');
 
 % compute error between the above two quantities
-err=  norm(uex-ucomputed)/norm(uex);
-fprintf('Error in solution (chunker weights missing): %5.2e\n',err);
+err_gmres =  norm(uex-ucomputed)/norm(uex);
 
 
 % Now use direct solver to do the same test
@@ -96,8 +100,27 @@ opts_flam.flamtype = 'rskelf';
 
 F = chunkerflam(chnkr,fkern,dval,opts_flam);
 sol2 = rskelf_sv(F,rhs);
-err = norm(sol2 - sol) / norm(sol)
 
-fprintf('Error between sol_gmres and sol_fds: %5.2e\n',err);
+% compute D[sigma](x_in)
+srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = chnkr.r;
+targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
+targinfo.d = chnkr.d;
+targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
+temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'sprime')
+ws = weights(chnkr)
+ws = reshape(ws,chnkr.k*chnkr.nch, 1)
+ucomputed = sum(sol2 .* temp .* ws)
+
+% compute error between the above two quantities
+err_fds =  norm(uex-ucomputed)/norm(uex);
+
+
+
+
+% report results
+refopts.maxchunklen
+fprintf('Max chunk length: %5.2e\n',refopts.maxchunklen);
+fprintf('Error in solution (chunker weights missing): %5.2e\n',err_gmres);
+fprintf('Error between sol_gmres and sol_fds: %5.2e\n',err_fds);
 
 
