@@ -120,7 +120,7 @@ err_fds =  norm(uex-ucomputed)/norm(uex);
 % report results
 refopts.maxchunklen
 fprintf('Max chunk length: %5.2e\n',refopts.maxchunklen);
-fprintf('Error in solution: %5.2e\n',err_gmres);
-fprintf('Error between sol_gmres and sol_fds: %5.2e\n',err_fds);
+fprintf('Error of sol_gmres: %5.2e\n',err_gmres);
+fprintf('Error of sol_fds: %5.2e\n',err_fds);
 
 
