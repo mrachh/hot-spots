@@ -74,7 +74,9 @@ targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
 targinfo.d = chnkr.d;
 targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
 temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'sprime')
-ucomputed = sum(sol .* temp)
+ws = weights(chnkr)
+ws = reshape(ws,chnkr.k*chnkr.nch, 1)
+ucomputed = sum(sol .* temp .* ws)
 
 % compute H_0(k(x_out - x_in))
 srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = targ0;
