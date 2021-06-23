@@ -80,6 +80,8 @@ opts_flam.flamtype = 'rskelf';
 
 F = chunkerflam(chnkr,fkern,dval,opts_flam);
 sol2 = rskelf_sv(F,rhs);
+% compute error for fds
+err = norm(uex-sol2)/norm(uex)
 
 fprintf('Error in solution by fds: %5.2e\n',err);
 
