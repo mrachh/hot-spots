@@ -1,3 +1,6 @@
+MAX_CHUNK_LEN = .0625
+
+
 % Create the unit disk
 
 cparams = [];
@@ -19,7 +22,7 @@ chnkr = chunkerfunc(@(t) chnk.curves.bymode(t,modes,ctr),cparams,pref);
 
 
 assert(checkadjinfo(chnkr) == 0);
-refopts = []; refopts.maxchunklen = 0.0625;
+refopts = []; refopts.maxchunklen = MAX_CHUNK_LEN;
 chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
 % plot geometry and data

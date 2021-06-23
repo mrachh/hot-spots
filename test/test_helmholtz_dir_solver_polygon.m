@@ -1,6 +1,6 @@
 % Global parameters
 MAX_CHUNK_LEN = 1
-NUM_VERTS = 5
+NUM_VERTS = 3
 
 % Create the polygon
 
