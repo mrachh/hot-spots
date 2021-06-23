@@ -12,7 +12,7 @@ function [detfun,varargout] = helm_neu_det(zk,chnkr,opts)
 %       opts.flam - if = true, use flam utilities (true)
 %       opts.eps = tolerance for adaptive integration
 % output:
-%   detfun - Fredholm determinant of I + 2*D
+%   detfun - Fredholm determinant of I - 2*D
 
 
 
