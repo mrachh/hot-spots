@@ -14,5 +14,5 @@ This project contains test scripts for testing the hot-spots conjecture
 
 ### helm_dir_det
 1. Added two ways to verify eigenfunction:
-    a. analytical: error has the same scale as hx, but it is not white noise
-    b. numerical: same error as above
+    a. analytical: 11 digits error; figure 4 plots the error; looks like white noise
+    b. numerical: 10 digits error

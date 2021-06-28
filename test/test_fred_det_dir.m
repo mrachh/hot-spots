@@ -88,7 +88,6 @@ start = tic; in = chunkerinterior(chnkr,targets); t1 = toc(start);
 fprintf('%5.2e s : time to find points in domain\n',t1)
 
 % compute layer potential at interior points
-% fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'D',1);
 fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'s',1);
 start = tic;
 Dsol = chunkerkerneval(chnkr,fkern,xnull,targets(:,in)); t1 = toc(start);
@@ -103,28 +102,30 @@ zztarg(in) = real(Dsol);
 h=surf(xxtarg,yytarg,zztarg);
 set(h,'EdgeColor','none')
 
+% END OF COMPUTATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-% compare to analytic value
+% compare to analytic values
 
 fprintf('check1: eigenvalue is a root of bessel function J_0(z_k): %5.2e\n', besselj(0, zk));
 
 % verify eigen function on point (37,51) via fd
-xpos = 37; ypos = 52;
-dx2 = (zztarg(xpos+1, ypos) - 2*zztarg(xpos, ypos) + zztarg(xpos-1, ypos))/(hx^2);
-dy2 = (zztarg(xpos, ypos+1) - 2*zztarg(xpos, ypos) + zztarg(xpos, ypos-1))/(hx^2);
+xpos = 117; ypos = 141;
+dx2 = (-zztarg(xpos-2, ypos)/12 + 4*zztarg(xpos-1, ypos)/3 - 5*zztarg(xpos, ypos)/2 ...
+        + 4*zztarg(xpos+1, ypos)/3 - zztarg(xpos+2, ypos)/12)/(hx^2);
+dy2 = (-zztarg(xpos, ypos-2)/12 + 4*zztarg(xpos, ypos-1)/3 - 5*zztarg(xpos, ypos)/2 ...
+        + 4*zztarg(xpos, ypos+1)/3 - zztarg(xpos, ypos+2)/12)/(hy^2);
 xylap = dx2 + dy2
-err = abs(xylap + zk * zztarg(xpos, ypos))
-fprintf('check2: eigenfunction (finite diff) error at (37, 51) of meshgrid: %5.2e\n', err)
+err = abs(xylap + zk^2 * zztarg(xpos, ypos))
+fprintf('check2: eigenfunction (finite diff) error at (117, 141) of meshgrid: %5.2e\n', err)
 
 %verify eigenfunction by analytical expression
 
 figure(4)
 clf
 zztarg2 = nan(size(xxtarg));
-true_eigenfunc = besselj(0, abs(xxtarg(in) + 1j*yytarg(in)))
+true_eigenfunc = besselj(0, abs(xxtarg(in) + 1j*yytarg(in))*zk)
 zztarg2(in) = true_eigenfunc
-eigen_func_scale = zztarg(37, 51)/zztarg2(37, 51)
+eigen_func_scale = zztarg(117, 141)/zztarg2(117, 141)
 err = zztarg2 * eigen_func_scale - zztarg
 h=surf(xxtarg,yytarg, err);
 set(h,'EdgeColor','none')
