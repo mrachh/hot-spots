@@ -13,6 +13,6 @@ This project contains test scripts for testing the hot-spots conjecture
 ## Determinant
 
 ### helm_dir_det
-1. The only change is I-2D, which assumes simply connectedness.
-2. Checked error with bessel function is -3.58e-10
-3. tested on polygon (without verifying analytical value)
+1. Added two ways to verify eigenfunction:
+    a. analytical: error has the same scale as hx, but it is not white noise
+    b. numerical: same error as above

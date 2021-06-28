@@ -103,12 +103,28 @@ zztarg(in) = real(Dsol);
 h=surf(xxtarg,yytarg,zztarg);
 set(h,'EdgeColor','none')
 
-%
-figure(4)
-zztarg = besselj(2, xxtarg + 1j * yytarg)
-h=surf(xxtarg,yytarg,zztarg);
-set(h,'EdgeColor','none')
+
 
 % compare to analytic value
 
 fprintf('check1: eigenvalue is a root of bessel function J_0(z_k): %5.2e\n', besselj(0, zk));
+
+% verify eigen function on point (37,51) via fd
+xpos = 37; ypos = 52;
+dx2 = (zztarg(xpos+1, ypos) - 2*zztarg(xpos, ypos) + zztarg(xpos-1, ypos))/(hx^2);
+dy2 = (zztarg(xpos, ypos+1) - 2*zztarg(xpos, ypos) + zztarg(xpos, ypos-1))/(hx^2);
+xylap = dx2 + dy2
+err = abs(xylap + zk * zztarg(xpos, ypos))
+fprintf('check2: eigenfunction (finite diff) error at (37, 51) of meshgrid: %5.2e\n', err)
+
+%verify eigenfunction by analytical expression
+
+figure(4)
+clf
+zztarg2 = nan(size(xxtarg));
+true_eigenfunc = besselj(0, abs(xxtarg(in) + 1j*yytarg(in)))
+zztarg2(in) = true_eigenfunc
+eigen_func_scale = zztarg(37, 51)/zztarg2(37, 51)
+err = zztarg2 * eigen_func_scale - zztarg
+h=surf(xxtarg,yytarg, err);
+set(h,'EdgeColor','none')
