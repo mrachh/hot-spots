@@ -88,7 +88,8 @@ start = tic; in = chunkerinterior(chnkr,targets); t1 = toc(start);
 fprintf('%5.2e s : time to find points in domain\n',t1)
 
 % compute layer potential at interior points
-fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'D',1);
+% fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'D',1);
+fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'s',1);
 start = tic;
 Dsol = chunkerkerneval(chnkr,fkern,xnull,targets(:,in)); t1 = toc(start);
 fprintf('%5.2e s : time for kerneval (adaptive for near)\n',t1);
@@ -102,6 +103,12 @@ zztarg(in) = real(Dsol);
 h=surf(xxtarg,yytarg,zztarg);
 set(h,'EdgeColor','none')
 
+%
+figure(4)
+zztarg = besselj(2, xxtarg + 1j * yytarg)
+h=surf(xxtarg,yytarg,zztarg);
+set(h,'EdgeColor','none')
+
 % compare to analytic value
 
-fprintf('evaluate bessel function J_0(z_k): %5.2e\n', besselj(0, zk));
+fprintf('check1: eigenvalue is a root of bessel function J_0(z_k): %5.2e\n', besselj(0, zk));
