@@ -1,5 +1,5 @@
 % Set max chunk length
-MAX_CHUNK_LEN = 1
+MAX_CHUNK_LEN = .25
 
 % Create the unit disk
 
@@ -52,10 +52,6 @@ fprintf('%5.2e s : time to assemble matrix\n',t1)
 sys = - 0.5*eye(chnkr.k*chnkr.nch) + dmat;
 
 % get the boundary data for a source located at the point above
-
-kerns = @(s,t) chnk.helm2d.kern(zk,s,t,'s');
-smat = chunkermat(chnkr,kerns);
-
 targs = chnkr.r; targs = reshape(targs,2,chnkr.k*chnkr.nch);
 targstau = tangents(chnkr); 
 targstau = reshape(targstau,2,chnkr.k*chnkr.nch);
@@ -72,16 +68,17 @@ rhs = ubdry; rhs = rhs(:);
 start = tic; sol = gmres(sys,rhs,[],1e-14,100); t1 = toc(start);
 
 % compute D[sigma](x_in)
-srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = chnkr.r;
-targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
-targinfo.d = chnkr.d;
-targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
-temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'sprime')
+targinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
+srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
+srcinfo.d = chnkr.d;
+srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
+temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'D').'
 
 % compute quadrature weights
 ws = weights(chnkr)
 ws = reshape(ws,chnkr.k*chnkr.nch, 1)
 ucomputed = sum(sol .* temp .* ws)
+
 
 % compute H_0(k(x_out - x_in))
 srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = targ0;

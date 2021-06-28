@@ -77,11 +77,11 @@ rhs = ubdry; rhs = rhs(:);
 start = tic; sol = gmres(sys,rhs,[],1e-14,100); t1 = toc(start);
 
 % compute D[sigma](x_in)
-srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = chnkr.r;
-targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
-targinfo.d = chnkr.d;
-targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
-temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'sprime')
+targinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
+srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
+srcinfo.d = chnkr.d;
+srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
+temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'D').'
 
 % compute quadrature weights
 ws = weights(chnkr)
