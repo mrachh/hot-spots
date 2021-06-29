@@ -1,5 +1,12 @@
 function grad = gd_grad(fun, xval, hspace)
-    %evaluates gradient using finite difference
+    % Evaluates gradient using centered difference
+    % INPUT:
+    %     fun: funtion handle for first order oracle "f"
+    %     xval: value of "x"
+    %     hspace: step size
+    % OUTPUT:
+    %     grad: an estimate of gradient "f'(x)"
+    
     num_params = length(xval);
     grad = zeros(1,num_params);
     for i = 1:num_params

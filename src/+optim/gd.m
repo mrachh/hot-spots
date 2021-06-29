@@ -1,6 +1,22 @@
 function [opt, gd_log] = gd(fun, init, cparams)
-    %todo: doc
-    %convergence criteria: grad 2-norm < cparams.eps
+    %Performs gradient descent on one dimensional input
+    % INPUT:
+    %     fun: function handle for objective "f"
+    %     init: initial value for weight "x"
+    %     cparams (struct):
+    %         maxiter: maximum iteration
+    %         report: frequency of reporting loss
+    %         eps: tolerance for gradient descent
+    %         hspace: step size for gradient estimate
+    %         line_search_eps: tolerance for line search
+    %         line_search_beta: shrinking factor for gradient descent step size
+    % OUTPUT:
+    %     opt: optimal weight "x"
+    %     gd_log (struct):
+    %         loss: loss over iterations
+    %         step: step sizes over iterations
+    %         grad: gradient norms over iterations
+    %         weight: weights "x" over iterations
 
     %read gradient descent parameters
     maxiter = cparams.maxiter;
