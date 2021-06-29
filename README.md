@@ -16,3 +16,6 @@ This project contains test scripts for testing the hot-spots conjecture
 1. Added two ways to verify eigenfunction:
     a. analytical: 11 digits error; figure 4 plots the error; looks like white noise
     b. numerical: 10 digits error
+
+
+## 

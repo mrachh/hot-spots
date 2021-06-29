@@ -23,7 +23,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
             i);
             break;
         end
-
+        
         grad = optim.gd_grad(fun, opt, hspace);
         grad_norm = norm(grad);
         loss = fun(opt);
@@ -76,7 +76,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
     end
 
     if not(gradient_descent_converged)
-        fprintf('gradient descent not converged after %d steps\n', ...
+        fprintf('gradient descent did not converge after %d steps\n', ...
             maxiter);
     end
     

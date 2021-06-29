@@ -1,7 +1,7 @@
 function grad = gd_grad(fun, xval, hspace)
     %evaluates gradient using finite difference
     num_params = length(xval);
-    grad = zeros(num_params);
+    grad = zeros(1,num_params);
     for i = 1:num_params
         xval(i) = xval(i) + hspace;
         fun_val_forward = fun(xval);
