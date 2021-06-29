@@ -1,9 +1,10 @@
-function [opt, log] = gd(fun, init, cparams)
+function [opt, gd_log] = gd(fun, init, cparams)
     %todo: doc
     %convergence criteria: grad 2-norm < cparams.eps
 
     %read gradient descent parameters
     maxiter = cparams.maxiter;
+    report = cparams.report;
     eps = cparams.eps;
     hspace = cparams.hspace;
     line_search_eps = cparams.line_search_eps;
@@ -68,6 +69,10 @@ function [opt, log] = gd(fun, init, cparams)
         step_arr(i) = step;
         grad_arr(i) = grad_norm;
         weight_arr(i,:) = opt;
+        if mod(i, report) == 1
+            fprintf('iter: %d, loss: %5.2e, grad: %5.2e \n', ...
+                i, loss, grad_norm);
+        end
     end
 
     if not(gradient_descent_converged)
@@ -75,26 +80,9 @@ function [opt, log] = gd(fun, init, cparams)
             maxiter);
     end
     
-    log = struct( ...
+    gd_log = struct( ...
             'loss',   loss_arr, ...
             'step',   step_arr, ...
             'grad',   grad_arr, ...
             'weight', weight_arr);
 end
-
-
-
-% %function that computes gradient
-% function grad = gd_grad(fun, xval, hspace)
-%     %evaluates gradient using finite difference
-%     num_params = length(xval);
-%     grad = zeros(num_params);
-%     for i = 1:num_params
-%         xval(i) = xval(i) + hspace;
-%         disp(xval)
-%         fun_val_forward = fun(xval);
-%         xval(i) = xval(i) - 2*hspace;
-%         fun_val_backward = fun(xval);
-%         grad(i) = (fun_val_forward + fun_val_backward)/(2*hspace);
-%     end
-% end

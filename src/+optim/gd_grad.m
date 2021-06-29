@@ -7,6 +7,6 @@ function grad = gd_grad(fun, xval, hspace)
         fun_val_forward = fun(xval);
         xval(i) = xval(i) - 2*hspace;
         fun_val_backward = fun(xval);
-        grad(i) = (fun_val_forward + fun_val_backward)/(2*hspace);
+        grad(i) = (fun_val_forward - fun_val_backward)/(2*hspace);
     end
 end

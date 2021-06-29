@@ -1,17 +1,36 @@
 addpath('../src');
 clear;
 
-GRAD_HSPACE = 1e-14;
-
-
-init = 2;
-
 cparams = struct( ...
-    'maxiter',          100, ...
-    'eps',              1e-5,   ...
+    'maxiter',          1000, ...
+    'report',           200, ...
+    'eps',              1e-4,   ...
     'hspace',           1e-10, ...
     'line_search_eps',  1e-10, ...
     'line_search_beta', 0.7 ...
 );
 
-[opt, log] = optim.gd(@rectangle_fun, init, cparams);
+
+init = 3;
+fun = @optim.tests.quad_fun;
+fprintf('TEST1: quadratic test function\n');
+[opt, gd_log] = optim.gd(fun, init, cparams);
+fprintf('optimal weight: %5.2e \n', opt);
+fprintf('optimal value: %5.2e \n', fun(opt));
+clear fun
+
+init = 1.4;
+fun = @optim.tests.test1;
+fprintf('TEST2: x^4-2x^2+1 initialized near optima 1\n');
+[opt, gd_log] = optim.gd(fun, init, cparams);
+fprintf('optimal weight: %5.2e \n', opt);
+fprintf('optimal value: %5.2e \n', fun(opt));
+clear fun
+
+init = 3;
+fun = @optim.tests.test1;
+fprintf('TEST3: x^4-2x^2+1 initialized far from optima 1\n');
+[opt, gd_log] = optim.gd(fun, init, cparams);
+fprintf('optimal weight: %5.2e \n', opt);
+fprintf('optimal value: %5.2e \n', fun(opt));
+clear fun
