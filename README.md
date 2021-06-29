@@ -18,4 +18,13 @@ This project contains test scripts for testing the hot-spots conjecture
     b. numerical: 10 digits error
 
 
-## 
+## Gradient Descent
+
+### test_gd
+    1. The file contains tests for 1d and 2d functions (which covers rectangle parametrizations 
+        and ellipse parametrizations). It should work for any function whose input is a one
+        dimensional array (row vector).
+    2. good cases: TEST1, TEST2, TEST4 converges
+    3. bad cases: 
+        TEST3 (nonconvex with two local minima)
+        TEST5 (ill-conditioned, converges but slowly).
