@@ -7,6 +7,7 @@ function [opt, log] = gd(fun, init, cparams)
     eps = cparams.eps
     hspace = cparams.hspace
     line_search_eps = cparams.line_search_eps
+    line_search_beta = cparams.line_search_beta
     opt = init
     
     loss_arr = nan(maxiter)
@@ -29,13 +30,29 @@ function [opt, log] = gd(fun, init, cparams)
         line_search_converged = false
         step = grad_norm
             while not(line_search_converged)
-                right = fun(opt + grad)
-                left = fun(opt - grad)
-                is_linear = (right - 2*loss + left > line_search_eps)
+                right = fun(opt + step * grad)
+                left = fun(opt - step * grad)
+                is_linear = (abs(right - 2*loss + left) < line_search_eps)
+
+                %compute quadratic fitting
                 if is_linear
                     break
                 else
-                    body
+                    better_step = (step/2)*...
+                        (right - left)/(right - 2*loss + left)
+                end
+                
+                better_loss = fun(opt - grad * better_step)
+
+                if min(left, better_loss) < loss
+                    line_search_converged = true
+                    if better_loss < left
+                        step = better_step
+                    end
+                elif step < line_search_eps
+                    line_search_converged = true
+                else
+                    step = step * line_search_beta
                 end
             end
 
