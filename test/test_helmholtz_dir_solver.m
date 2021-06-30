@@ -72,12 +72,12 @@ targinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
 srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
 srcinfo.d = chnkr.d;
 srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
-temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'D').'
+temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'D').';
 
 % compute quadrature weights
-ws = weights(chnkr)
-ws = reshape(ws,chnkr.k*chnkr.nch, 1)
-ucomputed = sum(sol .* temp .* ws)
+ws = weights(chnkr);
+ws = reshape(ws,chnkr.k*chnkr.nch, 1);
+ucomputed = sum(sol .* temp .* ws);
 
 
 % compute H_0(k(x_out - x_in))
@@ -99,14 +99,14 @@ F = chunkerflam(chnkr,fkern,dval,opts_flam);
 sol2 = rskelf_sv(F,rhs);
 
 % compute D[sigma](x_in)
-srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = chnkr.r;
-targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
-targinfo.d = chnkr.d;
-targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
-temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'sprime')
-ws = weights(chnkr)
-ws = reshape(ws,chnkr.k*chnkr.nch, 1)
-ucomputed = sum(sol2 .* temp .* ws)
+srcinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
+srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
+srcinfo.d = chnkr.d;
+srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
+temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'D').';
+ws = weights(chnkr);
+ws = reshape(ws,chnkr.k*chnkr.nch, 1);
+ucomputed = sum(sol2 .* temp .* ws);
 
 % compute error between the above two quantities
 err_fds =  norm(uex-ucomputed)/norm(uex);
@@ -115,7 +115,7 @@ err_fds =  norm(uex-ucomputed)/norm(uex);
 
 
 % report results
-refopts.maxchunklen
+refopts.maxchunklen;
 fprintf('Max chunk length: %5.2e\n',refopts.maxchunklen);
 fprintf('Error of sol_gmres: %5.2e\n',err_gmres);
 fprintf('Error of sol_fds: %5.2e\n',err_fds);
