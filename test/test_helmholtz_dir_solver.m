@@ -1,3 +1,4 @@
+addpath('../src');
 % Set max chunk length
 MAX_CHUNK_LEN = .25
 
@@ -62,6 +63,8 @@ targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
 targinfo.d = chnkr.d;
 targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
 ubdry = chnk.helm2d.kern(zk,srcinfo,targinfo,'s');
+dudnbdry = chnk.helm2d.kern(zk,srcinfo,targinfo,'sprime');
+
 
 % solve linear system to get sigma
 rhs = ubdry; rhs = rhs(:);
@@ -112,6 +115,9 @@ ucomputed = sum(sol2 .* temp .* ws);
 err_fds =  norm(uex-ucomputed)/norm(uex);
 
 
+dudncomputed = helm_dprime(zk,chnkr,sol2);
+err_dudn =  norm(dudnbdry-dudncomputed)/norm(sol2);
+
 
 
 % report results
@@ -119,5 +125,6 @@ refopts.maxchunklen;
 fprintf('Max chunk length: %5.2e\n',refopts.maxchunklen);
 fprintf('Error of sol_gmres: %5.2e\n',err_gmres);
 fprintf('Error of sol_fds: %5.2e\n',err_fds);
+fprintf('Error of sol_fds: %5.2e\n',err_dudn);
 
 
