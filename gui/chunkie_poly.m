@@ -1,6 +1,9 @@
+function file_id = chunkie_poly(vert_coords)
+
 % Global parameters
-MAX_CHUNK_LEN = 1
-NUM_VERTS = 3
+MAX_CHUNK_LEN = 1;
+file_id = abs(typecast(randi([0 255],1,8,'uint8'),'int64'));
+file_name = sprintf('temp/%d.png',file_id);
 
 % Create the polygon
 
@@ -10,13 +13,6 @@ pref = [];
 pref.k = 16;
 
 zk = 1.1 + 0.1*1j;
-% modes and center of polygon
-ctr = [0 0];
-modes = 1
-vert_angles = 0 : 2*pi/NUM_VERTS : 2*pi
-vert_angles = vert_angles(1:NUM_VERTS)
-vert_coords = ctr.' + modes .* cat(1, cos(vert_angles), sin(vert_angles))
-
 
 % Create source and target location
 src0 = [0.3;0.21];
@@ -37,4 +33,10 @@ clf
 plot(chnkr,'-b')
 hold on
 quiver(chnkr,'r')
-axis equal
+hold on
+xlim([-3,3])
+ylim([-3,3])
+set(gcf, 'PaperPosition', [0.25 2.5 6.0 6.0]);
+saveas(gcf,file_name)
+
+end
