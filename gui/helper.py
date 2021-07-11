@@ -15,3 +15,7 @@ def init_temp():
 
 def id2name(id):
     return 'temp/%d.png'%id
+
+def delete_temp_file(file_id):
+    os.remove(id2name(fild_id))
+    return 

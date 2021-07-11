@@ -28,7 +28,7 @@ chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
 % plot geometry and data
 
-figure(1)
+f = figure;
 clf
 plot(chnkr,'-b')
 hold on
@@ -36,7 +36,7 @@ quiver(chnkr,'r')
 hold on
 xlim([-3,3])
 ylim([-3,3])
-set(gcf, 'PaperPosition', [0.25 2.5 6.0 6.0]);
+set(gcf, 'PaperPosition', [0.25 2.5 4.0 4.0]);
 saveas(gcf,file_name)
 
 end
