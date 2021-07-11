@@ -14,7 +14,7 @@ def init_poly(num_verts):
     vert_coords = matlab.double([vert_xs, vert_ys])
 
     #call matlab code
-    file_id = eng.chunkie_poly(vert_coords)
+    file_id = eng.chunkie_poly(vert_coords, background = False)
 
     return file_id
 

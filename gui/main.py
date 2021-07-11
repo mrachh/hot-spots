@@ -1,7 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import numpy as np
 import helper
-
+import call_matlab
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -20,15 +20,12 @@ class Ui_MainWindow(object):
         self.button_add_vert = QtWidgets.QPushButton(self.centralwidget)
         self.button_add_vert.setGeometry(QtCore.QRect(1000, 140, 201, 41))
         self.button_add_vert.setObjectName("button_add_vert")
+        self.button_add_vert.clicked.connect(self.clickedAddVert)
 
         self.button_delete_vert = QtWidgets.QPushButton(self.centralwidget)
         self.button_delete_vert.setGeometry(QtCore.QRect(1000, 210, 201, 41))
         self.button_delete_vert.setObjectName("button_delete_vert")
-
-        self.button_init = QtWidgets.QPushButton(self.centralwidget)
-        self.button_init.setGeometry(QtCore.QRect(1000, 70, 201, 41))
-        self.button_init.setObjectName("button_init")
-        self.button_init.clicked.connect(self.clickedInitButton)
+        self.button_delete_vert.clicked.connect(self.clickedDeleteVert)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -43,18 +40,29 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.initPolygon()
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.button_add_vert.setText(_translate("MainWindow", "add a vertex"))
         self.button_delete_vert.setText(_translate("MainWindow", "delete a vertex"))
-        self.button_init.setText(_translate("MainWindow", "initialize"))
 
-    def clickedInitButton(self):
-        pix = QtGui.QPixmap('temp/8338669101373134896.png')
+    def initPolygon(self):
+        file_id = call_matlab.init_poly(self.num_verts)
+        pix = QtGui.QPixmap(helper.id2name(file_id))
         item = QtWidgets.QGraphicsPixmapItem(pix)
         self.polygonScene.addItem(item)
         self.polygonView.setScene(self.polygonScene)
+        helper.delete_temp_file(file_id)
+
+    def clickedAddVert(self):
+        self.num_verts += 1
+        self.initPolygon()
+    
+    def clickedDeleteVert(self):
+        self.num_verts -= 1
+        self.initPolygon()
 
 if __name__ == "__main__":
     import sys

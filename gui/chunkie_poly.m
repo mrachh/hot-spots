@@ -30,13 +30,14 @@ chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
 f = figure;
 clf
-plot(chnkr,'-b')
+plot(chnkr,'-b');
 hold on
-quiver(chnkr,'r')
+quiver(chnkr,'r');
 hold on
-xlim([-3,3])
-ylim([-3,3])
+xlim([-3,3]);
+ylim([-3,3]);
+set(gcf,'Visible', 'off');
 set(gcf, 'PaperPosition', [0.25 2.5 4.0 4.0]);
-saveas(gcf,file_name)
+saveas(gcf,file_name);
 
 end
