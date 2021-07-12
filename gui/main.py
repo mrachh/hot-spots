@@ -3,12 +3,18 @@ import numpy as np
 import helper
 import call_matlab
 
+
+# end of polygon
+
+
+        
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1500, 1500)
 
         self.num_verts = 3
+        self.vert_coords = []
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -40,6 +46,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        # self.polygonScene.polygon_item = PolygonAnnotation()
         self.initPolygon()
 
     def retranslateUi(self, MainWindow):
@@ -47,9 +54,13 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.button_add_vert.setText(_translate("MainWindow", "add a vertex"))
         self.button_delete_vert.setText(_translate("MainWindow", "delete a vertex"))
-
+# User defined
     def initPolygon(self):
-        file_id = call_matlab.init_poly(self.num_verts)
+        self.vert_coords = helper.init_poly(self.num_verts)
+        #draw on gui
+  
+        #draw in matlab
+        file_id = call_matlab.draw_poly(self.vert_coords)
         pix = QtGui.QPixmap(helper.id2name(file_id))
         item = QtWidgets.QGraphicsPixmapItem(pix)
         self.polygonScene.addItem(item)
@@ -63,6 +74,10 @@ class Ui_MainWindow(object):
     def clickedDeleteVert(self):
         self.num_verts -= 1
         self.initPolygon()
+
+
+
+
 
 if __name__ == "__main__":
     import sys
