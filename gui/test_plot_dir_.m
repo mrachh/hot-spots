@@ -1,32 +1,42 @@
 addpath('../src');
 clear;
 
+
 % Global parameters
-NUM_VERTS = 3
-% TODO: kvec by angle direction
-kvec = 3*[1; 1];
+NUM_VERTS = 4
+kvec = 20*[1;-1.5];
 
-% compute polygon vertices
-vert_angles = 0 : 2*pi/NUM_VERTS : 2*pi
-vert_angles = vert_angles(1:NUM_VERTS)
-vert_coords = cat(1, cos(vert_angles), sin(vert_angles))
-
-
-% build chunkie object
+%
 zk = norm(kvec);
+MAX_CHUNK_LEN = 4.0/zk
+
+
+
+% discretize domain
+
 cparams = [];
 cparams.eps = 1.0e-10;
 cparams.nover = 0;
-cparams.maxchunklen = 4.0/zk; 
-
+cparams.maxchunklen = 4.0/zk; % setting a chunk length helps when the
+                              % frequency is known
+                              
 pref = []; 
-pref.k = 16;                  
+pref.k = 16;
+narms =5;
+amp = 0.25;
+
+% Create the chunked geometry
+vert_angles = 0 : 2*pi/NUM_VERTS : 2*pi;
+vert_angles = vert_angles(1:NUM_VERTS);
+vert_coords = cat(1, cos(vert_angles), sin(vert_angles));
 chnkr = chunkerpoly(vert_coords, cparams, pref);
+
 [~,~,info] = sortinfo(chnkr);
 assert(info.ier == 0);
 
-% plot chunkie object
-figure(1)
+% plot geometry and data
+
+figure(2)
 clf
 plot(chnkr,'-x')
 hold on
@@ -34,11 +44,10 @@ quiver(chnkr)
 axis equal
 
 
-%%%%%%%%%%%%%%%%%%
-% solve and visualize the solution
 
-% build CFIE
+% code in demo_scatter.m %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%compute
 fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'c',1);
 opdims(1) = 1; opdims(2) = 1;
 opts = [];
@@ -52,7 +61,7 @@ sys = 0.5*eye(chnkr.k*chnkr.nch) + sysmat;
 rhs = -planewave(kvec(:),chnkr.r(:,:)); rhs = rhs(:);
 start = tic; sol = gmres(sys,rhs,[],1e-13,100); t1 = toc(start);
 
-fprintf('%5.2e s : time for dense gmres\n',t1)
+
 
 % evaluate at targets and plot
 
@@ -90,8 +99,7 @@ maxtot = max(abs(uin(:)));
 
 maxu = max(max(maxin,maxsc),maxtot);
 
-figure(2)
-clf
+figure(1)
 zztarg = nan(size(xxtarg));
 zztarg(out) = utot;
 h=pcolor(xxtarg,yytarg,imag(zztarg));
@@ -103,3 +111,6 @@ axis tight
 colormap(redblue)
 caxis([-maxu,maxu])
 title('$u_{tot}$','Interpreter','latex','FontSize',24)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+

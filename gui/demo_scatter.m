@@ -1,31 +1,44 @@
-addpath('../src');
-clear;
+%DEMO_SCATTER
+%
+% Define an exterior scattering problem on a starfish-shaped domain and 
+% solve
+%
 
-% Global parameters
-NUM_VERTS = 3
-% TODO: kvec by angle direction
-kvec = 3*[1; 1];
+clearvars; close all;
+iseed = 8675309;
+rng(iseed);
+addpaths_loc();
 
-% compute polygon vertices
-vert_angles = 0 : 2*pi/NUM_VERTS : 2*pi
-vert_angles = vert_angles(1:NUM_VERTS)
-vert_coords = cat(1, cos(vert_angles), sin(vert_angles))
+% planewave vec
 
+kvec = 20*[1;-1.5];
 
-% build chunkie object
+%
+
 zk = norm(kvec);
+
+% discretize domain
+
 cparams = [];
 cparams.eps = 1.0e-10;
 cparams.nover = 0;
-cparams.maxchunklen = 4.0/zk; 
-
+cparams.maxchunklen = 4.0/zk; % setting a chunk length helps when the
+                              % frequency is known
+                              
 pref = []; 
-pref.k = 16;                  
-chnkr = chunkerpoly(vert_coords, cparams, pref);
+pref.k = 16;
+narms =5;
+amp = 0.25;
+start = tic; chnkr = chunkerfunc(@(t) starfish(t,narms,amp),cparams,pref); 
+t1 = toc(start);
+
+fprintf('%5.2e s : time to build geo\n',t1)
+
 [~,~,info] = sortinfo(chnkr);
 assert(info.ier == 0);
 
-% plot chunkie object
+% plot geometry and data
+
 figure(1)
 clf
 plot(chnkr,'-x')
@@ -33,8 +46,9 @@ hold on
 quiver(chnkr)
 axis equal
 
+%
 
-%%%%%%%%%%%%%%%%%%
+
 % solve and visualize the solution
 
 % build CFIE
@@ -92,6 +106,34 @@ maxu = max(max(maxin,maxsc),maxtot);
 
 figure(2)
 clf
+subplot(1,3,1)
+zztarg = nan(size(xxtarg));
+zztarg(out) = uin;
+h=pcolor(xxtarg,yytarg,imag(zztarg));
+set(h,'EdgeColor','none')
+hold on
+plot(chnkr,'LineWidth',2)
+axis equal
+axis tight
+colormap(redblue)
+caxis([-maxu,maxu])
+title('$u_{in}$','Interpreter','latex','FontSize',24)
+
+
+subplot(1,3,2)
+zztarg = nan(size(xxtarg));
+zztarg(out) = uscat;
+h=pcolor(xxtarg,yytarg,imag(zztarg));
+set(h,'EdgeColor','none')
+hold on
+plot(chnkr,'LineWidth',2)
+axis equal
+axis tight
+colormap(redblue)
+caxis([-maxu,maxu])
+title('$u_{scat}$','Interpreter','latex','FontSize',24)
+
+subplot(1,3,3)
 zztarg = nan(size(xxtarg));
 zztarg(out) = utot;
 h=pcolor(xxtarg,yytarg,imag(zztarg));
