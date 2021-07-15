@@ -6,6 +6,7 @@ classdef dumb_exported < matlab.apps.AppBase
         UIAxes    matlab.ui.control.UIAxes
         usr_poly
         btn       matlab.ui.control.Button  
+        btn_dir   matlab.ui.control.Button
         chunkie_handle
         chnkr
         cparams
@@ -49,6 +50,15 @@ classdef dumb_exported < matlab.apps.AppBase
             app.usr_poly = images.roi.Polygon();
         end
         
+        function dirButtonPushed(app, btn_dir)
+            disp(['dirichlet button pushed']);
+            xlimit = [-3 3];
+            ylimit = [-3 3];
+            kvec = 2;
+            zk = 36;
+            uiax = app.UIAxes;
+            plot_dir(uiax, app.chnkr, zk, kvec, xlimit, ylimit);
+        end
         
         function allevents_poly(app,src,evt)
         evname = evt.EventName;
@@ -125,6 +135,10 @@ classdef dumb_exported < matlab.apps.AppBase
             app.btn = uibutton(app.UIFigure,'push',...
                'Text','Delete Polygon','Position',[120, 58, 100, 22],...
                'ButtonPushedFcn', @(btn,event) deleteButtonPushed(app,btn));
+
+               app.btn = uibutton(app.UIFigure,'push',...
+               'Text','Dirichlet','Position',[120, 108, 100, 22],...
+               'ButtonPushedFcn', @(btn,event) dirButtonPushed(app,btn));
          
             app.round_sldr = uislider(app.UIFigure,...
                 'Position',[250 78 200 3],'Value',0.1,'Limits',[0.01,0.49999],...
