@@ -61,12 +61,12 @@ function [utot] = plot_new(chnk_plot_axis, chnkr, k, direction, xlimit, ylimit)
     zztarg = nan(size(xxtarg));
     zztarg(out) = utot;
 
-    axes(handles.chnk_plot_axis)
+    axes(chnk_plot_axis)
     
     h=pcolor(xxtarg,yytarg,imag(zztarg));
     set(h,'EdgeColor','none')
-    hold on
-    plot(chnkr,'LineWidth',2)
+    % hold on
+    % plot(chnkr,'LineWidth',2)
     colormap(redblue)
     caxis([-maxu,maxu])
 

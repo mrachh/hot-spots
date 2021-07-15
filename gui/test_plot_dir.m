@@ -32,11 +32,8 @@ chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
 figure(1)
 clf
-plot(chnkr,'-x')
-hold on
-quiver(chnkr)
-axis equal
-hold on
 ax = gca
-sol = plot_dir(ax, chnkr, zk, kvec, xlimit, ylimit)
+plot_new(ax, chnkr)
+hold on
+sol = plot_dir(ax, chnkr, zk, kvec, xlimit, ylimit);
 shg
