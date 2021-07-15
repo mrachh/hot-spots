@@ -1,11 +1,22 @@
 function [utot] = plot_new(chnk_plot_axis, chnkr, k, direction, xlimit, ylimit)
+    %%%
+    5 text inputs
+    zk, xlim, ylim
+    zk slider; .1 - 40
+    two more imput: F, boundary data
 
+    when chunkie update (include slide): 
+        do create F in backgorund
+        do compute boundary
+
+    after xlim, ylim,
+        find exterior points
+    %%%
     addpath('../src');
     chnk_plot_handle = [];
-
-    % TODO: kvec by angle direction
     kvec = k .* [cos(direction); sin(direction)];
     zk = k
+    nplot = 200;
 
     %%%%%%%%%%%%%%%%%%
     % solve and visualize the solution
@@ -27,7 +38,6 @@ function [utot] = plot_new(chnk_plot_axis, chnkr, k, direction, xlimit, ylimit)
 
     fprintf('%5.2e s : time for dense gmres\n',t1)
 
-    nplot = 400;
     xtarg = linspace(xlimit(1),xlimit(2),nplot); 
     ytarg = linspace(ylimit(1),ylimit(2),nplot);
     [xxtarg,yytarg] = meshgrid(xtarg,ytarg);
@@ -61,13 +71,11 @@ function [utot] = plot_new(chnk_plot_axis, chnkr, k, direction, xlimit, ylimit)
     zztarg = nan(size(xxtarg));
     zztarg(out) = utot;
 
-    axes(chnk_plot_axis)
-    
-    h=pcolor(xxtarg,yytarg,imag(zztarg));
+    % axes(chnk_plot_axis)
+    h=pcolor(chnk_plot_axis ,xxtarg,yytarg,imag(zztarg));
     set(h,'EdgeColor','none')
-    % hold on
-    % plot(chnkr,'LineWidth',2)
-    colormap(redblue)
-    caxis([-maxu,maxu])
+    colormap(chnk_plot_axis, redblue)
+    % set(gcf,'Visible', 'off');
+    % caxis([-maxu,maxu])
 
 end

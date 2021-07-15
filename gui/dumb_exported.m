@@ -22,6 +22,7 @@ classdef dumb_exported < matlab.apps.AppBase
         function UIAxesButtonDown(app, event) 
             if (isempty(app.usr_poly.Position))
             app.usr_poly = drawpolygon(app.UIAxes);
+            %TODO: ROI MOVE
             addlistener(app.usr_poly,'MovingROI',@app.allevents_poly);
             addlistener(app.usr_poly,'ROIMoved',@app.allevents_poly);
             addlistener(app.usr_poly,'DeletingROI',@app.allevents_poly);
