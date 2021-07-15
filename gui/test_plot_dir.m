@@ -2,104 +2,41 @@ addpath('../src');
 clear;
 
 % Global parameters
-NUM_VERTS = 3
+NUM_VERTS = 5;
+xlimit = [-3 3];
+ylimit = [-3 3];
 % TODO: kvec by angle direction
-kvec = 3*[1; 1];
+kvec = 2;
+zk = 36;
+MAX_CHUNK_LEN = 4.0/zk;
 
-% compute polygon vertices
+% Create the polygon
+
+cparams = [];
+cparams.eps = 1.0e-5;
+cparams.nover = 0;
+cparams.maxchunklen = MAX_CHUNK_LEN;
+pref = []; 
+pref.k = 16;
+
 vert_angles = 0 : 2*pi/NUM_VERTS : 2*pi
 vert_angles = vert_angles(1:NUM_VERTS)
 vert_coords = cat(1, cos(vert_angles), sin(vert_angles))
 
-
-% build chunkie object
-zk = norm(kvec);
-cparams = [];
-cparams.eps = 1.0e-10;
-cparams.nover = 0;
-cparams.maxchunklen = 4.0/zk; 
-
-pref = []; 
-pref.k = 16;                  
+% Create the chunked geometry
 chnkr = chunkerpoly(vert_coords, cparams, pref);
-[~,~,info] = sortinfo(chnkr);
-assert(info.ier == 0);
 
-% plot chunkie object
+assert(checkadjinfo(chnkr) == 0);
+refopts = []; refopts.maxchunklen = MAX_CHUNK_LEN;
+chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
+
 figure(1)
 clf
 plot(chnkr,'-x')
 hold on
 quiver(chnkr)
 axis equal
-
-
-%%%%%%%%%%%%%%%%%%
-% solve and visualize the solution
-
-% build CFIE
-
-fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'c',1);
-opdims(1) = 1; opdims(2) = 1;
-opts = [];
-start = tic; sysmat = chunkermat(chnkr,fkern,opts);
-t1 = toc(start);
-
-fprintf('%5.2e s : time to assemble matrix\n',t1)
-
-sys = 0.5*eye(chnkr.k*chnkr.nch) + sysmat;
-
-rhs = -planewave(kvec(:),chnkr.r(:,:)); rhs = rhs(:);
-start = tic; sol = gmres(sys,rhs,[],1e-13,100); t1 = toc(start);
-
-fprintf('%5.2e s : time for dense gmres\n',t1)
-
-% evaluate at targets and plot
-
-rmin = min(chnkr); rmax = max(chnkr);
-xl = rmax(1)-rmin(1);
-yl = rmax(2)-rmin(2);
-nplot = 400;
-xtarg = linspace(rmin(1)-xl,rmax(1)+xl,nplot); 
-ytarg = linspace(rmin(2)-yl,rmax(2)+yl,nplot);
-[xxtarg,yytarg] = meshgrid(xtarg,ytarg);
-targets = zeros(2,length(xxtarg(:)));
-targets(1,:) = xxtarg(:); targets(2,:) = yytarg(:);
-
-%
-
-start = tic; in = chunkerinterior(chnkr,targets); t1 = toc(start);
-out = ~in;
-
-fprintf('%5.2e s : time to find points in domain\n',t1)
-
-% compute layer potential based on oversample boundary
-
-start = tic;
-uscat = chunkerkerneval(chnkr,fkern,sol,targets(:,out)); t1 = toc(start);
-fprintf('%5.2e s : time for kernel eval (for plotting)\n',t1)
-
-uin = planewave(kvec,targets(:,out));
-utot = uscat(:)+uin(:);
-
-%
-
-maxin = max(abs(uin(:)));
-maxsc = max(abs(uin(:)));
-maxtot = max(abs(uin(:)));
-
-maxu = max(max(maxin,maxsc),maxtot);
-
-figure(2)
-clf
-zztarg = nan(size(xxtarg));
-zztarg(out) = utot;
-h=pcolor(xxtarg,yytarg,imag(zztarg));
-set(h,'EdgeColor','none')
 hold on
-plot(chnkr,'LineWidth',2)
-axis equal
-axis tight
-colormap(redblue)
-caxis([-maxu,maxu])
-title('$u_{tot}$','Interpreter','latex','FontSize',24)
+ax = gca
+sol = plot_dir(ax, chnkr, zk, kvec, xlimit, ylimit)
+shg

@@ -19,7 +19,6 @@ classdef dumb_exported < matlab.apps.AppBase
 
         % Button down function: UIAxes
         function UIAxesButtonDown(app, event) 
-            app.usr_poly
             if (isempty(app.usr_poly.Position))
             app.usr_poly = drawpolygon(app.UIAxes);
             addlistener(app.usr_poly,'MovingROI',@app.allevents_poly);
@@ -29,12 +28,11 @@ classdef dumb_exported < matlab.apps.AppBase
            
             
             app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals)
-            app.chnkr
-            app.usr_poly
             uiax = app.UIAxes;
             %poly_tmp = app.usr_poly;
             
             app.chunkie_handle = plot_new(uiax,app.chnkr);
+            app.chunkie_handle
             %app.usr_poly = poly_tmp;
             app.usr_poly.EdgeAlpha = 1;
             app.usr_poly.FaceAlpha = 0;
