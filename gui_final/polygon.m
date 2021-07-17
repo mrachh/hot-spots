@@ -26,6 +26,9 @@ classdef polygon < matlab.apps.AppBase
         edgevals
         sol
         F
+        u_imre
+        u_out
+        direction
         dir_handle
     end
 
@@ -65,7 +68,8 @@ classdef polygon < matlab.apps.AppBase
         % Value changed function: directionKnob
         function directionKnobTurned(app, event)
             value = app.directionKnob.Value;
-            disp(['Direction: ' mat2str(value)]);
+            app.direction = value * 2.0 * pi / 360.0;
+            disp(['Direction: ' mat2str(app.direction)]);
         end
 
         % Button pushed function: DeletePolygonButton
@@ -172,6 +176,7 @@ classdef polygon < matlab.apps.AppBase
             app.pref.k  = 16;
             app.edgevals = [];
             app.sol = [];
+            app.u_imre = 'Real';
 
             % Create UIFigure and hide until all components are created
             app.UIFigure = uifigure('Visible', 'off', 'NextPlot','add');
