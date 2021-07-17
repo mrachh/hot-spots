@@ -29,9 +29,11 @@ classdef polygon < matlab.apps.AppBase
         imre
         out
         direction
+        zk
         dir_handle
         default_ui_name
         plot_option
+        rhs
     end
 
     % Callbacks that handle component events
@@ -62,6 +64,9 @@ classdef polygon < matlab.apps.AppBase
             app.chunkie_handle = plot_new(uiax,app.chnkr);
             show_buttons(app);
             update_out(app);
+            update_rhs(app);
+            update_F(app);
+            update_sol(app);
             app.chunkie_handle
             app.usr_poly.EdgeAlpha = 1;
             app.usr_poly.FaceAlpha = 0;
@@ -73,6 +78,8 @@ classdef polygon < matlab.apps.AppBase
         function directionKnobTurned(app, event)
             value = app.directionKnob.Value;
             app.direction = value * 2.0 * pi / 360.0;
+            update_rhs(app);
+            update_sol(app);
             disp(['Direction: ' mat2str(app.direction)]);
         end
 
@@ -106,14 +113,40 @@ classdef polygon < matlab.apps.AppBase
         function wavenumberSliderSlided(app, event)
             value = app.wavenumberSlider.Value;
             disp(['zk: ' mat2str(value)]);
+            update_F(app);
+            update_rhs(app);
+            update_sol(app);
         end
 %%%%%%%%% Computation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
         function update_out(app)
+            disp('Targets Updated');
             app.UIFigure.Name = 'Finding Targets ...';
             app.out = find_targets(app.chnkr);
             app.UIFigure.Name = app.default_ui_name;
         end
+
+        function update_F(app)
+            disp('F Updated');
+            app.UIFigure.Name = 'Computing F ...';
+            app.F = compute_F(app.chnkr, app.zk);
+            app.UIFigure.Name = app.default_ui_name;
+        end
+
+        function update_rhs(app)
+            disp('rhs Updated');
+            app.UIFigure.Name = 'Computing rhs ...';
+            app.rhs = compute_rhs(app.chnkr, app.direction, app.zk);
+            app.UIFigure.Name = app.default_ui_name;
+        end
+
+        function update_sol(app)
+            disp('sol Updated');
+            app.UIFigure.Name = 'Computing sol ...';
+            app.sol = compute_sol(app.F, app.rhs);
+            app.UIFigure.Name = app.default_ui_name;
+        end
+
 
 %%%%%%%%% Helper functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         function allevents_poly(app,src,evt)
@@ -136,6 +169,10 @@ classdef polygon < matlab.apps.AppBase
                 disp(['ROI moved Previous Position: ' mat2str(evt.PreviousPosition)]);
                 disp(['ROI moved Current Position: ' mat2str(evt.CurrentPosition)]);
                 update_out(app);
+                update_rhs(app);
+                update_F(app);
+                update_sol(app);
+                
             case{'DeletingROI'}
                 disp(['ROI deleted']);
                 app.chnkr    = chunker();
@@ -180,23 +217,11 @@ classdef polygon < matlab.apps.AppBase
 
         % Create UIFigure and components
         function createComponents(app)
-            % Init
-            app.usr_poly = images.roi.Polygon();
-            app.chnkr = chunker();
-            app.chunkie_handle = [];
-            app.cparams = struct();
-            app.cparams.rounded = true;
-            app.pref    = struct();
-            app.pref.k  = 16;
-            app.edgevals = [];
-            app.sol = [];
-            app.imre = 'Real';
-            app.default_ui_name = 'polygon';
-            app.plot_option = ' ';
 
             % Create UIFigure and hide until all components are created
             app.UIFigure = uifigure('Visible', 'off', 'NextPlot','add');
             app.UIFigure.Position = [100 100 640 480];
+            app.default_ui_name = 'polygon';
             app.UIFigure.Name = app.default_ui_name;
 
             % Create UIAxes
@@ -287,6 +312,21 @@ classdef polygon < matlab.apps.AppBase
 
             % Hide some buttons until a polygon is created
             hide_buttons(app);
+
+            % Init
+            app.usr_poly = images.roi.Polygon();
+            app.chnkr = chunker();
+            app.chunkie_handle = [];
+            app.cparams = struct();
+            app.cparams.rounded = true;
+            app.pref    = struct();
+            app.pref.k  = 16;
+            app.edgevals = [];
+            app.sol = [];
+            app.imre = 'Real';
+            app.plot_option = ' ';
+            app.zk = app.wavenumberSlider.Value;
+            app.direction = app.directionKnob.Value;
         end
     end
 

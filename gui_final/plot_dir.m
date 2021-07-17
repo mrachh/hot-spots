@@ -1,4 +1,4 @@
-function [h] = plot_dir(chnk_plot_axis, chnkr, sol, zk, direction, out)
+function [h] = plot_dir(chnk_plot_axis, chnkr, zk, direction, out, plot_option, imre)
 
     addpath('../src');
     kvec = zk .* [cos(direction); sin(direction)];
@@ -35,8 +35,6 @@ function [h] = plot_dir(chnk_plot_axis, chnkr, sol, zk, direction, out)
     % colormap(chnk_plot_axis, redblue);
     colormap(chnk_plot_axis);
     caxis([-maxu,maxu]);
-    % quick fix
     set(gcf,'Visible', 'off');
-    % set axis 
     axis(chnk_plot_axis, [-3 3 -3 3]);
 end

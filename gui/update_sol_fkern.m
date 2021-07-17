@@ -20,11 +20,4 @@ function [F, sol] = update_sol_fkern(chnkr, direction, zk)
     start = tic; sol = rskelf_sv(F,rhs); t_fds = toc(start);
     disp(sol(2))
 
-
-    % %%%%%%%%%%%%%%%%%%
-    % % backslash
-    % start = tic; sysmat = chunkermat(chnkr,fkern,opts);
-    % t1 = toc(start);
-    % sys = 0.5*eye(chnkr.k*chnkr.nch) + sysmat;
-    % start = tic; sol = sys\rhs; t_bs = toc(start);
 end
