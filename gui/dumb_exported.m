@@ -7,11 +7,16 @@ classdef dumb_exported < matlab.apps.AppBase
         usr_poly
         btn       matlab.ui.control.Button  
         btn_dir   matlab.ui.control.Button
+        knob_direction  matlab.ui.control.Knob
+        knob_zk  matlab.ui.control.Knob
         chunkie_handle
         chnkr
         cparams
         pref
         edgevals
+        sol
+        F
+        dir_handle
         round_sldr        matlab.ui.control.Slider   
     end
 
@@ -45,20 +50,32 @@ classdef dumb_exported < matlab.apps.AppBase
             %app.usr_poly.Position
         end
         
-        function deleteButtonPushed(app,btn)
+        function deleteButtonPushed(app, btn)
             disp(['button pushed']);
             cla(app.UIAxes);
             app.usr_poly = images.roi.Polygon();
+            % delete(app.dir_handle);
         end
         
         function dirButtonPushed(app, btn_dir)
             disp(['dirichlet button pushed']);
-            xlimit = [-3 3];
-            ylimit = [-3 3];
-            kvec = 2;
-            zk = 36;
+            
+            [app.F, app.sol] = update_sol_fkern(...
+                app.chnkr, app.knob_direction.Value, app.knob_zk.Value);
             uiax = app.UIAxes;
-            plot_dir(uiax, app.chnkr, zk, kvec, xlimit, ylimit);
+            if ~isempty(app.dir_handle)
+                delete(app.dir_handle);
+            end
+            app.dir_handle = plot_dir(uiax, app.chnkr, app.sol, app.knob_zk.Value, ...
+                app.knob_direction.Value);
+        end
+        
+        function knobDirectionTurned(app, knob_direction)
+            disp(['Direction: ' mat2str(knob_direction.Value)]);
+        end
+
+        function knobZkTurned(app, knob_zk)
+            disp(['zk: ' mat2str(knob_zk.Value)]);
         end
         
         function allevents_poly(app,src,evt)
@@ -67,6 +84,8 @@ classdef dumb_exported < matlab.apps.AppBase
         case{'MovingROI'}
             disp(['ROI moving Previous Position: ' mat2str(evt.PreviousPosition)]);
             disp(['ROI moving Current Position: ' mat2str(evt.CurrentPosition)]);
+
+
             
 %%%% now update the chunkie
             delete(app.chunkie_handle);
@@ -116,9 +135,11 @@ classdef dumb_exported < matlab.apps.AppBase
         % Create UIFigure and components
         function createComponents(app)
 
+            app.sol = [];
+
             % Create UIFigure and hide until all components are created
             app.UIFigure = uifigure('Visible', 'off','NextPlot','add');
-            app.UIFigure.Position = [100 100 640 480];
+            app.UIFigure.Position = [300 300 800 480];
             app.UIFigure.Name = 'MATLAB App';
 
             % Create UIAxes
@@ -137,10 +158,20 @@ classdef dumb_exported < matlab.apps.AppBase
                'Text','Delete Polygon','Position',[120, 58, 100, 22],...
                'ButtonPushedFcn', @(btn,event) deleteButtonPushed(app,btn));
 
-               app.btn = uibutton(app.UIFigure,'push',...
-               'Text','Dirichlet','Position',[120, 108, 100, 22],...
-               'ButtonPushedFcn', @(btn,event) dirButtonPushed(app,btn));
-         
+            app.btn_dir = uibutton(app.UIFigure,'push',...
+            'Text','Dirichlet','Position',[120, 108, 100, 22],...
+            'ButtonPushedFcn', @(btn_dir,event) dirButtonPushed(app,btn_dir));
+            
+            app.knob_direction = uiknob(app.UIFigure, 'continuous', ...
+            'Position', [700 78 30 30], ...
+            'Limits',[0.0, 360.0], ...
+            'ValueChangedFcn', @(kb,event) knobDirectionTurned(app, kb));
+
+            app.knob_zk = uiknob(app.UIFigure, 'continuous', ...
+            'Position', [700 200 30 30], ...
+            'Limits',[10.0, 50.0], ...
+            'ValueChangedFcn', @(kb,event) knobZkTurned(app, kb));
+
             app.round_sldr = uislider(app.UIFigure,...
                 'Position',[250 78 200 3],'Value',0.1,'Limits',[0.01,0.49999],...
                 'ValueChangedFcn',@(sld,event) update_round(app,sld));
@@ -183,3 +214,4 @@ classdef dumb_exported < matlab.apps.AppBase
         end
     end
 end
+

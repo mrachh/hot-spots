@@ -1,4 +1,4 @@
-function [nothing] = plot_new(chnk_plot_axis, chnkr, sol, zk)
+function [h] = plot_dir(chnk_plot_axis, chnkr, sol, zk, direction)
     disp(sol(2))
     %%%
     % 5 text inputs
@@ -16,7 +16,8 @@ function [nothing] = plot_new(chnk_plot_axis, chnkr, sol, zk)
 
     addpath('../src');
     % chnk_plot_handle = [];
-    % kvec = zk .* [cos(direction); sin(direction)];
+    direction = direction * 2.0 * pi / 360.0;
+    kvec = zk .* [cos(direction); sin(direction)];
     nplot = 200;
 
     % %%%%%%%%%%%%%%%%%%
@@ -82,9 +83,10 @@ function [nothing] = plot_new(chnk_plot_axis, chnkr, sol, zk)
     zztarg = nan(size(xxtarg));
     zztarg(out) = utot;
 
-    h=pcolor(chnk_plot_axis ,xxtarg,yytarg,imag(zztarg));
+    h=pcolor(chnk_plot_axis ,xxtarg,yytarg,real(zztarg));
     set(h,'EdgeColor','none');
-    colormap(chnk_plot_axis, redblue);
+    % colormap(chnk_plot_axis, redblue);
+    colormap(chnk_plot_axis);
     caxis([-maxu,maxu]);
     % quick fix
     set(gcf,'Visible', 'off');

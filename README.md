@@ -28,3 +28,12 @@ This project contains test scripts for testing the hot-spots conjecture
     3. bad cases: 
         TEST3 (nonconvex with two local minima)
         TEST5 (ill-conditioned, converges but slowly).
+
+
+update dir when dragging
+1. when chunkie uopdated, 1. update F 2. target 250 **2, -3 to 3
+                        3. precompute quad
+    when freq changed: 1. update F 2. precompute quad
+    when direction changed:  1. boundary_data
+
+debug by creating new buttons
