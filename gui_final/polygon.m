@@ -31,6 +31,7 @@ classdef polygon < matlab.apps.AppBase
         direction
         dir_handle
         default_ui_name
+        plot_option
     end
 
     % Callbacks that handle component events
@@ -40,13 +41,12 @@ classdef polygon < matlab.apps.AppBase
         function imReSwitchChanged(app, event)
             value = app.imReSwitch.Value;
             app.imre = value;
-            disp(mat2str(value));
         end
 
         % Selection changed function: uOptionsButtonGroup
         function uOptionsChanged(app, event)
             selectedButton = app.uOptionsButtonGroup.SelectedObject;
-            
+            app.plot_option = selectedButton.Text;
         end
 
         % Button down function: UIAxes
@@ -192,6 +192,7 @@ classdef polygon < matlab.apps.AppBase
             app.sol = [];
             app.imre = 'Real';
             app.default_ui_name = 'polygon';
+            app.plot_option = ' ';
 
             % Create UIFigure and hide until all components are created
             app.UIFigure = uifigure('Visible', 'off', 'NextPlot','add');
