@@ -2,6 +2,7 @@ classdef polygon < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
+        % matlab.ui.*
         UIFigure             matlab.ui.Figure
         RoundSlider          matlab.ui.control.Slider
         RoundSliderLabel     matlab.ui.control.Label
@@ -11,6 +12,11 @@ classdef polygon < matlab.apps.AppBase
         directionKnob        matlab.ui.control.Knob
         directionKnobLabel   matlab.ui.control.Label
         UIAxes               matlab.ui.control.UIAxes
+        imReSwitch           matlab.ui.control.RockerSwitch
+        uOptionsButtonGroup  matlab.ui.container.ButtonGroup
+        utotButton           matlab.ui.control.RadioButton
+        uscatButton          matlab.ui.control.RadioButton
+        uinButton            matlab.ui.control.RadioButton
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         usr_poly
         chunkie_handle
@@ -25,6 +31,17 @@ classdef polygon < matlab.apps.AppBase
 
     % Callbacks that handle component events
     methods (Access = private)
+        % Value changed function: imReSwitch
+        function imReSwitchChanged(app, event)
+            value = app.imReSwitch.Value;
+            disp(mat2str(value));
+        end
+
+        % Selection changed function: uOptionsButtonGroup
+        function uOptionsChanged(app, event)
+            selectedButton = app.uOptionsButtonGroup.SelectedObject;
+            
+        end
 
         % Button down function: UIAxes
         function UIAxesButtonDown(app, event) 
@@ -37,6 +54,7 @@ classdef polygon < matlab.apps.AppBase
             app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals)
             uiax = app.UIAxes;
             app.chunkie_handle = plot_new(uiax,app.chnkr);
+            show_buttons(app);
             app.chunkie_handle
             app.usr_poly.EdgeAlpha = 1;
             app.usr_poly.FaceAlpha = 0;
@@ -55,6 +73,7 @@ classdef polygon < matlab.apps.AppBase
             disp(['button pushed']);
             cla(app.UIAxes);
             app.usr_poly = images.roi.Polygon();
+            hide_buttons(app);
         end
 
         % Value changed function: RoundSlider
@@ -81,7 +100,7 @@ classdef polygon < matlab.apps.AppBase
             disp(['zk: ' mat2str(value)]);
         end
 
-        % Helper function
+        % Helper functions
         function allevents_poly(app,src,evt)
             evname = evt.EventName;
             switch(evname)
@@ -105,7 +124,36 @@ classdef polygon < matlab.apps.AppBase
                 disp(['ROI deleted']);
                 app.chnkr    = chunker();
                 app.usr_poly = images.roi.Polygon();
+                hide_buttons(app);
             end
+        end
+
+        function show_buttons(app)
+            % shows valid options after a polygon is created
+            app.directionKnob.Visible = 1;
+            app.directionKnobLabel.Visible = 1;
+            app.wavenumberSlider.Visible = 1;
+            app.wavenumberLabel.Visible = 1;
+            app.DeletePolygonButton.Visible = 1;
+            app.RoundSlider.Visible = 1;
+            app.RoundSliderLabel.Visible = 1;
+            app.uOptionsButtonGroup.Visible = 1;
+            app.imReSwitch.Visible = 1;
+            app.imReSwitch.Items = {'Real', 'Imaginary'};
+        end
+
+        function hide_buttons(app)
+            % hides valid options after a polygon is created
+            app.directionKnob.Visible = 0;
+            app.directionKnobLabel.Visible = 0;
+            app.wavenumberSlider.Visible = 0;
+            app.wavenumberLabel.Visible = 0;
+            app.DeletePolygonButton.Visible = 0;
+            app.RoundSlider.Visible = 0;
+            app.RoundSliderLabel.Visible = 0;
+            app.uOptionsButtonGroup.Visible = 0;
+            app.imReSwitch.Visible = 0;
+            app.imReSwitch.Items = {' ', ' '};
         end
     end
 
@@ -126,9 +174,9 @@ classdef polygon < matlab.apps.AppBase
             app.sol = [];
 
             % Create UIFigure and hide until all components are created
-            app.UIFigure = uifigure('Visible', 'off');
+            app.UIFigure = uifigure('Visible', 'off', 'NextPlot','add');
             app.UIFigure.Position = [100 100 640 480];
-            app.UIFigure.Name = 'MATLAB App';
+            app.UIFigure.Name = 'Polygon';
 
             % Create UIAxes
             app.UIAxes = uiaxes(app.UIFigure);
@@ -141,7 +189,7 @@ classdef polygon < matlab.apps.AppBase
             % Create directionKnobLabel
             app.directionKnobLabel = uilabel(app.UIFigure);
             app.directionKnobLabel.HorizontalAlignment = 'center';
-            app.directionKnobLabel.Position = [395 178 51 22];
+            app.directionKnobLabel.Position = [395 148 51 22];
             app.directionKnobLabel.Text = 'direction';
 
             % Create directionKnob
@@ -151,19 +199,20 @@ classdef polygon < matlab.apps.AppBase
             app.directionKnob.MajorTickLabels = {''};
             app.directionKnob.ValueChangedFcn = createCallbackFcn(app, @directionKnobTurned, true);
             app.directionKnob.MinorTicks = [-160 -150 -140 -130 -120 -110 -100 -90 -80 -70 -60 -50 -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160];
-            app.directionKnob.Position = [348 234 146 146];
+            app.directionKnob.Position = [348 204 146 146];
 
             % Create wavenumberLabel
             app.wavenumberLabel = uilabel(app.UIFigure);
             app.wavenumberLabel.HorizontalAlignment = 'right';
-            app.wavenumberLabel.Position = [519 178 74 22];
+            app.wavenumberLabel.Position = [519 148 74 22];
             app.wavenumberLabel.Text = {'wavenumber'; ''};
 
             % Create wavenumberSlider
             app.wavenumberSlider = uislider(app.UIFigure);
             app.wavenumberSlider.Orientation = 'vertical';
+            app.wavenumberSlider.Limits = [10 50];
             app.wavenumberSlider.ValueChangedFcn = createCallbackFcn(app, @wavenumberSliderSlided, true);
-            app.wavenumberSlider.Position = [547 234 7 168];
+            app.wavenumberSlider.Position = [547 204 7 168];
 
             % Create DeletePolygonButton
             app.DeletePolygonButton = uibutton(app.UIFigure, 'push');
@@ -184,8 +233,39 @@ classdef polygon < matlab.apps.AppBase
             app.RoundSlider.Position = [319 113 211 7];
             app.RoundSlider.Value = 0.01;
 
+            % Create uOptionsButtonGroup
+            app.uOptionsButtonGroup = uibuttongroup(app.UIFigure);
+            app.uOptionsButtonGroup.SelectionChangedFcn = createCallbackFcn(app, @uOptionsChanged, true);
+            app.uOptionsButtonGroup.Position = [384 392 100 71];
+
+            % Create uinButton
+            app.uinButton = uiradiobutton(app.uOptionsButtonGroup);
+            app.uinButton.Text = 'uin';
+            app.uinButton.Position = [11 44 58 22];
+            app.uinButton.Value = true;
+
+            % Create uscatButton
+            app.uscatButton = uiradiobutton(app.uOptionsButtonGroup);
+            app.uscatButton.Text = 'uscat';
+            app.uscatButton.Position = [12 23 65 22];
+
+            % Create utotButton
+            app.utotButton = uiradiobutton(app.uOptionsButtonGroup);
+            app.utotButton.Text = 'utot';
+            app.utotButton.Position = [11 0 65 22];
+
+            % Create imReSwitch
+            app.imReSwitch = uiswitch(app.UIFigure, 'rocker');
+            app.imReSwitch.Items = {'Real', 'Imaginary'};
+            app.imReSwitch.ValueChangedFcn = createCallbackFcn(app, @imReSwitchChanged, true);
+            app.imReSwitch.Position = [548 404 20 45];
+            app.imReSwitch.Value = 'Real';
+
             % Show the figure after all components are created
             app.UIFigure.Visible = 'on';
+
+            % Hide some buttons until a polygon is created
+            hide_buttons(app);
         end
     end
 
