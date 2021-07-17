@@ -1,57 +1,11 @@
 function [h] = plot_dir(chnk_plot_axis, chnkr, sol, zk, direction)
-    disp(sol(2))
-    %%%
-    % 5 text inputs
-    % zk, xlim, ylim
-    % zk slider; .1 - 40
-    % two more imput: F, boundary data
-
-    % when chunkie update (include slide): 
-    %     do create F in backgorund
-    %     do compute boundary
-
-    % after xlim, ylim,
-    %     find exterior points
-    %%%
 
     addpath('../src');
-    % chnk_plot_handle = [];
-    direction = direction * 2.0 * pi / 360.0;
     kvec = zk .* [cos(direction); sin(direction)];
-    nplot = 200;
+    nplot = 250;
 
-    % %%%%%%%%%%%%%%%%%%
-    % % solve and visualize the solution
-
-    % % build CFIE
-
-    fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'c',1);
-    % opdims(1) = 1; opdims(2) = 1;
-    % opts = [];
-    % start = tic; sysmat = chunkermat(chnkr,fkern,opts);
-    % t1 = toc(start);
-
-    % fprintf('%5.2e s : time to assemble matrix\n',t1)
-
-    % sys = 0.5*eye(chnkr.k*chnkr.nch) + sysmat;
-
-    % rhs = -planewave(kvec(:),chnkr.r(:,:)); rhs = rhs(:);
-    % start = tic; sol = sys\rhs; t1 = toc(start);
-
-    % fprintf('%5.2e s : time for dense gmres\n',t1)
-
-    % %%%%%%%%%%%%%%%%%%%%%%
-    % % End of solve
-
-    rmin = min(chnkr); rmax = max(chnkr);
-    xl = rmax(1)-rmin(1);
-    yl = rmax(2)-rmin(2);
-    xlo = rmin(1)-xl;
-    xhi = rmax(1)+xl;
-    ylo = rmin(2)-yl;
-    yhi = rmax(2)+yl;
-    xtarg = linspace(xlo,xhi,nplot); 
-    ytarg = linspace(ylo,yhi,nplot);
+    xtarg = linspace(-3,3,nplot); 
+    ytarg = linspace(-3,3,nplot);
     [xxtarg,yytarg] = meshgrid(xtarg,ytarg);
     targets = zeros(2,length(xxtarg(:)));
     targets(1,:) = xxtarg(:); targets(2,:) = yytarg(:);
@@ -91,5 +45,5 @@ function [h] = plot_dir(chnk_plot_axis, chnkr, sol, zk, direction)
     % quick fix
     set(gcf,'Visible', 'off');
     % set axis 
-    axis(chnk_plot_axis, [xlo xhi ylo yhi]);
+    axis(chnk_plot_axis, [-3 3 -3 3]);
 end
