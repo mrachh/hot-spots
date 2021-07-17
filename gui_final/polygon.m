@@ -26,17 +26,20 @@ classdef polygon < matlab.apps.AppBase
         edgevals
         sol
         F
-        u_imre
-        u_out
+        imre
+        out
         direction
         dir_handle
+        default_ui_name
     end
 
     % Callbacks that handle component events
     methods (Access = private)
+%%%%%%%%% Callback %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Value changed function: imReSwitch
         function imReSwitchChanged(app, event)
             value = app.imReSwitch.Value;
+            app.imre = value;
             disp(mat2str(value));
         end
 
@@ -58,6 +61,7 @@ classdef polygon < matlab.apps.AppBase
             uiax = app.UIAxes;
             app.chunkie_handle = plot_new(uiax,app.chnkr);
             show_buttons(app);
+            update_out(app);
             app.chunkie_handle
             app.usr_poly.EdgeAlpha = 1;
             app.usr_poly.FaceAlpha = 0;
@@ -103,8 +107,15 @@ classdef polygon < matlab.apps.AppBase
             value = app.wavenumberSlider.Value;
             disp(['zk: ' mat2str(value)]);
         end
+%%%%%%%%% Computation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+        function update_out(app)
+            app.UIFigure.Name = 'Finding Targets ...';
+            app.out = find_targets(app.chnkr);
+            app.UIFigure.Name = app.default_ui_name;
+        end
 
-        % Helper functions
+%%%%%%%%% Helper functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         function allevents_poly(app,src,evt)
             evname = evt.EventName;
             switch(evname)
@@ -124,6 +135,7 @@ classdef polygon < matlab.apps.AppBase
             case{'ROIMoved'}
                 disp(['ROI moved Previous Position: ' mat2str(evt.PreviousPosition)]);
                 disp(['ROI moved Current Position: ' mat2str(evt.CurrentPosition)]);
+                update_out(app);
             case{'DeletingROI'}
                 disp(['ROI deleted']);
                 app.chnkr    = chunker();
@@ -161,6 +173,8 @@ classdef polygon < matlab.apps.AppBase
         end
     end
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Component initialization
     methods (Access = private)
 
@@ -176,12 +190,13 @@ classdef polygon < matlab.apps.AppBase
             app.pref.k  = 16;
             app.edgevals = [];
             app.sol = [];
-            app.u_imre = 'Real';
+            app.imre = 'Real';
+            app.default_ui_name = 'polygon';
 
             % Create UIFigure and hide until all components are created
             app.UIFigure = uifigure('Visible', 'off', 'NextPlot','add');
             app.UIFigure.Position = [100 100 640 480];
-            app.UIFigure.Name = 'Polygon';
+            app.UIFigure.Name = app.default_ui_name;
 
             % Create UIAxes
             app.UIAxes = uiaxes(app.UIFigure);
