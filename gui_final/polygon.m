@@ -40,6 +40,7 @@ classdef polygon < matlab.apps.AppBase
         xxtarg
         yytarg
         uscat
+        default_font
     end
 
     % Callbacks that handle component events
@@ -259,6 +260,7 @@ classdef polygon < matlab.apps.AppBase
 
         % Create UIFigure and components
         function createComponents(app)
+            app.default_font = 'Calibri'
 
             % initiate targets
             disp('Targets Initiated from -3 to 3');
@@ -299,7 +301,7 @@ classdef polygon < matlab.apps.AppBase
             app.directionKnobLabel.HorizontalAlignment = 'center';
             app.directionKnobLabel.Position = [395 148 51 22];
             app.directionKnobLabel.Text = 'direction';
-            app.directionKnobLabel.FontName = 'Helvetica';
+            app.directionKnobLabel.FontName = app.default_font;
 
             % Create directionKnob
             app.directionKnob = uiknob(app.UIFigure, 'continuous');
@@ -315,6 +317,7 @@ classdef polygon < matlab.apps.AppBase
             app.wavenumberLabel.HorizontalAlignment = 'right';
             app.wavenumberLabel.Position = [519 148 74 22];
             app.wavenumberLabel.Text = {'wavenumber'; ''};
+            app.wavenumberLabel.FontName = app.default_font;
 
             % Create wavenumberSlider
             app.wavenumberSlider = uislider(app.UIFigure);
@@ -328,12 +331,14 @@ classdef polygon < matlab.apps.AppBase
             app.DeletePolygonButton.ButtonPushedFcn = createCallbackFcn(app, @DeletePolygonButtonPushed, true);
             app.DeletePolygonButton.Position = [58 94 140 33];
             app.DeletePolygonButton.Text = 'Delete Polygon';
+            app.DeletePolygonButton.FontName = app.default_font;
 
             % Create RoundSliderLabel
             app.RoundSliderLabel = uilabel(app.UIFigure);
             app.RoundSliderLabel.HorizontalAlignment = 'right';
             app.RoundSliderLabel.Position = [337 104 41 22];
             app.RoundSliderLabel.Text = 'Round';
+            app.RoundSliderLabel.FontName = app.default_font;
 
             % Create RoundSlider
             app.RoundSlider = uislider(app.UIFigure);
@@ -352,16 +357,19 @@ classdef polygon < matlab.apps.AppBase
             app.uinButton.Text = 'incoming field';
             app.uinButton.Position = [11 44 160 22];
             app.uinButton.Value = true;
+            app.uinButton.FontName = app.default_font;
 
             % Create uscatButton
             app.uscatButton = uiradiobutton(app.uOptionsButtonGroup);
             app.uscatButton.Text = 'scattered field';
             app.uscatButton.Position = [12 23 160 22];
+            app.directionKnobLabel.FontName = app.default_font;
 
             % Create utotButton
             app.utotButton = uiradiobutton(app.uOptionsButtonGroup);
             app.utotButton.Text = 'total field';
             app.utotButton.Position = [11 0 160 22];
+            app.utotButton.FontName = app.default_font;
 
             % Create imReSwitch
             app.imReSwitch = uiswitch(app.UIFigure, 'rocker');
@@ -369,12 +377,17 @@ classdef polygon < matlab.apps.AppBase
             app.imReSwitch.ValueChangedFcn = createCallbackFcn(app, @imReSwitchChanged, true);
             app.imReSwitch.Position = [548 404 20 45];
             app.imReSwitch.Value = 'Real';
+            app.imReSwitch.FontName = app.default_font;
 
             % Show the figure after all components are created
             app.UIFigure.Visible = 'on';
 
             % Hide some buttons until a polygon is created
             hide_buttons(app);
+
+            % % Change font
+            % temp = findobj(app.UIFigure, '-property', 'FontSize');
+            % set(temp,{'FontSize'}, num2cell(18));
 
             % Init
             app.usr_poly = images.roi.Polygon();
