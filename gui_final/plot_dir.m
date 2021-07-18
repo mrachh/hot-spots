@@ -1,40 +1,40 @@
-function [h] = plot_dir(chnk_plot_axis, chnkr, zk, direction, out, plot_option, imre)
+function [h] = plot_dir(chnk_plot_axis, uscat, direction, zk, targets, out, xxtarg, yytarg, plot_option, imre)
+    disp(plot_option)
 
     addpath('../src');
     kvec = zk .* [cos(direction); sin(direction)];
-    nplot = 250;
-
-    xtarg = linspace(-3,3,nplot); 
-    ytarg = linspace(-3,3,nplot);
-    [xxtarg,yytarg] = meshgrid(xtarg,ytarg);
-    targets = zeros(2,length(xxtarg(:)));
-    targets(1,:) = xxtarg(:); targets(2,:) = yytarg(:);
-
-    % % compute layer potential based on oversample boundary
-
-    start = tic;
-    uscat = chunkerkerneval(chnkr,fkern,sol,targets(:,out)); t1 = toc(start);
-    fprintf('%5.2e s : time for kernel eval (for plotting)\n',t1)
-
     uin = planewave(kvec,targets(:,out));
     utot = uscat(:)+uin(:);
-
+    
     %
-
+    
     maxin = max(abs(uin(:)));
     maxsc = max(abs(uin(:)));
     maxtot = max(abs(uin(:)));
-
+    
     maxu = max(max(maxin,maxsc),maxtot);
 
     zztarg = nan(size(xxtarg));
-    zztarg(out) = utot;
 
-    h=pcolor(chnk_plot_axis ,xxtarg,yytarg,real(zztarg));
+    if strcmp(plot_option, 'incoming field')
+        zztarg(out) = uin;
+    elseif strcmp(plot_option, 'scattered field')
+        zztarg(out) = uscat;
+    else
+        zztarg(out) = utot;
+    end
+
+    if strcmp(imre,'Real')
+        zztarg_plot = real(zztarg);
+    else
+        zztarg_plot = imag(zztarg);
+    end
+
+    h = pcolor(chnk_plot_axis ,xxtarg,yytarg,zztarg_plot);
     set(h,'EdgeColor','none');
-    % colormap(chnk_plot_axis, redblue);
     colormap(chnk_plot_axis);
     caxis([-maxu,maxu]);
     set(gcf,'Visible', 'off');
     axis(chnk_plot_axis, [-3 3 -3 3]);
+    
 end

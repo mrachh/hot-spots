@@ -32,8 +32,14 @@ classdef polygon < matlab.apps.AppBase
         zk
         dir_handle
         default_ui_name
+        default_ui_position
+        small_ui_position
         plot_option
         rhs
+        targets
+        xxtarg
+        yytarg
+        uscat
     end
 
     % Callbacks that handle component events
@@ -43,12 +49,14 @@ classdef polygon < matlab.apps.AppBase
         function imReSwitchChanged(app, event)
             value = app.imReSwitch.Value;
             app.imre = value;
+            make_dir_plot(app);
         end
 
         % Selection changed function: uOptionsButtonGroup
         function uOptionsChanged(app, event)
             selectedButton = app.uOptionsButtonGroup.SelectedObject;
             app.plot_option = selectedButton.Text;
+            make_dir_plot(app);
         end
 
         % Button down function: UIAxes
@@ -67,6 +75,8 @@ classdef polygon < matlab.apps.AppBase
             update_rhs(app);
             update_F(app);
             update_sol(app);
+            update_uscat(app);
+            make_dir_plot(app);
             app.chunkie_handle
             app.usr_poly.EdgeAlpha = 1;
             app.usr_poly.FaceAlpha = 0;
@@ -80,6 +90,8 @@ classdef polygon < matlab.apps.AppBase
             app.direction = value * 2.0 * pi / 360.0;
             update_rhs(app);
             update_sol(app);
+            update_uscat(app);
+            make_dir_plot(app);
             disp(['Direction: ' mat2str(app.direction)]);
         end
 
@@ -116,13 +128,15 @@ classdef polygon < matlab.apps.AppBase
             update_F(app);
             update_rhs(app);
             update_sol(app);
+            update_uscat(app);
+            make_dir_plot(app);
         end
 %%%%%%%%% Computation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
         function update_out(app)
             disp('Targets Updated');
             app.UIFigure.Name = 'Finding Targets ...';
-            app.out = find_targets(app.chnkr);
+            app.out = find_targets(app.chnkr, app.targets);
             app.UIFigure.Name = app.default_ui_name;
         end
 
@@ -147,6 +161,28 @@ classdef polygon < matlab.apps.AppBase
             app.UIFigure.Name = app.default_ui_name;
         end
 
+        function update_uscat(app)
+            disp('uscat Updated');
+            app.UIFigure.Name = 'Computing scattering field ...';
+            app.uscat = compute_uscat(app.chnkr, app.zk, app.sol, app.out, app.targets);
+            app.UIFigure.Name = app.default_ui_name;
+        end
+
+
+%%%%%%%%% Plot $$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        function make_dir_plot(app)
+            if ~isempty(app.uscat)
+                if ~isempty(app.dir_handle)
+                    delete(app.dir_handle);
+                end
+                app.dir_handle = plot_dir(app.UIAxes, ...
+                    app.uscat, app.direction, app.zk, ...
+                    app.targets, app.out, app.xxtarg, ...
+                    app.yytarg, app.plot_option, app.imre);
+                disp('Plot updated');
+            end
+        end
 
 %%%%%%%%% Helper functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         function allevents_poly(app,src,evt)
@@ -172,6 +208,8 @@ classdef polygon < matlab.apps.AppBase
                 update_rhs(app);
                 update_F(app);
                 update_sol(app);
+                update_uscat(app);
+                make_dir_plot(app);
                 
             case{'DeletingROI'}
                 disp(['ROI deleted']);
@@ -183,6 +221,8 @@ classdef polygon < matlab.apps.AppBase
 
         function show_buttons(app)
             % shows valid options after a polygon is created
+            app.UIFigure.Position(3) = app.default_ui_position(3);
+            app.UIFigure.Position(4) = app.default_ui_position(4);
             app.directionKnob.Visible = 1;
             app.directionKnobLabel.Visible = 1;
             app.wavenumberSlider.Visible = 1;
@@ -197,6 +237,8 @@ classdef polygon < matlab.apps.AppBase
 
         function hide_buttons(app)
             % hides valid options after a polygon is created
+            app.UIFigure.Position(3) = app.small_ui_position(3);
+            app.UIFigure.Position(4) = app.small_ui_position(4);
             app.directionKnob.Visible = 0;
             app.directionKnobLabel.Visible = 0;
             app.wavenumberSlider.Visible = 0;
@@ -218,11 +260,31 @@ classdef polygon < matlab.apps.AppBase
         % Create UIFigure and components
         function createComponents(app)
 
+            % initiate targets
+            disp('Targets Initiated from -3 to 3');
+            XLO = -3;
+            XHI = 3;
+            YLO = -3;
+            YHI = 3;
+            NPLOT = 250;
+        
+            xtarg = linspace(XLO,XHI,NPLOT); 
+            ytarg = linspace(YLO,YHI,NPLOT);
+            [app.xxtarg,app.yytarg] = meshgrid(xtarg,ytarg);
+            app.targets = zeros(2,length(app.xxtarg(:)));
+            app.targets(1,:) = app.xxtarg(:); 
+            app.targets(2,:) = app.yytarg(:);
+            %
+
             % Create UIFigure and hide until all components are created
             app.UIFigure = uifigure('Visible', 'off', 'NextPlot','add');
-            app.UIFigure.Position = [100 100 640 480];
+            app.default_ui_position = [100 100 640 480];
+            app.small_ui_position = [100 100 400 480];
+            app.UIFigure.Position = app.small_ui_position;
             app.default_ui_name = 'polygon';
             app.UIFigure.Name = app.default_ui_name;
+            app.UIFigure.AutoResizeChildren = 'off'
+            app.UIFigure.Resize = 'off'
 
             % Create UIAxes
             app.UIAxes = uiaxes(app.UIFigure);
@@ -237,6 +299,7 @@ classdef polygon < matlab.apps.AppBase
             app.directionKnobLabel.HorizontalAlignment = 'center';
             app.directionKnobLabel.Position = [395 148 51 22];
             app.directionKnobLabel.Text = 'direction';
+            app.directionKnobLabel.FontName = 'Helvetica';
 
             % Create directionKnob
             app.directionKnob = uiknob(app.UIFigure, 'continuous');
@@ -269,36 +332,36 @@ classdef polygon < matlab.apps.AppBase
             % Create RoundSliderLabel
             app.RoundSliderLabel = uilabel(app.UIFigure);
             app.RoundSliderLabel.HorizontalAlignment = 'right';
-            app.RoundSliderLabel.Position = [257 104 41 22];
+            app.RoundSliderLabel.Position = [337 104 41 22];
             app.RoundSliderLabel.Text = 'Round';
 
             % Create RoundSlider
             app.RoundSlider = uislider(app.UIFigure);
             app.RoundSlider.Limits = [0.01 0.5];
             app.RoundSlider.ValueChangedFcn = createCallbackFcn(app, @RoundSliderSlided, true);
-            app.RoundSlider.Position = [319 113 211 7];
+            app.RoundSlider.Position = [399 113 211 7];
             app.RoundSlider.Value = 0.01;
 
             % Create uOptionsButtonGroup
             app.uOptionsButtonGroup = uibuttongroup(app.UIFigure);
             app.uOptionsButtonGroup.SelectionChangedFcn = createCallbackFcn(app, @uOptionsChanged, true);
-            app.uOptionsButtonGroup.Position = [384 392 100 71];
+            app.uOptionsButtonGroup.Position = [350 392 160 71];
 
             % Create uinButton
             app.uinButton = uiradiobutton(app.uOptionsButtonGroup);
-            app.uinButton.Text = 'uin';
-            app.uinButton.Position = [11 44 58 22];
+            app.uinButton.Text = 'incoming field';
+            app.uinButton.Position = [11 44 160 22];
             app.uinButton.Value = true;
 
             % Create uscatButton
             app.uscatButton = uiradiobutton(app.uOptionsButtonGroup);
-            app.uscatButton.Text = 'uscat';
-            app.uscatButton.Position = [12 23 65 22];
+            app.uscatButton.Text = 'scattered field';
+            app.uscatButton.Position = [12 23 160 22];
 
             % Create utotButton
             app.utotButton = uiradiobutton(app.uOptionsButtonGroup);
-            app.utotButton.Text = 'utot';
-            app.utotButton.Position = [11 0 65 22];
+            app.utotButton.Text = 'total field';
+            app.utotButton.Position = [11 0 160 22];
 
             % Create imReSwitch
             app.imReSwitch = uiswitch(app.UIFigure, 'rocker');
