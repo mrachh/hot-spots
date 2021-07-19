@@ -119,6 +119,12 @@ classdef polygon < matlab.apps.AppBase
                 app.usr_poly
                 uiax = app.UIAxes;
                 app.chunkie_handle = plot_new(uiax,app.chnkr);
+                update_out(app);
+                update_rhs(app);
+                update_F(app);
+                update_sol(app);
+                update_uscat(app);
+                make_dir_plot(app);
             end
         end
 
@@ -268,7 +274,7 @@ classdef polygon < matlab.apps.AppBase
             XHI = 3;
             YLO = -3;
             YHI = 3;
-            NPLOT = 250;
+            NPLOT = 100;
         
             xtarg = linspace(XLO,XHI,NPLOT); 
             ytarg = linspace(YLO,YHI,NPLOT);
@@ -305,7 +311,7 @@ classdef polygon < matlab.apps.AppBase
 
             % Create directionKnob
             app.directionKnob = uiknob(app.UIFigure, 'continuous');
-            app.directionKnob.Limits = [-160 160];
+            app.directionKnob.Limits = [-70 250];
             app.directionKnob.MajorTicks = [-160 -120 -80 -40 0 40 80 120 160];
             app.directionKnob.MajorTickLabels = {''};
             app.directionKnob.ValueChangedFcn = createCallbackFcn(app, @directionKnobTurned, true);
@@ -350,7 +356,8 @@ classdef polygon < matlab.apps.AppBase
             % Create uOptionsButtonGroup
             app.uOptionsButtonGroup = uibuttongroup(app.UIFigure);
             app.uOptionsButtonGroup.SelectionChangedFcn = createCallbackFcn(app, @uOptionsChanged, true);
-            app.uOptionsButtonGroup.Position = [350 392 160 71];
+            app.uOptionsButtonGroup.Position = [350 392 160 71]
+            ;
 
             % Create uinButton
             app.uinButton = uiradiobutton(app.uOptionsButtonGroup);
@@ -358,6 +365,7 @@ classdef polygon < matlab.apps.AppBase
             app.uinButton.Position = [11 44 160 22];
             app.uinButton.Value = true;
             app.uinButton.FontName = app.default_font;
+            app.uOptionsButtonGroup.SelectedObject = app.uinButton;
 
             % Create uscatButton
             app.uscatButton = uiradiobutton(app.uOptionsButtonGroup);
@@ -403,6 +411,7 @@ classdef polygon < matlab.apps.AppBase
             app.plot_option = ' ';
             app.zk = app.wavenumberSlider.Value;
             app.direction = app.directionKnob.Value;
+            app.plot_option = 'incoming field'
         end
     end
 

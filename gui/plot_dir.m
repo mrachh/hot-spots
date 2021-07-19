@@ -2,7 +2,7 @@ function [h] = plot_dir(chnk_plot_axis, chnkr, sol, zk, direction)
 
     addpath('../src');
     kvec = zk .* [cos(direction); sin(direction)];
-    nplot = 250;
+    nplot = 20;
 
     xtarg = linspace(-3,3,nplot); 
     ytarg = linspace(-3,3,nplot);
