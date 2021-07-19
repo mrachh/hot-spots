@@ -14,7 +14,7 @@ function [h] = plot_dir(chnk_plot_axis, uscat, direction, zk, targets, out, xxta
     
     maxu = max(max(maxin,maxsc),maxtot);
 
-    zztarg = nan(size(xxtarg));
+    zztarg = nan(size(xxtarg)) + 1i * nan(size(xxtarg)) ;
 
     if strcmp(plot_option, 'incoming field')
         zztarg(out) = uin;
