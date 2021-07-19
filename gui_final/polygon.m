@@ -68,6 +68,9 @@ classdef polygon < matlab.apps.AppBase
             addlistener(app.usr_poly,'ROIMoved',@app.allevents_poly);
             addlistener(app.usr_poly,'DeletingROI',@app.allevents_poly);
             verts = app.usr_poly.Position';
+            % preprocess vertices
+            verts = preproc_verts(verts);
+            app.usr_poly.Position = verts'
             app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals)
             uiax = app.UIAxes;
             app.chunkie_handle = plot_new(uiax,app.chnkr);
@@ -114,6 +117,9 @@ classdef polygon < matlab.apps.AppBase
                 disp(['here']);
                 delete(app.chunkie_handle);
                 verts = app.usr_poly.Position';
+                % preprocess vertices
+                verts = preproc_verts(verts);
+                app.usr_poly.Position = verts'
                 app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
                 app.chnkr
                 app.usr_poly
@@ -202,6 +208,9 @@ classdef polygon < matlab.apps.AppBase
             %%%% now update the chunkie
                 delete(app.chunkie_handle);
                 verts = app.usr_poly.Position';
+                % % preprocess vertices
+                % verts = preproc_verts(verts);
+                % app.usr_poly.Position = verts'
                 app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
                 app.chnkr
                 app.usr_poly
