@@ -283,7 +283,7 @@ classdef polygon < matlab.apps.AppBase
             XHI = 3;
             YLO = -3;
             YHI = 3;
-            NPLOT = 5;
+            NPLOT = 50;
         
             xtarg = linspace(XLO,XHI,NPLOT); 
             ytarg = linspace(YLO,YHI,NPLOT);
