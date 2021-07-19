@@ -90,7 +90,7 @@ classdef polygon < matlab.apps.AppBase
 
         % Value changed function: directionKnob
         function directionKnobTurned(app, event)
-            value = app.directionKnob.Value;
+            value = -app.directionKnob.Value + 180;
             app.direction = value * 2.0 * pi / 360.0;
             update_rhs(app);
             update_sol(app);
@@ -283,7 +283,7 @@ classdef polygon < matlab.apps.AppBase
             XHI = 3;
             YLO = -3;
             YHI = 3;
-            NPLOT = 100;
+            NPLOT = 50;
         
             xtarg = linspace(XLO,XHI,NPLOT); 
             ytarg = linspace(YLO,YHI,NPLOT);
@@ -320,11 +320,11 @@ classdef polygon < matlab.apps.AppBase
 
             % Create directionKnob
             app.directionKnob = uiknob(app.UIFigure, 'continuous');
-            app.directionKnob.Limits = [-70 250];
-            app.directionKnob.MajorTicks = [-160 -120 -80 -40 0 40 80 120 160];
+            app.directionKnob.Limits = [-65 245];
+            app.directionKnob.MajorTicks = [90];
             app.directionKnob.MajorTickLabels = {''};
             app.directionKnob.ValueChangedFcn = createCallbackFcn(app, @directionKnobTurned, true);
-            app.directionKnob.MinorTicks = [-160 -150 -140 -130 -120 -110 -100 -90 -80 -70 -60 -50 -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160];
+            app.directionKnob.MinorTicks = [90];
             app.directionKnob.Position = [348 204 146 146];
 
             % Create wavenumberLabel
@@ -419,7 +419,8 @@ classdef polygon < matlab.apps.AppBase
             app.imre = 'Real';
             app.plot_option = ' ';
             app.zk = app.wavenumberSlider.Value;
-            app.direction = app.directionKnob.Value;
+            app.directionKnob.Value = 90;
+            app.direction = pi/2.0;
             app.plot_option = 'incoming field'
         end
     end
