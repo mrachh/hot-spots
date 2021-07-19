@@ -24,7 +24,7 @@ function [h] = plot_dir(chnk_plot_axis, uscat, direction, zk, targets, out, xxta
         zztarg(out) = utot;
     end
 
-    if strcmp(imre,'Real')
+    if strcmp(imre,'real')
         zztarg_plot = real(zztarg);
     else
         zztarg_plot = imag(zztarg);
