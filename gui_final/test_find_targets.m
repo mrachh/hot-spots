@@ -29,7 +29,7 @@ XLO = -3;
 XHI = 3;
 YLO = -3;
 YHI = 3;
-NPLOT = 400;
+NPLOT = 20;
 
 xtarg = linspace(XLO,XHI,NPLOT); 
 ytarg = linspace(YLO,YHI,NPLOT);

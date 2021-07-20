@@ -69,6 +69,9 @@ classdef polygon < matlab.apps.AppBase
             addlistener(app.usr_poly,'ROIMoved',@app.allevents_poly);
             addlistener(app.usr_poly,'DeletingROI',@app.allevents_poly);
             verts = app.usr_poly.Position';
+            % preprocess vertices
+            verts = preproc_verts(verts);
+            app.usr_poly.Position = verts'
             app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals)
             uiax = app.UIAxes;
             app.chunkie_handle = plot_new(uiax,app.chnkr);
@@ -88,7 +91,7 @@ classdef polygon < matlab.apps.AppBase
 
         % Value changed function: directionKnob
         function directionKnobTurned(app, event)
-            value = app.directionKnob.Value;
+            value = -app.directionKnob.Value + 180;
             app.direction = value * 2.0 * pi / 360.0;
             update_rhs(app);
             update_sol(app);
@@ -115,11 +118,20 @@ classdef polygon < matlab.apps.AppBase
                 disp(['here']);
                 delete(app.chunkie_handle);
                 verts = app.usr_poly.Position';
+                % preprocess vertices
+                verts = preproc_verts(verts);
+                app.usr_poly.Position = verts'
                 app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
                 app.chnkr
                 app.usr_poly
                 uiax = app.UIAxes;
                 app.chunkie_handle = plot_new(uiax,app.chnkr);
+                update_out(app);
+                update_rhs(app);
+                update_F(app);
+                update_sol(app);
+                update_uscat(app);
+                make_dir_plot(app);
             end
         end
 
@@ -197,6 +209,9 @@ classdef polygon < matlab.apps.AppBase
             %%%% now update the chunkie
                 delete(app.chunkie_handle);
                 verts = app.usr_poly.Position';
+                % % preprocess vertices
+                % verts = preproc_verts(verts);
+                % app.usr_poly.Position = verts'
                 app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
                 app.chnkr
                 app.usr_poly
@@ -234,7 +249,7 @@ classdef polygon < matlab.apps.AppBase
             app.RoundSliderLabel.Visible = 1;
             app.uOptionsButtonGroup.Visible = 1;
             app.imReSwitch.Visible = 1;
-            app.imReSwitch.Items = {'Real', 'Imaginary'};
+            app.imReSwitch.Items = {'real', 'imaginary'};
         end
 
         function hide_buttons(app)
@@ -261,7 +276,7 @@ classdef polygon < matlab.apps.AppBase
 
         % Create UIFigure and components
         function createComponents(app)
-            app.default_font = 'Calibri'
+            app.default_font = 'SansSerif'
 
             % initiate targets
             disp('Targets Initiated from -3 to 3');
@@ -300,46 +315,50 @@ classdef polygon < matlab.apps.AppBase
             % Create directionKnobLabel
             app.directionKnobLabel = uilabel(app.UIFigure);
             app.directionKnobLabel.HorizontalAlignment = 'center';
-            app.directionKnobLabel.Position = [395 148 51 22];
+            app.directionKnobLabel.Position = [370 148 100 22];
             app.directionKnobLabel.Text = 'direction';
             app.directionKnobLabel.FontName = app.default_font;
+            app.directionKnobLabel.FontSize = 16;
 
             % Create directionKnob
             app.directionKnob = uiknob(app.UIFigure, 'continuous');
-            app.directionKnob.Limits = [-160 160];
-            app.directionKnob.MajorTicks = [-160 -120 -80 -40 0 40 80 120 160];
+            app.directionKnob.Limits = [-65 245];
+            app.directionKnob.MajorTicks = [90];
             app.directionKnob.MajorTickLabels = {''};
             app.directionKnob.ValueChangedFcn = createCallbackFcn(app, @directionKnobTurned, true);
-            app.directionKnob.MinorTicks = [-160 -150 -140 -130 -120 -110 -100 -90 -80 -70 -60 -50 -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160];
-            app.directionKnob.Position = [348 204 146 146];
+            app.directionKnob.MinorTicks = [90];
+            app.directionKnob.Position = [348 194 146 146];
 
             % Create wavenumberLabel
             app.wavenumberLabel = uilabel(app.UIFigure);
             app.wavenumberLabel.HorizontalAlignment = 'right';
-            app.wavenumberLabel.Position = [519 148 74 22];
+            app.wavenumberLabel.Position = [509 148 100 22];
             app.wavenumberLabel.Text = {'wavenumber'; ''};
             app.wavenumberLabel.FontName = app.default_font;
+            app.wavenumberLabel.FontSize = 16;
 
             % Create wavenumberSlider
             app.wavenumberSlider = uislider(app.UIFigure);
             app.wavenumberSlider.Orientation = 'vertical';
             app.wavenumberSlider.Limits = [10 50];
             app.wavenumberSlider.ValueChangedFcn = createCallbackFcn(app, @wavenumberSliderSlided, true);
-            app.wavenumberSlider.Position = [547 204 7 168];
+            app.wavenumberSlider.Position = [547 194 7 168];
 
             % Create DeletePolygonButton
             app.DeletePolygonButton = uibutton(app.UIFigure, 'push');
             app.DeletePolygonButton.ButtonPushedFcn = createCallbackFcn(app, @DeletePolygonButtonPushed, true);
-            app.DeletePolygonButton.Position = [58 94 140 33];
-            app.DeletePolygonButton.Text = 'Delete Polygon';
+            app.DeletePolygonButton.Position = [100 94 140 33];
+            app.DeletePolygonButton.Text = 'delete polygon';
             app.DeletePolygonButton.FontName = app.default_font;
+            app.DeletePolygonButton.FontSize = 16;
 
             % Create RoundSliderLabel
             app.RoundSliderLabel = uilabel(app.UIFigure);
             app.RoundSliderLabel.HorizontalAlignment = 'right';
-            app.RoundSliderLabel.Position = [337 104 41 22];
-            app.RoundSliderLabel.Text = 'Round';
+            app.RoundSliderLabel.Position = [317 104 60 22];
+            app.RoundSliderLabel.Text = 'round';
             app.RoundSliderLabel.FontName = app.default_font;
+            app.RoundSliderLabel.FontSize = 16;
 
             % Create RoundSlider
             app.RoundSlider = uislider(app.UIFigure);
@@ -351,34 +370,40 @@ classdef polygon < matlab.apps.AppBase
             % Create uOptionsButtonGroup
             app.uOptionsButtonGroup = uibuttongroup(app.UIFigure);
             app.uOptionsButtonGroup.SelectionChangedFcn = createCallbackFcn(app, @uOptionsChanged, true);
-            app.uOptionsButtonGroup.Position = [350 392 160 71];
+            app.uOptionsButtonGroup.Position = [350 392 160 71]
+            ;
 
             % Create uinButton
             app.uinButton = uiradiobutton(app.uOptionsButtonGroup);
             app.uinButton.Text = 'incoming field';
-            app.uinButton.Position = [11 44 160 22];
+            app.uinButton.Position = [11 44 160 30];
             app.uinButton.Value = true;
             app.uinButton.FontName = app.default_font;
+            app.uinButton.FontSize = 16;
+            app.uOptionsButtonGroup.SelectedObject = app.uinButton;
 
             % Create uscatButton
             app.uscatButton = uiradiobutton(app.uOptionsButtonGroup);
             app.uscatButton.Text = 'scattered field';
-            app.uscatButton.Position = [12 23 160 22];
-            app.directionKnobLabel.FontName = app.default_font;
+            app.uscatButton.Position = [12 23 160 30];
+            app.uscatButton.FontName = app.default_font;
+            app.uscatButton.FontSize = 16;
 
             % Create utotButton
             app.utotButton = uiradiobutton(app.uOptionsButtonGroup);
             app.utotButton.Text = 'total field';
-            app.utotButton.Position = [11 0 160 22];
+            app.utotButton.Position = [11 0 160 30];
             app.utotButton.FontName = app.default_font;
+            app.utotButton.FontSize = 16;
 
             % Create imReSwitch
             app.imReSwitch = uiswitch(app.UIFigure, 'rocker');
-            app.imReSwitch.Items = {'Real', 'Imaginary'};
+            app.imReSwitch.Items = {'real', 'imaginary'};
             app.imReSwitch.ValueChangedFcn = createCallbackFcn(app, @imReSwitchChanged, true);
             app.imReSwitch.Position = [548 404 20 45];
-            app.imReSwitch.Value = 'Real';
+            app.imReSwitch.Value = 'real';
             app.imReSwitch.FontName = app.default_font;
+            app.imReSwitch.FontSize = 16;
 
             % Show the figure after all components are created
             app.UIFigure.Visible = 'on';
@@ -403,7 +428,9 @@ classdef polygon < matlab.apps.AppBase
             app.imre = 'Real';
             app.plot_option = ' ';
             app.zk = app.wavenumberSlider.Value;
-            app.direction = app.directionKnob.Value;
+            app.directionKnob.Value = 90;
+            app.direction = pi/2.0;
+            app.plot_option = 'incoming field'
         end
     end
 

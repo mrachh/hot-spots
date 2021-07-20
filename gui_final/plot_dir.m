@@ -15,7 +15,7 @@ function [h] = plot_dir(chnk_plot_axis, uscat, direction, zk, targets, ...
     
     maxu = max(max(maxin,maxsc),maxtot);
 
-    zztarg = nan(size(xxtarg));
+    zztarg = nan(size(xxtarg)) + 1i * nan(size(xxtarg)) ;
 
     if strcmp(plot_option, 'incoming field')
         zztarg(out0) = uin;
@@ -25,7 +25,7 @@ function [h] = plot_dir(chnk_plot_axis, uscat, direction, zk, targets, ...
         zztarg(out0) = utot;
     end
 
-    if strcmp(imre,'Real')
+    if strcmp(imre,'real')
         zztarg_plot = real(zztarg);
     else
         zztarg_plot = imag(zztarg);
