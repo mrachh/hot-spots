@@ -59,10 +59,14 @@ out = find_targets(chnkr,targets);
 fprintf('%5.2e s : time to compute ifmm\n',t1)
 start = tic; [flag,corr] = get_flags_corr(chnkr,zk,targets(:,out)); t1 = toc(start);
 fprintf('%5.2e s : time to compute near correction\n',t1)
-start = tic; uscat2 = compute_uscat_withcorr(chnkr,zk,sol,out,targets,flag,corr); t1 = toc(start);
+start = tic; [flag2,corr2] = get_flags_corr_fast(chnkr,zk,targets(:,out)); t1 = toc(start);
+fprintf('%5.2e s : time to compute near correction\n',t1)
+
+start = tic; uscat = compute_uscat_withcorr(chnkr,zk,sol,out,targets,flag,corr); t1 = toc(start);
+start = tic; uscat2 = compute_uscat_withcorr(chnkr,zk,sol,out,targets,flag,corr2); t1 = toc(start);
 fprintf('%5.2e s : time to compute fmm\n',t1)
-%err = norm(uscat-uscat2)/norm(uscat);
-%fprintf('%5.2e : error in withcorr comp\n',err)
+err = norm(uscat-uscat2)/norm(uscat);
+fprintf('%5.2e : error in withcorr comp\n',err)
 figure(1)
 clf
 ax = gca;

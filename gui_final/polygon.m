@@ -76,7 +76,7 @@ classdef polygon < matlab.apps.AppBase
             verts = preproc_verts(verts);
             app.usr_poly.Position = verts'
             app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
-            app.chnkr = app.chnkr.refine(app.refopts);
+            %app.chnkr = app.chnkr.refine(app.refopts);
             uiax = app.UIAxes;
             app.chunkie_handle = plot_new(uiax,app.chnkr);
             show_buttons(app);
@@ -127,7 +127,7 @@ classdef polygon < matlab.apps.AppBase
                 verts = preproc_verts(verts);
                 app.usr_poly.Position = verts'
                 app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
-                app.chnkr = app.chnkr.refine(app.refopts);
+                %app.chnkr = app.chnkr.refine(app.refopts);
                 app.usr_poly
                 uiax = app.UIAxes;
                 app.chunkie_handle = plot_new(uiax,app.chnkr);
@@ -171,7 +171,7 @@ classdef polygon < matlab.apps.AppBase
             disp(app.chnkr.nch)
             disp(app.zk)
             start = tic; [app.targ_flag, app.targ_corr] = ...
-              get_flags_corr(app.chnkr,app.zk,app.targets(:,app.out0));
+              get_flags_corr_fast(app.chnkr,app.zk,app.targets(:,app.out0));
             t1 = toc(start);
             fprintf('%5.2e s : time to compute near correction\n',t1);
             
