@@ -26,8 +26,9 @@ classdef polygon < matlab.apps.AppBase
         edgevals
         sol
         F
+        invtype
         imre
-        out
+        out0
         direction
         zk
         dir_handle
@@ -137,14 +138,14 @@ classdef polygon < matlab.apps.AppBase
         function update_out(app)
             disp('Targets Updated');
             app.UIFigure.Name = 'Finding Targets ...';
-            app.out = find_targets(app.chnkr, app.targets);
+            app.out0 = find_targets(app.chnkr, app.targets);
             app.UIFigure.Name = app.default_ui_name;
         end
 
         function update_F(app)
             disp('F Updated');
             app.UIFigure.Name = 'Computing F ...';
-            app.F = compute_F(app.chnkr, app.zk);
+            [app.F,app.invtype] = compute_F(app.chnkr, app.zk);
             app.UIFigure.Name = app.default_ui_name;
         end
 
@@ -158,14 +159,14 @@ classdef polygon < matlab.apps.AppBase
         function update_sol(app)
             disp('sol Updated');
             app.UIFigure.Name = 'Computing sol ...';
-            app.sol = compute_sol(app.F, app.rhs);
+            app.sol = compute_sol(app.F, app.rhs,app.invtype);
             app.UIFigure.Name = app.default_ui_name;
         end
 
         function update_uscat(app)
             disp('uscat Updated');
             app.UIFigure.Name = 'Computing scattering field ...';
-            app.uscat = compute_uscat(app.chnkr, app.zk, app.sol, app.out, app.targets);
+            app.uscat = compute_uscat(app.chnkr, app.zk, app.sol, app.out0, app.targets);
             app.UIFigure.Name = app.default_ui_name;
         end
 
@@ -179,7 +180,7 @@ classdef polygon < matlab.apps.AppBase
                 end
                 app.dir_handle = plot_dir(app.UIAxes, ...
                     app.uscat, app.direction, app.zk, ...
-                    app.targets, app.out, app.xxtarg, ...
+                    app.targets, app.out0, app.xxtarg, ...
                     app.yytarg, app.plot_option, app.imre);
                 disp('Plot updated');
             end
@@ -268,7 +269,7 @@ classdef polygon < matlab.apps.AppBase
             XHI = 3;
             YLO = -3;
             YHI = 3;
-            NPLOT = 250;
+            NPLOT = 100;
         
             xtarg = linspace(XLO,XHI,NPLOT); 
             ytarg = linspace(YLO,YHI,NPLOT);

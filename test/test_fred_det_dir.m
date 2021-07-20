@@ -115,7 +115,7 @@ dx2 = (-zztarg(xpos-2, ypos)/12 + 4*zztarg(xpos-1, ypos)/3 - 5*zztarg(xpos, ypos
 dy2 = (-zztarg(xpos, ypos-2)/12 + 4*zztarg(xpos, ypos-1)/3 - 5*zztarg(xpos, ypos)/2 ...
         + 4*zztarg(xpos, ypos+1)/3 - zztarg(xpos, ypos+2)/12)/(hy^2);
 xylap = dx2 + dy2
-err = abs(xylap + zk^2 * zztarg(xpos, ypos))
+err = abs(xylap + zk^2 * zztarg(xpos, ypos));
 fprintf('check2: eigenfunction (finite diff) error at (117, 141) of meshgrid: %5.2e\n', err)
 
 %verify eigenfunction by analytical expression

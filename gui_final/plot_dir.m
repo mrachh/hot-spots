@@ -1,9 +1,10 @@
-function [h] = plot_dir(chnk_plot_axis, uscat, direction, zk, targets, out, xxtarg, yytarg, plot_option, imre)
+function [h] = plot_dir(chnk_plot_axis, uscat, direction, zk, targets, ...
+                out0, xxtarg, yytarg, plot_option, imre)
     disp(plot_option)
 
     addpath('../src');
     kvec = zk .* [cos(direction); sin(direction)];
-    uin = planewave(kvec,targets(:,out));
+    uin = planewave(kvec,targets(:,out0));
     utot = uscat(:)+uin(:);
     
     %
@@ -17,11 +18,11 @@ function [h] = plot_dir(chnk_plot_axis, uscat, direction, zk, targets, out, xxta
     zztarg = nan(size(xxtarg));
 
     if strcmp(plot_option, 'incoming field')
-        zztarg(out) = uin;
+        zztarg(out0) = uin;
     elseif strcmp(plot_option, 'scattered field')
-        zztarg(out) = uscat;
+        zztarg(out0) = uscat;
     else
-        zztarg(out) = utot;
+        zztarg(out0) = utot;
     end
 
     if strcmp(imre,'Real')

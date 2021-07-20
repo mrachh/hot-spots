@@ -27,7 +27,7 @@ if isfield(opts,'flam'); flam = opts.flam; end
 if isfield(opts,'eps'); eps = opts.eps; end
     
     
-fkern = @(s,t) 2*chnk.helm2d.kern(zk,s,t,'D',1);
+fkern = @(s,t) 2*chnk.helm2d.kern(zk,s,t,'',1);
 dval = 1.0;
 opts_flam = [];
 opts_flam.flamtype = 'rskelf';
