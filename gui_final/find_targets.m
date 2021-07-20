@@ -4,7 +4,7 @@ function [out] = find_targets(chnkr, targets)
 
     addpath('../src');
 
-    start = tic; in = chunkerinterior(chnkr,targets); t1 = toc(start);
+    start = tic; in = chunkerinterior_fmm(chnkr,targets); t1 = toc(start);
     out = ~in;
 
     fprintf('%5.2e s : time to find points in domain\n',t1)

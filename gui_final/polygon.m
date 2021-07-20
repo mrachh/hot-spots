@@ -38,10 +38,13 @@ classdef polygon < matlab.apps.AppBase
         plot_option
         rhs
         targets
+        targ_flag
+        targ_corr
         xxtarg
         yytarg
         uscat
         default_font
+        refopts
     end
 
     % Callbacks that handle component events
@@ -72,11 +75,13 @@ classdef polygon < matlab.apps.AppBase
             % preprocess vertices
             verts = preproc_verts(verts);
             app.usr_poly.Position = verts'
-            app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals)
+            app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
+            app.chnkr = app.chnkr.refine(app.refopts);
             uiax = app.UIAxes;
             app.chunkie_handle = plot_new(uiax,app.chnkr);
             show_buttons(app);
             update_out(app);
+            update_corr_flag(app);
             update_rhs(app);
             update_F(app);
             update_sol(app);
@@ -122,11 +127,12 @@ classdef polygon < matlab.apps.AppBase
                 verts = preproc_verts(verts);
                 app.usr_poly.Position = verts'
                 app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
-                app.chnkr
+                app.chnkr = app.chnkr.refine(app.refopts);
                 app.usr_poly
                 uiax = app.UIAxes;
                 app.chunkie_handle = plot_new(uiax,app.chnkr);
                 update_out(app);
+                update_corr_flag(app);
                 update_rhs(app);
                 update_F(app);
                 update_sol(app);
@@ -139,6 +145,10 @@ classdef polygon < matlab.apps.AppBase
         function wavenumberSliderSlided(app, event)
             value = app.wavenumberSlider.Value;
             disp(['zk: ' mat2str(value)]);
+            app.zk = value;
+            app.refopts.maxchunklen = 4.0/abs(app.zk);
+            app.chnkr = app.chnkr.refine(app.refopts);
+            update_corr_flag(app);
             update_F(app);
             update_rhs(app);
             update_sol(app);
@@ -152,6 +162,19 @@ classdef polygon < matlab.apps.AppBase
             app.UIFigure.Name = 'Finding Targets ...';
             app.out0 = find_targets(app.chnkr, app.targets);
             app.UIFigure.Name = app.default_ui_name;
+        end
+        
+        function update_corr_flag(app)
+            disp('Quadrature correction + near flags updated');
+            app.UIFigure.Name = 'Computing quadrature correction ...';
+            disp(sum(app.out0))
+            disp(app.chnkr.nch)
+            disp(app.zk)
+            start = tic; [app.targ_flag, app.targ_corr] = ...
+              get_flags_corr(app.chnkr,app.zk,app.targets(:,app.out0));
+            t1 = toc(start);
+            fprintf('%5.2e s : time to compute near correction\n',t1);
+            
         end
 
         function update_F(app)
@@ -178,7 +201,8 @@ classdef polygon < matlab.apps.AppBase
         function update_uscat(app)
             disp('uscat Updated');
             app.UIFigure.Name = 'Computing scattering field ...';
-            app.uscat = compute_uscat(app.chnkr, app.zk, app.sol, app.out0, app.targets);
+            app.uscat = compute_uscat_withcorr(app.chnkr, app.zk, ...
+              app.sol, app.out0, app.targets, app.targ_flag, app.targ_corr);
             app.UIFigure.Name = app.default_ui_name;
         end
 
@@ -213,7 +237,7 @@ classdef polygon < matlab.apps.AppBase
                 % verts = preproc_verts(verts);
                 % app.usr_poly.Position = verts'
                 app.chnkr = chunkerpoly(verts,app.cparams,app.pref,app.edgevals);
-                app.chnkr
+                app.chnkr = app.chnkr.refine(app.refopts);
                 app.usr_poly
                 uiax = app.UIAxes;
                 app.chunkie_handle = plot_new(uiax,app.chnkr);
@@ -222,6 +246,7 @@ classdef polygon < matlab.apps.AppBase
                 disp(['ROI moved Previous Position: ' mat2str(evt.PreviousPosition)]);
                 disp(['ROI moved Current Position: ' mat2str(evt.CurrentPosition)]);
                 update_out(app);
+                update_corr_flag(app);
                 update_rhs(app);
                 update_F(app);
                 update_sol(app);
@@ -284,7 +309,7 @@ classdef polygon < matlab.apps.AppBase
             XHI = 3;
             YLO = -3;
             YHI = 3;
-            NPLOT = 100;
+            NPLOT = 250;
         
             xtarg = linspace(XLO,XHI,NPLOT); 
             ytarg = linspace(YLO,YHI,NPLOT);
@@ -326,6 +351,7 @@ classdef polygon < matlab.apps.AppBase
             app.directionKnob.MajorTicks = [90];
             app.directionKnob.MajorTickLabels = {''};
             app.directionKnob.ValueChangedFcn = createCallbackFcn(app, @directionKnobTurned, true);
+            %app.directionKnob.ValueChangingFcn = createCallbackFcn(app, @directionKnobTurned, true);
             app.directionKnob.MinorTicks = [90];
             app.directionKnob.Position = [348 194 146 146];
 
@@ -370,8 +396,8 @@ classdef polygon < matlab.apps.AppBase
             % Create uOptionsButtonGroup
             app.uOptionsButtonGroup = uibuttongroup(app.UIFigure);
             app.uOptionsButtonGroup.SelectionChangedFcn = createCallbackFcn(app, @uOptionsChanged, true);
-            app.uOptionsButtonGroup.Position = [350 392 160 71]
-            ;
+            app.uOptionsButtonGroup.Position = [350 392 160 71];
+            
 
             % Create uinButton
             app.uinButton = uiradiobutton(app.uOptionsButtonGroup);
@@ -421,16 +447,22 @@ classdef polygon < matlab.apps.AppBase
             app.chunkie_handle = [];
             app.cparams = struct();
             app.cparams.rounded = true;
+            app.cparams.eps = 1e-3;
+            app.refopts = struct();
             app.pref    = struct();
             app.pref.k  = 16;
             app.edgevals = [];
             app.sol = [];
             app.imre = 'Real';
             app.plot_option = ' ';
+            app.targ_flag = [];
+            app.targ_corr = [];
             app.zk = app.wavenumberSlider.Value;
+            app.cparams.maxchunklen = 4.0/abs(app.zk);
+            app.refopts.maxchunklen = 4.0/abs(app.zk);
             app.directionKnob.Value = 90;
             app.direction = pi/2.0;
-            app.plot_option = 'incoming field'
+            app.plot_option = 'incoming field';
         end
     end
 

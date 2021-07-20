@@ -14,7 +14,7 @@ MAX_CHUNK_LEN = 4.0/zk;
 % Create the polygon
 
 cparams = [];
-cparams.eps = 1.0e-2;
+cparams.eps = 1.0e-3;
 cparams.nover = 0;
 cparams.maxchunklen = MAX_CHUNK_LEN;
 pref = []; 
@@ -28,8 +28,11 @@ vert_coords = cat(1, cos(vert_angles), sin(vert_angles));
 chnkr = chunkerpoly(vert_coords, cparams, pref);
 
 assert(checkadjinfo(chnkr) == 0);
+
+
 refopts = []; refopts.maxchunklen = MAX_CHUNK_LEN;
 chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
+
 start = tic;  [F,invtype] = compute_F(chnkr,zk); t1 = toc(start);
 fprintf('%5.2e s : time to compress inverse\n',t1)
 rhs = compute_rhs(chnkr,direction,zk);
@@ -40,7 +43,7 @@ XLO = -3;
 XHI = 3;
 YLO = -3;
 YHI = 3;
-NPLOT = 100;
+NPLOT = 250;
 
 xtarg = linspace(XLO,XHI,NPLOT); 
 ytarg = linspace(YLO,YHI,NPLOT);
@@ -54,7 +57,6 @@ out = find_targets(chnkr,targets);
 
 %start = tic; uscat = compute_uscat(chnkr, zk, sol, out, targets); t1 = toc(start);
 fprintf('%5.2e s : time to compute ifmm\n',t1)
-
 start = tic; [flag,corr] = get_flags_corr(chnkr,zk,targets(:,out)); t1 = toc(start);
 fprintf('%5.2e s : time to compute near correction\n',t1)
 start = tic; uscat2 = compute_uscat_withcorr(chnkr,zk,sol,out,targets,flag,corr); t1 = toc(start);

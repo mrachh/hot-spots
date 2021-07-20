@@ -36,9 +36,9 @@ if nargin < 5
     opts = [];
 end
 
-fac = 0.5;
+fac = 0.1;
 quadgkparams = {};
-eps = 1e-12;
+eps = 1e-7;
 
 [dim,~] = size(targs);
 
@@ -82,7 +82,7 @@ if ~isempty(flag)
 end    
 
 corr = corr + chunkerkernevalmat_adap_corr(chnkr,kern,opdims,targs,flag,...
-    opts);
+    optsadap);
 
 end
 
