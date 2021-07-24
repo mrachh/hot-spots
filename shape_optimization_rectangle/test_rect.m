@@ -1,6 +1,9 @@
 addpath('../src');
 clear;
 
-rect_chnk(1.0, true)
+[chnkr, zero_loc] = rect_chnk(2.0, true);
 
-rect_chnk(2, true)
+figure(2);
+test = chnkr.r(:, :, zero_loc);
+scatter(test(1,:), test(2,:));
+title('Interval containing origin')
