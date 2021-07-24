@@ -1,37 +1,27 @@
+addpath('../src');
+
 % Global parameters
-MAX_CHUNK_LEN = 1
+MAX_CHUNK_LEN = .25
 NUM_VERTS = 3
 
 % Create the polygon
-
 cparams = [];
 cparams.eps = 1.0e-5;
 pref = []; 
 pref.k = 16;
-
+% wave number
 zk = 1.1 + 0.1*1j;
-% modes and center of polygon
-ctr = [0 0];
-modes = 1
-vert_angles = 0 : 2*pi/NUM_VERTS : 2*pi
-vert_angles = vert_angles(1:NUM_VERTS)
-vert_coords = ctr.' + modes .* cat(1, cos(vert_angles), sin(vert_angles))
-
-
+% Orientation of polygon
+vert_coords = flipud(nsidedpoly(NUM_VERTS).Vertices)'
 % Create source and target location
-src0 = [0.3;0.21];
-targ0 = [0.7;1.8];
-
+src0 = [0.1;0.1];
+targ0 = [1.0;1.8];
 % Create the chunked geometry
 chnkr = chunkerpoly(vert_coords, cparams, pref);
-
-
 assert(checkadjinfo(chnkr) == 0);
 refopts = []; refopts.maxchunklen = MAX_CHUNK_LEN;
 chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
-
 % plot geometry and data
-
 figure(1)
 clf
 plot(chnkr,'-b')
@@ -44,11 +34,9 @@ axis equal
 
 % build double layer potential
 
-fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'D',1);
-
+fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'d',1);
 start = tic; dmat = chunkermat(chnkr,fkern);
 t1 = toc(start);
-
 fprintf('%5.2e s : time to assemble matrix\n',t1)
 
 % Everything above is the same as in the neu code
@@ -81,7 +69,7 @@ targinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
 srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
 srcinfo.d = chnkr.d;
 srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
-temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'D').'
+temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'d').'
 
 % compute quadrature weights
 ws = weights(chnkr)
