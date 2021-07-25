@@ -7,18 +7,14 @@ function res = rectangle(width)
     %         a = L-inf norm of grad u
     %         b = sqrt{lamb} * 2-norm(u)
 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % Rectangle parametrization:
-        % vertices:
-        %     height = 1.0/width
-        %     [-weight/2 0]       [weight/2 0]
-        %     [weight/2 height]   [-weight/2 height]
 
 
     % Create chunker object
-    verts = [-weight/2 0],  [weight/2 0]  [weight/2 height]   [-weight/2 height]
+    [chnkr, zero_loc] = rect_chnk(width, show_plot);
+    % Extract 16 real quadrature points around zero
+    zero_quad_pts = chnkr.r(1, :, zero_loc);
+    
 
-    res = 0;
 
 end
 
