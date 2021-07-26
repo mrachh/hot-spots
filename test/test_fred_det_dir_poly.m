@@ -3,7 +3,7 @@ clear;
 
 % Global parameters
 MAX_CHUNK_LEN = 1
-NUM_VERTS = 4
+NUM_VERTS = 5
 
 
 % Create polygon
@@ -25,6 +25,8 @@ vert_angles = vert_angles(1:NUM_VERTS)
 vert_coords = ctr.' + modes .* cat(1, cos(vert_angles), sin(vert_angles))
 chnkr = chunkerpoly(vert_coords, cparams, pref);
 
+[chnkr, zero_loc] = rect_chnk(1.0, false);
+
 
 
 % solve and visualize the solution
@@ -36,7 +38,7 @@ eps = 1e-7;
 p = chebfunpref; p.chebfuneps = eps;
 p.splitting = 0; p.maxLength=257;
 
-chebabs = [2,5];
+chebabs = [1e-3,5];
 
 
 assert(checkadjinfo(chnkr) == 0);

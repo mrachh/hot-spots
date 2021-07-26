@@ -71,6 +71,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
                         step = better_step;
                     end
                 elseif step < line_search_eps
+                    error('Step size too small');
                     line_search_converged = true;
                 else
                     step = step * line_search_beta;
