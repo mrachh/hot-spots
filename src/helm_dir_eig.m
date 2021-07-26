@@ -26,7 +26,7 @@ function [e_val, err_nullvec, sigma] = helm_dir_eig(chnkr)
     zk = real(rts_real(1));
     [d,F] = helm_dir_det(zk,chnkr,opts);
     nsys = chnkr.nch*chnkr.k;
-    e_val = zk^2;
+    e_val = - zk^2;
 
     % compute sigma
     sigma = rskelf_nullvec(F,nsys,1,4);

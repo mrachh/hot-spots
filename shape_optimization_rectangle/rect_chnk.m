@@ -11,7 +11,7 @@ function [chnkr, zero_loc] = rect_chnk(width, show_plot)
     pref = []; pref.k = 16;
     chnkr = chunkerpoly(verts', cparams, pref);
     assert(checkadjinfo(chnkr) == 0);
-    refopts = []; refopts.maxchunklen = .25;
+    refopts = []; refopts.maxchunklen = pi/5/2;
     chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
     [rn,dn,d2n,dist,tn,ichn] = nearest(chnkr, [0 0], 1:chnkr.nch);
