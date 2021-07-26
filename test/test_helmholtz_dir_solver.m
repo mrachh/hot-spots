@@ -1,6 +1,6 @@
 addpath('../src');
 % Set max chunk length
-MAX_CHUNK_LEN = .25
+MAX_CHUNK_LEN = 1.0
 
 % Create the unit disk
 
@@ -11,16 +11,19 @@ pref.k = 16;
 
 zk = 1.1 + 0.1*1j;
 % modes and center define the unit disk
-modes = 1;
-ctr = [0 0];
+modes = [1]% [1.0 0 0 0 0 0.3];
+ctr = [0.01 0];
 
 % Create source and target location
 src0 = [0.3;0.21];
-targ0 = [0.7;1.8];
+targ0 = [0.7;5.8];
+
+a = 1.1;
+b = 2.2;
 
 % Create the chunked geometry
-chnkr = chunkerfunc(@(t) chnk.curves.bymode(t,modes,ctr),cparams,pref);
-
+%chnkr = chunkerfunc(@(t) chnk.curves.bymode(t,modes,ctr),cparams,pref);
+chnkr = chunkerfunc(@(t) ellipse(t,a,b,ctr),cparams,pref);
 
 assert(checkadjinfo(chnkr) == 0);
 refopts = []; refopts.maxchunklen = MAX_CHUNK_LEN;
@@ -127,4 +130,39 @@ fprintf('Error of sol_gmres: %5.2e\n',err_gmres);
 fprintf('Error of sol_fds: %5.2e\n',err_fds);
 fprintf('Error of sol_dudn: %5.2e\n',err_dudn);
 
+
+r = chnkr.r(:);
+r = reshape(r,[2,chnkr.k*chnkr.nch]);
+thet = atan2(r(2,:),r(1,:));
+wts = weights(chnkr);
+wts = reshape(wts,[chnkr.k*chnkr.nch,1]);
+
+rint = sum(dudncomputed.*wts);
+rint = rint/abs(rint);
+y = real(dudncomputed./rint);
+figure(2)
+plot(thet,y,'b.')
+
+
+[ymax,iind] = max(y);
+
+ichind = ceil(iind/chnkr.k);
+[~,~,u,v] = lege.exps(chnkr.k);
+y = reshape(y,[chnkr.k,chnkr.nch]);
+ycoefs = u*y(:,ichind);
+ydcoefs = lege.derpol(ycoefs);
+
+ccheb = leg2cheb(ycoefs);
+p = chebfun(ccheb,'coeffs');
+
+cchebd = leg2cheb(ydcoefs);
+pd = chebfun(cchebd,'coeffs');
+rr = roots(pd);
+yy = p(rr);
+[ymax_final,iind] = max(yy);
+ymax_loc = rr(iind);
+figure(3)
+plot(p), hold on; plot(rr,p(rr),'.r')
+figure(4)
+plot(pd), hold on; plot(rr,pd(rr),'.r')
 
