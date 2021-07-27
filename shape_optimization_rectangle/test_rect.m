@@ -1,8 +1,8 @@
 addpath('../src');
 clear;
 
-height = 2.0;
-loss = rect_loss(height);
+height = 1.0;
+[loss, zk, ud_inf] = rect_loss(height);
 
-
+% agrees with analytical value
 

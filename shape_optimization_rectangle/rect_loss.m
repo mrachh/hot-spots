@@ -1,4 +1,4 @@
-function loss = rect_loss(height, verbose)
+function [loss, zk, ud_inf] = rect_loss(height, verbose)
     addpath('../src');
     % INPUT: width size 1 real
     % OUTPUT: res size 1 real
@@ -23,7 +23,7 @@ function loss = rect_loss(height, verbose)
     center = [0 height/2];
     u_2 = int_u_2(chnkr, zk, sigma, center);
     
-    loss =  - ud_inf/(u_2 * zk)
+    loss =  - ud_inf/(u_2 * zk);
 
 end
 
