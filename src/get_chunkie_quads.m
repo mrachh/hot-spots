@@ -1,10 +1,10 @@
-function [xang,yang,wtot] = get_chunkie_quads(chnkr,k,xy_s)
+function [xang,yang,wtot] = get_chunkie_quads(chnkr,xy_s,k)
 
 % xy_s: any poitn inside domain
-%
+% k = 16 
 
 opts = struct();
-% k = 16;
+
 [x,w,u,v] = lege.exps(k,opts);
 
 xr = (x+1)/2;

@@ -12,7 +12,7 @@ function [chnkr] = rect_chnk(height, show_plot)
     pref = []; pref.k = 16;
     chnkr = chunkerpoly(verts', cparams, pref);
     assert(checkadjinfo(chnkr) == 0);
-    refopts = []; refopts.maxchunklen = pi/5/2;
+    refopts = []; refopts.maxchunklen = pi/4/2;
     chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
 

@@ -1,4 +1,4 @@
-function res = rectangle(width)
+function loss = rect_loss(height, verbose)
     addpath('../src');
     % INPUT: width size 1 real
     % OUTPUT: res size 1 real
@@ -8,13 +8,22 @@ function res = rectangle(width)
     %         b = sqrt{lamb} * 2-norm(u)
 
 
-
-    % Create chunker object
-    [chnkr, zero_loc] = rect_chnk(width, show_plot);
-    % Extract 16 real quadrature points around zero
-    zero_quad_pts = chnkr.r(1, :, zero_loc);
+    addpath('../src');
     
-
+    % Create chunker object
+    chnkr = rect_chnk(height);
+    
+    fprintf('Finding eigenvalue ...\n');
+    start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr);
+    fprintf('Time to find eigenvalue: %5.2e\n', toc(start));
+    
+    fprintf('Finding ymax_final ...\n');
+    start = tic; ud_inf = max_grad(chnkr, zk, sigma);
+    fprintf('Time to find ymax_final: %5.2e\n', toc(start));
+    center = [0 height/2];
+    u_2 = int_u_2(chnkr, zk, sigma, center);
+    
+    loss =  - ud_inf/(u_2 * zk)
 
 end
 

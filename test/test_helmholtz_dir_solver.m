@@ -130,18 +130,15 @@ fprintf('Error of sol_gmres: %5.2e\n',err_gmres);
 fprintf('Error of sol_fds: %5.2e\n',err_fds);
 fprintf('Error of sol_dudn: %5.2e\n',err_dudn);
 
-
+% dudncomputed = helm_dprime(zk,chnkr,sol2);
 r = chnkr.r(:);
 r = reshape(r,[2,chnkr.k*chnkr.nch]);
-thet = atan2(r(2,:),r(1,:));
 wts = weights(chnkr);
 wts = reshape(wts,[chnkr.k*chnkr.nch,1]);
 
 rint = sum(dudncomputed.*wts);
 rint = rint/abs(rint);
 y = real(dudncomputed./rint);
-figure(2)
-plot(thet,y,'b.')
 
 
 [ymax,iind] = max(y);
@@ -161,8 +158,23 @@ rr = roots(pd);
 yy = p(rr);
 [ymax_final,iind] = max(yy);
 ymax_loc = rr(iind);
+
+%
+
 figure(3)
 plot(p), hold on; plot(rr,p(rr),'.r')
 figure(4)
 plot(pd), hold on; plot(rr,pd(rr),'.r')
 
+figure(5)
+clf
+plot(chnkr,'-b')
+hold on
+xs = reshape(chnkr.r(1,:), chnkr.k * chnkr.nch,1);
+ys = reshape(chnkr.r(2,:), chnkr.k * chnkr.nch,1);
+zs = reshape(y, chnkr.k * chnkr.nch, 1);
+[zmax, zmax_ind] = max(zs);
+caxis
+scatter(xs, ys, 10, zs, 'filled')
+plot(xs(zmax_ind), ys(zmax_ind), '.r','MarkerSize',20)
+axis equal

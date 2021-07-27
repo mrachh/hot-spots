@@ -88,7 +88,7 @@ start = tic; in = chunkerinterior(chnkr,targets); t1 = toc(start);
 fprintf('%5.2e s : time to find points in domain\n',t1)
 
 % compute layer potential at interior points
-fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'s',1);
+fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'d',1);
 start = tic;
 Dsol = chunkerkerneval(chnkr,fkern,xnull,targets(:,in)); t1 = toc(start);
 fprintf('%5.2e s : time for kerneval (adaptive for near)\n',t1);
