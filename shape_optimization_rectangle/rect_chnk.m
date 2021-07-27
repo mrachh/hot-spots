@@ -4,8 +4,8 @@ function [chnkr, zero_loc] = rect_chnk(width, show_plot)
 
     height = 1.0/width;
 
-    verts = [[-width*0.75 0]; [width*0.25 0]; ...
-        [width*0.25 height]; [-width*0.75 height]];
+    verts = [[-width*0.5 0]; [width*0.5 0]; ...
+        [width*0.5 height]; [-width*0.5 height]];
 
     cparams = []; cparams.eps = 1.0e-5;
     pref = []; pref.k = 16;

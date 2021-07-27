@@ -23,12 +23,23 @@ fun = chebfun(zero_quad_pts, chebab, chebfunpref);
 
 
 
-% [e_val, err_nullvec, sigma] = helm_dir_eig(chnkr)
+% [e_val, err_nullvec, sigma] = helm_dir_eig(chnkr);
 
 % %
-% [dp,varargout] = helm_dprime(zk,chnkr,sigma)
+% [dp,varargout] = helm_dprime(zk,chnkr,sigma);
+
+% dp = reshape(dp, chnkr.k, chnkr.nch);
+% take maxi of dp
+% fun = chebfun(dp(:, zero_loc), chebab, chebfunpref);
+% gradu = abs(fun(0));
+
+% res = integrate_u2norm[chnkr, sigma]
+
+% loss =  - gradu/(res * sqrt(abs(e_val)))
 
 
+
+% COPIED FROM "test_fred_det_dir_poly": 
 
 chebabs = [0.1,5];
 eps = 1e-7;

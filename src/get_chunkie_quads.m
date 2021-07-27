@@ -1,5 +1,7 @@
 function [xang,yang,wtot] = get_chunkie_quads(chnkr,k,xy_s)
 
+% xy_s: any poitn inside domain
+%
 
 opts = struct();
 % k = 16;

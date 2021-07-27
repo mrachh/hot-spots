@@ -98,7 +98,7 @@ fprintf('%5.2e s : time for kerneval (adaptive for near)\n',t1);
 figure(3)
 clf
 zztarg = nan(size(xxtarg));
-zztarg(in) = real(Dsol);
+zztarg(in) = abs(Dsol);
 h=surf(xxtarg,yytarg,zztarg);
 set(h,'EdgeColor','none')
 
@@ -129,14 +129,14 @@ fprintf('check2: eigenfunction (finite diff) error at (117, 141) of meshgrid: %5
 
 
 % CHECK 2
-%verify eigenfunction by analytical expression
+% verify eigenfunction by analytical expression
 
-% figure(4)
-% clf
-% zztarg2 = nan(size(xxtarg));
-% true_eigenfunc = besselj(0, abs(xxtarg(in) + 1j*yytarg(in))*zk)
-% zztarg2(in) = true_eigenfunc
-% eigen_func_scale = zztarg(117, 141)/zztarg2(117, 141)
-% err = zztarg2 * eigen_func_scale - zztarg
-% h=surf(xxtarg,yytarg, err);
-% set(h,'EdgeColor','none')
+figure(4)
+clf
+zztarg2 = nan(size(xxtarg));
+true_eigenfunc = besselj(0, abs(xxtarg(in) + 1j*yytarg(in))*zk)
+zztarg2(in) = true_eigenfunc
+eigen_func_scale = zztarg(117, 141)/zztarg2(117, 141)
+err = zztarg2 * eigen_func_scale - zztarg
+h=surf(xxtarg,yytarg, err);
+set(h,'EdgeColor','none')
