@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "C:\\Users\\charl\\anaconda3\\envs\\matlab\\python.exe",
-    "python.analysis.extraPaths": [
-        "./gui"
-    ]
-}
