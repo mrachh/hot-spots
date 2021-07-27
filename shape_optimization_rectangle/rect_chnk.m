@@ -1,8 +1,9 @@
-function [chnkr, zero_loc] = rect_chnk(width, show_plot)
+function [chnkr] = rect_chnk(height, show_plot)
     % INPUT: width of chunker; (OPTIONAL: whether show plot)
-    % OUTPUT: chnkr object, chunker id containing 0
+    % OUTPUT: chnkr object
 
-    height = 1.0/width;
+
+    width = 1.0;
 
     verts = [[-width*0.5 0]; [width*0.5 0]; ...
         [width*0.5 height]; [-width*0.5 height]];
@@ -14,8 +15,6 @@ function [chnkr, zero_loc] = rect_chnk(width, show_plot)
     refopts = []; refopts.maxchunklen = pi/5/2;
     chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
-    [rn,dn,d2n,dist,tn,ichn] = nearest(chnkr, [0 0], 1:chnkr.nch);
-    zero_loc = ichn;
 
     if nargin > 1 & show_plot
         % plot geometry and data
