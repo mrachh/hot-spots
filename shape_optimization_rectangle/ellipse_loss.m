@@ -1,4 +1,4 @@
-function [loss, zk, ud_inf] = rect_loss(height, figure_id)
+function [loss, zk, ud_inf] = ellipse_loss(height, figure_id)
     addpath('../src');
     % INPUT: width size 1 real
     % OUTPUT: res size 1 real
@@ -15,7 +15,7 @@ function [loss, zk, ud_inf] = rect_loss(height, figure_id)
     end
 
     % Create chunker object
-    chnkr = rect_chnk(height);
+    chnkr = ellipse_chnk(height);
     
     fprintf('Finding eigenvalue ...\n');
     start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr);

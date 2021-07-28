@@ -19,3 +19,11 @@ fun = @rect_loss;
 fprintf('optimal weight: %5.2e \n', opt);
 fprintf('optimal value: %5.2e \n', fun(opt));
 clear fun
+
+
+% TODO:
+
+% TODO: 
+% gradient descent
+% first deriv: 2
+% use second deri: 3

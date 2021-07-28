@@ -1,7 +1,7 @@
 function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr)
 
-    chebabs = [2,5];
-    eps = 1e-7;
+    chebabs = [1.5,4];
+    eps = 1e-5;
     p = chebfunpref; p.chebfuneps = eps;
     p.splitting = 0; p.maxLength=257;
 
