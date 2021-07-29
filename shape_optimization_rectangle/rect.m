@@ -1,3 +1,0 @@
-addpath('../src');
-clear;
-
