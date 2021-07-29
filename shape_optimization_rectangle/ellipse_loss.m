@@ -11,7 +11,7 @@ function [loss, zk, ud_inf] = ellipse_loss(height, figure_id)
 
     
     if nargin < 2
-        figure_id = -1
+        figure_id = -1;
     end
 
     % Create chunker object
