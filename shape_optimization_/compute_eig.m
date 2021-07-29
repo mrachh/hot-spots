@@ -1,4 +1,13 @@
-function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs)
+function [zk, err_nullvec, sigma] = compute_eig(chnkr, chebabs)
+
+    % Computes the first laplacian (dirichlet boundary) eigenvalue
+    % INPUT:    "chnkr"         chunkie object
+    %           "chebabs"       [a b] where eigenvalue lives in
+    %
+    % OUTPUT:   "zk"            wave number (or equivalently sqrt(eigenval))
+    %           "sigma"         sigma
+    %           "err_nullvec"   error of sigma
+
 
     eps = 1e-7;
     p = chebfunpref; p.chebfuneps = eps;

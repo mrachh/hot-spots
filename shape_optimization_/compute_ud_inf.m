@@ -1,4 +1,13 @@
-function ud_inf = max_grad(chnkr, zk, sigma, figure_id)
+function ud_inf = compute_ud_inf(chnkr, zk, sigma, figure_id)
+    % Compute infinity norm of grad u (assuming that it occurs on the boundary)
+
+    % INPUT:      "chnkr"         chunkie object
+    %             "zk"            wavenumber
+    %             "sigma"         sigma
+    %             "figure_id"     (optional) creates a figure in "temp" folder with figure_id
+    
+    % OUTPUT:     "ud_inf"        \|\nabla u\|_\inf
+
 
     xplt_range = [-.6 .6];
     yplt_range = [-.1, 2.1];

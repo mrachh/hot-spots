@@ -1,4 +1,11 @@
-function u_2 = int_u_2(chnkr, zk, sigma, center)
+function u_2 = compute_u_2(chnkr, zk, sigma, center)
+    % Computes 2-norm of u
+    % INPUT:      "sigma"
+    %             "chnkr"     chnkie object
+    %             "zk"        wave number
+    %             "center"    any point inside chnkr
+    
+    % OUTPUT:     "u_2"       2-norm of u
     
     k = 16;
     [xang,yang,wtot] = get_chunkie_quads(chnkr,center,k);

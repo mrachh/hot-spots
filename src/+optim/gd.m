@@ -27,9 +27,9 @@ function [opt, gd_log] = gd(fun, init, cparams)
     line_search_beta = cparams.line_search_beta;
     opt = init;
 
-    loss_arr = nan(maxiter);
-    step_arr = nan(maxiter);
-    grad_arr = nan(maxiter);
+    loss_arr = nan(maxiter,1);
+    step_arr = nan(maxiter,1);
+    grad_arr = nan(maxiter,1);
     weight_arr = nan(maxiter, length(init));
     gradient_descent_converged = false;
 
