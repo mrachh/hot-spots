@@ -1,0 +1,611 @@
+Now we do the actual optimization
+Finding eigenvalue ...
+Error in null vector: 2.97e-09
+Time to find eigenvalue: 1.92e+01
+Finding ymax_final ...
+Time to find ymax_final: 2.02e-01
+Running chunkerkerneval on 8192 targets...
+Time for chunkerkerneval: 4.11e+00
+Finding eigenvalue ...
+Error in null vector: 2.97e-09
+Time to find eigenvalue: 1.92e+01
+Finding ymax_final ...
+Time to find ymax_final: 2.16e-01
+Running chunkerkerneval on 8192 targets...
+Time for chunkerkerneval: 4.38e+00
+Finding eigenvalue ...
+Error in null vector: 2.97e-09
+Time to find eigenvalue: 1.84e+01
+Finding ymax_final ...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.047979e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 25)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',25,0)">line 25</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 14)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',14,0)">line 14</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time to find ymax_final: 2.15e-01
+Running chunkerkerneval on 8192 targets...
+Time for chunkerkerneval: 4.36e+00
+Finding eigenvalue ...
+Error in null vector: 2.27e-09
+Time to find eigenvalue: 1.88e+01
+Finding ymax_final ...
+Time to find ymax_final: 1.77e-01
+Running chunkerkerneval on 8192 targets...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.793465e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 28)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 65)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',65,0)">line 65</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time for chunkerkerneval: 3.97e+00
+iter: 1, loss: -2.55e-01, grad: 1.85e-01, 2nd-deri: 1.16e+00 
+Current weight 1.25897458403993
+Finding eigenvalue ...
+Error in null vector: 2.27e-09
+Time to find eigenvalue: 1.91e+01
+Finding ymax_final ...
+Time to find ymax_final: 2.14e-01
+Running chunkerkerneval on 8192 targets...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.986337e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 28)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 12)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time for chunkerkerneval: 4.36e+00
+Finding eigenvalue ...
+Error in null vector: 2.27e-09
+Time to find eigenvalue: 1.82e+01
+Finding ymax_final ...
+Time to find ymax_final: 2.06e-01
+Running chunkerkerneval on 8192 targets...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.002083e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 28)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 13)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',13,0)">line 13</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time for chunkerkerneval: 4.28e+00
+Finding eigenvalue ...
+Error in null vector: 2.27e-09
+Time to find eigenvalue: 1.89e+01
+Finding ymax_final ...
+Time to find ymax_final: 1.85e-01
+Running chunkerkerneval on 8192 targets...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.793465e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 28)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 14)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',14,0)">line 14</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time for chunkerkerneval: 3.82e+00
+Finding eigenvalue ...
+Error in null vector: 2.27e-09
+Time to find eigenvalue: 8.68e+01
+Finding ymax_final ...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.575735e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 25)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',25,0)">line 25</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 65)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',65,0)">line 65</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time to find ymax_final: 5.55e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.44e+00
+iter: 2, loss: -2.80e-01, grad: 1.35e-01, 2nd-deri: 8.66e-02 
+Current weight 2.82055929344432
+Finding eigenvalue ...
+Error in null vector: 2.21e-09
+Time to find eigenvalue: 8.58e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.61e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.51e+00
+Finding eigenvalue ...
+Error in null vector: 2.19e-09
+Time to find eigenvalue: 8.61e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.98e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.08e+00
+Finding eigenvalue ...
+Error in null vector: 2.25e-09
+Time to find eigenvalue: 8.64e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.78e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.05e+00
+Finding eigenvalue ...
+Error in null vector: 2.23e-09
+Time to find eigenvalue: 8.63e+01
+Finding ymax_final ...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.826953e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 25)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',25,0)">line 25</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 65)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',65,0)">line 65</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time to find ymax_final: 5.87e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.62e+00
+iter: 3, loss: -3.39e-01, grad: 9.27e-04, 2nd-deri: 9.02e+00 
+Current weight 2.82045650413258
+Finding eigenvalue ...
+Error in null vector: 2.20e-09
+Time to find eigenvalue: 8.55e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.49e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.39e+00
+Finding eigenvalue ...
+Error in null vector: 2.58e-09
+Time to find eigenvalue: 8.61e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.54e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.67e+00
+Finding eigenvalue ...
+Error in null vector: 2.61e-09
+Time to find eigenvalue: 8.63e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.60e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.38e+00
+[Warning: Negative second derivative -3.48e+02] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 56)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)] 
+Finding eigenvalue ...
+Error in null vector: 2.30e-09
+Time to find eigenvalue: 8.50e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.56e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.39e+00
+iter: 4, loss: -3.39e-01, grad: 2.62e-03, 2nd-deri: -3.48e+02 
+Current weight 2.82044964475871
+Finding eigenvalue ...
+Error in null vector: 2.24e-09
+Time to find eigenvalue: 8.51e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.56e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.36e+00
+Finding eigenvalue ...
+Error in null vector: 2.63e-09
+Time to find eigenvalue: 8.60e+01
+Finding ymax_final ...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.660148e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 25)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',25,0)">line 25</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 13)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',13,0)">line 13</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time to find ymax_final: 5.16e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.87e+00
+Finding eigenvalue ...
+Error in null vector: 2.34e-09
+Time to find eigenvalue: 8.63e+01
+Finding ymax_final ...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.961824e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 25)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',25,0)">line 25</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 14)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',14,0)">line 14</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time to find ymax_final: 5.62e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.35e+00
+Finding eigenvalue ...
+Error in null vector: 2.29e-09
+Time to find eigenvalue: 8.53e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.70e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.44e+00
+iter: 5, loss: -3.39e-01, grad: 2.66e-03, 2nd-deri: 3.71e+02 
+Current weight 2.82044247467128
+Finding eigenvalue ...
+Error in null vector: 2.30e-09
+Time to find eigenvalue: 8.60e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.72e-01
+Running chunkerkerneval on 16384 targets...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.866883e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 28)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 12)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.861516e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 28)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 12)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time for chunkerkerneval: 7.05e+00
+Finding eigenvalue ...
+Error in null vector: 2.27e-09
+Time to find eigenvalue: 8.75e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.65e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.39e+00
+Finding eigenvalue ...
+Error in null vector: 2.32e-09
+Time to find eigenvalue: 8.56e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.60e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.36e+00
+Finding eigenvalue ...
+Error in null vector: 2.57e-09
+Time to find eigenvalue: 8.64e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.86e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.66e+00
+iter: 6, loss: -3.39e-01, grad: 9.28e-04, 2nd-deri: 6.48e+00 
+Current weight 2.82029920351015
+Finding eigenvalue ...
+Error in null vector: 2.57e-09
+Time to find eigenvalue: 8.60e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.51e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 7.29e+00
+Finding eigenvalue ...
+Error in null vector: 2.55e-09
+Time to find eigenvalue: 8.53e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.52e-01
+Running chunkerkerneval on 16384 targets...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.840489e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 28)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 13)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',13,0)">line 13</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time for chunkerkerneval: 7.35e+00
+Finding eigenvalue ...
+Error in null vector: 2.54e-09
+Time to find eigenvalue: 8.52e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.67e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.37e+00
+Finding eigenvalue ...
+Error in null vector: 2.54e-09
+Time to find eigenvalue: 7.21e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.54e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.31e+00
+iter: 7, loss: -3.39e-01, grad: 9.04e-04, 2nd-deri: 3.73e+00 
+Current weight 2.82005662535013
+Finding eigenvalue ...
+Error in null vector: 2.51e-09
+Time to find eigenvalue: 7.23e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.57e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.31e+00
+Finding eigenvalue ...
+Error in null vector: 2.53e-09
+Time to find eigenvalue: 7.24e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.52e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.30e+00
+Finding eigenvalue ...
+Error in null vector: 2.61e-09
+Time to find eigenvalue: 7.24e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.53e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.27e+00
+[Warning: Negative second derivative -1.74e+01] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 56)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)] 
+Finding eigenvalue ...
+Error in null vector: 2.58e-09
+Time to find eigenvalue: 7.23e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.51e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.27e+00
+iter: 8, loss: -3.39e-01, grad: 9.19e-04, 2nd-deri: -1.74e+01 
+Current weight 2.82005578053119
+Finding eigenvalue ...
+Error in null vector: 2.64e-09
+Time to find eigenvalue: 7.23e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.83e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.31e+00
+Finding eigenvalue ...
+Error in null vector: 2.68e-09
+Time to find eigenvalue: 7.23e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.75e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.26e+00
+Finding eigenvalue ...
+Error in null vector: 2.57e-09
+Time to find eigenvalue: 7.46e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.96e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.41e+00
+Finding eigenvalue ...
+Error in null vector: 2.66e-09
+Time to find eigenvalue: 7.42e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.49e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.41e+00
+iter: 9, loss: -3.39e-01, grad: 9.29e-04, 2nd-deri: 1.73e+01 
+Current weight 2.82000225668287
+Finding eigenvalue ...
+Error in null vector: 2.60e-09
+Time to find eigenvalue: 7.26e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.58e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.26e+00
+Finding eigenvalue ...
+Error in null vector: 2.66e-09
+Time to find eigenvalue: 7.35e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.59e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.48e+00
+Finding eigenvalue ...
+Error in null vector: 2.64e-09
+Time to find eigenvalue: 7.38e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.69e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.29e+00
+[Warning: Negative second derivative -8.32e-01] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 56)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)] 
+Finding eigenvalue ...
+Error in null vector: 2.65e-09
+Time to find eigenvalue: 7.32e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.50e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.31e+00
+iter: 10, loss: -3.39e-01, grad: 9.40e-04, 2nd-deri: -8.32e-01 
+Current weight 2.82000137373427
+Finding eigenvalue ...
+Error in null vector: 2.54e-09
+Time to find eigenvalue: 7.26e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.50e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.33e+00
+Finding eigenvalue ...
+Error in null vector: 2.56e-09
+Time to find eigenvalue: 7.31e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.54e-01
+Running chunkerkerneval on 16384 targets...
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.881524e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 28)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',28,0)">line 28</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 13)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',13,0)">line 13</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+] 
+Time for chunkerkerneval: 6.47e+00
+Finding eigenvalue ...
+Error in null vector: 2.60e-09
+Time to find eigenvalue: 7.27e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.47e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.24e+00
+[Warning: Negative second derivative -9.18e+00] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 56)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)] 
+Finding eigenvalue ...
+Error in null vector: 1.35e-09
+Time to find eigenvalue: 7.27e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.43e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.35e+00
+iter: 11, loss: -3.39e-01, grad: 9.19e-04, 2nd-deri: -9.18e+00 
+Current weight 2.82000052976774
+Finding eigenvalue ...
+Error in null vector: 2.61e-09
+Time to find eigenvalue: 7.25e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.52e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.33e+00
+Finding eigenvalue ...
+Error in null vector: 2.60e-09
+Time to find eigenvalue: 7.32e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.53e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.24e+00
+Finding eigenvalue ...
+Error in null vector: 2.46e-09
+Time to find eigenvalue: 7.26e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.56e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.24e+00
+Finding eigenvalue ...
+Error in null vector: 2.54e-09
+Time to find eigenvalue: 7.27e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.54e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.31e+00
+iter: 12, loss: -3.39e-01, grad: 9.06e-04, 2nd-deri: 2.81e+01 
+Current weight 2.81996826726722
+Finding eigenvalue ...
+Error in null vector: 2.57e-09
+Time to find eigenvalue: 7.26e+01
+Finding ymax_final ...
+Time to find ymax_final: 4.43e-01
+Running chunkerkerneval on 16384 targets...
+Time for chunkerkerneval: 6.37e+00
+Finding eigenvalue ...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 105)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',105,0)">line 105</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rskelf', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\rskelf\rskelf.m', 213)" style="font-weight:bold">rskelf</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\rskelf\rskelf.m',213,0)">line 213</a>)
+      [sk,rd,T] = id(K,rank_or_tol,opts.Tmax,opts.rrqr_iter);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 185)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',185,0)">line 185</a>)
+    F = rskelf(matfun,xflam,occ,rank_or_tol,pxyfun);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dir_det', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dir_det.m', 44)" style="font-weight:bold">helm_dir_det</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dir_det.m',44,0)">line 44</a>)
+    F = chunkerflam(chnkr,fkern,dval,opts_flam);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dir_eig>@(zk)helm_dir_det(zk,chnkr,opts)', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\helm_dir_eig.m', 11)" style="font-weight:bold">helm_dir_eig>@(zk)helm_dir_det(zk,chnkr,opts)</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\helm_dir_eig.m',11,0)">line 11</a>)
+    detfun = @(zk) helm_dir_det(zk,chnkr,opts);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun>vec/loopWrapperScalar', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\chebfun.m', 966)" style="font-weight:bold">chebfun>vec/loopWrapperScalar</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\chebfun.m',966,0)">line 966</a>)
+            v(j) = op(x(j));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bndfun>@(x)op(linmap.For(x))', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@bndfun\bndfun.m', 99)" style="font-weight:bold">bndfun>@(x)op(linmap.For(x))</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@bndfun\bndfun.m',99,0)">line 99</a>)
+                op = @(x) op(linmap.For(x));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech2.refine>refineNested', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m', 134)" style="font-weight:bold">chebtech2.refine>refineNested</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m',134,0)">line 134</a>)
+        values(2:2:end-1,:) = feval(op, x);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech2.refine', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m', 46)" style="font-weight:bold">chebtech2.refine</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m',46,0)">line 46</a>)
+    [values, giveUp] = refineNested(op, values, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech/populate', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech\populate.m', 92)" style="font-weight:bold">chebtech/populate</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech\populate.m',92,0)">line 92</a>)
+    [values, giveUp] = f.refine(op, values, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech2', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\chebtech2.m', 102)" style="font-weight:bold">chebtech2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\chebtech2.m',102,0)">line 102</a>)
+            [obj, values] = populate(obj, op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smoothfun.constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@smoothfun\smoothfun.m', 57)" style="font-weight:bold">smoothfun.constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@smoothfun\smoothfun.m',57,0)">line 57</a>)
+            obj = feval(pref.tech, op, data, pref.techPrefs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('onefun.constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@onefun\onefun.m', 71)" style="font-weight:bold">onefun.constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@onefun\onefun.m',71,0)">line 71</a>)
+                obj = smoothfun.constructor(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bndfun', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@bndfun\bndfun.m', 103)" style="font-weight:bold">bndfun</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@bndfun\bndfun.m',103,0)">line 103</a>)
+            obj.onefun = onefun.constructor(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('classicfun.constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@classicfun\classicfun.m', 100)" style="font-weight:bold">classicfun.constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@classicfun\classicfun.m',100,0)">line 100</a>)
+                obj = bndfun(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fun.constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@fun\fun.m', 51)" style="font-weight:bold">fun.constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@fun\fun.m',51,0)">line 51</a>)
+                obj = classicfun.constructor(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun/constructor>getFun', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m', 276)" style="font-weight:bold">chebfun/constructor>getFun</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m',276,0)">line 276</a>)
+g = fun.constructor(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun/constructor>constructorNoSplit', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m', 110)" style="font-weight:bold">chebfun/constructor>constructorNoSplit</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m',110,0)">line 110</a>)
+    [funs{k}, ishappy, data.vscale] = getFun(opk, endsk, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun/constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m', 63)" style="font-weight:bold">chebfun/constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m',63,0)">line 63</a>)
+    [funs, ends] = constructorNoSplit(op, dom, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\chebfun.m', 219)" style="font-weight:bold">chebfun</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\chebfun.m',219,0)">line 219</a>)
+                [f.funs, f.domain] = chebfun.constructor(op, dom,
+                data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dir_eig', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\helm_dir_eig.m', 13)" style="font-weight:bold">helm_dir_eig</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\helm_dir_eig.m',13,0)">line 13</a>)
+    detchebs = chebfun(detfun,chebabs,p);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ellipse_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m', 21)" style="font-weight:bold">ellipse_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\ellipse_loss.m',21,0)">line 21</a>)
+    start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr,
+    chebabs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 13)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',13,0)">line 13</a>)
+    right = fun(xval + hspace);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 45)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',45,0)">line 45</a>)
+        [grad, fdd, loss] = optim.gd_grad_1d(fun, opt, hspace);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_ellipse_gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m', 20)" style="font-weight:bold">test_ellipse_gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_ellipse_gd.m',20,0)">line 20</a>)
+[opt, gd_log] = optim.gd_1d(fun, init_weight, cparams);
+} 
