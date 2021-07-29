@@ -70,3 +70,10 @@ Current weight 1.6649739282685
 gradient descent converged after 3 steps
 optimal weight: 1.66e+00 
 Finding eigenvalue ...
+Error in null vector: 2.87e-09
+Time to find eigenvalue: 4.50e+01
+Finding ymax_final ...
+Time to find ymax_final: 6.23e-01
+Running chunkerkerneval on 15360 targets...
+Time for chunkerkerneval: 8.77e+00
+optimal value: -3.63e-01 
