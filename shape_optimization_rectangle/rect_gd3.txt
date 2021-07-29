@@ -1,0 +1,44 @@
+TEST: true rectangle objective
+iter: 1, loss: -3.32e-01, grad: 1.22e-01, 2nd-deri: 3.38e-01 
+Current weight 1.46160414127643
+iter: 2, loss: -3.59e-01, grad: 3.38e-02, 2nd-deri: 1.66e-01 
+Current weight 1.66541555928151
+iter: 3, loss: -3.63e-01, grad: 6.53e-03, 2nd-deri: 1.06e-01 
+Current weight 1.72722851404702
+iter: 4, loss: -3.63e-01, grad: 4.40e-04, 2nd-deri: 9.17e-02 
+Current weight 1.73202408106475
+gradient descent converged after 5 steps
+optimal weight: 1.73e+00 
+optimal value: -3.63e-01 
+Now we do the actual optimization
+Finding eigenvalue ...
+Error in null vector: 8.04e-09
+Time to find eigenvalue: 2.02e+01
+Finding ymax_final ...
+Time to find ymax_final: 8.33e-01
+Running chunkerkerneval on 15872 targets...
+Time for chunkerkerneval: 8.23e+00
+Finding eigenvalue ...
+Error in null vector: 6.95e-09
+Time to find eigenvalue: 1.69e+01
+Finding ymax_final ...
+Time to find ymax_final: 6.31e-01
+Running chunkerkerneval on 14848 targets...
+Time for chunkerkerneval: 7.21e+00
+Finding eigenvalue ...
+Error in null vector: 4.72e-09
+Time to find eigenvalue: 1.63e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.51e-01
+Running chunkerkerneval on 14336 targets...
+Time for chunkerkerneval: 6.85e+00
+Finding eigenvalue ...
+Error in null vector: 6.44e-10
+Time to find eigenvalue: 1.75e+01
+Finding ymax_final ...
+Time to find ymax_final: 5.41e-01
+Running chunkerkerneval on 14848 targets...
+Time for chunkerkerneval: 7.18e+00
+iter: 1, loss: -3.32e-01, grad: 1.21e-01, 2nd-deri: 3.38e+01 
+Current weight 1.10359089259864
+Finding eigenvalue ...

@@ -22,11 +22,14 @@ function ud_inf = max_grad(chnkr, zk, sigma, figure_id)
     ycoefs = u*y(:,ichind);
     ydcoefs = lege.derpol(ycoefs);
 
+    chebfun_param = chebfunpref; chebfun_param.chebfuneps = eps;
+    chebfun_param.splitting = 0; chebfun_param.maxLength=257;
+
     ccheb = leg2cheb(ycoefs);
-    p = chebfun(ccheb,'coeffs');
+    p = chebfun(ccheb,'coeffs', chebfun_param);
 
     cchebd = leg2cheb(ydcoefs);
-    pd = chebfun(cchebd,'coeffs');
+    pd = chebfun(cchebd,'coeffs', chebfun_param);
     rr = [roots(pd) -1 1];
     yy = p(rr);
     [ymax_final,iind] = max(yy);

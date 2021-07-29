@@ -7,7 +7,7 @@ clc;
 
 % agrees with analytical value sqrt(2) at height = 1.0
 
-height_step = 1e-2;
+height_step = .5;
 num_heights = floor(1/height_step);
 losss = zeros(num_heights);
 zks = zeros(num_heights);
