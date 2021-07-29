@@ -137,6 +137,6 @@ zztarg2 = nan(size(xxtarg));
 true_eigenfunc = besselj(0, abs(xxtarg(in) + 1j*yytarg(in))*zk)
 zztarg2(in) = true_eigenfunc
 eigen_func_scale = zztarg(117, 141)/zztarg2(117, 141)
-err = zztarg2 * eigen_func_scale - zztarg
+err = zztarg2 * eigen_func_scale - zztarg;
 h=surf(xxtarg,yytarg, err);
 set(h,'EdgeColor','none')

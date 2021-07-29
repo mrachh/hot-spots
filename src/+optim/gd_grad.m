@@ -1,7 +1,7 @@
 function grad = gd_grad(fun, xval, hspace)
     % Evaluates gradient using centered difference
     % INPUT:
-    %     fun: funtion handle for first order oracle "f"
+    %     fun: funtion handle for objective "f"
     %     xval: value of "x"
     %     hspace: step size
     % OUTPUT:

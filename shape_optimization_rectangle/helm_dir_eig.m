@@ -1,9 +1,8 @@
-function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr)
+function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs)
 
-    chebabs = [1.5,4];
     eps = 1e-5;
     p = chebfunpref; p.chebfuneps = eps;
-    p.splitting = 0; p.maxLength=257;
+    p.splitting = 0; p.maxLength=33;
 
     opts = [];
     opts.flam = true;

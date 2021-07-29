@@ -1,4 +1,4 @@
-function [opt, gd_log] = gd(fun, init, cparams)
+function [opt, gd_log] = gd_1d(fun, init, cparams)
     %Performs gradient descent on one dimensional input
     % INPUT:
     %     fun: function handle for objective "f"
@@ -41,21 +41,13 @@ function [opt, gd_log] = gd(fun, init, cparams)
             break;
         end
         
-        grad = optim.gd_grad(fun, opt, hspace);
-
+        [grad, fdd, loss] = optim.gd_grad_1d(fun, opt, hspace);
         grad_norm = norm(grad);
-        grad_direction = grad / grad_norm;
-        loss = fun(opt);
+
         gradient_descent_converged = (grad_norm < eps);
 
         % Line search
 
-        % Initialize step size with second derivative (stored as fdd)
-
-        right = fun(opt + hspace * grad_direction);
-        left = fun(opt - hspace * grad_direction);
-        center = loss;
-        fdd = (right - 2*center + left) / (hspace^2);
  
         % Check second derivative
 
@@ -99,7 +91,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
         step_arr(i) = step;
         grad_arr(i) = grad_norm;
         weight_arr(i,:) = opt;
-        if mod(i, report) == 1 or report==1
+        if (mod(i, report) == 1) | (report == 1)
             fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e \n', ...
                 i, loss, grad_norm, fdd);
 

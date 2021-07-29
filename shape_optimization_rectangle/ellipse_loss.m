@@ -7,7 +7,7 @@ function [loss, zk, ud_inf] = ellipse_loss(height, figure_id)
     %         a = L-inf norm of grad u
     %         b = sqrt{lamb} * 2-norm(u)
 
-
+    chebabs = [1.5,4];
 
     
     if nargin < 2
@@ -18,7 +18,7 @@ function [loss, zk, ud_inf] = ellipse_loss(height, figure_id)
     chnkr = ellipse_chnk(height);
     
     fprintf('Finding eigenvalue ...\n');
-    start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr);
+    start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs);
     fprintf('Time to find eigenvalue: %5.2e\n', toc(start));
     
     fprintf('Finding ymax_final ...\n');
