@@ -26,7 +26,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
     line_search_eps = cparams.line_search_eps;
     line_search_beta = cparams.line_search_beta;
     opt = init;
-    
+
     loss_arr = nan(maxiter);
     step_arr = nan(maxiter);
     grad_arr = nan(maxiter);
@@ -34,6 +34,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
     gradient_descent_converged = false;
 
     for i = 1:maxiter
+
         if gradient_descent_converged
             fprintf('gradient descent converged after %d steps\n', ...
             i);
@@ -41,56 +42,70 @@ function [opt, gd_log] = gd(fun, init, cparams)
         end
         
         grad = optim.gd_grad(fun, opt, hspace);
+
         grad_norm = norm(grad);
+        grad_direction = grad / grad_norm;
         loss = fun(opt);
         gradient_descent_converged = (grad_norm < eps);
 
-        %line search
-        line_search_converged = false;
-        step = grad_norm;
-            while not(line_search_converged)
-                right = fun(opt + step * grad);
-                left = fun(opt - step * grad);
-                is_linear = (abs(right - 2*loss + left) < line_search_eps);
+        % Line search
 
-                %compute quadratic fitting
-                if is_linear
-                    break;
-                else
-                    better_step = (step/2)*...
-                        (right - left)/(right - 2*loss + left);
-                end
-                
-                better_loss = fun(opt - grad * better_step);
+        % Initialize step size with second derivative (stored as fdd)
 
-                % if better_loss is actually higher, 
-                %   we shrink it until it's too small.
-                if min(left, better_loss) < loss
-                    line_search_converged = true;
-                    if better_loss < left
-                        step = better_step;
-                    end
-                elseif step < line_search_eps
-                    error('Step size too small');
-                    line_search_converged = true;
-                else
-                    step = step * line_search_beta;
-                end
-            end
+        right = fun(opt + hspace * grad_direction);
+        left = fun(opt - hspace * grad_direction);
+        center = loss;
+        fdd = (right - 2*center + left) / (hspace^2);
+ 
+        % Check second derivative
         
-            %update weight
-            opt = opt - step * grad;
+        if fdd < 0
+            error('Negative second derivative');
+        elseif fdd == 0
+            step = 1.0;
+        else
+            step = 1.0 / fdd;
+        end
 
-        %record
+
+        better_loss = fun(opt - step * grad);
+        line_search_converged = (better_loss < loss);
+
+        % Line search loop        
+
+        while not(line_search_converged)
+            % disp('2')
+
+            % Shrink step size
+
+            step = step * line_search_beta;
+            better_loss = fun(opt - step * grad);
+            line_search_converged = (better_loss < loss);
+
+            % Raise error when step is too small
+            if step < line_search_eps
+                error('Line search does not converge')
+            end
+        end
+        
+        % End of line search loop
+
+        % Update weight
+        opt = opt - step * grad;
+
+        % Record
         loss_arr(i) = loss;
         step_arr(i) = step;
         grad_arr(i) = grad_norm;
         weight_arr(i,:) = opt;
         if mod(i, report) == 1
-            fprintf('iter: %d, loss: %5.2e, grad: %5.2e \n', ...
-                i, loss, grad_norm);
+            fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e \n', ...
+                i, loss, grad_norm, fdd);
+
         end
     end
+
+    % End of GD loop
 
     if not(gradient_descent_converged)
         fprintf('gradient descent did not converge after %d steps\n', ...
@@ -98,8 +113,9 @@ function [opt, gd_log] = gd(fun, init, cparams)
     end
     
     gd_log = struct( ...
-            'loss',   loss_arr, ...
-            'step',   step_arr, ...
-            'grad',   grad_arr, ...
-            'weight', weight_arr);
+            'loss',     loss_arr, ...
+            'step',     step_arr, ...
+            'grad',     grad_arr, ...
+            'weight',   weight_arr ...
+            );
 end
