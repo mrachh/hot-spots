@@ -19,7 +19,7 @@ function [detfun,varargout] = helm_neu_det(zk,chnkr,opts)
 
 
 flam = true;
-eps = 1e-5;
+eps = 1e-12;
 
 if(nargin < 3) opts = []; end
     

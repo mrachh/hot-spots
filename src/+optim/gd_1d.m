@@ -30,6 +30,7 @@ function [opt, gd_log] = gd_1d(fun, init, cparams)
     loss_arr = nan(maxiter);
     step_arr = nan(maxiter);
     grad_arr = nan(maxiter);
+    fdd_arr = nan(maxiter);
     weight_arr = nan(maxiter, length(init));
     gradient_descent_converged = false;
 
@@ -90,10 +91,12 @@ function [opt, gd_log] = gd_1d(fun, init, cparams)
         loss_arr(i) = loss;
         step_arr(i) = step;
         grad_arr(i) = grad_norm;
+        fdd_arr(i) = fdd;
         weight_arr(i,:) = opt;
         if (mod(i, report) == 1) | (report == 1)
             fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e \n', ...
                 i, loss, grad_norm, fdd);
+            fprintf('Current weight %s\n', mat2str(opt));
 
         end
     end
@@ -109,6 +112,7 @@ function [opt, gd_log] = gd_1d(fun, init, cparams)
             'loss',     loss_arr, ...
             'step',     step_arr, ...
             'grad',     grad_arr, ...
-            'weight',   weight_arr ...
+            'weight',   weight_arr, ...
+            'fdd',      fdd_arr ...
             );
 end
