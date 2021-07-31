@@ -31,10 +31,13 @@ function [opt, gd_log] = gd_1d(fun, init, cparams)
     step_arr = nan(maxiter,1);
     grad_arr = nan(maxiter,1);
     fdd_arr = nan(maxiter,1);
+    time_arr = nan(maxiter,1);
     weight_arr = nan(maxiter, length(init));
     gradient_descent_converged = false;
 
     for i = 1:maxiter
+
+        start = tic;
 
         if gradient_descent_converged
             fprintf('gradient descent converged after %d steps\n', ...
@@ -92,6 +95,7 @@ function [opt, gd_log] = gd_1d(fun, init, cparams)
         step_arr(i) = step;
         grad_arr(i) = grad_norm;
         fdd_arr(i) = fdd;
+        time_arr(i) = toc(start);
         weight_arr(i,:) = opt;
         if (mod(i, report) == 1) | (report == 1)
             fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e \n', ...
@@ -113,6 +117,7 @@ function [opt, gd_log] = gd_1d(fun, init, cparams)
             'step',     step_arr, ...
             'grad',     grad_arr, ...
             'weight',   weight_arr, ...
-            'fdd',      fdd_arr ...
+            'fdd',      fdd_arr, ...
+            'time',     time_arr ...
             );
 end

@@ -18,13 +18,13 @@ function [loss, zk, ud_inf] = rect_loss(height, figure_id)
     % Create chunker object
     chnkr = rect_chnk(height);
     
-    fprintf('Finding eigenvalue ...\n');
+    % fprintf('Finding eigenvalue ...\n');
     start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs);
-    fprintf('Time to find eigenvalue: %5.2e\n', toc(start));
+    % fprintf('Time to find eigenvalue: %5.2e\n', toc(start));
     
-    fprintf('Finding ymax_final ...\n');
+    % fprintf('Finding ymax_final ...\n');
     start = tic; ud_inf = max_grad(chnkr, zk, sigma, figure_id);
-    fprintf('Time to find ymax_final: %5.2e\n', toc(start));
+    % fprintf('Time to find ymax_final: %5.2e\n', toc(start));
 
 
     center = [0 height/2];

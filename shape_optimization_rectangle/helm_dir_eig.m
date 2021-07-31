@@ -22,6 +22,6 @@ function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs)
     xnrm = norm(sigma,'fro');
     xnrm_mv = norm(rskelf_mv(F,sigma),'fro');
     err_nullvec = xnrm_mv/xnrm;
-    fprintf('Error in null vector: %5.2e\n',err_nullvec);
+    % fprintf('Error in null vector: %5.2e\n',err_nullvec);
 
 end
