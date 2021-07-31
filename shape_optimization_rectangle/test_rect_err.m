@@ -3,6 +3,7 @@ clear;clc;addpath('../src');
 
 height_step = 1e-1;
 num_heights = ceil(1/height_step);
+
 rect_computed = nan(num_heights);
 rect_true = nan(num_heights);
 
