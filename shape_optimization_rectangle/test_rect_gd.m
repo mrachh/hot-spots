@@ -2,6 +2,10 @@ addpath('../src');
 clear;
 clc;
 
+%
+%   Performs gradient descent on rectangle
+%
+
 diary('rect_gd_diary.txt');
 
 cparams = struct( ...
@@ -14,7 +18,7 @@ cparams = struct( ...
 )
 
 init = 1.1;
-fun = @optim.tests.test4;
+fun = @rect_true_loss;
 fprintf('TEST: true rectangle objective\n');
 [opt, gd_log] = optim.gd_1d(fun, init, cparams);
 fprintf('optimal weight: %5.2e \n', opt);

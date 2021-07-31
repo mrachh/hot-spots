@@ -2,7 +2,11 @@ addpath('../src');
 clear;
 clc;
 
-diary('ellipse_gd.txt');
+%
+%   Performs gradient descent on ellipse
+%
+
+diary('ellipse_gd_diary.txt');
 
 cparams = struct( ...
     'maxiter',          100, ...
