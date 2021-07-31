@@ -10,10 +10,12 @@ function grad = gd_grad(fun, xval, hspace)
     num_params = length(xval);
     grad = zeros(1,num_params);
     for i = 1:num_params
-        xval(i) = xval(i) + hspace;
-        fun_val_forward = fun(xval);
-        xval(i) = xval(i) - 2*hspace;
-        fun_val_backward = fun(xval);
-        grad(i) = (fun_val_forward - fun_val_backward)/(2*hspace);
+        direction = zeros(num_params, 1);
+        direction(i) = hspace;
+
+        % Change this if # of params gets big
+        left = fun(xval - direction);
+        right = fun(xval + direction);
+        grad(i) = (right - left) / (2 * hspace)
     end
 end

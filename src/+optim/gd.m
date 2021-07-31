@@ -29,8 +29,11 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
     loss_arr = nan(maxiter,1);
     step_arr = nan(maxiter,1);
-    grad_arr = nan(maxiter,1);
+    gradnorm_arr = nan(maxiter,1);
+    fdd_arr = nan(maxiter,1);
+    time_arr = nan(maxiter,1);
     weight_arr = nan(maxiter, length(init));
+    grad_arr = nan(maxiter, length(init));
     gradient_descent_converged = false;
 
     for i = 1:maxiter
@@ -40,6 +43,8 @@ function [opt, gd_log] = gd(fun, init, cparams)
             i);
             break;
         end
+
+        start = tic;
         
         grad = optim.gd_grad(fun, opt, hspace);
 
@@ -75,8 +80,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
         % Line search loop        
 
         while not(line_search_converged)
-            % disp('2')
-
+            
             % Shrink step size
 
             step = step * line_search_beta;
@@ -97,11 +101,15 @@ function [opt, gd_log] = gd(fun, init, cparams)
         % Record
         loss_arr(i) = loss;
         step_arr(i) = step;
-        grad_arr(i) = grad_norm;
+        gradnorm_arr(i) = grad_norm;
+        fdd_arr(i) = fdd;
+        time_arr(i) = toc(start);
         weight_arr(i,:) = opt;
-        if mod(i, report) == 1 or report==1
+        grad_arr(i,:) = grad;
+        if (mod(i, report) == 1) | (report == 1)
             fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e \n', ...
                 i, loss, grad_norm, fdd);
+            fprintf('Current weight %s\n', mat2str(opt));
 
         end
     end
@@ -114,9 +122,12 @@ function [opt, gd_log] = gd(fun, init, cparams)
     end
     
     gd_log = struct( ...
-            'loss',     loss_arr, ...
-            'step',     step_arr, ...
-            'grad',     grad_arr, ...
-            'weight',   weight_arr ...
+            'loss',         loss_arr, ...
+            'step',         step_arr, ...
+            'grad_norm',    gradnorm_arr, ...
+            'weight',       weight_arr, ...
+            'fdd',          fdd_arr, ...
+            'time',         time_arr, ...
+            'grad',         grad_arr ...
             );
 end
