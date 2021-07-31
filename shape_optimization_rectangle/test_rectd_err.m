@@ -11,7 +11,7 @@ hspaces = nan(num_hspaces + 1,1);
 errs = nan(num_hspaces + 1,1);
 
 
-fprintf(' Error of rectd hspace from 1e-1 to 1e-6')
+fprintf(' Error of rectd hspace from 1e-.5 to 1e-6')
 
 i = 1;
 for hspace_log10 = 0.5 : hspace_step : 6;
