@@ -13,7 +13,7 @@ cparams = struct( ...
 init_weight = [1 2];
 fun = @optim.tests.test3;
 fprintf('Start of optimization\n');
-[opt, gd_log] = optim.gd_1d(fun, init_weight, cparams);
+[opt, gd_log] = optim.gd(fun, init_weight, cparams);
 fprintf('optimal weight: %5.2e \n', opt);
 fprintf('optimal value: %5.2e \n', fun(opt));
 clear fun;

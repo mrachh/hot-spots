@@ -47,7 +47,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
         start = tic;
         
         grad = optim.gd_grad(fun, opt, hspace);
-
+        
         grad_norm = norm(grad);
         grad_direction = grad / grad_norm;
         loss = fun(opt);
@@ -80,7 +80,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
         % Line search loop        
 
         while not(line_search_converged)
-            
+
             % Shrink step size
 
             step = step * line_search_beta;

@@ -8,14 +8,14 @@ function grad = gd_grad(fun, xval, hspace)
     %     grad: an estimate of gradient "f'(x)"
     
     num_params = length(xval);
-    grad = zeros(1,num_params);
+    grad = zeros(1, num_params);
     for i = 1:num_params
-        direction = zeros(num_params, 1);
+        direction = zeros(1, num_params);
         direction(i) = hspace;
 
         % Change this if # of params gets big
         left = fun(xval - direction);
         right = fun(xval + direction);
-        grad(i) = (right - left) / (2 * hspace)
+        grad(i) = (right - left) / (2 * hspace);
     end
 end
