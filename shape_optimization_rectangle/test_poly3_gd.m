@@ -18,7 +18,7 @@ cparams = struct( ...
 )
 
 
-init_weight = ones(1, num_verts - 1);
+init_weight = ones(1, num_verts);
 fun = @poly_loss;
 fprintf('Polygon with %d vertices\n', num_verts);
 [opt, gd_log] = optim.gd(fun, init_weight, cparams);
