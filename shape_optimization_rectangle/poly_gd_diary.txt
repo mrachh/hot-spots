@@ -1,0 +1,776 @@
+
+cparams = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.0000e-04
+              hspace: 0.0100
+     line_search_eps: 1.0000e-06
+    line_search_beta: 0.5000
+
+Now we do the actual optimization
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vertcat')" style="font-weight:bold">vertcat</a>
+Dimensions of arrays being concatenated are not consistent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rect_chnk', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\rect_chnk.m', 8)" style="font-weight:bold">rect_chnk</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\rect_chnk.m',8,0)">line 8</a>)
+    verts = [[-width*0.5 0]; [width*0.5 0]; ...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rect_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\rect_loss.m', 19)" style="font-weight:bold">rect_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\rect_loss.m',19,0)">line 19</a>)
+    chnkr = rect_chnk(height);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad_1d', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m', 12)" style="font-weight:bold">optim.gd_grad_1d</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad_1d.m',12,0)">line 12</a>)
+    left = fun(xval - hspace);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_1d', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m', 49)" style="font-weight:bold">optim.gd_1d</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_1d.m',49,0)">line 49</a>)
+        [grad, fdd, loss] = optim.gd_grad_1d(fun, opt, hspace);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly_gd.m', 22)" style="font-weight:bold">test_poly_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly_gd.m',22,0)">line 22</a>)
+[opt, gd_log] = optim.gd_1d(fun, init_weight, cparams);
+} 
+test_poly_gd
+
+cparams = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.0000e-04
+              hspace: 0.0100
+     line_search_eps: 1.0000e-06
+    line_search_beta: 0.5000
+
+Now we do the actual optimization
+{Out of memory. The likely cause is an infinite recursion within the program.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\path.m', 71)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\path.m',71,0)">line 71</a>)
+        if ~isempty(path2Cased) && path2Cased(end)~=ps, path2 = strcat(path2,ps); end
+} 
+h.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+    path(p, mp);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 2)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',2,0)">line 2</a>)
+    addpath('../src');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 19)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',19,0)">line 19</a>)
+    chnkr = poly_loss(weight);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m', 17)" style="font-weight:bold">optim.gd_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m',17,0)">line 17</a>)
+        left = fun(xval - direction);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 49)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',49,0)">line 49</a>)
+        grad = optim.gd_grad(fun, opt, hspace);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly4_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly4_gd.m', 24)" style="font-weight:bold">test_poly4_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly4_gd.m',24,0)">line 24</a>)
+[opt, gd_log] = optim.gd(fun, init_weight, cparams);
+} 
+test_poly3_gd
+
+cparams = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.0000e-04
+              hspace: 0.0100
+     line_search_eps: 1.0000e-06
+    line_search_beta: 0.5000
+
+Polygon with 4 sides
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+} 
+test_poly3_gd
+
+cparams = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.0000e-04
+              hspace: 0.0100
+     line_search_eps: 1.0000e-06
+    line_search_beta: 0.5000
+
+Polygon with 3 vertices
+{Out of memory. The likely cause is an infinite recursion within the program.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\path.m', 71)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\path.m',71,0)">line 71</a>)
+        if ~isempty(path2Cased) && path2Cased(end)~=ps, path2 = strcat(path2,ps); end
+} 
+opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\path.m',71,0)
+chnkr
+{Unrecognized function or variable 'chnkr'.
+} 
+chunker
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×0 double]
+          d: [2×16×0 double]
+         d2: [2×16×0 double]
+        adj: [2×0 double]
+          h: [0×1 double]
+       data: []
+     nchmax: 10000
+        nch: 0
+    nchstor: 4
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 0
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+test_poly_chnk
+
+verts =
+
+    1.0000    0.0000         0
+         0    2.0000         0
+
+sum(verts)/3
+{Unrecognized function or variable 'verts'.
+} 
+sum(verts, 1)/3
+{Unrecognized function or variable 'verts'.
+} 
+sum(verts, 1)/3
+{Unrecognized function or variable 'verts'.
+} 
+verts
+{Unrecognized function or variable 'verts'.
+} 
+verts =
+ verts =
+        ↑
+{Error: Invalid expression. Check for missing or extra characters.
+} 
+verts = [1 2 3; 1 2 3]
+
+verts =
+
+     1     2     3
+     1     2     3
+
+sum(verts, 3)
+
+ans =
+
+     1     2     3
+     1     2     3
+
+sum(verts, 1)
+
+ans =
+
+     2     4     6
+
+sum(verts, 0\)
+ sum(verts, 0\)
+              ↑
+{Error: Invalid expression. When calling a function or indexing a variable, use
+parentheses. Otherwise, check for mismatched delimiters.
+} 
+sum(verts, 2)
+
+ans =
+
+     6
+     6
+
