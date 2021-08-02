@@ -6,7 +6,7 @@ clear; clc; addpath('../src');
 
 num_verts = 3;
 
-diary('poly_gd_diary.txt');
+diary('poly3_gd_diary.txt');
 
 cparams = struct( ...
     'maxiter',          100, ...

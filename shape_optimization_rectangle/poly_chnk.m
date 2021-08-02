@@ -13,7 +13,6 @@ function [chnkr, center] = poly_chnk(rs, show_plot)
         verts(1,i) = rs(i)*cos(angle);
         verts(2,i) = rs(i)*sin(angle);
     end
-    verts
 
     cparams = []; cparams.eps = 1.0e-5;
     pref = []; pref.k = 16;
@@ -33,6 +32,6 @@ function [chnkr, center] = poly_chnk(rs, show_plot)
         axis equal
     end
 
-    center = sum(verts, 2)/num_verts
+    center = sum(verts, 2)/num_verts;
 
 end

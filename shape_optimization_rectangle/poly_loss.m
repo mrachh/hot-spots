@@ -16,15 +16,15 @@ function [loss, zk, ud_inf] = poly_loss(weight, figure_id)
     end
 
     % Create chunker object
-    [chnkr, center] = poly_loss(weight);
+    [chnkr, center] = poly_chnk(weight);
     
-    % fprintf('Finding eigenvalue ...\n');
+    fprintf('Finding eigenvalue ...\n');
     start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs);
-    % fprintf('Time to find eigenvalue: %5.2e\n', toc(start));
+    fprintf('Time to find eigenvalue: %5.2e\n', toc(start));
     
-    % fprintf('Finding ymax_final ...\n');
+    fprintf('Finding ymax_final ...\n');
     start = tic; ud_inf = max_grad(chnkr, zk, sigma, figure_id);
-    % fprintf('Time to find ymax_final: %5.2e\n', toc(start));
+    fprintf('Time to find ymax_final: %5.2e\n', toc(start));
 
 
     u_2 = int_u_2(chnkr, zk, sigma, center);
