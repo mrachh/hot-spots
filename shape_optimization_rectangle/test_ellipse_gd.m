@@ -20,7 +20,7 @@ cparams = struct( ...
 
 init_weight = 1.1;
 fun = @ellipse_loss;
-fprintf('Now we do the actual optimization\n');
+fprintf('Ellipse: \n');
 [opt, gd_log] = optim.gd_1d(fun, init_weight, cparams);
 fprintf('optimal weight: %5.2e \n', opt);
 fprintf('optimal value: %5.2e \n', fun(opt));

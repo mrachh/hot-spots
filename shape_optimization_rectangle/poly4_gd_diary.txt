@@ -3693,7 +3693,18 @@ Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback
 Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly4_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly4_gd.m', 24)" style="font-weight:bold">test_poly4_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly4_gd.m',24,0)">line 24</a>)
 [opt, gd_log] = optim.gd(fun, init_weight, cparams);
 } 
+ls
 
-12  ramen pack
+.                       poly3_gd_diary.txt      test_gd.m               
+..                      poly4_gd_diary.txt      test_poly3_gd.m         
+.gitignore              poly_chnk.m             test_poly4_gd.m         
+README.md               poly_gd_diary.txt       test_poly_chnk.m        
+ellipse_chnk.m          poly_loss.m             test_rect_err.m         
+ellipse_gd.txt          rect_chnk.m             test_rect_gd.m          
+ellipse_gd_diary.txt    rect_gd_diary.txt       test_rectd_err.m        
+ellipse_loss.m          rect_loss.m             test_rectdd_err.m       
+helm_dir_eig.m          rect_true_loss.m        
+int_u_2.m               rectgd_loss_weight.jpg  
+max_grad.m              test_ellipse_gd.m       
 
-5   pizza xdr dinner
+test_ellipse_gd
