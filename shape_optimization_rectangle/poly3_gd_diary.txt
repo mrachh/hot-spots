@@ -80,3 +80,243 @@ ans =
       nvert: 0
     vertdeg: []
 
+polysymodd_chnk([1 2 3], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×85 double]
+          d: [2×16×85 double]
+         d2: [2×16×85 double]
+        adj: [2×85 double]
+          h: [85×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 85
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1360
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymodd_chnk([1 2 3 2], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×108 double]
+          d: [2×16×108 double]
+         d2: [2×16×108 double]
+        adj: [2×108 double]
+          h: [108×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 108
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1728
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymeven_chnk([1 2 3 2], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×108 double]
+          d: [2×16×108 double]
+         d2: [2×16×108 double]
+        adj: [2×108 double]
+          h: [108×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 108
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1728
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymeven_chnk([1 2 3 2], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×108 double]
+          d: [2×16×108 double]
+         d2: [2×16×108 double]
+        adj: [2×108 double]
+          h: [108×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 108
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1728
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymodd_chnk([1 2 3 2], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×108 double]
+          d: [2×16×108 double]
+         d2: [2×16×108 double]
+        adj: [2×108 double]
+          h: [108×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 108
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1728
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymeven_chnk([1 2 3 2], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×108 double]
+          d: [2×16×108 double]
+         d2: [2×16×108 double]
+        adj: [2×108 double]
+          h: [108×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 108
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1728
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymeven_chnk([1 2 3 2], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×118 double]
+          d: [2×16×118 double]
+         d2: [2×16×118 double]
+        adj: [2×118 double]
+          h: [118×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 118
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1888
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymeven_chnk([1 1 1], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×105 double]
+          d: [2×16×105 double]
+         d2: [2×16×105 double]
+        adj: [2×105 double]
+          h: [105×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 105
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1680
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymeven_chnk([1 1], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×62 double]
+          d: [2×16×62 double]
+         d2: [2×16×62 double]
+        adj: [2×62 double]
+          h: [62×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 62
+    nchstor: 64
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 992
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+polysymeven_chnk([1 2], true)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×66 double]
+          d: [2×16×66 double]
+         d2: [2×16×66 double]
+        adj: [2×66 double]
+          h: [66×1 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 66
+    nchstor: 128
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 1056
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+

@@ -1,4 +1,4 @@
-function [chnkr, center] = polysymodd_chnk(rs, show_plot)
+function [chnkr, center] = polysymeven_chnk(rs, show_plot)
     % INPUT:  [r_1 r_2 ... r_M]
     % OUTPUT: chnkr object
     % theta_j = (pi/2)*j/M
@@ -7,15 +7,19 @@ function [chnkr, center] = polysymodd_chnk(rs, show_plot)
     % theta_j = pi*(j-1)/M.
 
     [temp, M] = size(rs);
-    num_verts = M * 2 - 1;
+    num_verts = M * 2 ;
     rs_symmetric = zeros(num_verts);
     for i = 1:M 
         rs_symmetric(i) = rs(i);
     end
     for i = (M+1) : num_verts
-        rs_symmetric(i) = 2*M - i;
+        rs_symmetric(i) = rs(2*M + 1 - i);
     end
 
-    [chnkr, center] = poly_chnk(rs_symmetric, show_plot);
+    if nargin > 1
+        [chnkr, center] = poly_chnk(rs_symmetric, show_plot);
+    else
+        [chnkr, center] = poly_chnk(rs_symmetric);
+    end
 
 end
