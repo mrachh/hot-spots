@@ -11,312 +11,252 @@ cparams =
     line_search_beta: 0.500000000000000
 
 Polygon with 3 vertices
-Finding eigenvalue ...
 {Index exceeds the number of array elements (0).
 
 Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dir_eig', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\helm_dir_eig.m', 18)" style="font-weight:bold">helm_dir_eig</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\helm_dir_eig.m',18,0)">line 18</a>)
     zk = real(rts_real(1));
 
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('poly_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m', 22)" style="font-weight:bold">poly_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\poly_loss.m',22,0)">line 22</a>)
-    start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs);
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 22)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',22,0)">line 22</a>)
+    start = tic; [zk, err_nullvec, sigma] =
+    helm_dir_eig(chnkr, chebabs);
 
 Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m', 17)" style="font-weight:bold">optim.gd_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m',17,0)">line 17</a>)
         left = fun(xval - direction);
 
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 49)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',49,0)">line 49</a>)
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 50)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',50,0)">line 50</a>)
         grad = optim.gd_grad(fun, opt, hspace);
 
 Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
 [opt, gd_log] = optim.gd(fun, init_weight, cparams);
 } 
-zk
-{Unrecognized function or variable 'zk'.
-} 
-polysymodd_chnk([1 1], true)
+polysymodd_chnk([.5, 1], true)
 
 ans = 
 
   <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
 
-          r: [2×16×51 double]
-          d: [2×16×51 double]
-         d2: [2×16×51 double]
-        adj: [2×51 double]
-          h: [51×1 double]
+          r: [2×16×44 double]
+          d: [2×16×44 double]
+         d2: [2×16×44 double]
+        adj: [2×44 double]
+          h: [44×1 double]
        data: [0×16×0 double]
      nchmax: 10000
-        nch: 51
+        nch: 44
     nchstor: 64
     hasdata: 0
        vert: {}
           k: 16
         dim: 2
-        npt: 816
+        npt: 704
     datadim: 0
       nvert: 0
     vertdeg: []
 
-polysymodd_chnk([1 2 3], true)
+polysymodd_chnk([.5, 1], true)
 
 ans = 
 
   <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
 
-          r: [2×16×85 double]
-          d: [2×16×85 double]
-         d2: [2×16×85 double]
-        adj: [2×85 double]
-          h: [85×1 double]
+          r: [2×16×44 double]
+          d: [2×16×44 double]
+         d2: [2×16×44 double]
+        adj: [2×44 double]
+          h: [44×1 double]
        data: [0×16×0 double]
      nchmax: 10000
-        nch: 85
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1360
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymodd_chnk([1 2 3], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×85 double]
-          d: [2×16×85 double]
-         d2: [2×16×85 double]
-        adj: [2×85 double]
-          h: [85×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 85
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1360
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymodd_chnk([1 2 3 2], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×108 double]
-          d: [2×16×108 double]
-         d2: [2×16×108 double]
-        adj: [2×108 double]
-          h: [108×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 108
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1728
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymeven_chnk([1 2 3 2], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×108 double]
-          d: [2×16×108 double]
-         d2: [2×16×108 double]
-        adj: [2×108 double]
-          h: [108×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 108
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1728
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymeven_chnk([1 2 3 2], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×108 double]
-          d: [2×16×108 double]
-         d2: [2×16×108 double]
-        adj: [2×108 double]
-          h: [108×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 108
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1728
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymodd_chnk([1 2 3 2], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×108 double]
-          d: [2×16×108 double]
-         d2: [2×16×108 double]
-        adj: [2×108 double]
-          h: [108×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 108
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1728
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymeven_chnk([1 2 3 2], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×108 double]
-          d: [2×16×108 double]
-         d2: [2×16×108 double]
-        adj: [2×108 double]
-          h: [108×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 108
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1728
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymeven_chnk([1 2 3 2], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×118 double]
-          d: [2×16×118 double]
-         d2: [2×16×118 double]
-        adj: [2×118 double]
-          h: [118×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 118
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1888
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymeven_chnk([1 1 1], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×105 double]
-          d: [2×16×105 double]
-         d2: [2×16×105 double]
-        adj: [2×105 double]
-          h: [105×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 105
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1680
-    datadim: 0
-      nvert: 0
-    vertdeg: []
-
-polysymeven_chnk([1 1], true)
-
-ans = 
-
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
-
-          r: [2×16×62 double]
-          d: [2×16×62 double]
-         d2: [2×16×62 double]
-        adj: [2×62 double]
-          h: [62×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 62
+        nch: 44
     nchstor: 64
     hasdata: 0
        vert: {}
           k: 16
         dim: 2
-        npt: 992
+        npt: 704
     datadim: 0
       nvert: 0
     vertdeg: []
 
-polysymeven_chnk([1 2], true)
+test_poly3_gd
 
-ans = 
+cparams = 
 
-  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
 
-          r: [2×16×66 double]
-          d: [2×16×66 double]
-         d2: [2×16×66 double]
-        adj: [2×66 double]
-          h: [66×1 double]
-       data: [0×16×0 double]
-     nchmax: 10000
-        nch: 66
-    nchstor: 128
-    hasdata: 0
-       vert: {}
-          k: 16
-        dim: 2
-        npt: 1056
-    datadim: 0
-      nvert: 0
-    vertdeg: []
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-04
+              hspace: 0.010000000000000
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
 
+Polygon with 3 vertices
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  2.158706e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 26)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',26,0)">line 26</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 62)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  2.117104e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 80)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',80,0)">line 80</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  1.758822e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 80)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',80,0)">line 80</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+iter: 1, loss: -3.60e-01, grad: 2.77e-02, 2nd-deri: 9.85e-02, time: 2.27e+02
+Current weight [1.19870795129505 0.801401945409334]
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  1.921308e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m', 17)" style="font-weight:bold">optim.gd_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 50)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  1.871572e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m', 17)" style="font-weight:bold">optim.gd_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 50)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  1.960330e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 26)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',26,0)">line 26</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m', 18)" style="font-weight:bold">optim.gd_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m',18,0)">line 18</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 50)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  2.003214e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m', 17)" style="font-weight:bold">optim.gd_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 50)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  1.644996e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m', 17)" style="font-weight:bold">optim.gd_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 50)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  1.970418e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m', 18)" style="font-weight:bold">optim.gd_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd_grad.m',18,0)">line 18</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 50)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  1.698133e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 26)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',26,0)">line 26</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 54)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  2.190042e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 54)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  2.104486e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 54)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',54,0)">line 54</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  2.112167e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('int_u_2', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m', 8)" style="font-weight:bold">int_u_2</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\int_u_2.m',8,0)">line 8</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 30)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',30,0)">line 30</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optim.gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m', 62)" style="font-weight:bold">optim.gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\+optim\gd.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 24)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',24,0)">line 24</a>)
+] 
+iter: 2, loss: -3.64e-01, grad: 2.26e-03, 2nd-deri: 8.97e-02, time: 2.45e+02
+Current weight [1.21278683115995 0.780571117561991]
+iter: 3, loss: -3.64e-01, grad: 3.68e-05, 2nd-deri: 9.31e-02, time: 3.52e+02
+Current weight [1.21274272965832 0.780659480076534]
+gradient descent converged after 4 steps
+optimal weight: 1.21e+00 
+optimal weight: 7.81e-01 
+[Warning: Matrix is close to singular or badly scaled.
+Results may be inaccurate. RCOND =  2.162733e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\zjw\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('max_grad', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m', 6)" style="font-weight:bold">max_grad</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\max_grad.m',6,0)">line 6</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('polysymodd_loss', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m', 26)" style="font-weight:bold">polysymodd_loss</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\polysymodd_loss.m',26,0)">line 26</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_poly3_gd', 'C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m', 26)" style="font-weight:bold">test_poly3_gd</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\shape_optimization_rectangle\test_poly3_gd.m',26,0)">line 26</a>)
+] 
+optimal value: -3.64e-01 
