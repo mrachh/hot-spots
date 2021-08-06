@@ -6,9 +6,7 @@ function [loss, zk, ud_inf, max_grad_loc] = polysymeven_loss(weight, figure_id)
     %     res = a/b, where
     %         a = L-inf norm of grad u
     %         b = sqrt{lamb} * 2-norm(u)
-    % e.g
-    % 6 edges
-    % weight = [1 1 1]
+
 
 
     chebabs = [1 6];

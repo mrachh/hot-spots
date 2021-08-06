@@ -45,13 +45,33 @@ function [opt, gd_log] = gd(fun, init, cparams)
             break;
         end
 
+        % Time a single iteration
         start = tic;
-        
-        grad = optim.gd_grad(fun, opt, hspace);
+
+        % Evaluate loss at optimal value
+        loss = fun(opt);
+
+        % Computes gradient
+        num_params = length(xval);
+        grad = zeros(1, num_params);
+
+        fprintf('Computing %d derivatives: \n', num_params);
+        for i = 1:num_params
+            fprintf('Compuing dx%d...\n', i);
+            direction = zeros(1, num_params);
+            direction(i) = hspace;
+
+            % Change this if # of params gets big
+            left = fun(xval - direction);
+            right = fun(xval + direction);
+            grad(i) = (right - left) / (2 * hspace);
+        end
+        fprintf('Gradient computed!\n')
+
+        % End of gradient computation
         
         grad_norm = norm(grad);
         grad_direction = grad / grad_norm;
-        loss = fun(opt);
         gradient_descent_converged = (grad_norm < eps);
 
         % Line search
@@ -92,7 +112,9 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
             % Raise error when step is too small
             if step < line_search_eps
-                error('Line search does not converge')
+                gradient_descent_converged = true;
+                fprintf('Line search did not converge')
+                break;
             end
         end
         
@@ -119,7 +141,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
     % End of GD loop
 
-    if not(gradient_descent_converged)
+    if not(gradient_descent_converged & line_search_converged)
         fprintf('gradient descent did not converge after %d steps\n', ...
             maxiter);
     end
