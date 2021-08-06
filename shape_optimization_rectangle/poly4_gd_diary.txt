@@ -10,4 +10,4 @@ cparams =
      line_search_eps: 1.0000e-06
     line_search_beta: 0.5000
 
-Polygon symmetric with 5 vertices
+Polygon symmetric with 4 vertices

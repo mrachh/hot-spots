@@ -3,7 +3,7 @@ clear;clc;addpath('../src');
 
 % Computes the gradient of objective when all sides are equal
 
-num_verts = 4;
+num_verts = 5;
 
 fprintf('Computing gradient for %d equal rs', num_verts);
 
