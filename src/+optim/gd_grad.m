@@ -9,7 +9,10 @@ function grad = gd_grad(fun, xval, hspace)
     
     num_params = length(xval);
     grad = zeros(1, num_params);
+
+    fprintf('Computing %d derivatives: \n', num_params);
     for i = 1:num_params
+        fprintf('Compuing dx%d...\n', i);
         direction = zeros(1, num_params);
         direction(i) = hspace;
 
@@ -18,4 +21,5 @@ function grad = gd_grad(fun, xval, hspace)
         right = fun(xval + direction);
         grad(i) = (right - left) / (2 * hspace);
     end
+    fprintf('Gradient computed!\n')
 end

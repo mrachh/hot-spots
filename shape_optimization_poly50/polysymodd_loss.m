@@ -1,4 +1,4 @@
-function [loss, zk, ud_inf] = polysymeven_loss(weight, figure_id)
+function [loss, zk, ud_inf] = polysymodd_loss(weight, figure_id)
     addpath('../src');
     % INPUT: width size 1 real
     % OUTPUT: res size 1 real
@@ -6,9 +6,7 @@ function [loss, zk, ud_inf] = polysymeven_loss(weight, figure_id)
     %     res = a/b, where
     %         a = L-inf norm of grad u
     %         b = sqrt{lamb} * 2-norm(u)
-    % e.g
-    % 6 edges
-    % weight = [1 1 1]
+
 
 
     chebabs = [1 6];
@@ -18,7 +16,7 @@ function [loss, zk, ud_inf] = polysymeven_loss(weight, figure_id)
     end
 
     % Create chunker object
-    [chnkr, center] = polysymeven_chnk(weight);
+    [chnkr, center] = polysymodd_chnk(weight);
     
     % fprintf('Finding eigenvalue ...\n');
     start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs);
