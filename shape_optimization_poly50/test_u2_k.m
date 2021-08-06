@@ -1,14 +1,12 @@
 clear; clc; addpath('../src');
 
 %
-%   Performs gradient descent on rectangle
+%   Tests different ks for integrating \|u\|_2
 %
 
-num_verts = 5;
+num_verts = 4;
 
-normalize = sqrt(pi/2);
-
-diary('poly5_gd_diary.txt');
+diary('poly4_gd_diary.txt');
 
 cparams = struct( ...
     'maxiter',          100, ...
@@ -20,8 +18,8 @@ cparams = struct( ...
 )
 
 
-init_weight = [1 1 1]/normalize;
-fun = @polysymodd_loss;
+init_weight = [0.5 1];
+fun = @polysymeven_loss;
 fprintf('Polygon symmetric with %d vertices\n', num_verts);
 [opt, gd_log] = optim.gd(fun, init_weight, cparams);
 fprintf('optimal weight: %5.2e \n', opt);

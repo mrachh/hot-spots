@@ -4,11 +4,12 @@ clear; clc; addpath('../src');
 %   Performs gradient descent on rectangle
 %
 
-num_verts = 6;
+num_verts = 50;
+num_rs = 50/2;
 
 normalize = sqrt(pi/2);
 
-diary('poly6_gd_diary.txt');
+diary('poly50_gd_diary.txt');
 
 cparams = struct( ...
     'maxiter',          100, ...
@@ -20,7 +21,7 @@ cparams = struct( ...
 )
 
 
-init_weight = [1 1 1]/normalize;
+init_weight = ones(1, num_rs)/normalize;
 fun = @polysymeven_loss;
 fprintf('Polygon symmetric with %d vertices\n', num_verts);
 [opt, gd_log] = optim.gd(fun, init_weight, cparams);

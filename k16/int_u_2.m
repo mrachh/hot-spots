@@ -1,6 +1,6 @@
 function u_2 = int_u_2(chnkr, zk, sigma, center)
     
-    k = 8;
+    k = 16;
     [xang,yang,wtot] = get_chunkie_quads(chnkr,center,k);
     targets = [xang yang]';
     fkern = @(s,t) chnk.helm2d.kern(zk,s,t,'d',1);

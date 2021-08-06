@@ -1,0 +1,17 @@
+
+cparams = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-06
+              hspace: 0.010000000000000
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+
+Finding eigenvalue ...
+Time to find eigenvalue: 3.06e+01
+Finding ymax_final ...
+max grad location: 0.000599
+Finding eigenvalue ...

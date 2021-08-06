@@ -1,12 +1,12 @@
 clear; clc; addpath('../src');
 
 %
-%   Performs gradient descent on rectangle
+%   Tests different ks for integrating \|u\|_2
 %
 
 num_verts = 4;
 
-diary('poly4_gd_diary.txt');
+diary('k4.txt');
 
 cparams = struct( ...
     'maxiter',          100, ...
@@ -19,12 +19,9 @@ cparams = struct( ...
 
 
 init_weight = [0.5 1];
-fun = @polysymeven_loss;
-fprintf('Polygon symmetric with %d vertices\n', num_verts);
-[opt, gd_log] = optim.gd(fun, init_weight, cparams);
-fprintf('optimal weight: %5.2e \n', opt);
-fprintf('optimal value: %5.2e \n', fun(opt));
-clear fun
+loss1 = polysymeven_loss(init_weight);
+init_weight = [1 1]/sqrt(pi/2);
+loss2 = polysymeven_loss(init_weight);
 
 
 diary off;
