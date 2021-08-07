@@ -32,15 +32,17 @@ function [opt, gd_log] = gd(fun, init, cparams)
     gradnorm_arr = nan(maxiter,1);
     fdd_arr = nan(maxiter,1);
     time_arr = nan(maxiter,1);
+    maxgradloc_arr = nan(maxiter,1);
     weight_arr = nan(maxiter, length(init));
     grad_arr = nan(maxiter, length(init));
     gradient_descent_converged = false;
+    zk = nan;
 
-    for i = 1:maxiter
+    for epoch = 1:maxiter
 
         if gradient_descent_converged
             fprintf('gradient descent converged after %d steps\n', ...
-            i);
+            epoch);
             num_steps = i;
             break;
         end
@@ -49,22 +51,45 @@ function [opt, gd_log] = gd(fun, init, cparams)
         start = tic;
 
         % Evaluate loss at optimal value
-        loss = fun(opt);
+        if isnan(zk)
+            [loss, zk, max_grad_loc] = fun(opt);
+        else
+            % Guess an interval using previous zk
+            chebab = [zk*0.9, zk*1.1];
+            try
+                [loss, zk, max_grad_loc] = fun(opt, chebab);
+            catch
+                [loss, zk] = fun(opt);
+            end
+        end
+
+        % Guess an interval using previous zk
+        chebab = [zk*0.9, zk*1.1];
 
         % Computes gradient
-        num_params = length(xval);
+        num_params = length(opt);
         grad = zeros(1, num_params);
 
         fprintf('Computing %d derivatives: \n', num_params);
-        for i = 1:num_params
-            fprintf('Compuing dx%d...\n', i);
+        for param_idx = 1:num_params
+            fprintf('Compuing dx%d...\n', param_idx);
             direction = zeros(1, num_params);
-            direction(i) = hspace;
+            direction(param_idx) = hspace;
 
             % Change this if # of params gets big
-            left = fun(xval - direction);
-            right = fun(xval + direction);
-            grad(i) = (right - left) / (2 * hspace);
+            try
+                left = fun(opt - direction, chebab);
+            catch
+                left = fun(opt - direction);
+            end
+
+            try
+                right = fun(opt + direction, chebab);
+            catch
+                right = fun(opt + direction);
+            end
+
+            grad(param_idx) = (right - left) / (2 * hspace);
         end
         fprintf('Gradient computed!\n')
 
@@ -76,10 +101,20 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
         % Line search
 
-        % Initialize step size with second derivative (stored as fdd)
+        % Initialize step size with second derivative "fdd"
 
-        right = fun(opt + hspace * grad_direction);
-        left = fun(opt - hspace * grad_direction);
+        try
+            right = fun(opt + hspace * grad_direction, chebab);
+        catch
+            right = fun(opt + hspace * grad_direction);
+        end
+        
+        try
+            left = fun(opt - hspace * grad_direction, chebab);
+        catch
+            left = fun(opt - hspace * grad_direction)
+        end
+
         center = loss;
         fdd = (right - 2*center + left) / (hspace^2);
  
@@ -124,16 +159,17 @@ function [opt, gd_log] = gd(fun, init, cparams)
         opt = opt - step * grad;
 
         % Record
-        loss_arr(i) = loss;
-        step_arr(i) = step;
-        gradnorm_arr(i) = grad_norm;
-        fdd_arr(i) = fdd;
-        time_arr(i) = toc(start);
-        weight_arr(i,:) = opt;
-        grad_arr(i,:) = grad;
-        if (mod(i, report) == 1) | (report == 1)
+        loss_arr(epoch) = loss;
+        step_arr(epoch) = step;
+        gradnorm_arr(epoch) = grad_norm;
+        fdd_arr(epoch) = fdd;
+        time_arr(epoch) = toc(start);
+        weight_arr(epoch,:) = opt;
+        grad_arr(epoch,:) = grad;
+        maxgradloc_arr(epoch) = max_grad_loc;
+        if (mod(epoch, report) == 1) | (report == 1)
             fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e, time: %5.2e\n', ...
-                i, loss, grad_norm, fdd, time_arr(i));
+                i, loss, grad_norm, fdd, time_arr(epoch));
             fprintf('Current weight %s\n', mat2str(opt));
 
         end
@@ -141,11 +177,8 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
     % End of GD loop
 
-    if not(gradient_descent_converged & line_search_converged)
-        fprintf('gradient descent did not converge after %d steps\n', ...
-            maxiter);
-    end
-    
+
+
     gd_log = struct( ...
             'loss',         loss_arr(1:num_steps), ...
             'step',         step_arr(1:num_steps), ...
@@ -153,6 +186,13 @@ function [opt, gd_log] = gd(fun, init, cparams)
             'weight',       weight_arr(1:num_steps, 1:end), ...
             'fdd',          fdd_arr(1:num_steps), ...
             'time',         time_arr(1:num_steps), ...
-            'grad',         grad_arr(1:num_steps, 1:end) ...
+            'grad',         grad_arr(1:num_steps, 1:end), ...
+            'max_grad_loc', max_grad_loc(1:num_steps) ...
             );
+
+    if not(gradient_descent_converged & line_search_converged)
+        fprintf('gradient descent did not converge after %d steps\n', ...
+            epoch);
+    end
+    
 end
