@@ -27,14 +27,15 @@ function [opt, gd_log] = gd(fun, init, cparams)
     line_search_beta = cparams.line_search_beta;
     opt = init;
 
-    loss_arr = nan(maxiter,1);
-    step_arr = nan(maxiter,1);
-    gradnorm_arr = nan(maxiter,1);
-    fdd_arr = nan(maxiter,1);
-    time_arr = nan(maxiter,1);
-    maxgradloc_arr = nan(maxiter,1);
-    weight_arr = nan(maxiter, length(init));
-    grad_arr = nan(maxiter, length(init));
+    gd_log = struct();
+    gd_log.loss = nan(maxiter,1);
+    gd_log.step = nan(maxiter,1);
+    gd_log.gradnorm = nan(maxiter,1);
+    gd_log.fdd = nan(maxiter,1);
+    gd_log.time = nan(maxiter,1);
+    gd_log.maxgradloc = nan(maxiter,1);
+    gd_log.weight = nan(maxiter, length(init));
+    gd_log.grad = nan(maxiter, length(init));
     gradient_descent_converged = false;
     line_search_converged = false;
     zk = nan;
@@ -158,18 +159,24 @@ function [opt, gd_log] = gd(fun, init, cparams)
         opt = opt - step * grad;
 
         % Record
-        loss_arr(epoch) = loss;
-        step_arr(epoch) = step;
-        gradnorm_arr(epoch) = grad_norm;
-        fdd_arr(epoch) = fdd;
-        time_arr(epoch) = toc(start);
-        weight_arr(epoch,:) = opt;
-        grad_arr(epoch,:) = grad;
-        maxgradloc_arr(epoch) = max_grad_loc;
+        gd_log.loss(epoch) = loss;
+        gd_log.step(epoch) = step;
+        gd_log.gradnorm(epoch) = grad_norm;
+        gd_log.fdd(epoch) = fdd;
+        gd_log.time(epoch) = toc(start);
+        gd_log.weight(epoch,:) = opt;
+        gd_log.grad(epoch,:) = grad;
+        gd_log.maxgradloc(epoch) = max_grad_loc;
+
+        %dump log file
+        fprintf('Saving log file...\n');
+        save('gd_log.mat', '-struct', 'gd_log');
+
         if (mod(epoch, report) == 1) | (report == 1)
             fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e, time: %5.2e\n', ...
-                epoch, loss, grad_norm, fdd, time_arr(epoch));
+                epoch, loss, grad_norm, fdd, gd_log.time(epoch));
             fprintf('Current weight %s\n', mat2str(opt));
+            fprintf('Current gradient %s\n', mat2str(grad));
 
         end
     end
@@ -179,14 +186,14 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
 
     gd_log = struct( ...
-            'loss',         loss_arr(1:num_steps), ...
-            'step',         step_arr(1:num_steps), ...
-            'grad_norm',    gradnorm_arr(1:num_steps), ...
-            'weight',       weight_arr(1:num_steps, 1:end), ...
-            'fdd',          fdd_arr(1:num_steps), ...
-            'time',         time_arr(1:num_steps), ...
-            'grad',         grad_arr(1:num_steps, 1:end), ...
-            'max_grad_loc', maxgradloc_arr(1:num_steps) ...
+            'loss',         gd_log.loss(1:num_steps), ...
+            'step',         gd_log.step(1:num_steps), ...
+            'grad_norm',    gd_log.gradnorm(1:num_steps), ...
+            'weight',       gd_log.weight(1:num_steps, 1:end), ...
+            'fdd',          gd_log.fdd(1:num_steps), ...
+            'time',         gd_log.time(1:num_steps), ...
+            'grad',         gd_log.grad(1:num_steps, 1:end), ...
+            'max_grad_loc', gd_log.maxgradloc(1:num_steps) ...
             );
 
     if not(gradient_descent_converged & line_search_converged)
