@@ -36,16 +36,10 @@ function [opt, gd_log] = gd(fun, init, cparams)
     weight_arr = nan(maxiter, length(init));
     grad_arr = nan(maxiter, length(init));
     gradient_descent_converged = false;
+    line_search_converged = false;
     zk = nan;
 
     for epoch = 1:maxiter
-
-        if gradient_descent_converged
-            fprintf('gradient descent converged after %d steps\n', ...
-            epoch);
-            num_steps = i;
-            break;
-        end
 
         % Time a single iteration
         start = tic;
@@ -98,6 +92,11 @@ function [opt, gd_log] = gd(fun, init, cparams)
         grad_norm = norm(grad);
         grad_direction = grad / grad_norm;
         gradient_descent_converged = (grad_norm < eps);
+
+        if gradient_descent_converged
+            num_steps = epoch;
+            break;
+        end
 
         % Line search
 
@@ -169,7 +168,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
         maxgradloc_arr(epoch) = max_grad_loc;
         if (mod(epoch, report) == 1) | (report == 1)
             fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e, time: %5.2e\n', ...
-                i, loss, grad_norm, fdd, time_arr(epoch));
+                epoch, loss, grad_norm, fdd, time_arr(epoch));
             fprintf('Current weight %s\n', mat2str(opt));
 
         end
@@ -187,12 +186,16 @@ function [opt, gd_log] = gd(fun, init, cparams)
             'fdd',          fdd_arr(1:num_steps), ...
             'time',         time_arr(1:num_steps), ...
             'grad',         grad_arr(1:num_steps, 1:end), ...
-            'max_grad_loc', max_grad_loc(1:num_steps) ...
+            'max_grad_loc', maxgradloc_arr(1:num_steps) ...
             );
 
     if not(gradient_descent_converged & line_search_converged)
         fprintf('gradient descent did not converge after %d steps\n', ...
             epoch);
+    else
+        fprintf('gradient descent converged after %d steps\n', ...
+            num_steps);
     end
+
     
 end

@@ -20,16 +20,16 @@ function [loss, zk, ud_inf, max_grad_loc] = polysymeven_loss(weight,chebabs, fig
     % Create chunker object
     [chnkr, center] = polysymeven_chnk(weight);
     
-    fprintf('Finding eigenvalue ...\n');
+    % fprintf('Finding eigenvalue ...\n');
     start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs);
-    fprintf('Time to find eigenvalue: %5.2e\n', toc(start));
+    fprintf('Time to find eigenvalue: %5.2e; ', toc(start));
     
-    fprintf('Finding ymax_final ...\n');
+    % fprintf('Finding ymax_final ...\n');
     start = tic; [ud_inf, max_grad_loc] = max_grad(chnkr, zk, sigma, figure_id);
 
     % fprintf('max grad location: %f\n',max_grad_loc);
 
-    fprintf('Computing 2-norm ...\n');
+    % fprintf('Computing 2-norm ...\n');
     start = tic; u_2 = int_u_2(chnkr, zk, sigma, center);
     fprintf('Time to compute 2-norm: %5.2e\n', toc(start));
 
