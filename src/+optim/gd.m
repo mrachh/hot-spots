@@ -18,6 +18,8 @@ function [opt, gd_log] = gd(fun, init, cparams)
     %         grad: gradient norms over iterations
     %         weight: weights "x" over iterations
 
+    cheb_left = 0.95;
+    cheb_right = 1.05;
     %read gradient descent parameters
     maxiter = cparams.maxiter;
     report = cparams.report;
@@ -50,7 +52,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
             [loss, zk, max_grad_loc] = fun(opt);
         else
             % Guess an interval using previous zk
-            chebab = [zk*0.9, zk*1.1];
+            chebab = [zk*cheb_left, zk*cheb_right];
             try
                 [loss, zk, max_grad_loc] = fun(opt, chebab);
             catch
@@ -59,7 +61,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
         end
 
         % Guess an interval using previous zk
-        chebab = [zk*0.9, zk*1.1];
+        chebab = [zk*cheb_left, zk*cheb_right];
 
         % Computes gradient
         num_params = length(opt);
