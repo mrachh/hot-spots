@@ -44,7 +44,7 @@ function [ud_inf, max_grad_loc] = max_grad(chnkr, zk, sigma, figure_id)
     right = chnkr.r(1,end,ichind);
     a = (right - left)/2;
     b = right - a;
-    max_grad_loc = a * ymax_loc + b;
+    max_grad_loc = a * ymax_loc + b
 
 
     if nargin > 3

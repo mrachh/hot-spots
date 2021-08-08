@@ -4,7 +4,7 @@ clear; clc; addpath('../src');
 %   Performs gradient descent on rectangle
 %
 
-num_verts = 4;
+num_verts = 50;
 num_rs = num_verts/2;
 
 diary('poly4_gd_diary.txt');
