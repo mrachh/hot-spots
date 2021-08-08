@@ -8,14 +8,13 @@ function [chnkr, center] = polysymeven_chnk(rs, show_plot)
 
     [temp, M] = size(rs);
     num_verts = M * 2 ;
-    rs_symmetric = zeros(num_verts);
+    rs_symmetric = zeros(1, num_verts);
     for i = 1:M 
         rs_symmetric(i) = rs(i);
     end
     for i = (M+1) : num_verts
         rs_symmetric(i) = rs(2*M + 1 - i);
     end
-
     if nargin > 1
         [chnkr, center] = poly_chnk(rs_symmetric, show_plot);
     else

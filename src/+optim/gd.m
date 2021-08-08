@@ -44,6 +44,11 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
     for epoch = 1:maxiter
 
+        if gradient_descent_converged
+            num_steps = epoch;
+            break;
+        end
+
         % Time a single iteration
         start = tic;
 
