@@ -18,8 +18,6 @@ function [opt, gd_log] = gd(fun, init, cparams)
     %         grad: gradient norms over iterations
     %         weight: weights "x" over iterations
 
-    cheb_left = 0.95;
-    cheb_right = 1.05;
     %read gradient descent parameters
     maxiter = cparams.maxiter;
     report = cparams.report;
@@ -40,7 +38,6 @@ function [opt, gd_log] = gd(fun, init, cparams)
     gd_log.grad = nan(maxiter, length(init));
     gradient_descent_converged = false;
     line_search_converged = false;
-    zk = nan;
 
     for epoch = 1:maxiter
 
@@ -53,20 +50,13 @@ function [opt, gd_log] = gd(fun, init, cparams)
         start = tic;
 
         % Evaluate loss at optimal value
-        if isnan(zk)
-            [loss, zk, max_grad_loc] = fun(opt);
+        if epoch == 1
+            [loss, chebab, max_grad_loc] = fun(opt);
         else
             % Guess an interval using previous zk
-            chebab = [zk*cheb_left, zk*cheb_right];
-            try
-                [loss, zk, max_grad_loc] = fun(opt, chebab);
-            catch
-                [loss, zk] = fun(opt);
-            end
+            [loss, chebab, max_grad_loc] = fun(opt, chebab);
+  
         end
-
-        % Guess an interval using previous zk
-        chebab = [zk*cheb_left, zk*cheb_right];
 
         % Computes gradient
         num_params = length(opt);
@@ -79,17 +69,8 @@ function [opt, gd_log] = gd(fun, init, cparams)
             direction(param_idx) = hspace;
 
             % Change this if # of params gets big
-            try
-                left = fun(opt - direction, chebab);
-            catch
-                left = fun(opt - direction);
-            end
-
-            try
-                right = fun(opt + direction, chebab);
-            catch
-                right = fun(opt + direction);
-            end
+            left = fun(opt - direction, chebab);
+            right = fun(opt + direction, chebab);
 
             grad(param_idx) = (right - left) / (2 * hspace);
         end
@@ -110,17 +91,8 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
         % Initialize step size with second derivative "fdd"
 
-        try
-            right = fun(opt + hspace * grad_direction, chebab);
-        catch
-            right = fun(opt + hspace * grad_direction);
-        end
-        
-        try
-            left = fun(opt - hspace * grad_direction, chebab);
-        catch
-            left = fun(opt - hspace * grad_direction)
-        end
+        right = fun(opt + hspace * grad_direction, chebab);
+        left = fun(opt - hspace * grad_direction, chebab);
 
         center = loss;
         fdd = (right - 2*center + left) / (hspace^2);
@@ -139,7 +111,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
         end
 
 
-        better_loss = fun(opt - step * grad);
+        [better_loss, chebab] = fun(opt - step * grad, chebab);
         line_search_converged = (better_loss < loss);
 
         % Line search loop        
@@ -149,7 +121,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
             % Shrink step size
 
             step = step * line_search_beta;
-            better_loss = fun(opt - step * grad);
+            [better_loss, chebab] = fun(opt - step * grad, chebab);
             line_search_converged = (better_loss < loss);
 
             % Raise error when step is too small
