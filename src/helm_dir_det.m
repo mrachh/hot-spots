@@ -16,7 +16,7 @@ function [detfun,varargout] = helm_neu_det(zk,chnkr,opts)
 %   detfun - Fredholm determinant of I - 2*D
 
 
-
+% start = tic;
 flam = true;
 eps = 1e-12;
 
@@ -44,5 +44,5 @@ else
     varargout{1} = F;
     detfun = exp(rskelf_logdet(F));
 end
-
+% fprintf('Time: %5.2e\n', toc(start));
 end
