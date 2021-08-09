@@ -30,7 +30,7 @@ weights = [
 
 for i = 1:5
     start = tic;
-    [loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weights, [4.7 4.9]);
-    fprintf('Loss = %.16f, Time = %f\n', loss, toc(start));
+    figure(i);
+    polysymeven_loss(weights, [3.8 3.9])
 
 end

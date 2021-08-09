@@ -17,8 +17,14 @@ function [ud_inf, max_grad_loc] = max_grad(chnkr, zk, sigma, figure_id)
 
 
     [ymax,iind] = max(y);
+    
 
-
+    tn
+    mat = lege.matrin(chnkr.k, 1.0)
+    x,~,~,~ =lege.exps(16)
+    vals = lege.pols(10)
+    mat*vals
+    
     [rn,dn,d2n,dist,tn,ichind] = ...
         nearest(chnkr, [0 0], 1:chnkr.nch);
     % ichind = ceil(iind/chnkr.k);
