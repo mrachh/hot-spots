@@ -28,6 +28,9 @@ weights = [
    0.798074764041292
 ]';
 
-start = tic;
-[loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weights, [4.7 4.9]);
-fprintf('Loss = %12f, Time = %f', loss, toc(start));
+for i = 1:5
+    start = tic;
+    [loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weights, [4.7 4.9]);
+    fprintf('Loss = %.16f, Time = %f\n', loss, toc(start));
+
+end

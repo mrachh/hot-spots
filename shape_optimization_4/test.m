@@ -3,7 +3,7 @@ clear;clc;addpath('../src');
 
 diary('poly50_ellipse_gd_diary.txt');
 
-num_verts = 50;
+num_verts = 40;
 angle_diff = pi/(num_verts - 1);
 angles = 0:angle_diff:(pi/2);
 a = 1.0;

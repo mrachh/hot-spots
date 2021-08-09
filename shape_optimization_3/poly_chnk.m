@@ -15,8 +15,9 @@ function [chnkr, center] = poly_chnk(rs, show_plot)
     end
 
     cparams = []; cparams.eps = 1.0e-5;
-    % cparams = []; cparams.eps = 1.0e-12;
-    pref = []; pref.k = 16;
+%%%%%%%%%%%%%%%%%%%%
+    pref = []; pref.k = 30;
+%%%%%%%%%%%%%%%%%%
     chnkr = chunkerpoly(verts, cparams, pref);
     assert(checkadjinfo(chnkr) == 0);
     refopts = []; refopts.maxchunklen = pi/6/2;
