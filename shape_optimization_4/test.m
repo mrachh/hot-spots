@@ -1,31 +1,37 @@
 clear;clc;addpath('../src');
 
-weights = [
-    0.797984932810233
-   0.798020073661662
-   0.797998662531422
-   0.797814417324334
-   0.798120827188785
-   0.797599080746267
-   0.798179374843703
-   0.798156797735414
-   0.798321692510853
-   0.798216576494111
-   0.798019472737395
-   0.798101761418109
-   0.798168665560401
-   0.798157647043780
-   0.798336738564235
-   0.798049046849747
-   0.797866420398457
-   0.797892926099338
-   0.798154759878623
-   0.798167146116474
-   0.798240089227531
-   0.798225574888096
-   0.798162822968365
-   0.798663647711876
-   0.798074764041292
-]';
 
-[loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weights, [4.7 4.9])
+diary('poly50_ellipse_gd_diary.txt');
+
+num_verts = 50;
+angle_diff = pi/(num_verts - 1);
+angles = 0:angle_diff:(pi/2);
+a = 1.0;
+b = 1.0/2.761451254618413;
+normalize = 1.336799222058980;
+a = a/normalize;
+b = b/normalize;
+
+
+init_weight = a*b./sqrt((b.*cos(angles)).^2 + (a.*sin(angles)).^2);
+
+polysymeven_chnk(init_weight, true);
+
+cparams = struct( ...
+    'maxiter',          100, ...
+    'report',           1, ...
+    'eps',              1e-6,   ...
+    'hspace',           1e-2, ...
+    'line_search_eps',  1e-6, ...
+    'line_search_beta', 0.5 ...
+)
+
+fun = @polysymeven_loss;
+fprintf('Polygon half ellipse with %d vertices\n', num_verts);
+[opt, gd_log] = optim.gd(fun, init_weight, cparams);
+fprintf('optimal weight: %5.2e \n', opt);
+fprintf('optimal value: %5.2e \n', fun(opt));
+clear fun
+
+
+diary off;

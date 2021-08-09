@@ -7,12 +7,11 @@ function [loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weight, che
     %         a = L-inf norm of grad u
     %         b = sqrt{lamb} * 2-norm(u)
 
-
+    default_chebabs = [1 6];
     if nargin < 2
-        chebabs = [1 6];
+        chebabs = default_chebabs;
     end
 
-    default_chebabs = [1 6];
 
     if nargin < 3
         figure_id = -1;
@@ -23,7 +22,7 @@ function [loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weight, che
 
     
     try
-        fprintf('Finding eigenvalue ... ');
+        % fprintf('Finding eigenvalue ... ');
         start = tic; [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs);
         fprintf('Time to find eigenvalue: %5.2e; ', toc(start));
         

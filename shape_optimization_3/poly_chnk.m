@@ -14,8 +14,8 @@ function [chnkr, center] = poly_chnk(rs, show_plot)
         verts(2,i) = rs(i)*sin(angle);
     end
 
-    % cparams = []; cparams.eps = 1.0e-5;
-    cparams = []; cparams.eps = 1.0e-12;
+    cparams = []; cparams.eps = 1.0e-5;
+    % cparams = []; cparams.eps = 1.0e-12;
     pref = []; pref.k = 16;
     chnkr = chunkerpoly(verts, cparams, pref);
     assert(checkadjinfo(chnkr) == 0);

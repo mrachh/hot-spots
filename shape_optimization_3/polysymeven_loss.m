@@ -7,12 +7,12 @@ function [loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weight, che
     %         a = L-inf norm of grad u
     %         b = sqrt{lamb} * 2-norm(u)
 
+    default_chebabs = [1 6];
 
     if nargin < 2
-        chebabs = [1 6];
+        chebabs = default_chebabs;
     end
 
-    default_chebabs = [1 6];
 
     if nargin < 3
         figure_id = -1;
