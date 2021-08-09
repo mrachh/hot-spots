@@ -12,6 +12,11 @@ function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs)
 
     detchebs = chebfun(detfun,chebabs,p);
 
+    % figure(1);
+    % plot(abs(detchebs));
+
+    % error('nothing')
+    
     rts = roots(detchebs,'complex');
     rts_real = rts(abs(imag(rts))<eps*10);
 

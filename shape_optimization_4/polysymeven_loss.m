@@ -7,7 +7,7 @@ function [loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weight, che
     %         a = L-inf norm of grad u
     %         b = sqrt{lamb} * 2-norm(u)
 
-    default_chebabs = [1 6];
+    default_chebabs = [3 7];
     if nargin < 2
         chebabs = default_chebabs;
     end
@@ -48,7 +48,7 @@ function [loss, new_chebab, ud_inf, max_grad_loc] = polysymeven_loss(weight, che
     cheb_left = 0.95;
     cheb_right = 1.05;
     new_chebab = [zk*cheb_left, zk*cheb_right];
-
+    % fprintf('zk is %f', zk);
 
 end
 

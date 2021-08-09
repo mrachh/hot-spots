@@ -1,7 +1,7 @@
 function u_2 = int_u_2(chnkr, zk, sigma, center)
     
-    % k = 16;
-    k = 64;
+    k = 16;
+    % k = 64;
     % Maximum number of targets evaluated each time
     max_num_targeval = 8192;
 

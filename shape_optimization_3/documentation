@@ -5,16 +5,21 @@ For the last set of vertices,
 
 
 Results:
-    semicircle loss:            loss = -0.365584022807387
-    original:                   loss = -0.365584464837272
-    chnk cparams.eps = 1e-8:    loss = -0.365586038747824
-    chnk cparams.eps = 1e-12:   loss = -0.365583038321849      time = ~1000
-    int_u_2 k = 32:             loss = -0.365584075431724      time = 306
-    int_u_2 k = 64:             
-    helm_dir_eig eps = 1e-10:   loss = -0.365584009225316      time = 236
+    (semicircle loss:            loss = -0.365584022807387)
+    original:                   loss = -0.365584464837272   diff: 0
+    chnk cparams.eps = 1e-8:    loss = -0.365586038747824   diff: -1.573910551999620e-06
+    chnk cparams.eps = 1e-12:   loss = -0.365583038321849   diff: 1.426515423008650e-06             time = ~1000
+    int_u_2 k = 32:             loss = -0.365584075431724   diff: 3.894055480291300e-07             time = 306
+    int_u_2 k = 64:             loss = -0.365584501355502   diff: -3.651822999551000e-08            time = 494.140965
+    helm_dir_eig eps = 1e-10:   loss = -0.365584009225316   diff: 4.556119560517001e-07             time = 236
 
 
-
+-0.365584464837272
+-0.365586038747824
+-0.365583038321849
+-0.365584075431724
+-0.365584501355502
+-0.365584009225316
 
 
 

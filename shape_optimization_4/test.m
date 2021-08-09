@@ -3,19 +3,21 @@ clear;clc;addpath('../src');
 
 diary('poly50_ellipse_gd_diary.txt');
 
-num_verts = 50;
+num_verts = 30;
 angle_diff = pi/(num_verts - 1);
 angles = 0:angle_diff:(pi/2);
 a = 1.0;
 b = 1.0/2.761451254618413;
-normalize = 1.336799222058980;
+normalize = 0.754208196380421;
 a = a/normalize;
 b = b/normalize;
 
 
 init_weight = a*b./sqrt((b.*cos(angles)).^2 + (a.*sin(angles)).^2);
 
-polysymeven_chnk(init_weight, true);
+% polysymeven_chnk(init_weight,true)
+
+% error('nothing')
 
 cparams = struct( ...
     'maxiter',          100, ...
