@@ -1,4 +1,20 @@
-test.m: code that reproduce chunk newton failing warning
-diary.txt: contains stdout of test.m
+test_optimization: 
+    1. a testing code for shape test_optimization
+    2. we might want to change the default searching interval
+        in "polysymeven_loss.m" if we use some other initialization
+    3. (serialization) after **every** iteration, all statistics of 
+        the optimization process is dumped in gd_log.mat
+        usage:
+            a = load('gd_log');
+        explanation
+            a.loss: losses in each iteration
+            a.step: step size
+            a.gradnorm: norm of gradient
+            a.fdd: second derivative on gradient direction
+            a.time: time for iteration
+            a.weight: weight (i.e radii)
+            a.grad: gradient
+    4. stdout is dumped to diary.txt
+    5. only files in this folder and "src" are required
 
-polysymeven_chnk.m: produce a symmetric 2n-gon with n radii r_1, ..., r_n
+

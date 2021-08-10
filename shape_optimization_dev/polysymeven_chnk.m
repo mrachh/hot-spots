@@ -6,7 +6,7 @@ function [chnkr, center] = polysymeven_chnk(rs, show_plot)
     % where r_1,...,r_M are real numbers and 
     % theta_j = pi*(j-1)/M.
 
-    [temp, M] = size(rs);
+    [~, M] = size(rs);
     num_verts = M * 2 ;
     rs_symmetric = zeros(1, num_verts);
     for i = 1:M 

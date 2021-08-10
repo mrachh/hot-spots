@@ -1,5 +1,8 @@
-function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs)
+function [zk, err_nullvec, sigma] = find_first_eig(chnkr, chebabs)
+    % INPUT: chnkr, eigenvalue interval [a b]
+    % OUTPUT: zk, error in null vector, density sigma
 
+    % Set eps
     eps = 1e-7;
     p = chebfunpref; p.chebfuneps = eps;
     p.splitting = 0; p.maxLength=257;
@@ -9,13 +12,7 @@ function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs)
     opts.eps = eps;
 
     detfun = @(zk) helm_dir_det(zk,chnkr,opts);
-
     detchebs = chebfun(detfun,chebabs,p);
-
-    % figure(1);
-    % plot(abs(detchebs));
-
-    % error('nothing')
     
     rts = roots(detchebs,'complex');
     rts_real = rts(abs(imag(rts))<eps*10);
@@ -27,6 +24,4 @@ function [zk, err_nullvec, sigma] = helm_dir_eig(chnkr, chebabs)
     xnrm = norm(sigma,'fro');
     xnrm_mv = norm(rskelf_mv(F,sigma),'fro');
     err_nullvec = xnrm_mv/xnrm;
-    % fprintf('Error in null vector: %5.2e\n',err_nullvec);
-
 end

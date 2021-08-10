@@ -1,4 +1,4 @@
-function u_2 = int_u_2(chnkr, zk, sigma, center)
+function u_2 = u_two_norm(chnkr, zk, sigma, center)
     
     k = 16;
     % Maximum number of targets evaluated each time
