@@ -6,11 +6,26 @@ num_params = num_verts /2;
 weight = ones(1, num_params)/sqrt(pi/2);
 grad_arr = nan(100, num_params);
 [~, chebab] = polysymeven_loss(weight);
+hbase = 1e-2;
+
+% Compute grad with hbase
+hspace = hbase;
+grad = zeros(1, num_params);
+for param_idx = 1:num_params
+    direction = zeros(1, num_params);
+    direction(param_idx) = hspace;
+    left = polysymeven_loss(weight - direction, chebab);
+    right = polysymeven_loss(weight + direction, chebab);
+    grad(param_idx) = (right - left) / (2 * hspace);
+end
+grad_true = grad;
+
+% Convergence test
 
 num_grads = 0;
-for logh = -10:2:-2
+for logh = -2:-2:-8
     num_grads = num_grads + 1
-    hspace = 10^(logh);
+    hspace = 10^(logh) + hbase;
     grad = zeros(1, num_params);
     for param_idx = 1:num_params
         direction = zeros(1, num_params);
@@ -25,5 +40,5 @@ end
 grad_arr = grad_arr(1:num_grads,:);
 dx_arr = grad_arr(:,1);
 dy_arr = grad_arr(:,2);
-dx_err = dx_arr - dx_arr(1);
-dy_err = dy_arr - dy_arr(1);
+dx_err = dx_arr - grad_true(1);
+dy_err = dy_arr - grad_true(2);

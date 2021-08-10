@@ -18,3 +18,22 @@ test_optimization:
     5. only files in this folder and "src" are required
 
 
+test_convergence:
+    1. take h=1e-2 to be "ground truth"
+    2. compute the difference between different hs to "ground truth"
+    3. we take hs to be h+1e-2, h+1e-4, h+1e-6, h+1e-8
+    4. evaluate the difference in dx and dy separately
+    5. results:
+        dx_err =
+            1.0e-04 *
+            -0.242063898980849
+            0.041781739207325
+            0.074572933764247
+            0.111898428686150
+        dy_err =
+            1.0e-04 *
+            -0.143208463504463
+            0.083733687428476
+            -0.093446717117549
+            -0.140701290684156
+
