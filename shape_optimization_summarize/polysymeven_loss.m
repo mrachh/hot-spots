@@ -4,7 +4,7 @@ function [loss, new_chebab, zk] = polysymeven_loss(weight, chebabs)
     % OUTPUT: loss, eigenvalue interval, 
 
 
-    default_chebabs = [2 6];
+    default_chebabs = [1 6];
     cheb_left = 0.95;
     cheb_right = 1.05;
 
