@@ -1,4 +1,4 @@
-function [opt, gd_log] = gd(fun, init, cparams)
+function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
     %Performs gradient descent on one dimensional input
     % INPUT:
     %     fun: function handle for objective "f"
@@ -19,22 +19,22 @@ function [opt, gd_log] = gd(fun, init, cparams)
     %         weight: weights "x" over iterations
 
     %read gradient descent parameters
-    maxiter = cparams.maxiter;
-    report = cparams.report;
-    eps = cparams.eps;
-    hspace = cparams.hspace;
-    line_search_eps = cparams.line_search_eps;
-    line_search_beta = cparams.line_search_beta;
+    maxiter = gd_params.maxiter;
+    report = gd_params.report;
+    eps = gd_params.eps;
+    hspace = gd_params.hspace;
+    line_search_eps = gd_params.line_search_eps;
+    line_search_beta = gd_params.line_search_beta;
     opt = init;
 
     gd_log = struct();
-    gd_log.loss = nan(maxiter,1);
-    gd_log.step = nan(maxiter,1);
-    gd_log.gradnorm = nan(maxiter,1);
-    gd_log.fdd = nan(maxiter,1);
-    gd_log.time = nan(maxiter,1);
-    gd_log.weight = nan(maxiter, length(init));
-    gd_log.grad = nan(maxiter, length(init));
+    gd_log.loss = nan(maxiter + 1,1);
+    gd_log.step = nan(maxiter + 1,1);
+    gd_log.gradnorm = nan(maxiter + 1,1);
+    gd_log.fdd = nan(maxiter + 1,1);
+    gd_log.time = nan(maxiter + 1,1);
+    gd_log.weight = nan(maxiter + 1, length(init));
+    gd_log.grad = nan(maxiter + 1, length(init));
     gradient_descent_converged = false;
     line_search_converged = false;
 
@@ -48,13 +48,12 @@ function [opt, gd_log] = gd(fun, init, cparams)
         % Time a single iteration
         start = tic;
 
-        % Evaluate loss at optimal value
+        % Evaluate loss at current optimal weight
         if epoch == 1
-            [loss, chebab] = fun(opt);
+            [loss, chebabs] = fun(opt, loss_params);
         else
             % Guess an interval using previous zk
-            [loss, chebab] = fun(opt, chebab);
-  
+            [loss, chebabs] = fun(opt, loss_params, chebabs);
         end
 
         % Computes gradient
@@ -68,8 +67,8 @@ function [opt, gd_log] = gd(fun, init, cparams)
             direction(param_idx) = hspace;
 
             % Change this if # of params gets big
-            left = fun(opt - direction, chebab);
-            right = fun(opt + direction, chebab);
+            left = fun(opt - direction, loss_params, chebabs);
+            right = fun(opt + direction, loss_params, chebabs);
 
             grad(param_idx) = (right - left) / (2 * hspace);
         end
@@ -90,8 +89,8 @@ function [opt, gd_log] = gd(fun, init, cparams)
 
         % Initialize step size with second derivative "fdd"
 
-        right = fun(opt + hspace * grad_direction, chebab);
-        left = fun(opt - hspace * grad_direction, chebab);
+        right = fun(opt + hspace * grad_direction, loss_params, chebabs);
+        left = fun(opt - hspace * grad_direction, loss_params, chebabs);
 
         center = loss;
         fdd = (right - 2*center + left) / (hspace^2);
@@ -110,7 +109,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
         end
 
 
-        [better_loss, chebab] = fun(opt - step * grad, chebab);
+        [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs);
         line_search_converged = (better_loss < loss);
 
         % Line search loop        
@@ -120,7 +119,7 @@ function [opt, gd_log] = gd(fun, init, cparams)
             % Shrink step size
 
             step = step * line_search_beta;
-            [better_loss, chebab] = fun(opt - step * grad, chebab);
+            [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs);
             line_search_converged = (better_loss < loss);
 
             % Raise error when step is too small
@@ -133,8 +132,6 @@ function [opt, gd_log] = gd(fun, init, cparams)
         
         % End of line search loop
 
-        % Update weight
-        opt = opt - step * grad;
 
         % Record
         gd_log.loss(epoch) = loss;
@@ -145,6 +142,12 @@ function [opt, gd_log] = gd(fun, init, cparams)
         gd_log.weight(epoch,:) = opt;
         gd_log.grad(epoch,:) = grad;
 
+        % Update weight
+        opt = opt - step * grad;
+
+        % Record next weight
+        gd_log.weight(epoch+1,:) = opt;
+
         %dump log file
         fprintf('Saving log file...\n');
         save('gd_log.mat', '-struct', 'gd_log');
@@ -154,8 +157,9 @@ function [opt, gd_log] = gd(fun, init, cparams)
                 epoch, loss, grad_norm, fdd, gd_log.time(epoch));
             fprintf('Current weight %s\n', mat2str(opt));
             fprintf('Current gradient %s\n', mat2str(grad));
-
         end
+
+
     end
 
     % End of GD loop

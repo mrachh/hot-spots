@@ -1,4 +1,4 @@
-function [chnkr, center] = polysymeven_chnk(rs, show_plot)
+function [chnkr, center] = chnk_polyeven(rs)
     % INPUT:  [r_1 r_2 ... r_M]
     % OUTPUT: chnkr object
     % theta_j = (pi/2)*j/M
@@ -15,10 +15,7 @@ function [chnkr, center] = polysymeven_chnk(rs, show_plot)
     for i = (M+1) : num_verts
         rs_symmetric(i) = rs(2*M + 1 - i);
     end
-    if nargin > 1
-        [chnkr, center] = poly_chnk(rs_symmetric, show_plot);
-    else
-        [chnkr, center] = poly_chnk(rs_symmetric);
-    end
+    
+    [chnkr, center] = chnk_poly(rs_symmetric);
 
 end

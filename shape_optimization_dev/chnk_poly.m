@@ -1,4 +1,4 @@
-function [chnkr, center] = poly_chnk(rs, show_plot)
+function [chnkr, center] = chnk_poly(rs, show_plot)
     % INPUT:  [r_1 r_2 ... r_M]
     % OUTPUT: chnkr object, center of chunker object
     % Vertices:

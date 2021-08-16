@@ -1,19 +1,19 @@
-function [loss, new_chebab, zk] = polysymeven_loss(weight, chebabs)
+function [loss, chebabs, zk] = polyeven_loss(weight, loss_params, chebabs)
     addpath('../src');
     % INPUT: weight, eigenvalue interval [a b] (OPTIONAL)
     % OUTPUT: loss, eigenvalue interval, 
 
+    default_chebabs = loss_params.default_chebabs;
 
-    default_chebabs = [2 6];
     cheb_left = 0.95;
     cheb_right = 1.05;
 
-    if nargin < 2
+    if nargin<3
         chebabs = default_chebabs;
     end
 
     % Create chunker object
-    [chnkr, center] = polysymeven_chnk(weight);
+    [chnkr, center] = loss_params.chnk_fun(weight);
 
     
     try
@@ -40,7 +40,7 @@ function [loss, new_chebab, zk] = polysymeven_loss(weight, chebabs)
     end
 
     % Update eigenvalue interval
-    new_chebab = [zk*cheb_left, zk*cheb_right];
+    chebabs = [zk*cheb_left, zk*cheb_right]
 
 end
 
