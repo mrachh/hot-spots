@@ -1855,3 +1855,49 @@ loss_true =
 {Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_loss_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m', 13)" style="font-weight:bold">test_loss_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m',13,0)">line 13</a>)
 nothing
 } 
+test_loss_rect
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rect_true_loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\rect_true_loss.m', 8)" style="font-weight:bold">rect_true_loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\rect_true_loss.m',8,0)">line 8</a>)
+    beta = 0.5 - 1/(2*p) + 1/q;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_loss_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m', 11)" style="font-weight:bold">test_loss_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m',11,0)">line 11</a>)
+loss_true = rect_true_loss(weight, loss_params)
+} 
+test_loss_rect
+
+loss_true =
+
+   0.319415450289720
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_loss_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m', 13)" style="font-weight:bold">test_loss_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m',13,0)">line 13</a>)
+nothing
+} 
+test_loss_rect
+
+loss_true =
+
+   NaN
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_loss_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m', 13)" style="font-weight:bold">test_loss_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m',13,0)">line 13</a>)
+nothing
+} 
+test_loss_rect
+
+loss_true =
+
+   0.319415450289720
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_loss_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m', 13)" style="font-weight:bold">test_loss_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m',13,0)">line 13</a>)
+nothing
+} 
+test_loss_rect
+
+loss_true =
+
+   0.322738145515730
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_loss_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m', 13)" style="font-weight:bold">test_loss_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_loss_rect.m',13,0)">line 13</a>)
+nothing
+} 

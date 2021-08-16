@@ -1,2 +1,7 @@
 generalize to \|grad u\|_p/(\lambda^\beta *\|u\|_q)
 where beta = 1/2-1/2p+1/q
+
+
+todo: 
+1. modify gradu_at_zero and u_p_norm by adding an 'inf' option
+2. compare numerical loss with theoretical (rect_true_loss)

@@ -2,13 +2,14 @@ function loss = rect_true_loss(weight, loss_params)
 
     % Computes true loss for integer p, q
 
-    q = loss_params.u_q;
-    p = loss_params.gradu_p;
+
+    q = str2double(loss_params.u_q);
+    p = str2double(loss_params.gradu_p);
     a = weight;
     beta = 0.5 - 1/(2*p) + 1/q;
 
     const = (2^(1/p) * pi^(1/p-2/q) * psi(p))/(psi(q)^2);
-    loss = const * (a^(-p)+a)^(1/p)/( (a^(-2)+1)^beta * a^(1/q) );
+    loss = - const * (a^(-p)+a)^(1/p)/( (a^(-2)+1)^beta * a^(1/q) );
 
 end
 
