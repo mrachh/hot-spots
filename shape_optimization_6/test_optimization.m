@@ -6,10 +6,10 @@ num_verts = 6;
 num_params = num_verts /2;
 
 % Set initial weight
-angle_diff = pi/(num_verts - 1);
-angles = 0:angle_diff:(pi/2);
-init_weight = 1-((angles-(pi/2)).^2)./10;
-% init_weight = [0.5 sqrt(7/4) sqrt(3.25)]/sqrt(pi);
+% angle_diff = pi/(num_verts - 1);
+% angles = 0:angle_diff:(pi/2);
+% init_weight = 1-((angles-(pi/2)).^2)./10;
+init_weight = [0.5 sqrt(7/4) sqrt(3.25)]/sqrt(pi);
 % chnkr = polysymeven_chnk(init_weight, true)
 % plot(chnkr)
 % xlim([-2 2])
