@@ -3,10 +3,21 @@ function [loss, chebabs, zk] = polyeven_loss(weight, loss_params, chebabs)
     % INPUT: weight, eigenvalue interval [a b] (OPTIONAL)
     % OUTPUT: loss, eigenvalue interval, 
 
-    default_chebabs = loss_params.default_chebabs;
-
     cheb_left = 0.95;
     cheb_right = 1.05;
+
+    % Reads loss parameters
+    default_chebabs = loss_params.default_chebabs;
+    q = str2double(loss_params.unorm_ord);
+    p = str2double(loss_params.udnorm_ord);
+    if isnan(q) or isnan(p)
+        error('Invalid loss parameters')
+    end
+    if isinf(q)
+        errors('unorm_ord = inf not supported')
+    end
+    beta = 1/2 - 1/(2*p) + 1/(q);
+
 
     if nargin<3
         chebabs = default_chebabs;
@@ -20,23 +31,22 @@ function [loss, chebabs, zk] = polyeven_loss(weight, loss_params, chebabs)
         start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr, chebabs);
         fprintf('Time to find eigenvalue: %5.2e; ', toc(start));
         
-        start = tic; [ud_inf] = gradu_at_zero(chnkr, zk, sigma);
+        start = tic; [ud_p] = ud_norm(chnkr, zk, sigma, p);
 
-        start = tic; u_2 = u_two_norm(chnkr, zk, sigma, center);
+        start = tic; u_q = u_norm(chnkr, zk, sigma, center, q);
         fprintf('Time to compute 2-norm: %5.2e\n', toc(start));
 
-        loss =  - ud_inf/(u_2 * (zk^2));
+        loss =  - ud_p/(u_q * (zk^(2*beta)));
     catch
-        warning('Provided chebabs did not work');
         start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr, default_chebabs);
         fprintf('Time to find eigenvalue: %5.2e; ', toc(start));
         
-        start = tic; [ud_inf] = gradu_at_zero(chnkr, zk, sigma);
+        start = tic; [ud_p] = ud_norm(chnkr, zk, sigma, p);
 
-        start = tic; u_2 = u_two_norm(chnkr, zk, sigma, center);
+        start = tic; u_q = u_norm(chnkr, zk, sigma, center, q);
         fprintf('Time to compute 2-norm: %5.2e\n', toc(start));
 
-        loss =  - ud_inf/(u_2 * (zk^2));
+        loss =  - ud_p/(u_q * (zk^(2*beta)));
     end
 
     % Update eigenvalue interval
