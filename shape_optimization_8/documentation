@@ -3,6 +3,10 @@ test_optimization:
     default p, q
     initialize with ellipse
 
+got something nonconvex (with better loss though ~ -3.9)
+stopped optimization at 9-th iteration
+stored in gd_result.mat
+
 
 
 doc from child:
