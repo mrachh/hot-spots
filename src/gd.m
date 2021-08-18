@@ -25,6 +25,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
     hspace = gd_params.hspace;
     line_search_eps = gd_params.line_search_eps;
     line_search_beta = gd_params.line_search_beta;
+    savefn = gd_params.savefn;
     opt = init;
 
     gd_log = struct();
@@ -150,7 +151,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
 
         %dump log file
         fprintf('Saving log file...\n');
-        save('gd_log.mat', '-struct', 'gd_log');
+        save(savefn, '-struct', 'gd_log');
 
         if (mod(epoch, report) == 1) | (report == 1)
             fprintf('iter: %d, loss: %5.2e, grad: %5.2e, 2nd-deri: %5.2e, time: %5.2e\n', ...

@@ -29,7 +29,7 @@ function [ud_p] = gradu_norm(chnkr, zk, sigma, p)
         rint = sum(dudncomputed.*wts);
         rint = rint/abs(rint);
         y = real(dudncomputed./rint);
-        ud_p = sum((abs(y).^p).*wts)^(1/p)
+        ud_p = sum((abs(y).^p).*wts)^(1/p);
 
     end
 

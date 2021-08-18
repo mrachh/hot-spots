@@ -2155,3 +2155,326 @@ Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback
 Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_optimization_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m', 31)" style="font-weight:bold">test_optimization_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m',31,0)">line 31</a>)
 [opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
 } 
+
+gd_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-06
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd_log_test'
+
+
+loss_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    default_chebabs: [1 8]
+           chnk_fun: @chnk_rectangle
+         udnorm_ord: '2'
+          unorm_ord: '2'
+
+Rectangle optimization
+Time to find eigenvalue: 4.60e+01; 
+ud_p =
+
+   0.265847180782778
+
+Time to compute 2-norm: 5.59e+00
+
+chebabs =
+
+   4.220740109340190   4.665028541902315
+
+Computing 1 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 1.50e+01; 
+ud_p =
+
+   0.261300052924041
+
+Time to compute 2-norm: 5.77e+00
+
+chebabs =
+
+   4.222853117611612   4.667363972097045
+
+Time to find eigenvalue: 1.47e+01; 
+ud_p =
+
+   0.265788812050178
+
+Time to compute 2-norm: 5.63e+00
+
+chebabs =
+
+   4.218632371703579   4.662698937146060
+
+Gradient computed!
+gradient descent did not converge after 1 steps
+optimal weight: 1.00e+00 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fun')" style="font-weight:bold">fun</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_optimization_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m', 32)" style="font-weight:bold">test_optimization_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m',32,0)">line 32</a>)
+fprintf('optimal value: %5.2e \n', fun(opt));
+} 
+test_optimization_rect
+{<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m',31,42)">File: test_optimization_rect.m Line: 31 Column: 42</a>
+Invalid use of operator.
+} 
+test_optimization_rect
+
+gd_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-06
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd_log_test'
+
+
+loss_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    default_chebabs: [1 8]
+           chnk_fun: @chnk_rectangle
+         udnorm_ord: '2'
+          unorm_ord: '2'
+
+Rectangle optimization
+Time to find eigenvalue: 4.57e+01; Time to compute 2-norm: 5.58e+00
+
+chebabs =
+
+   4.220740109330424   4.665028541891522
+
+Computing 1 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 1.50e+01; {Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.adapgausskerneval>oneintp', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\adapgausskerneval.m', 176)" style="font-weight:bold">chnk.adapgausskerneval>oneintp</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\adapgausskerneval.m',176,0)">line 176</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.adapgausskerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\adapgausskerneval.m', 110)" style="font-weight:bold">chnk.adapgausskerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\adapgausskerneval.m',110,0)">line 110</a>)
+        v2 = oneintp(a,c,rs,ds,d2s,densj,ct,bw,rt1,dt1,d2t1,kern,opdims,t,w);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_adap', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 307)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_adap</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',307,0)">line 307</a>)
+        fints1 =  chnk.adapgausskerneval(r,d,d2,h,ct,bw,i,dens,targs(:,ji), ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 98)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',98,0)">line 98</a>)
+fints = fints + chunkerkerneval_adap(chnkr,kern,opdims,dens, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('u_norm', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\u_norm.m', 22)" style="font-weight:bold">u_norm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\u_norm.m',22,0)">line 22</a>)
+        u = chunkerkerneval(chnkr,fkern,sigma,...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m', 36)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m',36,0)">line 36</a>)
+        start = tic; u_q = u_norm(chnkr, zk, sigma, center, q);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 71)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',71,0)">line 71</a>)
+            left = fun(opt - direction, loss_params, chebabs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_optimization_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m', 30)" style="font-weight:bold">test_optimization_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m',30,0)">line 30</a>)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 
+test_optimization_rect
+
+gd_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-06
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd_log_test.mat'
+
+
+loss_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    default_chebabs: [1 8]
+           chnk_fun: @chnk_rectangle
+         udnorm_ord: '2'
+          unorm_ord: '2'
+
+Rectangle optimization
+Time to find eigenvalue: 4.51e+01; Time to compute 2-norm: 5.52e+00
+
+chebabs =
+
+   4.220740109341224   4.665028541903459
+
+Computing 1 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 1.48e+01; Time to compute 2-norm: 5.63e+00
+
+chebabs =
+
+   4.222853117607492   4.667363972092492
+
+Time to find eigenvalue: 1.41e+01; Time to compute 2-norm: 5.58e+00
+
+chebabs =
+
+   4.218632371694492   4.662698937136018
+
+Gradient computed!
+gradient descent did not converge after 1 steps
+optimal weight: 1.00e+00 
+
+gd_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-06
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd_log_test.mat'
+
+
+loss_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    default_chebabs: [1 8]
+           chnk_fun: @chnk_rectangle
+         udnorm_ord: '2'
+          unorm_ord: '2'
+
+Rectangle optimization
+Time to find eigenvalue: 4.51e+01; Time to compute 2-norm: 5.51e+00
+
+chebabs =
+
+   4.220740109341073   4.665028541903292
+
+Computing 1 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 1.47e+01; Time to compute 2-norm: 5.73e+00
+
+chebabs =
+
+   4.222853117617722   4.667363972103798
+
+Time to find eigenvalue: 1.41e+01; Time to compute 2-norm: 5.63e+00
+
+chebabs =
+
+   4.218632371692408   4.662698937133714
+
+Gradient computed!
+
+grad_norm =
+
+     1.891488077276904e-07
+
+gradient descent did not converge after 1 steps
+optimal weight: 1.00e+00 
+
+gd_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-06
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd_log_test.mat'
+
+
+loss_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    default_chebabs: [1 8]
+           chnk_fun: @chnk_rectangle
+         udnorm_ord: '3'
+          unorm_ord: '2'
+
+Rectangle optimization
+Time to find eigenvalue: 4.51e+01; Time to compute 2-norm: 5.57e+00
+
+chebabs =
+
+   4.220740109315495   4.665028541875022
+
+Computing 1 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 1.47e+01; Time to compute 2-norm: 5.77e+00
+
+chebabs =
+
+   4.222853117618454   4.667363972104608
+
+Time to find eigenvalue: 1.41e+01; Time to compute 2-norm: 5.58e+00
+
+chebabs =
+
+   4.218632371702445   4.662698937144808
+
+Gradient computed!
+gradient descent did not converge after 1 steps
+optimal weight: 1.00e+00 
+
+gd_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-06
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd_log_test.mat'
+
+
+loss_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    default_chebabs: [1 8]
+           chnk_fun: @chnk_rectangle
+         udnorm_ord: '4'
+          unorm_ord: '2'
+
+Rectangle optimization
+Time to find eigenvalue: 4.52e+01; Time to compute 2-norm: 5.50e+00
+
+chebabs =
+
+   4.220740109342788   4.665028541905187
+
+Computing 1 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 1.46e+01; Time to compute 2-norm: 5.70e+00
+
+chebabs =
+
+   4.222853117624827   4.667363972111651
+
+Time to find eigenvalue: 1.44e+01; Time to compute 2-norm: 5.58e+00
+
+chebabs =
+
+   4.218632371704944   4.662698937147569
+
+Gradient computed!
+gradient descent did not converge after 1 steps
+optimal weight: 1.00e+00 
