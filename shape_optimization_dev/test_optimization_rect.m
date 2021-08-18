@@ -24,8 +24,6 @@ loss_params = struct(...
     'unorm_ord',                  '2' ...
 )
 
-% Set loss function
-fun = @loss;
 
 fprintf('Rectangle optimization\n');
 [opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);

@@ -2139,3 +2139,19 @@ chebabs =
 
    4.361322329281757   4.820408890258784
 
+{Index exceeds the number of array elements (0).
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('find_first_eig', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\find_first_eig.m', 20)" style="font-weight:bold">find_first_eig</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\find_first_eig.m',20,0)">line 20</a>)
+    zk = real(rts_real(1));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m', 41)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m',41,0)">line 41</a>)
+        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr,
+        default_chebabs);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 122)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',122,0)">line 122</a>)
+            [better_loss, chebabs] = fun(opt - step * grad, loss_params,
+            chebabs);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_optimization_rect', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m', 31)" style="font-weight:bold">test_optimization_rect</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test_optimization_rect.m',31,0)">line 31</a>)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 

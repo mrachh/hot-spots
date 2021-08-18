@@ -22,10 +22,14 @@ function [ud_p] = gradu_norm(chnkr, zk, sigma, p)
         ud_p = dot(mat,y(:,ichind));
     
     else
-        
 
-        error('not implemented')
-
+        dudncomputed = helm_dprime(zk,chnkr,sigma);
+        wts = weights(chnkr);
+        wts = reshape(wts,[chnkr.k*chnkr.nch,1]);
+        rint = sum(dudncomputed.*wts);
+        rint = rint/abs(rint);
+        y = real(dudncomputed./rint);
+        ud_p = sum((abs(y).^p).*wts)^(1/p)
 
     end
 
