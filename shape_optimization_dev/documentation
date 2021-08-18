@@ -3,5 +3,6 @@ where beta = 1/2-1/2p+1/q
 
 
 todo: 
-1. modify gradu_at_zero and u_p_norm by adding an 'inf' option
-2. compare numerical loss with theoretical (rect_true_loss)
+1. modify gradu_at_zero and u_p_norm by adding an 'inf' option done
+2. compare numerical loss with theoretical (rect_true_loss) done
+3. Got trivial result for rectangle, check
