@@ -8,7 +8,8 @@ loss_params = struct(...
 );
 
 weight = [0.7];
-loss_true = rect_true_loss((1/weight), loss_params);
+alpha = 1/weight;
+loss_true = rect_true_loss(alpha, loss_params);
 
 
 loss_computed = loss(weight, loss_params);
