@@ -1,5 +1,7 @@
 generalize to \|grad u\|_p/(\lambda^\beta *\|u\|_q)
-where beta = 1/2-1/2p+1/q
+where beta = 1/2-1/2p+1/q done
+
+check convexity when shrinking step size
 
 
 todo: 
