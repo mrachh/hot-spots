@@ -3,13 +3,18 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
     % INPUT:
     %     fun: function handle for objective "f"
     %     init: initial value for weight "x"
-    %     cparams (struct):
+    %     gd_params (struct):
     %         maxiter: maximum iteration
     %         report: frequency of reporting loss
     %         eps: tolerance for gradient descent
     %         hspace: step size for gradient estimate
     %         line_search_eps: tolerance for line search
     %         line_search_beta: shrinking factor for gradient descent step size
+    %     loss_params (struct):
+    %         default_chebabs:          [1 10]
+    %         chnk_fun:                 @chnk_polyeven
+    %         udnorm_ord:               '3'
+    %         unorm_ord:                '2'
     % OUTPUT:
     %     opt: optimal weight "x"
     %     gd_log (struct):
@@ -109,6 +114,11 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             step = 1.0 / fdd;
         end
 
+        isconvex = check_convex(opt - step * grad);
+        while ~isconvex
+            step = step * line_search_beta;
+            isconvex = check_convex(opt - step * grad);
+        end
 
         [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs);
         line_search_converged = (better_loss < loss);

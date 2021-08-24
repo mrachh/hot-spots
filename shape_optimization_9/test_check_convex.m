@@ -55,3 +55,15 @@ if isconvex
 else
     title('is not convex');
 end
+
+figid = figid + 1;
+rs = [1 1 1 -1]
+chnkr = chnk_polyeven(rs);
+figure(figid);
+plot(chnkr);
+isconvex = check_convex(rs);
+if isconvex
+    title('Is convex');
+else
+    title('is not convex');
+end

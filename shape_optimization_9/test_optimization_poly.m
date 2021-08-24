@@ -6,9 +6,11 @@ num_verts = 8;
 num_params = num_verts /2;
 
 
-init_weight = ones(1,num_params)/sqrt(pi/2);
+init_weight = [1 1 0.9 0.8];
 
+plot(chnk_polyeven(init_weight))
 
+error('nothing')
 % Gradient descent parameter
 gd_params = struct( ...
     'maxiter',          100, ...
