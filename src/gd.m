@@ -68,30 +68,85 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             [loss, chebabs] = fun(opt, loss_params, chebabs, valid_params);
         end
 
-        % Computes gradient
-        grad = zeros(1, num_params);
+        update_gradient = true
 
-        fprintf('Computing %d derivatives: \n', num_params);
+        while update_gradient
+            % Computes gradient
+            grad = zeros(1, num_params);
 
-        for param_idx = 1:num_params
-            if valid_params(param_idx)
-                fprintf('Compuing dx%d...\n', param_idx);
-                direction = zeros(1, num_params);
-                direction(param_idx) = hspace;
+            fprintf('Computing %d derivatives: \n', num_params);
 
-                % Change this if # of params gets big
-                left = fun(opt - direction, loss_params, chebabs, valid_params);
-                right = fun(opt + direction, loss_params, chebabs, valid_params);
+            for param_idx = 1:num_params
+                if valid_params(param_idx)
+                    fprintf('Compuing dx%d...\n', param_idx);
+                    direction = zeros(1, num_params);
+                    direction(param_idx) = hspace;
+                    left = fun(opt - direction, loss_params, chebabs, valid_params);
+                    right = fun(opt + direction, loss_params, chebabs, valid_params);
+                    grad(param_idx) = (right - left) / (2 * hspace);
+                else
+                    grad(param_idx) = 0;
+                end
+            end
+            fprintf('Gradient computed!\n')
 
-                grad(param_idx) = (right - left) / (2 * hspace);
+            % End of gradient computation
+            % No need to recompute gradient unless vertices are deleted
+            update_gradient = false;
+
+            % Initialize step size with second derivative "fdd"
+
+            right = fun(opt + hspace * grad_direction, loss_params, chebabs, valid_params);
+            left = fun(opt - hspace * grad_direction, loss_params, chebabs, valid_params);
+
+            center = loss;
+            fdd = (right - 2*center + left) / (hspace^2);
+    
+            % Check second derivative
+
+            if fdd < 0
+                warning('Negative second derivative %5.2e', fdd);
+                step = 1;
+            elseif fdd == 0
+                step = 1;
             else
-                grad(param_idx) = 0;
+                step = 1.0 / fdd;
+            end
+
+            % Delete vertex if necessary
+
+            for i = 1:num_params
+                if valid_params(i)
+                    direction = zeros(1, num_params);
+                    direction(i) = grad(i) * line_search_eps;
+                    if ~ check_convex(opt - direction, vert_type, valid_params)
+                        % delete this vertex
+                        valid_params(i) = 0;
+                        fprintf('vertex %d deleted \n', i);
+                        update_gradient = true;
+                    end
+                end
+            end
+
+            vert_not_deleted = ~ update_gradient;
+            % Shrink step so that the shape is convex 
+            % Only perform this step of no vertex is deleted
+            if vert_not_deleted
+                isconvex = check_convex(opt - step * grad, vert_type, valid_params);
+                while ~isconvex
+                    step = step * line_search_beta;
+                    isconvex = check_convex(opt - step * grad, vert_type, valid_params);
+                    if step < line_search_eps
+                        % give up
+                        gradient_descent_converged = true;
+                        update_gradient = false
+                        fprintf('Failed to be convex')
+                        break;
+                    end
+                end
             end
         end
-        fprintf('Gradient computed!\n')
 
-        % End of gradient computation
-        
         grad_norm = norm(grad);
         grad_direction = grad / grad_norm;
         gradient_descent_converged = (grad_norm < eps);
@@ -99,54 +154,6 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         if gradient_descent_converged
             num_steps = epoch;
             break;
-        end
-
-        % Line search
-
-        % Initialize step size with second derivative "fdd"
-
-        right = fun(opt + hspace * grad_direction, loss_params, chebabs, valid_params);
-        left = fun(opt - hspace * grad_direction, loss_params, chebabs, valid_params);
-
-        center = loss;
-        fdd = (right - 2*center + left) / (hspace^2);
- 
-        % Check second derivative
-
-        if fdd < 0
-            warning('Negative second derivative %5.2e', fdd);
-            % step = grad_norm;
-            step = 1;
-        elseif fdd == 0
-            % step = grad_norm;
-            step = 1;
-        else
-            step = 1.0 / fdd;
-        end
-
-        % delete vertex if necessary
-        for i = 1:num_params
-            if valid_params(i)
-                direction = zeros(1, num_params);
-                direction(i) = grad(i) * line_search_eps;
-                if ~ check_convex(opt - direction, vert_type, valid_params)
-                    % delete this vertex
-                    valid_params(i) = 0;
-                    fprintf('vertex %d deleted \n', i);
-                end
-            end
-        end
-
-        % shrink step so that the shape is convex
-        isconvex = check_convex(opt - step * grad, vert_type, valid_params);
-        while ~isconvex
-            step = step * line_search_beta;
-            isconvex = check_convex(opt - step * grad, vert_type, valid_params);
-            if step < line_search_eps
-                gradient_descent_converged = true;
-                fprintf('Failed to be convex')
-                break;
-            end
         end
 
         [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs, valid_params);

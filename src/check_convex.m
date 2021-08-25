@@ -32,7 +32,7 @@ function isconvex = check_convex(rs, vert_type, valid_verts)
     % Compute the vertices that needs to be checked
     verts = nan(num_valid_verts, 2);
     angle = pi/(num_rs - 1);
-    valid_vert_idx = 1
+    valid_vert_idx = 1;
     for i = 1:num_verts
         if valid_verts(i)
             angle_i = (i-1)*angle;
@@ -49,7 +49,6 @@ function isconvex = check_convex(rs, vert_type, valid_verts)
         end
     end
 
-    verts
     if isconvex
         for i = 1:(num_valid_verts-2)
             if ~ isconvex
