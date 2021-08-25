@@ -161,3 +161,38 @@ loss_params =
           unorm_ord: '2'
 
 Polygon polygon with 6 vertices
+Time to find eigenvalue: 1.83e+02; Time to compute 2-norm: 1.51e+01
+
+chebabs =
+
+   3.943939225260408   4.359090722656241
+
+Computing 3 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.88e+01; Time to compute 2-norm: 1.35e+01
+
+chebabs =
+
+   3.944166386147479   4.359341795215635
+
+Time to find eigenvalue: 5.43e+01; Time to compute 2-norm: 1.38e+01
+
+chebabs =
+
+   3.943712999743104   4.358840683926589
+
+Compuing dx2...
+Time to find eigenvalue: 5.60e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+   3.945252158097865   4.360541858950271
+
+Time to find eigenvalue: 5.28e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+   3.942630233445808   4.357643942229577
+
+Compuing dx3...
+Time to find eigenvalue: 5.63e+01; 

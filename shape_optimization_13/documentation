@@ -1,3 +1,8 @@
 implement delete vertex
 keep track of indices of deleted vertices
 skip when chunking
+
+1. include valid_params book keeping DONE
+2. make sure it's bug free RUNNING
+3. delete vertex
+4. test it on ellipse (where we stucked last time)
