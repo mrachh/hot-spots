@@ -1,4 +1,4 @@
-function [loss, chebabs, zk] = polyeven_loss(weight, loss_params, chebabs, valid_verts)
+function [loss, chebabs, zk] = loss(weight, loss_params, chebabs, valid_verts)
     addpath('../src');
     % INPUT: weight, eigenvalue interval [a b] (OPTIONAL)
     % OUTPUT: loss, eigenvalue interval, 

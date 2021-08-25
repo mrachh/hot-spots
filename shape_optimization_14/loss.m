@@ -1,4 +1,4 @@
-function [loss, chebabs, zk] = loss(weight, loss_params, chebabs)
+function [loss, chebabs, zk, ud_p, u_q] = loss(weight, loss_params, chebabs)
     addpath('../src');
     % INPUT: weight, eigenvalue interval [a b] (OPTIONAL)
     % OUTPUT: loss, eigenvalue interval, 
