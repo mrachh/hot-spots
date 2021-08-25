@@ -35,3 +35,12 @@ for i = 1:num_params
     unorm_grad(i) = (unorm_right - unorm_left)/(2*h_step);
     eigenval_grad(i) = (eigenval_right - eigenval_left)/(2*h_step);
 end
+
+
+% figure(1)
+% plot(unorm_grad)
+% hold on
+% plot(eigenval_grad)
+% legend('unorm','eigenval')
+% xlabel('d/dx_i')
+% ylabel('d/dx_i')

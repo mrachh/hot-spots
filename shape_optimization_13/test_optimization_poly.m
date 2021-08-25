@@ -14,7 +14,9 @@ init_weight = [
     0.911173560390196   
     0.990130395598911
 ]';
-% plot(chnk_polyeven(init_weight))
+
+% valid_verts = [1 1 1];
+% plot(chnk_polyeven(init_weight, valid_verts))
 % error('nothing')
 % Gradient descent parameter
 gd_params = struct( ...
