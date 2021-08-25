@@ -2,20 +2,23 @@ clear;clc;addpath('../src');
 
 diary('test_optimization_diary.txt');
 
-num_verts = 6;
+num_verts = 10;
 num_params = num_verts /2;
 
 
-% angle_diff = pi/(num_verts - 1);
-% angles = 0:angle_diff:(pi/2);
-% init_weight = 1-((angles-(pi/2)).^2)./10;
-init_weight = [
-    0.753259889972766   
-    0.911173560390196   
-    0.990130395598911
-]';
+angle_diff = pi/(num_verts - 1);
+angles = 0:angle_diff:(pi/2);
+a = 1.0;
+b = 1.0/2.761451254618413;
+normalize = 0.754208196380421;
+a = a/normalize;
+b = b/normalize;
 
-% valid_verts = [1 1 1];
+
+init_weight = a*b./sqrt((b.*cos(angles)).^2 + (a.*sin(angles)).^2);
+
+
+% valid_verts = ones(1, num_params);
 % plot(chnk_polyeven(init_weight, valid_verts))
 % error('nothing')
 % Gradient descent parameter

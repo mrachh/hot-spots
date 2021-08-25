@@ -7,3 +7,5 @@ skip when chunking
 3. delete vertex DONE
 3.5 check normal case RUNNING
 4. test it on ellipse (where we stucked last time)
+    q: do I recompute grad after deleting vertices
+5. merge to dev

@@ -44,3 +44,5 @@ end
 % legend('unorm','eigenval')
 % xlabel('d/dx_i')
 % ylabel('d/dx_i')
+
+% [loss, chebabs, zk, udnorm, unorm] = loss(poly_param, loss_params, chebabs)

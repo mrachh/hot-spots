@@ -19,7 +19,6 @@ function [chnkr, center] = chnk_poly(rs,valid_verts)
             verts_idx = verts_idx + 1;
         end
     end
-
     cparams = []; cparams.eps = 1.0e-5;
     pref = []; pref.k = 16;
     chnkr = chunkerpoly(verts, cparams, pref);
