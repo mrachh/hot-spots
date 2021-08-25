@@ -1,0 +1,3 @@
+implement delete vertex
+keep track of indices of deleted vertices
+skip when chunking

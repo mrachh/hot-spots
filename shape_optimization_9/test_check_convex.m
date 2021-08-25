@@ -67,3 +67,27 @@ if isconvex
 else
     title('is not convex');
 end
+
+figid = figid + 1;
+rs = [1 1.1 1.2 1]
+chnkr = chnk_poly(rs);
+figure(figid);
+plot(chnkr);
+isconvex = check_convex(rs,'full');
+if isconvex
+    title('Is convex');
+else
+    title('is not convex');
+end
+
+figid = figid + 1;
+rs = [1 0.5 1.2 1]
+chnkr = chnk_poly(rs);
+figure(figid);
+plot(chnkr);
+isconvex = check_convex(rs,'full');
+if isconvex
+    title('Is convex');
+else
+    title('is not convex');
+end

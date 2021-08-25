@@ -31,7 +31,12 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
     line_search_eps = gd_params.line_search_eps;
     line_search_beta = gd_params.line_search_beta;
     savefn = gd_params.savefn;
+    vert_type = loss_params.vert_type;
     opt = init;
+    num_params = length(opt);
+    valid_params = ones(1, num_params);
+    num_valid_params = sum(valid_params);
+    
 
     gd_log = struct();
     gd_log.loss = nan(maxiter + 1,1);
@@ -40,6 +45,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
     gd_log.fdd = nan(maxiter + 1,1);
     gd_log.time = nan(maxiter + 1,1);
     gd_log.weight = nan(maxiter + 1, length(init));
+    gd_log.valid_params = nan(maxiter + 1, length(init));
     gd_log.grad = nan(maxiter + 1, length(init));
     gradient_descent_converged = false;
     line_search_converged = false;
@@ -56,27 +62,31 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
 
         % Evaluate loss at current optimal weight
         if epoch == 1
-            [loss, chebabs] = fun(opt, loss_params);
+            [loss, chebabs] = fun(opt, loss_params, nan, valid_params);
         else
             % Guess an interval using previous zk
-            [loss, chebabs] = fun(opt, loss_params, chebabs);
+            [loss, chebabs] = fun(opt, loss_params, chebabs, valid_params);
         end
 
         % Computes gradient
-        num_params = length(opt);
         grad = zeros(1, num_params);
 
         fprintf('Computing %d derivatives: \n', num_params);
+
         for param_idx = 1:num_params
-            fprintf('Compuing dx%d...\n', param_idx);
-            direction = zeros(1, num_params);
-            direction(param_idx) = hspace;
+            if valid_params(param_idx)
+                fprintf('Compuing dx%d...\n', param_idx);
+                direction = zeros(1, num_params);
+                direction(param_idx) = hspace;
 
-            % Change this if # of params gets big
-            left = fun(opt - direction, loss_params, chebabs);
-            right = fun(opt + direction, loss_params, chebabs);
+                % Change this if # of params gets big
+                left = fun(opt - direction, loss_params, chebabs, valid_params);
+                right = fun(opt + direction, loss_params, chebabs, valid_params);
 
-            grad(param_idx) = (right - left) / (2 * hspace);
+                grad(param_idx) = (right - left) / (2 * hspace);
+            else
+                grad(param_idx) = 0;
+            end
         end
         fprintf('Gradient computed!\n')
 
@@ -95,8 +105,8 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
 
         % Initialize step size with second derivative "fdd"
 
-        right = fun(opt + hspace * grad_direction, loss_params, chebabs);
-        left = fun(opt - hspace * grad_direction, loss_params, chebabs);
+        right = fun(opt + hspace * grad_direction, loss_params, chebabs, valid_params);
+        left = fun(opt - hspace * grad_direction, loss_params, chebabs, valid_params);
 
         center = loss;
         fdd = (right - 2*center + left) / (hspace^2);
@@ -114,13 +124,18 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             step = 1.0 / fdd;
         end
 
-        isconvex = check_convex(opt - step * grad);
+        isconvex = check_convex(opt - step * grad, vert_type);
         while ~isconvex
             step = step * line_search_beta;
-            isconvex = check_convex(opt - step * grad);
+            isconvex = check_convex(opt - step * grad, vert_type);
+            if step < line_search_eps
+                gradient_descent_converged = true;
+                fprintf('Failed to be convex')
+                break;
+            end
         end
 
-        [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs);
+        [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs, valid_params);
         line_search_converged = (better_loss < loss);
 
         % Line search loop        
@@ -130,7 +145,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             % Shrink step size
 
             step = step * line_search_beta;
-            [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs);
+            [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs, valid_params);
             line_search_converged = (better_loss < loss);
 
             % Raise error when step is too small
@@ -151,6 +166,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         gd_log.fdd(epoch) = fdd;
         gd_log.time(epoch) = toc(start);
         gd_log.weight(epoch,:) = opt;
+        gd_log.valid_params(epoch,:) = valid_params;
         gd_log.grad(epoch,:) = grad;
 
         % Update weight
@@ -178,13 +194,14 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
 
 
     gd_log = struct( ...
-            'loss',         gd_log.loss(1:num_steps), ...
-            'step',         gd_log.step(1:num_steps), ...
-            'grad_norm',    gd_log.gradnorm(1:num_steps), ...
-            'weight',       gd_log.weight(1:num_steps, 1:end), ...
-            'fdd',          gd_log.fdd(1:num_steps), ...
-            'time',         gd_log.time(1:num_steps), ...
-            'grad',         gd_log.grad(1:num_steps, 1:end)...
+            'loss',                 gd_log.loss(1:num_steps), ...
+            'step',                 gd_log.step(1:num_steps), ...
+            'grad_norm',            gd_log.gradnorm(1:num_steps), ...
+            'weight',               gd_log.weight(1:num_steps, 1:end), ...
+            'valid_params',         gd_log.valid_params(1:num_steps, 1:end), ...
+            'fdd',                  gd_log.fdd(1:num_steps), ...
+            'time',                 gd_log.time(1:num_steps), ...
+            'grad',                 gd_log.grad(1:num_steps, 1:end)...
             );
 
     if not(gradient_descent_converged & line_search_converged)
