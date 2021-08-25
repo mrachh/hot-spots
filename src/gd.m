@@ -124,10 +124,24 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             step = 1.0 / fdd;
         end
 
-        isconvex = check_convex(opt - step * grad, vert_type);
+        % delete vertex if necessary
+        for i = 1:num_params
+            if valid_params(i)
+                direction = zeros(1, num_params);
+                direction(i) = grad(i) * line_search_eps;
+                if ~ check_convex(opt - direction, vert_type, valid_params)
+                    % delete this vertex
+                    valid_params(i) = 0;
+                    fprintf('vertex %d deleted \n', i);
+                end
+            end
+        end
+
+        % shrink step so that the shape is convex
+        isconvex = check_convex(opt - step * grad, vert_type, valid_params);
         while ~isconvex
             step = step * line_search_beta;
-            isconvex = check_convex(opt - step * grad, vert_type);
+            isconvex = check_convex(opt - step * grad, vert_type, valid_params);
             if step < line_search_eps
                 gradient_descent_converged = true;
                 fprintf('Failed to be convex')
