@@ -5,7 +5,7 @@ skip when chunking
 1. include valid_params book keeping DONE
 2. make sure it's bug free DONE
 3. delete vertex DONE
-3.5 check normal case RUNNING
-4. test it on ellipse (where we stucked last time)
-    q: do I recompute grad after deleting vertices
+3.5 check normal case done
+4. test it on ellipse (where we stucked last time) RUNNING
+    q: do I recompute grad after deleting vertices DONE
 5. merge to dev
