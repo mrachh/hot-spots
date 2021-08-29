@@ -1,4 +1,4 @@
-function [chnkr, center] = chnk_poly(rs, show_plot)
+function [chnkr, center] = chnk_poly(rs)
     % INPUT:  [r_1 r_2 ... r_M]
     % OUTPUT: chnkr object, center of chunker object
     % Vertices:
@@ -10,11 +10,10 @@ function [chnkr, center] = chnk_poly(rs, show_plot)
     num_verts = M;
     verts = zeros(2, num_verts);
     for i = 1:M 
-        angle = pi*(i-1)/(M-1);
-        verts(1,i) = rs(i)*cos(angle);
-        verts(2,i) = rs(i)*sin(angle);
+        angle_i = 2*pi*(i-1)/M;
+        verts(1,i) = rs(i)*cos(angle_i);
+        verts(2,i) = rs(i)*sin(angle_i);
     end
-
     cparams = []; cparams.eps = 1.0e-5;
     pref = []; pref.k = 16;
     chnkr = chunkerpoly(verts, cparams, pref);

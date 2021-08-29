@@ -13,13 +13,28 @@ function [ud_p] = gradu_norm(chnkr, zk, sigma, p)
         rint = rint/abs(rint);
         y = real(dudncomputed./rint);
 
-        % Find the chunk closest to the origin
-        [rn,dn,d2n,dist,tn,ichind] = ...
-            nearest(chnkr, [0 0], 1:chnkr.nch);
+        [ymax,iind] = max(y);
 
-        mat = lege.matrin(chnkr.k, tn);
+        [rn,dn,d2n,dist,tn,ichind] = ...
+        nearest(chnkr, [0 0], 1:chnkr.nch);
+        % ichind = ceil(iind/chnkr.k);
+        [~,~,u,v] = lege.exps(chnkr.k);
         y = reshape(y,[chnkr.k,chnkr.nch]);
-        ud_p = dot(mat,y(:,ichind));
+        ycoefs = u*y(:,ichind);
+        ydcoefs = lege.derpol(ycoefs);
+        chebfun_param = chebfunpref; chebfun_param.chebfuneps = eps;
+        chebfun_param.splitting = 0; chebfun_param.maxLength=257;
+
+        ccheb = leg2cheb(ycoefs);
+        p = chebfun(ccheb,'coeffs', chebfun_param);
+
+        cchebd = leg2cheb(ydcoefs);
+        pd = chebfun(cchebd,'coeffs', chebfun_param);
+        rr = [roots(pd) -1 1];
+        yy = p(rr);
+        [ymax_final,iind] = max(yy);
+        ymax_loc = rr(iind);
+        ud_p = ymax_final;
     
     else
 

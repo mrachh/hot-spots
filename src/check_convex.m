@@ -1,71 +1,111 @@
-function isconvex = check_convex(rs, vert_type, valid_verts)
-
-% Assume an even number of vertices
-    if nargin < 3
-        error('valid verts not specified')
-    end
+function [isconvex, rs_conv] = check_convex(rs)
     
     isconvex = true;
 
-
-    if strcmp(vert_type, 'even')
-        [~, M] = size(rs);
-        num_verts = M * 2 ;
-        rs_symmetric = zeros(1, num_verts);
-        valid_verts_symmetric = zeros(1, num_verts);
-        for i = 1:M 
-            rs_symmetric(i) = rs(i);
-            valid_verts_symmetric(i) = valid_verts(i);
-        end
-        for i = (M+1) : num_verts
-            rs_symmetric(i) = rs(2*M + 1 - i);
-            valid_verts_symmetric(i) = valid_verts(2*M + 1 - i);
-        end
-        rs = rs_symmetric;
-        valid_verts = valid_verts_symmetric;
-    end
-    
     [~, num_rs] = size(rs);
     num_verts = num_rs;
-    num_valid_verts = sum(valid_verts);
+    rs_conv = rs;
 
     % Compute the vertices that needs to be checked
-    verts = nan(num_valid_verts, 2);
-    angle = pi/(num_rs - 1);
-    valid_vert_idx = 1;
+    verts = nan(num_verts, 2);
+    angle = 2 * pi/num_rs;
     for i = 1:num_verts
-        if valid_verts(i)
-            angle_i = (i-1)*angle;
-            r = rs(min(i,num_rs));
-            if r<=0
-                isconvex = false;
-                break;
-            end
-            x_i = cos(angle_i)*r;
-            y_i = sin(angle_i)*r;
-            verts(valid_vert_idx,1) = x_i;
-            verts(valid_vert_idx,2) = y_i;
-            valid_vert_idx = valid_vert_idx + 1;
+        angle_i = (i-1)*angle;
+        r = rs(i);
+        if r<=0
+            isconvex = false;
+            break;
         end
+        x_i = cos(angle_i)*r;
+        y_i = sin(angle_i)*r;
+        verts(i,1) = x_i;
+        verts(i,2) = y_i;
     end
 
     if isconvex
-        for i = 1:(num_valid_verts-2)
+        for i = 1:num_verts
             if ~ isconvex
                 break;
             end
             % compute angle i-i+1-i+2
-            v1 = verts(i,:) - verts(i+1,:);
-            v2 = verts(i+2,:) - verts(i+1,:);
+            i_0 = mod(i-1, num_verts)+1;
+            i_1 = mod(i, num_verts)+1;
+            i_2 = mod(i+1, num_verts)+1;
+            v1 = verts(i_0,:) - verts(i_1,:);
+            v2 = verts(i_2,:) - verts(i_1,:);
             x1 = v1(1);
             y1 = v1(2);
             x2 = v2(1);
             y2 = v2(2);
             angle = - atan2(x1*y2 - x2*y1, x1*x2 + y1*y2);
             angle = wrapTo2Pi(angle);
-            isconvex = isconvex & (angle < pi);
+            isconvex = isconvex & (angle <= pi);
         end
     end
 
+    % Convexify if not convex
+    if ~ isconvex
+        for i = 1:num_verts
+            % compute angle i-i+1-i+2
+            i_0 = mod(i-1, num_verts)+1;
+            i_1 = mod(i, num_verts)+1;
+            i_2 = mod(i+1, num_verts)+1;
+            v1 = verts(i_0,:) - verts(i_1,:);
+            v2 = verts(i_2,:) - verts(i_1,:);
+            x1 = v1(1);
+            y1 = v1(2);
+            x2 = v2(1);
+            y2 = v2(2);
+            angle = - atan2(x1*y2 - x2*y1, x1*x2 + y1*y2);
+            angle = wrapTo2Pi(angle);
+            if angle > pi
+                % angle for r_i+1
+                ang = (i_1-1)*2*pi/num_verts;
+                sang = sin(ang);
+                cang = cos(ang);
+                x1 = verts(i_2,1);
+                y1 = verts(i_2,2);
+                x2 = verts(i_0,1);
+                y2 = verts(i_0,2);
+                r = (x2*y1-x1*y2)/...
+                    (sang*x2+cang*y1-sang*x1-cang*y2)
+                verts(i_1,1) = r*cang;
+                verts(i_1,2) = r*sang;
+            end
+        end
+
+        % for i = num_verts:(-1):1
+        %     % compute angle i-i+1-i+2
+        %     i_0 = mod(i-1, num_verts)+1;
+        %     i_1 = mod(i, num_verts)+1;
+        %     i_2 = mod(i+1, num_verts)+1;
+        %     v1 = verts(i_0,:) - verts(i_1,:);
+        %     v2 = verts(i_2,:) - verts(i_1,:);
+        %     x1 = v1(1);
+        %     y1 = v1(2);
+        %     x2 = v2(1);
+        %     y2 = v2(2);
+        %     angle = - atan2(x1*y2 - x2*y1, x1*x2 + y1*y2);
+        %     angle = wrapTo2Pi(angle);
+        %     if angle > pi
+        %         verts(i_1,:) = (verts(i_0,:) + verts(i_2,:))/2
+        %     end
+        % end
+
+        %Convert verts to rs
+        % scatter(verts(:,1),verts(:,2))
+        % verts
+        angle = 2 * pi/num_rs;
+        for i = 1:num_verts
+            angle_i = (i-1)*angle;
+            if cos(angle_i)~=0
+                rs_conv(i) = verts(i,1) / cos(angle_i);
+            else
+                rs_conv(i) = verts(i,2) / sin(angle_i);
+            end
+        end
+
+
+    end
 
 end
