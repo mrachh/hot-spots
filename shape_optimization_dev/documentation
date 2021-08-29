@@ -1,4 +1,3 @@
-add check convex to gd.m done
-test optimization:
-    issue: halts when one angle becomes pi (while gradient still positive), consider deleting one vertex.
-test ellipse initialization (previously results in nonconvex domains)
+1. switch to new parametrization
+2. test 1
+3. 
