@@ -15,9 +15,7 @@ function [ud_p] = gradu_norm(chnkr, zk, sigma, p)
 
         [ymax,iind] = max(y);
 
-        [rn,dn,d2n,dist,tn,ichind] = ...
-        nearest(chnkr, [0 0], 1:chnkr.nch);
-        % ichind = ceil(iind/chnkr.k);
+        ichind = ceil(iind/chnkr.k);
         [~,~,u,v] = lege.exps(chnkr.k);
         y = reshape(y,[chnkr.k,chnkr.nch]);
         ycoefs = u*y(:,ichind);

@@ -2,7 +2,7 @@ clear;clc;addpath('../src');
 
 diary('test_optimization_diary.txt');
 
-num_verts = 4;
+num_verts = 8;
 num_params = num_verts;
 
 

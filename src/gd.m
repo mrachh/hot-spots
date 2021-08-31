@@ -115,17 +115,25 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         end
 
         %
-        max_steps = opt./(-grad);
+        max_steps = opt./(grad);
         max_steps = max_steps(max_steps>0);
-        max_step = min(max_steps)
-        step = min(step, max_step);
+        [~, num_directions_inward] = size(max_steps)
+        if num_directions_inward > 0
+            max_step = min(max_steps);
+            step = min(step, max_step);
+        end
+        step
 
         [isconvex, opt_next] = check_convex(opt - step * grad);
         [better_loss, chebabs] = fun(opt_next, loss_params, chebabs);
         line_search_converged = (better_loss < loss);
 
         % Line search loop        
-
+        fprintf('Some statistics before line search')
+        step
+        fdd
+        grad
+        opt
         while not(line_search_converged)
 
             % Shrink step size
