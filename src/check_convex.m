@@ -1,6 +1,6 @@
 function [isconvex, rs_conv] = check_convex(rs)
     
-    convex_tol = 1e-15;
+    % convex_tol = 1e-15;
 
     isconvex = true;
 
@@ -47,42 +47,106 @@ function [isconvex, rs_conv] = check_convex(rs)
 
     % Convexify if not convex
     if ~ isconvex
-        convex_err = 1;
-        while convex_err > convex_tol
 
-            convex_err = 0;
+        % Two pass convexification
 
-            for i = 1:num_verts
-                % compute angle i-i+1-i+2
-                i_0 = mod(i-1, num_verts)+1;
-                i_1 = mod(i, num_verts)+1;
-                i_2 = mod(i+1, num_verts)+1;
-                v1 = verts(i_0,:) - verts(i_1,:);
-                v2 = verts(i_2,:) - verts(i_1,:);
-                x1 = v1(1);
-                y1 = v1(2);
-                x2 = v2(1);
-                y2 = v2(2);
-                angle = - atan2(x1*y2 - x2*y1, x1*x2 + y1*y2);
-                angle = wrapTo2Pi(angle);
-                if angle > pi + 1e-15
-                    % angle for r_i+1
-                    convex_err = convex_err + angle - pi;
-                    ang = (i_1-1)*2*pi/num_verts;
-                    sang = sin(ang);
-                    cang = cos(ang);
-                    x1 = verts(i_2,1);
-                    y1 = verts(i_2,2);
-                    x2 = verts(i_0,1);
-                    y2 = verts(i_0,2);
-                    r = (x2*y1-x1*y2)/...
-                        (sang*x2+cang*y1-sang*x1-cang*y2);
-                    verts(i_1,1) = r*cang;
-                    verts(i_1,2) = r*sang;
-                end
+        % First Pass
+        for i = 1:num_verts
+            % compute angle i-i+1-i+2
+            i_0 = mod(i-1, num_verts)+1;
+            i_1 = mod(i, num_verts)+1;
+            i_2 = mod(i+1, num_verts)+1;
+            v1 = verts(i_0,:) - verts(i_1,:);
+            v2 = verts(i_2,:) - verts(i_1,:);
+            x1 = v1(1);
+            y1 = v1(2);
+            x2 = v2(1);
+            y2 = v2(2);
+            angle = - atan2(x1*y2 - x2*y1, x1*x2 + y1*y2);
+            angle = wrapTo2Pi(angle);
+            if angle > pi + 1e-15
+                % angle for r_i+1
+                ang = (i_1-1)*2*pi/num_verts;
+                sang = sin(ang);
+                cang = cos(ang);
+                x1 = verts(i_2,1);
+                y1 = verts(i_2,2);
+                x2 = verts(i_0,1);
+                y2 = verts(i_0,2);
+                r = (x2*y1-x1*y2)/...
+                    (sang*x2+cang*y1-sang*x1-cang*y2);
+                verts(i_1,1) = r*cang;
+                verts(i_1,2) = r*sang;
             end
-            disp(convex_err)
         end
+
+        % Second Pass
+        for i = num_verts:(-1):1
+            % compute angle i-i+1-i+2
+            i_0 = mod(i-1, num_verts)+1;
+            i_1 = mod(i, num_verts)+1;
+            i_2 = mod(i+1, num_verts)+1;
+            v1 = verts(i_0,:) - verts(i_1,:);
+            v2 = verts(i_2,:) - verts(i_1,:);
+            x1 = v1(1);
+            y1 = v1(2);
+            x2 = v2(1);
+            y2 = v2(2);
+            angle = - atan2(x1*y2 - x2*y1, x1*x2 + y1*y2);
+            angle = wrapTo2Pi(angle);
+            if angle > pi + 1e-15
+                % angle for r_i+1
+                ang = (i_1-1)*2*pi/num_verts;
+                sang = sin(ang);
+                cang = cos(ang);
+                x1 = verts(i_2,1);
+                y1 = verts(i_2,2);
+                x2 = verts(i_0,1);
+                y2 = verts(i_0,2);
+                r = (x2*y1-x1*y2)/...
+                    (sang*x2+cang*y1-sang*x1-cang*y2);
+                verts(i_1,1) = r*cang;
+                verts(i_1,2) = r*sang;
+            end
+        end
+
+        % Iterative convexification
+        % convex_err = 1;
+        % while convex_err > convex_tol
+
+        %     convex_err = 0;
+
+        %     for i = 1:num_verts
+        %         % compute angle i-i+1-i+2
+        %         i_0 = mod(i-1, num_verts)+1;
+        %         i_1 = mod(i, num_verts)+1;
+        %         i_2 = mod(i+1, num_verts)+1;
+        %         v1 = verts(i_0,:) - verts(i_1,:);
+        %         v2 = verts(i_2,:) - verts(i_1,:);
+        %         x1 = v1(1);
+        %         y1 = v1(2);
+        %         x2 = v2(1);
+        %         y2 = v2(2);
+        %         angle = - atan2(x1*y2 - x2*y1, x1*x2 + y1*y2);
+        %         angle = wrapTo2Pi(angle);
+        %         if angle > pi + 1e-15
+        %             % angle for r_i+1
+        %             convex_err = convex_err + angle - pi;
+        %             ang = (i_1-1)*2*pi/num_verts;
+        %             sang = sin(ang);
+        %             cang = cos(ang);
+        %             x1 = verts(i_2,1);
+        %             y1 = verts(i_2,2);
+        %             x2 = verts(i_0,1);
+        %             y2 = verts(i_0,2);
+        %             r = (x2*y1-x1*y2)/...
+        %                 (sang*x2+cang*y1-sang*x1-cang*y2);
+        %             verts(i_1,1) = r*cang;
+        %             verts(i_1,2) = r*sang;
+        %         end
+        %     end
+        %     disp(convex_err)
+        % end
 
 
 
