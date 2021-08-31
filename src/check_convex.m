@@ -47,7 +47,7 @@ function [isconvex, rs_conv] = check_convex(rs)
 
     % Convexify if not convex
     if ~ isconvex
-
+        warning('Shape has been convexified')
         % Two pass convexification
 
         % First Pass

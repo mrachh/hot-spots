@@ -114,13 +114,14 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             step = 1.0 / fdd;
         end
 
-        isconvex = check_convex(opt - step * grad);
-        while ~isconvex
-            step = step * line_search_beta;
-            isconvex = check_convex(opt - step * grad);
-        end
+        %
+        max_steps = opt./(-grad);
+        max_steps = max_steps(max_steps>0);
+        max_step = min(max_steps)
+        step = min(step, max_step);
 
-        [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs);
+        [isconvex, opt_next] = check_convex(opt - step * grad);
+        [better_loss, chebabs] = fun(opt_next, loss_params, chebabs);
         line_search_converged = (better_loss < loss);
 
         % Line search loop        
@@ -130,7 +131,8 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             % Shrink step size
 
             step = step * line_search_beta;
-            [better_loss, chebabs] = fun(opt - step * grad, loss_params, chebabs);
+            [isconvex, opt_next] = check_convex(opt - step * grad);
+            [better_loss, chebabs] = fun(opt_next, loss_params, chebabs);
             line_search_converged = (better_loss < loss);
 
             % Raise error when step is too small
@@ -154,7 +156,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         gd_log.grad(epoch,:) = grad;
 
         % Update weight
-        opt = opt - step * grad;
+        opt = opt_next;
 
         % Record next weight
         gd_log.weight(epoch+1,:) = opt;
