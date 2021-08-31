@@ -69,8 +69,24 @@ figid = 0
 %     title('is not convex');
 % end
 
+% figid = figid + 1;
+% rs = [1 0.1 1.2 1 1]
+% chnkr = chnk_poly(rs);
+% figure(figid);
+% clf;
+% plot(chnkr);
+% [isconvex, rs_conv] = check_convex(rs);
+% hold on
+% plot(chnk_poly(rs_conv))
+% legend('rs', 'rs conv')
+% if isconvex
+%     title('Is convex');
+% else
+%     title('is not convex');
+% end
+
 figid = figid + 1;
-rs = [1 0.1 1.2 1 1]
+rs = [1 .3 1 .3 1 .3 1 .3 1 .3]
 chnkr = chnk_poly(rs);
 figure(figid);
 clf;
@@ -78,7 +94,23 @@ plot(chnkr);
 [isconvex, rs_conv] = check_convex(rs);
 hold on
 plot(chnk_poly(rs_conv))
-legend('rs', 'rs_conv')
+legend('rs', 'rs conv')
+if isconvex
+    title('Is convex');
+else
+    title('is not convex');
+end
+
+figid = figid + 1;
+rs = [1 .3 .3 1 .3 .3 1 .3 .3 1 .3 .3 1 .3 .3]
+chnkr = chnk_poly(rs);
+figure(figid);
+clf;
+plot(chnkr);
+[isconvex, rs_conv] = check_convex(rs);
+hold on
+plot(chnk_poly(rs_conv))
+legend('rs', 'rs conv')
 if isconvex
     title('Is convex');
 else
