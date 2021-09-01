@@ -14,8 +14,8 @@ init_weight = ones(1,num_verts)/sqrt(pi);
 
 % init_weight = [0.408066774854523 0.429040642463146 1.18253139126812 0.65423897111139 0.443338318926292 0.440662202602962 0.839294305380822 1.15659966820638];
 
-plot(chnk_poly(init_weight))
-error('nothing')
+% plot(chnk_poly(init_weight))
+% error('nothing')
 
 
 % valid_verts = ones(1, num_params);
