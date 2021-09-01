@@ -1443,3 +1443,1562 @@ loss_params =
           unorm_ord: '2'
 
 Polygon polygon with 8 vertices
+Time to find eigenvalue: 1.24e+02; Time to compute 2-norm: 7.84e+00
+
+chebabs =
+
+   4.287988382370077   4.739355580514296
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.60e+01; Time to compute 2-norm: 7.71e+00
+
+chebabs =
+
+   4.288940122155582   4.740407503435117
+
+Time to find eigenvalue: 3.56e+01; Time to compute 2-norm: 7.66e+00
+
+chebabs =
+
+   4.287040051801284   4.738307425675105
+
+Compuing dx2...
+Time to find eigenvalue: 3.47e+01; Time to compute 2-norm: 7.58e+00
+
+chebabs =
+
+   4.288940122163067   4.740407503443391
+
+Time to find eigenvalue: 3.85e+01; Time to compute 2-norm: 7.95e+00
+
+chebabs =
+
+   4.287040051854271   4.738307425733669
+
+Compuing dx3...
+Time to find eigenvalue: 3.94e+01; Time to compute 2-norm: 8.03e+00
+
+chebabs =
+
+   4.288940122184729   4.740407503467332
+
+Time to find eigenvalue: 3.81e+01; Time to compute 2-norm: 7.94e+00
+
+chebabs =
+
+   4.287040051814857   4.738307425690106
+
+Compuing dx4...
+Time to find eigenvalue: 3.70e+01; Time to compute 2-norm: 7.84e+00
+
+chebabs =
+
+   4.288940122192265   4.740407503475662
+
+Time to find eigenvalue: 3.72e+01; Time to compute 2-norm: 7.89e+00
+
+chebabs =
+
+   4.287040051816779   4.738307425692230
+
+Compuing dx5...
+Time to find eigenvalue: 3.70e+01; Time to compute 2-norm: 7.79e+00
+
+chebabs =
+
+   4.288940122164726   4.740407503445224
+
+Time to find eigenvalue: 3.72e+01; Time to compute 2-norm: 7.88e+00
+
+chebabs =
+
+   4.287040051821985   4.738307425697983
+
+Compuing dx6...
+Time to find eigenvalue: 3.79e+01; Time to compute 2-norm: 7.89e+00
+
+chebabs =
+
+   4.288940122162780   4.740407503443073
+
+Time to find eigenvalue: 3.73e+01; Time to compute 2-norm: 7.84e+00
+
+chebabs =
+
+   4.287040051826831   4.738307425703341
+
+Compuing dx7...
+Time to find eigenvalue: 3.37e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.288940122133735   4.740407503410972
+
+Time to find eigenvalue: 3.69e+01; Time to compute 2-norm: 7.79e+00
+
+chebabs =
+
+   4.287040051817577   4.738307425693112
+
+Compuing dx8...
+Time to find eigenvalue: 3.58e+01; [Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.008168e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('u_norm', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\u_norm.m', 22)" style="font-weight:bold">u_norm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\u_norm.m',22,0)">line 22</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m', 44)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m',44,0)">line 44</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 76)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',76,0)">line 76</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)
+] 
+Time to compute 2-norm: 7.66e+00
+
+chebabs =
+
+   4.288940122176421   4.740407503458150
+
+Time to find eigenvalue: 3.45e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.287040051832274   4.738307425709356
+
+Gradient computed!
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 7.98e+00
+
+chebabs =
+
+   4.290677165557508   4.742327393510930
+
+Time to find eigenvalue: 3.88e+01; Time to compute 2-norm: 8.03e+00
+
+chebabs =
+
+   4.285302966988676   4.736387489829590
+
+[Warning: Negative second derivative -9.31e-04] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 107)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',107,0)">line 107</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+
+num_directions_inward =
+
+     0
+
+
+step =
+
+     1
+
+Time to find eigenvalue: 3.92e+01; Time to compute 2-norm: 7.88e+00
+
+chebabs =
+
+   4.033729145759249   4.458332213733907
+
+Some statistics before line search
+step =
+
+     1
+
+
+fdd =
+
+    -9.309503168353217e-04
+
+
+grad =
+
+  Columns 1 through 5
+
+  -0.035562969752517  -0.035562726304228  -0.035562753552820  -0.035562591815752  -0.035561743650186
+
+  Columns 6 through 8
+
+  -0.035563689745638  -0.035562402058126  -0.035562952591328
+
+
+opt =
+
+  Columns 1 through 5
+
+   0.564189583547756   0.564189583547756   0.564189583547756   0.564189583547756   0.564189583547756
+
+  Columns 6 through 8
+
+   0.564189583547756   0.564189583547756   0.564189583547756
+
+Saving log file...
+iter: 1, loss: -2.77e-01, grad: 1.01e-01, 2nd-deri: -9.31e-04, time: 1.00e+03
+Current weight [0.599752553300274 0.599752309851984 0.599752337100577 0.599752175363508 0.599751327197943 0.599753273293394 0.599751985605882 0.599752536139084]
+Current gradient [-0.0355629697525173 -0.035562726304228 -0.0355627535528202 -0.0355625918157521 -0.0355617436501865 -0.0355636897456379 -0.0355624020581258 -0.0355629525913281]
+Time to find eigenvalue: 3.83e+01; Time to compute 2-norm: 7.94e+00
+
+chebabs =
+
+   4.033729141775279   4.458332209330571
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.84e+01; Time to compute 2-norm: 7.88e+00
+
+chebabs =
+
+   4.034571269582484   4.459262982170115
+
+Time to find eigenvalue: 3.89e+01; Time to compute 2-norm: 7.92e+00
+
+chebabs =
+
+   4.032889851304621   4.457404572494582
+
+Compuing dx2...
+Time to find eigenvalue: 3.96e+01; Time to compute 2-norm: 7.90e+00
+
+chebabs =
+
+   4.034571270183839   4.459262982834770
+
+Time to find eigenvalue: 3.84e+01; Time to compute 2-norm: 7.90e+00
+
+chebabs =
+
+   4.032889850754307   4.457404571886340
+
+Compuing dx3...
+Time to find eigenvalue: 3.76e+01; Time to compute 2-norm: 7.79e+00
+
+chebabs =
+
+   4.034571268901697   4.459262981417666
+
+Time to find eigenvalue: 4.03e+01; Time to compute 2-norm: 8.01e+00
+
+chebabs =
+
+   4.032889851948465   4.457404573206198
+
+Compuing dx4...
+Time to find eigenvalue: 3.86e+01; Time to compute 2-norm: 7.88e+00
+
+chebabs =
+
+   4.034571268599577   4.459262981083744
+
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 8.00e+00
+
+chebabs =
+
+   4.032889852309649   4.457404573605401
+
+Compuing dx5...
+Time to find eigenvalue: 3.94e+01; Time to compute 2-norm: 7.97e+00
+
+chebabs =
+
+   4.034571273213104   4.459262986182906
+
+Time to find eigenvalue: 4.09e+01; Time to compute 2-norm: 8.01e+00
+
+chebabs =
+
+   4.032889847735261   4.457404568549500
+
+Compuing dx6...
+Time to find eigenvalue: 3.61e+01; Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   4.034571265092816   4.459262977207849
+
+Time to find eigenvalue: 3.75e+01; Time to compute 2-norm: 7.75e+00
+
+chebabs =
+
+   4.032889855847764   4.457404577515951
+
+Compuing dx7...
+Time to find eigenvalue: 3.94e+01; Time to compute 2-norm: 7.97e+00
+
+chebabs =
+
+   4.034571272312718   4.459262985187742
+
+Time to find eigenvalue: 3.74e+01; Time to compute 2-norm: 7.75e+00
+
+chebabs =
+
+   4.032889848569101   4.457404569471112
+
+Compuing dx8...
+Time to find eigenvalue: 3.81e+01; Time to compute 2-norm: 7.83e+00
+
+chebabs =
+
+   4.034571269695281   4.459262982294785
+
+Time to find eigenvalue: 3.92e+01; Time to compute 2-norm: 7.85e+00
+
+chebabs =
+
+   4.032889851216240   4.457404572396896
+
+Gradient computed!
+Time to find eigenvalue: 4.17e+01; Time to compute 2-norm: 8.15e+00
+
+chebabs =
+
+   4.036108407797264   4.460961924407502
+
+Time to find eigenvalue: 4.19e+01; Time to compute 2-norm: 7.89e+00
+
+chebabs =
+
+   4.031352679369416   4.455705592987250
+
+[Warning: Negative second derivative -1.08e+00] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 107)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',107,0)">line 107</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+
+num_directions_inward =
+
+     0
+
+
+step =
+
+     1
+
+Time to find eigenvalue: 4.07e+01; Time to compute 2-norm: 8.03e+00
+
+chebabs =
+
+   3.820431648626841   4.222582348482298
+
+Some statistics before line search
+step =
+
+     1
+
+
+fdd =
+
+  -1.077275267158395
+
+
+grad =
+
+  Columns 1 through 5
+
+  -0.033577327699097  -0.033446796152303  -0.033676554077156  -0.033353121772633  -0.033446379940544
+
+  Columns 6 through 8
+
+  -0.033644959970131  -0.033349087133733  -0.033382934938625
+
+
+opt =
+
+  Columns 1 through 5
+
+   0.599752553300274   0.599752309851984   0.599752337100577   0.599752175363508   0.599751327197943
+
+  Columns 6 through 8
+
+   0.599753273293394   0.599751985605882   0.599752536139084
+
+Saving log file...
+iter: 2, loss: -2.77e-01, grad: 9.47e-02, 2nd-deri: -1.08e+00, time: 9.57e+02
+Current weight [0.63332988099937 0.633199106004288 0.633428891177732 0.633105297136142 0.633197707138487 0.633398233263525 0.633101072739615 0.633135471077709]
+Current gradient [-0.0335773276990969 -0.0334467961523033 -0.0336765540771555 -0.0333531217726335 -0.0334463799405438 -0.0336449599701305 -0.0333490871337327 -0.033382934938625]
+Time to find eigenvalue: 4.01e+01; Time to compute 2-norm: 7.98e+00
+
+chebabs =
+
+   3.820431648420173   4.222582348253876
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.91e+01; Time to compute 2-norm: 7.99e+00
+
+chebabs =
+
+   3.821186632259257   4.223416804076022
+
+Time to find eigenvalue: 4.23e+01; [Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.636337e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ud_norm', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\ud_norm.m', 7)" style="font-weight:bold">ud_norm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\ud_norm.m',7,0)">line 7</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m', 42)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 77)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',77,0)">line 77</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)
+] 
+Time to compute 2-norm: 8.14e+00
+
+chebabs =
+
+   3.819679075317412   4.221750556929772
+
+Compuing dx2...
+Time to find eigenvalue: 4.02e+01; Time to compute 2-norm: 7.92e+00
+
+chebabs =
+
+   3.821187413080481   4.223417667088953
+
+Time to find eigenvalue: 3.92e+01; Time to compute 2-norm: 7.93e+00
+
+chebabs =
+
+   3.819678295446295   4.221749694966958
+
+Compuing dx3...
+Time to find eigenvalue: 3.44e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   3.821186413652687   4.223416562458234
+
+Time to find eigenvalue: 3.77e+01; Time to compute 2-norm: 7.81e+00
+
+chebabs =
+
+   3.819679293118738   4.221750797657553
+
+Compuing dx4...
+Time to find eigenvalue: 3.58e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   3.821187585228262   4.223417857357553
+
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 7.74e+00
+
+chebabs =
+
+   3.819678125581588   4.221749507221756
+
+Compuing dx5...
+Time to find eigenvalue: 3.81e+01; Time to compute 2-norm: 7.80e+00
+
+chebabs =
+
+   3.821187144785259   4.223417370552128
+
+Time to find eigenvalue: 3.80e+01; Time to compute 2-norm: 7.93e+00
+
+chebabs =
+
+   3.819678564310209   4.221749992132336
+
+Compuing dx6...
+Time to find eigenvalue: 3.87e+01; Time to compute 2-norm: 7.92e+00
+
+chebabs =
+
+   3.821186285651406   4.223416420983133
+
+Time to find eigenvalue: 4.04e+01; Time to compute 2-norm: 7.93e+00
+
+chebabs =
+
+   3.819679421880981   4.221750939973717
+
+Compuing dx7...
+Time to find eigenvalue: 4.03e+01; Time to compute 2-norm: 7.99e+00
+
+chebabs =
+
+   3.821187356382405   4.223417604422659
+
+Time to find eigenvalue: 3.90e+01; Time to compute 2-norm: 7.96e+00
+
+chebabs =
+
+   3.819678353468535   4.221749759096803
+
+Compuing dx8...
+Time to find eigenvalue: 3.91e+01; Time to compute 2-norm: 8.00e+00
+
+chebabs =
+
+   3.821187195620876   4.223417426738863
+
+Time to find eigenvalue: 3.94e+01; Time to compute 2-norm: 7.88e+00
+
+chebabs =
+
+   3.819678513953817   4.221749936475272
+
+Gradient computed!
+Time to find eigenvalue: 3.91e+01; Time to compute 2-norm: 7.90e+00
+
+chebabs =
+
+   3.821671926134243   4.223953181516796
+
+Time to find eigenvalue: 3.92e+01; Time to compute 2-norm: 7.90e+00
+
+chebabs =
+
+   3.819194535539618   4.221215012964842
+
+[Warning: Negative second derivative -1.79e+02] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 107)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',107,0)">line 107</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+
+num_directions_inward =
+
+     3
+
+
+step =
+
+     1
+
+Time to find eigenvalue: 3.89e+01; Time to compute 2-norm: 8.28e+00
+
+chebabs =
+
+   3.699531383998315   4.088955740208664
+
+Some statistics before line search
+step =
+
+     1
+
+
+fdd =
+
+    -1.788288958359252e+02
+
+
+grad =
+
+  Columns 1 through 5
+
+  -0.041665413410413  -0.026087198763569  -0.055557461885569   0.013535878807203   0.006832003610180
+
+  Columns 6 through 8
+
+  -0.081682263135707   0.006590651724731  -0.005596433188787
+
+
+opt =
+
+  Columns 1 through 5
+
+   0.633329880999370   0.633199106004288   0.633428891177732   0.633105297136142   0.633197707138487
+
+  Columns 6 through 8
+
+   0.633398233263525   0.633101072739615   0.633135471077709
+
+Saving log file...
+iter: 3, loss: -2.77e-01, grad: 1.12e-01, 2nd-deri: -1.79e+02, time: 9.54e+02
+Current weight [0.674995294409784 0.659286304767857 0.688986353063301 0.619569418328939 0.626365703528307 0.715080496399232 0.626510421014884 0.638731904266496]
+Current gradient [-0.0416654134104133 -0.0260871987635691 -0.0555574618855692 0.0135358788072026 0.00683200361017988 -0.0816822631357073 0.0065906517247305 -0.005596433188787]
+Time to find eigenvalue: 3.84e+01; Time to compute 2-norm: 8.10e+00
+
+chebabs =
+
+   3.699531384011805   4.088955740223574
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.95e+01; Time to compute 2-norm: 7.99e+00
+
+chebabs =
+
+   3.700195371006163   4.089689620585759
+
+Time to find eigenvalue: 3.95e+01; Time to compute 2-norm: 8.21e+00
+
+chebabs =
+
+   3.698869446952746   4.088224125579351
+
+Compuing dx2...
+Time to find eigenvalue: 4.27e+01; Time to compute 2-norm: 8.25e+00
+
+chebabs =
+
+   3.700282656190713   4.089786093684473
+
+Time to find eigenvalue: 3.98e+01; Time to compute 2-norm: 8.19e+00
+
+chebabs =
+
+   3.698782312217157   4.088127818766331
+
+Compuing dx3...
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 8.21e+00
+
+chebabs =
+
+   3.700139303156378   4.089627650857050
+
+Time to find eigenvalue: 3.71e+01; Time to compute 2-norm: 8.08e+00
+
+chebabs =
+
+   3.698925343002995   4.088285905424363
+
+Compuing dx4...
+Time to find eigenvalue: 3.71e+01; Time to compute 2-norm: 8.05e+00
+
+chebabs =
+
+   3.700338100275000   4.089847373988158
+
+Time to find eigenvalue: 3.79e+01; Time to compute 2-norm: 8.16e+00
+
+chebabs =
+
+   3.698727222856395   4.088066930525489
+
+Compuing dx5...
+Time to find eigenvalue: 3.73e+01; {Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.adapgausskerneval>oneintp', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\adapgausskerneval.m', 177)" style="font-weight:bold">chnk.adapgausskerneval>oneintp</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\adapgausskerneval.m',177,0)">line 177</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.adapgausskerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\adapgausskerneval.m', 110)" style="font-weight:bold">chnk.adapgausskerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\adapgausskerneval.m',110,0)">line 110</a>)
+        v2 = oneintp(a,c,rs,ds,d2s,densj,ct,bw,rt1,dt1,d2t1,kern,opdims,t,w);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_adap', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 307)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_adap</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',307,0)">line 307</a>)
+        fints1 =  chnk.adapgausskerneval(r,d,d2,h,ct,bw,i,dens,targs(:,ji), ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 98)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',98,0)">line 98</a>)
+fints = fints + chunkerkerneval_adap(chnkr,kern,opdims,dens, ...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('u_norm', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\u_norm.m', 22)" style="font-weight:bold">u_norm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\u_norm.m',22,0)">line 22</a>)
+        u = chunkerkerneval(chnkr,fkern,sigma,...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m', 44)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m',44,0)">line 44</a>)
+        start = tic; u_q = u_norm(chnkr, zk, sigma, center, q);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 76)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',76,0)">line 76</a>)
+            left = fun(opt - direction, loss_params, chebabs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 
+test
+
+gd_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-06
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-04
+    line_search_beta: 0.500000000000000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 8 vertices
+Time to find eigenvalue: 1.21e+02; Time to compute 2-norm: 7.81e+00
+
+chebabs =
+
+   4.062304783308114   4.965039179598806
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.47e+01; Time to compute 2-norm: 7.69e+00
+
+chebabs =
+
+   4.063206431508915   4.966141194066452
+
+Time to find eigenvalue: 3.51e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.061406364855550   4.963941112601228
+
+Compuing dx2...
+Time to find eigenvalue: 3.41e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.063206431512059   4.966141194070294
+
+Time to find eigenvalue: 3.86e+01; Time to compute 2-norm: 7.99e+00
+
+chebabs =
+
+   4.061406364903404   4.963941112659716
+
+Compuing dx3...
+Time to find eigenvalue: 3.93e+01; Time to compute 2-norm: 8.00e+00
+
+chebabs =
+
+   4.063206431531835   4.966141194094465
+
+Time to find eigenvalue: 3.78e+01; Time to compute 2-norm: 7.81e+00
+
+chebabs =
+
+   4.061406364876610   4.963941112626967
+
+Compuing dx4...
+Time to find eigenvalue: 3.69e+01; Time to compute 2-norm: 7.82e+00
+
+chebabs =
+
+   4.063206431538154   4.966141194102188
+
+Time to find eigenvalue: 3.75e+01; Time to compute 2-norm: 7.86e+00
+
+chebabs =
+
+   4.061406364867733   4.963941112616118
+
+Compuing dx5...
+Time to find eigenvalue: 3.66e+01; Time to compute 2-norm: 7.78e+00
+
+chebabs =
+
+   4.063206431503176   4.966141194059438
+
+Time to find eigenvalue: 3.72e+01; Time to compute 2-norm: 7.88e+00
+
+chebabs =
+
+   4.061406364870929   4.963941112620025
+
+Compuing dx6...
+Time to find eigenvalue: 3.78e+01; Time to compute 2-norm: 7.80e+00
+
+chebabs =
+
+   4.063206431505214   4.966141194061928
+
+Time to find eigenvalue: 3.73e+01; Time to compute 2-norm: 7.77e+00
+
+chebabs =
+
+   4.061406364880749   4.963941112632027
+
+Compuing dx7...
+Time to find eigenvalue: 3.37e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.063206431482952   4.966141194034718
+
+Time to find eigenvalue: 3.69e+01; Time to compute 2-norm: 7.76e+00
+
+chebabs =
+
+   4.061406364871448   4.963941112620659
+
+Compuing dx8...
+Time to find eigenvalue: 3.58e+01; [Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.730302e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ifmm', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m', 351)" style="font-weight:bold">ifmm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\ifmm\ifmm.m',351,0)">line 351</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval>chunkerkerneval_smooth', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 209)" style="font-weight:bold">chunkerkerneval>chunkerkerneval_smooth</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',209,0)">line 209</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerkerneval', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m', 95)" style="font-weight:bold">chunkerkerneval</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerkerneval.m',95,0)">line 95</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('u_norm', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\u_norm.m', 22)" style="font-weight:bold">u_norm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\u_norm.m',22,0)">line 22</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m', 44)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m',44,0)">line 44</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 76)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',76,0)">line 76</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)
+] 
+Time to compute 2-norm: 7.71e+00
+
+chebabs =
+
+   4.063206431513703   4.966141194072303
+
+Time to find eigenvalue: 3.46e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.061406364877009   4.963941112627456
+
+Gradient computed!
+Time to find eigenvalue: 3.62e+01; Time to compute 2-norm: 7.72e+00
+
+chebabs =
+
+   4.064852051543208   4.968152507441699
+
+Time to find eigenvalue: 3.71e+01; Time to compute 2-norm: 7.71e+00
+
+chebabs =
+
+   4.059760705534377   4.961929751208682
+
+[Warning: Negative second derivative -6.28e-03] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 107)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',107,0)">line 107</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+
+num_directions_inward =
+
+     0
+
+
+step =
+
+     1
+
+Time to find eigenvalue: 4.05e+01; Time to compute 2-norm: 8.13e+00
+
+chebabs =
+
+   3.821425885940024   4.670631638371141
+
+Some statistics before line search
+step =
+
+     1
+
+
+fdd =
+
+  -0.006283838172028
+
+
+grad =
+
+  Columns 1 through 5
+
+  -0.035562992080046  -0.035562822918250  -0.035562776772358  -0.035562704342351  -0.035561724645888
+
+  Columns 6 through 8
+
+  -0.035563731110799  -0.035562400550693  -0.035564839314051
+
+
+opt =
+
+  Columns 1 through 5
+
+   0.564189583547756   0.564189583547756   0.564189583547756   0.564189583547756   0.564189583547756
+
+  Columns 6 through 8
+
+   0.564189583547756   0.564189583547756   0.564189583547756
+
+Saving log file...
+iter: 1, loss: -2.77e-01, grad: 1.01e-01, 2nd-deri: -6.28e-03, time: 9.92e+02
+Current weight [0.599752575627802 0.599752406466007 0.599752360320114 0.599752287890107 0.599751308193645 0.599753314658556 0.599751984098449 0.599754422861807]
+Current gradient [-0.035562992080046 -0.0355628229182503 -0.0355627767723576 -0.0355627043423512 -0.0355617246458884 -0.0355637311107992 -0.0355624005506927 -0.0355648393140506]
+Time to find eigenvalue: 3.99e+01; Time to compute 2-norm: 8.04e+00
+
+chebabs =
+
+   3.821425885874608   4.670631638291188
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.02e+01; Time to compute 2-norm: 8.11e+00
+
+chebabs =
+
+   3.822223693466631   4.671606736459216
+
+Time to find eigenvalue: 3.90e+01; Time to compute 2-norm: 8.09e+00
+
+chebabs =
+
+   3.820630766283498   4.669659825457608
+
+Compuing dx2...
+Time to find eigenvalue: 4.00e+01; Time to compute 2-norm: 7.99e+00
+
+chebabs =
+
+   3.822223691279360   4.671606733785885
+
+Time to find eigenvalue: 4.04e+01; Time to compute 2-norm: 8.28e+00
+
+chebabs =
+
+   3.820630768420943   4.669659828070042
+
+Compuing dx3...
+Time to find eigenvalue: 4.11e+01; Time to compute 2-norm: 8.41e+00
+
+chebabs =
+
+   3.822223689356744   4.671606731436021
+
+Time to find eigenvalue: 3.94e+01; Time to compute 2-norm: 8.22e+00
+
+chebabs =
+
+   3.820630770386555   4.669659830472457
+
+Compuing dx4...
+Time to find eigenvalue: 4.13e+01; Time to compute 2-norm: 8.18e+00
+
+chebabs =
+
+   3.822223688365010   4.671606730223901
+
+Time to find eigenvalue: 3.92e+01; Time to compute 2-norm: 7.95e+00
+
+chebabs =
+
+   3.820630771438692   4.669659831758401
+
+Compuing dx5...
+Time to find eigenvalue: 4.03e+01; Time to compute 2-norm: 8.00e+00
+
+chebabs =
+
+   3.822223693419143   4.671606736401174
+
+Time to find eigenvalue: 3.66e+01; Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   3.820630766320424   4.669659825502741
+
+Compuing dx6...
+Time to find eigenvalue: 4.05e+01; Time to compute 2-norm: 8.03e+00
+
+chebabs =
+
+   3.822223686484074   4.671606727924980
+
+Time to find eigenvalue: 3.80e+01; Time to compute 2-norm: 8.02e+00
+
+chebabs =
+
+   3.820630773288169   4.669659834018874
+
+Compuing dx7...
+Time to find eigenvalue: 3.85e+01; Time to compute 2-norm: 8.00e+00
+
+chebabs =
+
+   3.822223695941866   4.671606739484503
+
+Time to find eigenvalue: 4.02e+01; Time to compute 2-norm: 8.06e+00
+
+chebabs =
+
+   3.820630763772429   4.669659822388525
+
+Compuing dx8...
+Time to find eigenvalue: 4.17e+01; Time to compute 2-norm: 8.28e+00
+
+chebabs =
+
+   3.822223686055616   4.671606727401309
+
+Time to find eigenvalue: 3.87e+01; Time to compute 2-norm: 8.01e+00
+
+chebabs =
+
+   3.820630773621522   4.669659834426305
+
+Gradient computed!
+Time to find eigenvalue: 3.86e+01; Time to compute 2-norm: 8.03e+00
+
+chebabs =
+
+   3.823679907833916   4.673386554019231
+
+Time to find eigenvalue: 3.74e+01; Time to compute 2-norm: 7.89e+00
+
+chebabs =
+
+   3.819174519833633   4.667879968685552
+
+[Warning: Negative second derivative -1.53e+00] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 107)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',107,0)">line 107</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+
+num_directions_inward =
+
+     0
+
+
+step =
+
+     1
+
+Time to find eigenvalue: 3.66e+01; Time to compute 2-norm: 7.72e+00
+
+chebabs =
+
+   3.619400139134473   4.423711281164357
+
+Some statistics before line search
+step =
+
+     1
+
+
+fdd =
+
+  -1.534431585015206
+
+
+grad =
+
+  Columns 1 through 5
+
+  -0.033342918862034  -0.033216141879983  -0.033770442936842  -0.033403556050721  -0.033466065098881
+
+  Columns 6 through 8
+
+  -0.033491422466919  -0.033379118335675  -0.033744333797742
+
+
+opt =
+
+  Columns 1 through 5
+
+   0.599752575627802   0.599752406466007   0.599752360320114   0.599752287890107   0.599751308193645
+
+  Columns 6 through 8
+
+   0.599753314658556   0.599751984098449   0.599754422861807
+
+Saving log file...
+iter: 2, loss: -2.77e-01, grad: 9.47e-02, 2nd-deri: -1.53e+00, time: 9.68e+02
+Current weight [0.633095494489836 0.632968548345989 0.633522803256956 0.633155843940828 0.633217373292525 0.633244737125475 0.633131102434124 0.633498756659549]
+Current gradient [-0.0333429188620338 -0.0332161418799826 -0.0337704429368424 -0.0334035560507207 -0.0334660650988805 -0.0334914224669192 -0.0333791183356746 -0.0337443337977417]
+Time to find eigenvalue: 3.61e+01; Time to compute 2-norm: 7.66e+00
+
+chebabs =
+
+   3.619400139089827   4.423711281109789
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.70e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   3.620116102003267   4.424586346892882
+
+Time to find eigenvalue: 3.64e+01; Time to compute 2-norm: 7.85e+00
+
+chebabs =
+
+   3.618686463153319   4.422839010520724
+
+Compuing dx2...
+Time to find eigenvalue: 3.57e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   3.620116563045083   4.424586910388435
+
+Time to find eigenvalue: 3.91e+01; Time to compute 2-norm: 7.83e+00
+
+chebabs =
+
+   3.618686004862789   4.422838450387853
+
+Compuing dx3...
+Time to find eigenvalue: 3.74e+01; Time to compute 2-norm: 7.76e+00
+
+chebabs =
+
+   3.620114645321538   4.424584566504103
+
+Time to find eigenvalue: 3.79e+01; Time to compute 2-norm: 7.93e+00
+
+chebabs =
+
+   3.618687916352128   4.422840786652602
+
+Compuing dx4...
+Time to find eigenvalue: 3.77e+01; Time to compute 2-norm: 7.90e+00
+
+chebabs =
+
+   3.620116179916737   4.424586442120456
+
+Time to find eigenvalue: 3.48e+01; [Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.154859e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ud_norm', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\ud_norm.m', 7)" style="font-weight:bold">ud_norm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\ud_norm.m',7,0)">line 7</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m', 42)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 77)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',77,0)">line 77</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)
+] 
+Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   3.618686383754086   4.422838913477217
+
+Compuing dx5...
+Time to find eigenvalue: 3.68e+01; Time to compute 2-norm: 7.82e+00
+
+chebabs =
+
+   3.620115800472079   4.424585978354763
+
+Time to find eigenvalue: 3.50e+01; Time to compute 2-norm: 7.69e+00
+
+chebabs =
+
+   3.618686763260856   4.422839377318824
+
+Compuing dx6...
+Time to find eigenvalue: 3.51e+01; Time to compute 2-norm: 7.58e+00
+
+chebabs =
+
+   3.620115683559162   4.424585835461198
+
+Time to find eigenvalue: 3.81e+01; Time to compute 2-norm: 7.89e+00
+
+chebabs =
+
+   3.618686879597945   4.422839519508599
+
+Compuing dx7...
+Time to find eigenvalue: 3.57e+01; Time to compute 2-norm: 7.71e+00
+
+chebabs =
+
+   3.620116277464928   4.424586561346024
+
+Time to find eigenvalue: 3.62e+01; Time to compute 2-norm: 7.84e+00
+
+chebabs =
+
+   3.618686285892678   4.422838793868829
+
+Compuing dx8...
+Time to find eigenvalue: 3.68e+01; Time to compute 2-norm: 7.86e+00
+
+chebabs =
+
+   3.620114797853486   4.424584752932038
+
+Time to find eigenvalue: 3.67e+01; Time to compute 2-norm: 7.76e+00
+
+chebabs =
+
+   3.618687764345711   4.422840600866981
+
+Gradient computed!
+Time to find eigenvalue: 4.00e+01; Time to compute 2-norm: 8.01e+00
+
+chebabs =
+
+   3.619859396397968   4.424272595597517
+
+Time to find eigenvalue: 3.86e+01; Time to compute 2-norm: 7.90e+00
+
+chebabs =
+
+   3.618944083800542   4.423153880200663
+
+[Warning: Negative second derivative -1.90e+02] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 107)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',107,0)">line 107</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+
+num_directions_inward =
+
+     2
+
+
+step =
+
+     1
+
+Time to find eigenvalue: 3.81e+01; Time to compute 2-norm: 8.20e+00
+
+chebabs =
+
+   3.583020684461765   4.379247503231047
+
+Some statistics before line search
+step =
+
+     1
+
+
+fdd =
+
+    -1.896787616920137e+02
+
+
+grad =
+
+  Columns 1 through 5
+
+   0.045153007145998   0.061575383202700  -0.086187236263774  -0.001429727514157  -0.011019796571310
+
+  Columns 6 through 8
+
+  -0.012936581518602  -0.003305010136817  -0.084252174491484
+
+
+opt =
+
+  Columns 1 through 5
+
+   0.633095494489836   0.632968548345989   0.633522803256956   0.633155843940828   0.633217373292525
+
+  Columns 6 through 8
+
+   0.633244737125475   0.633131102434124   0.633498756659549
+
+Saving log file...
+iter: 3, loss: -2.77e-01, grad: 1.44e-01, 2nd-deri: -1.90e+02, time: 9.13e+02
+Current weight [0.587942487343838 0.571393165143289 0.71971003952073 0.634585571454985 0.644237169863835 0.646181318644077 0.636436112570941 0.717750931151032]
+Current gradient [0.0451530071459982 0.0615753832027 -0.0861872362637739 -0.00142972751415726 -0.0110197965713099 -0.0129365815186022 -0.00330501013681705 -0.0842521744914837]
+Time to find eigenvalue: 3.80e+01; Time to compute 2-norm: 8.08e+00
+
+chebabs =
+
+   3.583020684455351   4.379247503223207
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.88e+01; Time to compute 2-norm: 8.05e+00
+
+chebabs =
+
+   3.583831180206941   4.380238109141818
+
+Time to find eigenvalue: 3.76e+01; Time to compute 2-norm: 8.01e+00
+
+chebabs =
+
+   3.582212822439180   4.378260116314553
+
+Compuing dx2...
+Time to find eigenvalue: 3.54e+01; Time to compute 2-norm: 8.00e+00
+
+chebabs =
+
+   3.583897916237559   4.380319675401461
+
+Time to find eigenvalue: 3.59e+01; Time to compute 2-norm: 7.86e+00
+
+chebabs =
+
+   3.582146278493162   4.378178784824976
+
+Compuing dx3...
+Time to find eigenvalue: 3.64e+01; Time to compute 2-norm: 8.03e+00
+
+chebabs =
+
+   3.583478481225229   4.379807032608613
+
+Time to find eigenvalue: 3.62e+01; Time to compute 2-norm: 7.88e+00
+
+chebabs =
+
+   3.582564302183117   4.378689702668255
+
+Compuing dx4...
+Time to find eigenvalue: 3.67e+01; Time to compute 2-norm: 7.97e+00
+
+chebabs =
+
+   3.583798334825975   4.380197964787302
+
+Time to find eigenvalue: 3.60e+01; Time to compute 2-norm: 8.06e+00
+
+chebabs =
+
+   3.582245306492381   4.378299819046243
+
+Compuing dx5...
+Time to find eigenvalue: 3.60e+01; Time to compute 2-norm: 7.84e+00
+
+chebabs =
+
+   3.583751487138492   4.380140706502601
+
+Time to find eigenvalue: 3.63e+01; Time to compute 2-norm: 7.92e+00
+
+chebabs =
+
+   3.582292214375669   4.378357150903597
+
+Compuing dx6...
+Time to find eigenvalue: 3.96e+01; Time to compute 2-norm: 8.13e+00
+
+chebabs =
+
+   3.583749483575652   4.380138257703575
+
+Time to find eigenvalue: 4.12e+01; Time to compute 2-norm: 8.43e+00
+
+chebabs =
+
+   3.582294213371247   4.378359594120413
+
+Compuing dx7...
+Time to find eigenvalue: 3.89e+01; Time to compute 2-norm: 8.17e+00
+
+chebabs =
+
+   3.583809215125724   4.380211262931440
+
+Time to find eigenvalue: 3.65e+01; Time to compute 2-norm: 8.01e+00
+
+chebabs =
+
+   3.582234462263500   4.378286564988723
+
+Compuing dx8...
+Time to find eigenvalue: 3.84e+01; Time to compute 2-norm: 8.05e+00
+
+chebabs =
+
+   3.583500337894113   4.379833746315028
+
+Time to find eigenvalue: 3.75e+01; Time to compute 2-norm: 8.10e+00
+
+chebabs =
+
+   3.582542497367410   4.378663052337945
+
+Gradient computed!
+Time to find eigenvalue: 3.72e+01; Time to compute 2-norm: 8.05e+00
+
+chebabs =
+
+   3.582505796824831   4.378618196119239
+
+Time to find eigenvalue: 3.70e+01; Time to compute 2-norm: 8.06e+00
+
+chebabs =
+
+   3.583538219109184   4.379880045577893
+
+
+num_directions_inward =
+
+     4
+
+
+step =
+
+   4.368453457676420
+
+[Warning: Shape has been convexified] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('check_convex', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\check_convex.m', 50)" style="font-weight:bold">check_convex</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\check_convex.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 127)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',127,0)">line 127</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+Time to find eigenvalue: 1.14e+02; Time to compute 2-norm: 1.08e+01
+
+chebabs =
+
+   4.170677017546025   5.097494132556253
+
+Some statistics before line search
+step =
+
+   4.368453457676420
+
+
+fdd =
+
+   0.228913964561706
+
+
+grad =
+
+  Columns 1 through 5
+
+   0.053779336785076   0.104973992337665  -0.105946270512303  -0.004498937632463   0.045988552444004
+
+  Columns 6 through 8
+
+   0.047046195646189  -0.000654280247592  -0.100458604242237
+
+
+opt =
+
+  Columns 1 through 5
+
+   0.587942487343838   0.571393165143289   0.719710039520730   0.634585571454985   0.644237169863835
+
+  Columns 6 through 8
+
+   0.646181318644077   0.636436112570941   0.717750931151032
+
+Saving log file...
+iter: 4, loss: -3.07e-01, grad: 1.99e-01, 2nd-deri: 2.29e-01, time: 1.04e+03
+Current weight [0.408066774854523 0.429040642463146 1.18253139126812 0.65423897111139 0.443338318926292 0.440662202602962 0.639294305380822 1.15659966820638]
+Current gradient [0.0537793367850758 0.104973992337665 -0.105946270512303 -0.00449893763246334 0.045988552444004 0.0470461956461887 -0.000654280247591732 -0.100458604242237]
+Time to find eigenvalue: 3.46e+01; Time to compute 2-norm: 1.06e+01
+
+chebabs =
+
+   4.170677017558615   5.097494132571640
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.70e+01; Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+   4.172558048216612   5.099793170042527
+
+Time to find eigenvalue: 3.63e+01; Time to compute 2-norm: 1.11e+01
+
+chebabs =
+
+   4.168801137503560   5.095201390282129
+
+Compuing dx2...
+Time to find eigenvalue: 3.68e+01; Time to compute 2-norm: 1.10e+01
+
+chebabs =
+
+   4.172506287511852   5.099729906958930
+
+Time to find eigenvalue: 3.68e+01; Time to compute 2-norm: 1.09e+01
+
+chebabs =
+
+   4.168852799212399   5.095264532370710
+
+Compuing dx3...
+Time to find eigenvalue: 3.81e+01; Time to compute 2-norm: 1.14e+01
+
+chebabs =
+
+   4.170836302738606   5.097688814458296
+
+Time to find eigenvalue: 3.73e+01; Time to compute 2-norm: 1.11e+01
+
+chebabs =
+
+   4.170517959852786   5.097299728708960
+
+Compuing dx4...
+Time to find eigenvalue: 3.37e+01; Time to compute 2-norm: 1.05e+01
+
+chebabs =
+
+   4.171522974863944   5.098528080389265
+
+Time to find eigenvalue: 3.35e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+   4.169832179243793   5.096461552409080
+
+Compuing dx5...
+Time to find eigenvalue: 3.45e+01; Time to compute 2-norm: 1.04e+01
+
+chebabs =
+
+   4.172147811436276   5.099291769533226
+
+Time to find eigenvalue: 3.46e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+   4.169211522795571   5.095702972305698
+
+Compuing dx6...
+Time to find eigenvalue: 3.30e+01; Time to compute 2-norm: 1.05e+01
+
+chebabs =
+
+   4.172062500552429   5.099187500675192
+
+Time to find eigenvalue: 3.28e+01; Time to compute 2-norm: 1.04e+01
+
+chebabs =
+
+   4.169296421120158   5.095806736924637
+
+Compuing dx7...
+Time to find eigenvalue: 3.44e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+   4.171408554981876   5.098388233866737
+
+Time to find eigenvalue: 3.42e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+   4.169946459623068   5.096601228428194
+
+Compuing dx8...
+Time to find eigenvalue: 3.42e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+   4.170808009178470   5.097654233440352
+
+Time to find eigenvalue: 3.49e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+   4.170546224274850   5.097334274113706
+
+Gradient computed!
+Time to find eigenvalue: 3.46e+01; Time to compute 2-norm: 1.11e+01
+
+chebabs =
+
+   4.170210163142706   5.096923532729973
+
+Time to find eigenvalue: 3.51e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+   4.171151246557025   5.098073745791919
+
+[Warning: Negative second derivative -8.22e+00] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 107)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',107,0)">line 107</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+
+num_directions_inward =
+
+     4
+
+
+step =
+
+   0.196828444176248
+
+[Warning: Shape has been convexified] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('check_convex', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\check_convex.m', 50)" style="font-weight:bold">check_convex</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\check_convex.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 127)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',127,0)">line 127</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerpoly', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerpoly.m', 186)" style="font-weight:bold">chunkerpoly</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerpoly.m',186,0)">line 186</a>)
+widths too large for side
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk_poly', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\chnk_poly.m', 19)" style="font-weight:bold">chnk_poly</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\chnk_poly.m',19,0)">line 19</a>)
+    chnkr = chunkerpoly(verts, cparams, pref);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m', 35)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\loss.m',35,0)">line 35</a>)
+    [chnkr, center] = loss_params.chnk_fun(weight);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 128)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',128,0)">line 128</a>)
+        [better_loss, chebabs] = fun(opt_next, loss_params, chebabs);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m', 38)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev\test.m',38,0)">line 38</a>)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 

@@ -11,8 +11,8 @@ function [loss, chebabs, zk] = loss(weight, loss_params, chebabs)
     % );
 
 
-    cheb_left = 0.95;
-    cheb_right = 1.05;
+    cheb_left = 0.9;
+    cheb_right = 1.1;
 
     % Reads loss parameters
     default_chebabs = loss_params.default_chebabs;

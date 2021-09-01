@@ -163,6 +163,9 @@ function [isconvex, rs_conv] = check_convex(rs)
             end
         end
 
+        fprintf('Convexified weights')
+        rs_conv
+
 
     end
 
