@@ -1,4 +1,4 @@
-function [chnkr, center] = chnk_poly(rs)
+function [chnkr, center, verts] = chnk_poly(rs)
     % INPUT:  [r_1 r_2 ... r_M]
     % OUTPUT: chnkr object, center of chunker object
     % Vertices:
@@ -22,5 +22,4 @@ function [chnkr, center] = chnk_poly(rs)
     chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
     center = sum(verts, 2)/num_verts;
-
 end
