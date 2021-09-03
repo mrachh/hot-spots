@@ -48,7 +48,7 @@ function [isconvex, rs_conv] = check_convex(rs)
     % Convexify if not convex
     if ~ isconvex
         warning('Shape has been convexified')
-        [conv_vert_id, ~] = convhull(verts');
+        [conv_vert_id, ~] = convhull(verts);
         num_conv_verts = length(conv_vert_id);
 
         % conv_vert_id has the following form:
@@ -56,53 +56,24 @@ function [isconvex, rs_conv] = check_convex(rs)
 
         for i  = 1:(num_conv_verts - 1)
             conv_start = conv_vert_id(i);
-            conv_end = conv_vert_id(i+1)
+            conv_end = conv_vert_id(i+1);
+            x1 = verts(conv_end,1);
+            y1 = verts(conv_end,2);
+            x2 = verts(conv_start,1);
+            y2 = verts(conv_start,2);
             % Convexify everything between conv_start and conv_end
-            
-        % First Pass
-        for i = 1:num_verts
-            % compute angle i-i+1-i+2
-            i_0 = mod(i-1, num_verts)+1;
-            i_1 = mod(i, num_verts)+1;
-            i_2 = mod(i+1, num_verts)+1;
-            v1 = verts(i_0,:) - verts(i_1,:);
-            v2 = verts(i_2,:) - verts(i_1,:);
-            x1 = v1(1);
-            y1 = v1(2);
-            x2 = v2(1);
-            y2 = v2(2);
-            angle = - atan2(x1*y2 - x2*y1, x1*x2 + y1*y2);
-            angle = wrapTo2Pi(angle);
-            if angle > pi + 1e-15
-                % angle for r_i+1
-                ang = (i_1-1)*2*pi/num_verts;
-                sang = sin(ang);
-                cang = cos(ang);
-                x1 = verts(i_2,1);
-                y1 = verts(i_2,2);
-                x2 = verts(i_0,1);
-                y2 = verts(i_0,2);
-                r = (x2*y1-x1*y2)/...
-                    (sang*x2+cang*y1-sang*x1-cang*y2);
-                verts(i_1,1) = r*cang;
-                verts(i_1,2) = r*sang;
-            end
-        end
-
-
-    
-
-
-        %Convert verts to rs
-        % scatter(verts(:,1),verts(:,2))
-        % verts
-        angle = 2 * pi/num_rs;
-        for i = 1:num_verts
-            angle_i = (i-1)*angle;
-            if cos(angle_i)~=0
-                rs_conv(i) = verts(i,1) / cos(angle_i);
+            if conv_start < conv_end
+                for j = conv_start + 1:conv_end - 1
+                    rs_conv(j) = convexify_single_vert(x1,y1,x2,y2,j,num_verts);
+                end
             else
-                rs_conv(i) = verts(i,2) / sin(angle_i);
+                for j = conv_start + 1:num_verts
+                    rs_conv(j) = convexify_single_vert(x1,y1,x2,y2,j,num_verts);
+                end
+
+                for j = 1:conv_end - 1
+                    rs_conv(j) = convexify_single_vert(x1,y1,x2,y2,j,num_verts);
+                end
             end
         end
 
@@ -112,4 +83,13 @@ function [isconvex, rs_conv] = check_convex(rs)
 
     end
 
+end
+
+function r_res = convexify_single_vert(x1,y1,x2,y2,j,num_verts)
+    % put vertex j on the line segment connecting x1,y1 and x2,y2
+    ang = (j-1)*2*pi/num_verts;
+    sang = sin(ang);
+    cang = cos(ang);
+    r_res = (x2*y1-x1*y2)/...
+        (sang*x2+cang*y1-sang*x1-cang*y2);
 end
