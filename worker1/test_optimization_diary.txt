@@ -35,3 +35,154 @@ loss_params =
           unorm_ord: '2'
 
 Polygon polygon with 20 vertices
+Time to find eigenvalue: 1.51e+03; Time to compute 2-norm: 5.55e+01
+
+chebabs =
+
+    3.8692    4.7290
+
+Computing 20 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.02e+02; Time to compute 2-norm: 5.11e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 4.04e+02; Time to compute 2-norm: 5.13e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx2...
+Time to find eigenvalue: 3.97e+02; Time to compute 2-norm: 5.10e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 3.97e+02; Time to compute 2-norm: 5.01e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx3...
+Time to find eigenvalue: 3.99e+02; Time to compute 2-norm: 5.09e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 4.05e+02; Time to compute 2-norm: 5.06e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx4...
+Time to find eigenvalue: 4.01e+02; Time to compute 2-norm: 5.04e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 4.00e+02; Time to compute 2-norm: 5.09e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx5...
+Time to find eigenvalue: 3.90e+02; Time to compute 2-norm: 4.97e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 3.89e+02; Time to compute 2-norm: 4.95e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx6...
+Time to find eigenvalue: 3.94e+02; Time to compute 2-norm: 4.63e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 4.01e+02; Time to compute 2-norm: 4.76e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx7...
+Time to find eigenvalue: 3.94e+02; Time to compute 2-norm: 4.92e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 3.92e+02; Time to compute 2-norm: 4.96e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx8...
+Time to find eigenvalue: 3.90e+02; Time to compute 2-norm: 4.97e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 3.97e+02; Time to compute 2-norm: 4.93e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx9...
+Time to find eigenvalue: 3.85e+02; Time to compute 2-norm: 4.89e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 3.89e+02; Time to compute 2-norm: 4.93e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx10...
+Time to find eigenvalue: 3.87e+02; Time to compute 2-norm: 4.95e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 3.89e+02; Time to compute 2-norm: 4.93e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx11...
+Time to find eigenvalue: 3.95e+02; Time to compute 2-norm: 4.97e+01
+
+chebabs =
+
+    3.8695    4.7294
+
+Time to find eigenvalue: 4.01e+02; Time to compute 2-norm: 4.92e+01
+
+chebabs =
+
+    3.8688    4.7286
+
+Compuing dx12...
