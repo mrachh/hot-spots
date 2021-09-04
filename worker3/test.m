@@ -1,43 +1,18 @@
 clear;clc;addpath('../src');
 
-diary('test_optimization_diary.txt');
+w = [0.545177745985917 0.424247815125798 0.377468025143292 0.372852749686064 0.374564990558187 0.37738614012285 0.384805218745146 0.398876126838583 0.420618337958971 0.45994346603542 0.548204131569398 0.723120702625667 0.661290864988556 0.669582163275382 0.75269895937504 0.704576276778817 0.605261763291369 0.580269886653041 0.512110523601676 0.50227866072026];
 
-num_verts = 20;
-num_params = num_verts;
-
-
-
-init_weight = ones(1,num_verts)/sqrt(pi);
-% plot(chnk_poly(init_weight))
-% error('nothing')
-
-
-% Gradient descent parameter
-gd_params = struct( ...
-    'maxiter',          100, ...
-    'report',           1, ...
-    'eps',              1e-6,   ...
-    'hspace',           1e-3, ...
-    'line_search_eps',  1e-4, ...
-    'line_search_beta', 0.5, ...
-    'savefn',           'gd.mat' ...
-)
 
 loss_params = struct(...
     'default_chebabs',      [1 10], ...
     'chnk_fun',             @chnk_poly, ...
     'udnorm_ord',              'inf', ...
     'unorm_ord',                  '2' ...
-)
+);
 
-% Set loss function
-fun = @loss;
+direction = zeros(1, 20);
+h = 1e-3;
+direction(19) = h;
 
-fprintf('Polygon polygon with %d vertices\n', num_verts);
-[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
-fprintf('optimal weight: %5.2e \n', opt);
-fprintf('optimal value: %5.2e \n', fun(opt));
-clear fun
-
-
-diary off;
+loss1 = loss(w+direction, loss_params)
+loss2 = loss(w-direction, loss_params)
