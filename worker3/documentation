@@ -1,5 +1,7 @@
 debug worker 1
 
+No bug when directly computing dx19. 
+
 error msg:
 
 iter: 4, loss: -2.91e-01, grad: 7.86e-01, 2nd-deri: -3.11e+02, time: 1.71e+04
