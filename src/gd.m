@@ -128,14 +128,16 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         line_search_converged = (better_loss < loss);
 
         % Line search loop        
-        fprintf('Some statistics before line search')
+        fprintf('Some statistics before line search: \n')
         step
         fdd
         grad
         opt
+        line_search_iter = 0;
         while not(line_search_converged)
 
             % Shrink step size
+            fprintf('Line search iter %d\n',line_search_iter);
 
             step = step * line_search_beta;
             [isconvex, opt_next] = check_convex(opt - step * grad);
@@ -145,7 +147,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             % Raise error when step is too small
             if step < line_search_eps
                 gradient_descent_converged = true;
-                fprintf('Line search did not converge')
+                fprintf('Line search did not converge\n')
                 break;
             end
         end
