@@ -54,8 +54,48 @@ for p = p_min:pq_step:p_max
             losses = losses(1, 1:num_ws);
 
             [loss, idx] = min(losses);
-            result(p_idx, q_idx) = ws(idx);
+            result(q_idx, p_idx) = ws(idx);
+
+
+        else
+            % Compute loss
+
+            loss_params = struct( ...
+                'unorm_ord',    mat2str(q), ...
+                'udnorm_ord',   mat2str(p) ...
+            );
+
+            w_start = 1e-3;
+            w_step = 1e-3;
+            w_end = 1 + 2 * w_step;
+
+            num_ws = floor((w_end - w_start) / w_step);
+            losses = nan(1, num_ws + 1);
+            ws = nan(1, num_ws + 1);
+
+            w_idx = 1;
+            for w = w_start:w_step:w_end
+                losses(w_idx) = rect_true_loss(w, loss_params);
+                ws(w_idx) = w;
+                w_idx = w_idx + 1;
+            end
+
+            ws = ws(1:num_ws);
+            losses = losses(1, 1:num_ws);
+
+            [loss, idx] = max(losses);
+            result(q_idx, p_idx) = ws(idx);
 
         end
+
     end
 end
+
+
+% result matrix: x-axis/columns p; y-axis/rows q;
+result = flipud(result);
+ps = flipud(ps')';
+figure(1)
+heatmap(qs,ps, result)
+% heatmap(result)
+colorbar
