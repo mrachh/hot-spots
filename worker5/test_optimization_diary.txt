@@ -386,3 +386,118 @@ chebabs =
    3.820182012885286   4.669111349082017
 
 Compuing dx5...
+Time to find eigenvalue: 4.21e+01; Time to compute 2-norm: 8.82e+00
+
+chebabs =
+
+   3.820312144431993   4.669270398750214
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.helm2d.green', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+helm2d\green.m', 33)" style="font-weight:bold">chnk.helm2d.green</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+helm2d\green.m',33,0)">line
+33</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.helm2d.kern', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+helm2d\kern.m', 56)" style="font-weight:bold">chnk.helm2d.kern</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+helm2d\kern.m',56,0)">line 56</a>)
+    [~,grad] = chnk.helm2d.green(zk,src,targ);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dir_det>@(s,t)(-2)*chnk.helm2d.kern(zk,s,t,''D'',1)', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dir_det.m', 30)" style="font-weight:bold">helm_dir_det>@(s,t)(-2)*chnk.helm2d.kern(zk,s,t,'D',1)</a>
+(<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dir_det.m',30,0)">line 30</a>)
+fkern = @(s,t) (-2)*chnk.helm2d.kern(zk,s,t,'D',1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.kernbyindex', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\kernbyindex.m', 50)" style="font-weight:bold">chnk.flam.kernbyindex</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\kernbyindex.m',50,0)">line 50</a>)
+matuni = kern(srcinfo,targinfo);
+
+In
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam>@(i,j)chnk.flam.kernbyindex(i,j,chnkr,wts,kern,opdims,sp)', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 178)" style="font-weight:bold">chunkerflam>@(i,j)chnk.flam.kernbyindex(i,j,chnkr,wts,kern,opdims,sp)</a>
+(<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',178,0)">line 178</a>)
+matfun = @(i,j)
+chnk.flam.kernbyindex(i,j,chnkr,wts,kern,opdims,sp);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('rskelf', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\rskelf\rskelf.m', 219)" style="font-weight:bold">rskelf</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\rskelf\rskelf.m',219,0)">line 219</a>)
+      K = full(A(slf,slf)) + M{i};
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 185)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',185,0)">line 185</a>)
+    F = rskelf(matfun,xflam,occ,rank_or_tol,pxyfun);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dir_det', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dir_det.m', 43)" style="font-weight:bold">helm_dir_det</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dir_det.m',43,0)">line 43</a>)
+    F = chunkerflam(chnkr,fkern,dval,opts_flam);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('find_first_eig>@(zk)helm_dir_det(zk,chnkr,opts)', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker5\find_first_eig.m', 14)" style="font-weight:bold">find_first_eig>@(zk)helm_dir_det(zk,chnkr,opts)</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker5\find_first_eig.m',14,0)">line 14</a>)
+    detfun = @(zk) helm_dir_det(zk,chnkr,opts);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun>vec/loopWrapperScalar', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\chebfun.m', 966)" style="font-weight:bold">chebfun>vec/loopWrapperScalar</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\chebfun.m',966,0)">line 966</a>)
+            v(j) = op(x(j));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bndfun>@(x)op(linmap.For(x))', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@bndfun\bndfun.m', 99)" style="font-weight:bold">bndfun>@(x)op(linmap.For(x))</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@bndfun\bndfun.m',99,0)">line 99</a>)
+                op = @(x) op(linmap.For(x));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech2.refine>refineResampling', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m', 100)" style="font-weight:bold">chebtech2.refine>refineResampling</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m',100,0)">line 100</a>)
+        values = feval(op, x);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech2.refine>refineNested', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m', 111)" style="font-weight:bold">chebtech2.refine>refineNested</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m',111,0)">line 111</a>)
+        [values, giveUp] = refineResampling(op, values,
+        pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech2.refine', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m', 46)" style="font-weight:bold">chebtech2.refine</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\refine.m',46,0)">line 46</a>)
+    [values, giveUp] = refineNested(op, values, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech/populate', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech\populate.m', 92)" style="font-weight:bold">chebtech/populate</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech\populate.m',92,0)">line 92</a>)
+    [values, giveUp] = f.refine(op, values, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebtech2', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\chebtech2.m', 102)" style="font-weight:bold">chebtech2</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebtech2\chebtech2.m',102,0)">line 102</a>)
+            [obj, values] = populate(obj, op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('smoothfun.constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@smoothfun\smoothfun.m', 57)" style="font-weight:bold">smoothfun.constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@smoothfun\smoothfun.m',57,0)">line 57</a>)
+            obj = feval(pref.tech, op, data,
+            pref.techPrefs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('onefun.constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@onefun\onefun.m', 71)" style="font-weight:bold">onefun.constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@onefun\onefun.m',71,0)">line 71</a>)
+                obj = smoothfun.constructor(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bndfun', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@bndfun\bndfun.m', 103)" style="font-weight:bold">bndfun</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@bndfun\bndfun.m',103,0)">line 103</a>)
+            obj.onefun = onefun.constructor(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('classicfun.constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@classicfun\classicfun.m', 100)" style="font-weight:bold">classicfun.constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@classicfun\classicfun.m',100,0)">line 100</a>)
+                obj = bndfun(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fun.constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@fun\fun.m', 51)" style="font-weight:bold">fun.constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@fun\fun.m',51,0)">line 51</a>)
+                obj = classicfun.constructor(op, data,
+                pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun/constructor>getFun', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m', 276)" style="font-weight:bold">chebfun/constructor>getFun</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m',276,0)">line 276</a>)
+g = fun.constructor(op, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun/constructor>constructorNoSplit', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m', 110)" style="font-weight:bold">chebfun/constructor>constructorNoSplit</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m',110,0)">line 110</a>)
+    [funs{k}, ishappy, data.vscale] = getFun(opk, endsk,
+    data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun/constructor', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m', 63)" style="font-weight:bold">chebfun/constructor</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\constructor.m',63,0)">line 63</a>)
+    [funs, ends] = constructorNoSplit(op, dom, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chebfun', 'C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\chebfun.m', 219)" style="font-weight:bold">chebfun</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chebfun\@chebfun\chebfun.m',219,0)">line 219</a>)
+                [f.funs, f.domain] = chebfun.constructor(op,
+                dom, data, pref);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('find_first_eig', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker5\find_first_eig.m', 15)" style="font-weight:bold">find_first_eig</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker5\find_first_eig.m',15,0)">line 15</a>)
+    detchebs = chebfun(detfun,chebabs,p);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker5\loss.m', 39)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker5\loss.m',39,0)">line 39</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 77)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',77,0)">line 77</a>)
+            right = fun(opt + direction, loss_params,
+            chebabs);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker5\test.m', 34)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker5\test.m',34,0)">line 34</a>)
+[opt, gd_log] = gd(@loss, init_weight, gd_params,
+loss_params);
+} 
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker5\test.m', 14)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker5\test.m',14,0)">line 14</a>)
+nothing
+} 
+init_weight
+
+init_weight =
+
+   0.563945298879718   0.564851815720133   0.564865732303110   0.563513505876953   0.564424234906898   0.566401525432045   0.563926851865282   0.564268141749132   0.564365857909443   0.563353533483639
+

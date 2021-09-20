@@ -7,7 +7,12 @@ num_params = num_verts;
 
 
 
-init_weight = ones(1, num_params)/sqrt(pi);
+% rnd_sigma = 1e-3;
+% init_weight = normrnd(1/sqrt(pi), rnd_sigma, 1, num_params);
+% [~, init_weight] = check_convex(init_weight);
+% error('nothing')
+
+init_weight = [0.563945298879718   0.564851815720133   0.564865732303110   0.563513505876953   0.564424234906898   0.566401525432045   0.563926851865282   0.564268141749132   0.564365857909443   0.563353533483639];
 
 % Gradient descent parameter
 gd_params = struct( ...
