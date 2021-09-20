@@ -14,6 +14,9 @@ function [loss, chebabs, zk] = loss(weight, loss_params, chebabs)
     cheb_left = 0.9;
     cheb_right = 1.1;
 
+    cheb_left1 = 0.99;
+    cheb_right1 = 1.01;
+
     % Reads loss parameters
     default_chebabs = loss_params.default_chebabs;
     q = str2double(loss_params.unorm_ord);

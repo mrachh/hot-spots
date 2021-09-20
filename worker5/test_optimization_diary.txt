@@ -130,3 +130,259 @@ chebabs =
    3.975832208839570   4.859350477470586
 
 Compuing dx2...
+Time to find eigenvalue: 4.25e+01; Time to compute 2-norm: 9.08e+00
+
+chebabs =
+
+   3.975973150894281   4.859522739981899
+
+Time to find eigenvalue: 4.06e+01; Time to compute 2-norm: 8.85e+00
+
+chebabs =
+
+   3.975832208790438   4.859350477410535
+
+Compuing dx3...
+Time to find eigenvalue: 4.22e+01; Time to compute 2-norm: 8.71e+00
+
+chebabs =
+
+   3.975973150919126   4.859522740012265
+
+Time to find eigenvalue: 4.03e+01; Time to compute 2-norm: 8.68e+00
+
+chebabs =
+
+   3.975832208822068   4.859350477449194
+
+Compuing dx4...
+Time to find eigenvalue: 4.01e+01; Time to compute 2-norm: 8.79e+00
+
+chebabs =
+
+   3.975973150956967   4.859522740058515
+
+Time to find eigenvalue: 4.10e+01; Time to compute 2-norm: 8.80e+00
+
+chebabs =
+
+   3.975832208768138   4.859350477383281
+
+Compuing dx5...
+Time to find eigenvalue: 4.15e+01; Time to compute 2-norm: 8.94e+00
+
+chebabs =
+
+   3.975973150894621   4.859522739982315
+
+Time to find eigenvalue: 4.20e+01; Time to compute 2-norm: 8.89e+00
+
+chebabs =
+
+   3.975832208843966   4.859350477475959
+
+Compuing dx6...
+Time to find eigenvalue: 4.17e+01; Time to compute 2-norm: 8.73e+00
+
+chebabs =
+
+   3.975973150913064   4.859522740004856
+
+Time to find eigenvalue: 4.09e+01; Time to compute 2-norm: 8.68e+00
+
+chebabs =
+
+   3.975832208824946   4.859350477452712
+
+Compuing dx7...
+Time to find eigenvalue: 4.16e+01; Time to compute 2-norm: 8.79e+00
+
+chebabs =
+
+   3.975973150906986   4.859522739997428
+
+Time to find eigenvalue: 4.14e+01; Time to compute 2-norm: 8.73e+00
+
+chebabs =
+
+   3.975832208817247   4.859350477443302
+
+Compuing dx8...
+Time to find eigenvalue: 4.07e+01; Time to compute 2-norm: 9.10e+00
+
+chebabs =
+
+   3.975973150837402   4.859522739912381
+
+Time to find eigenvalue: 4.11e+01; Time to compute 2-norm: 8.83e+00
+
+chebabs =
+
+   3.975832208818308   4.859350477444599
+
+Compuing dx9...
+Time to find eigenvalue: 4.14e+01; Time to compute 2-norm: 8.92e+00
+
+chebabs =
+
+   3.975973150963346   4.859522740066312
+
+Time to find eigenvalue: 4.07e+01; Time to compute 2-norm: 8.83e+00
+
+chebabs =
+
+   3.975832208798545   4.859350477420445
+
+Compuing dx10...
+Time to find eigenvalue: 4.02e+01; Time to compute 2-norm: 8.61e+00
+
+chebabs =
+
+   3.975973150927402   4.859522740022381
+
+Time to find eigenvalue: 4.07e+01; Time to compute 2-norm: 9.03e+00
+
+chebabs =
+
+   3.975832208828850   4.859350477457484
+
+Gradient computed!
+Time to find eigenvalue: 4.03e+01; Time to compute 2-norm: 9.27e+00
+
+chebabs =
+
+   3.976125525305594   4.859708975373504
+
+Time to find eigenvalue: 3.93e+01; Time to compute 2-norm: 8.71e+00
+
+chebabs =
+
+   3.975679827555288   4.859164233678685
+
+[Warning: Negative second derivative -3.36e+00] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m', 107)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\gd.m',107,0)">line 107</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker5\test.m', 34)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker5\test.m',34,0)">line 34</a>)] 
+
+num_directions_inward =
+
+     0
+
+Time to find eigenvalue: 4.39e+01; Time to compute 2-norm: 8.96e+00
+
+chebabs =
+
+   3.820247075067590   4.669190869527055
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+  -3.361028361181795
+
+
+grad =
+
+  Columns 1 through 3
+
+  -0.022996089223681  -0.022970558250512  -0.023007341668768
+
+  Columns 4 through 6
+
+  -0.022944998879504  -0.022997600446772  -0.023002376441650
+
+  Columns 7 through 9
+
+  -0.022996263791264  -0.022964639834755  -0.022986758028976
+
+  Column 10
+
+  -0.023011871964351
+
+
+opt =
+
+  Columns 1 through 3
+
+   0.564189583547756   0.564189583547756   0.564189583547756
+
+  Columns 4 through 6
+
+   0.564189583547756   0.564189583547756   0.564189583547756
+
+  Columns 7 through 9
+
+   0.564189583547756   0.564189583547756   0.564189583547756
+
+  Column 10
+
+   0.564189583547756
+
+Saving log file...
+iter: 1, loss: -2.68e-01, grad: 7.27e-02, 2nd-deri: -3.36e+00, time: 1.32e+03
+Current weight [0.587185672771438 0.587160141798269 0.587196925216524 0.58713458242726 0.587187183994529 0.587191959989406 0.58718584733902 0.587154223382511 0.587176341576732 0.587201455512108]
+Current gradient [-0.0229960892236813 -0.0229705582505124 -0.0230073416687682 -0.0229449988795039 -0.0229976004467725 -0.0230023764416498 -0.022996263791264 -0.0229646398347549 -0.0229867580289755 -0.0230118719643513]
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 9.04e+00
+
+chebabs =
+
+   3.820247075070799   4.669190869530977
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 9.07e+00
+
+chebabs =
+
+   3.820312149801892   4.669270405313424
+
+Time to find eigenvalue: 4.63e+01; Time to compute 2-norm: 9.10e+00
+
+chebabs =
+
+   3.820182028751019   4.669111368473468
+
+Compuing dx2...
+Time to find eigenvalue: 4.22e+01; Time to compute 2-norm: 8.96e+00
+
+chebabs =
+
+   3.820312158345289   4.669270415755353
+
+Time to find eigenvalue: 4.41e+01; Time to compute 2-norm: 8.93e+00
+
+chebabs =
+
+   3.820182020473008   4.669111358355899
+
+Compuing dx3...
+Time to find eigenvalue: 4.70e+01; Time to compute 2-norm: 8.90e+00
+
+chebabs =
+
+   3.820312137579110   4.669270390374469
+
+Time to find eigenvalue: 4.40e+01; Time to compute 2-norm: 8.90e+00
+
+chebabs =
+
+   3.820182041050642   4.669111383506340
+
+Compuing dx4...
+Time to find eigenvalue: 4.24e+01; Time to compute 2-norm: 8.98e+00
+
+chebabs =
+
+   3.820312166106023   4.669270425240695
+
+Time to find eigenvalue: 4.18e+01; Time to compute 2-norm: 8.79e+00
+
+chebabs =
+
+   3.820182012885286   4.669111349082017
+
+Compuing dx5...
