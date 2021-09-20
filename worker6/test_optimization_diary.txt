@@ -1721,29 +1721,203 @@ chebabs =
 
    3.461186381027099   3.825521789556267
 
-Time to find eigenvalue: 4.53e+01; Time to compute 2-norm: 1.06e+01
+[Warning: Shape has been convexified] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('check_convex', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\check_convex.m', 50)" style="font-weight:bold">check_convex</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\check_convex.m',50,0)">line 50</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m', 12)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m',12,0)">line 12</a>)] 
+Convexified weights
+rs_conv =
 
-chebabs =
+  Columns 1 through 5
 
-   3.460961757079634   3.825273520982753
+   0.564727250687302   0.566023468562351   0.564421236844077   0.565051756868124   0.564508348787615
 
-Compuing dx5...
-Time to find eigenvalue: 4.40e+01; Time to compute 2-norm: 1.10e+01
+  Columns 6 through 10
 
-chebabs =
+   0.563018733831340   0.563755991525451   0.564638485442032   0.567767980487482   0.566959020577641
 
-   3.461186349199702   3.825521754378619
+  Columns 11 through 15
 
-Time to find eigenvalue: 4.06e+01; Time to compute 2-norm: 1.08e+01
+   0.565972706728966   0.567224507014088   0.564914987772702   0.564126528674567   0.564904326451582
 
-chebabs =
+  Columns 16 through 20
 
-   3.460961788707289   3.825273555939636
+   0.563984617489456   0.564065439199540   0.565679281155542   0.565598618037557   0.565606775961186
 
-Compuing dx6...
-Time to find eigenvalue: 4.08e+01; Time to compute 2-norm: 1.01e+01
+  Columns 21 through 25
 
-chebabs =
+   0.564861080681364   0.563769281073369   0.564906822199085   0.565819818836921   0.564678477318068
 
-   3.461089624878967   3.825414848550438
+  Columns 26 through 30
 
+   0.565224276557674   0.564916468681140   0.563886142622970   0.564483455014853   0.563666095214107
+
+  Columns 31 through 35
+
+   0.565077979179514   0.563042513440787   0.563120713089588   0.563380084853331   0.563387871231957
+
+  Columns 36 through 40
+
+   0.565627963840571   0.564514774087213   0.563921873679808   0.565559882087851   0.563708103354364
+
+  Columns 41 through 45
+
+   0.564087341101671   0.563948136506149   0.564508790286922   0.564502442144394   0.563324703630432
+
+  Columns 46 through 50
+
+   0.564159532251560   0.564024704528547   0.564817290835285   0.565282849216796   0.565298856845371
+
+  Columns 51 through 55
+
+   0.563667959279651   0.564266942638887   0.562975466504141   0.563076082806270   0.564182734219653
+
+  Columns 56 through 60
+
+   0.565722213856041   0.564025814921434   0.564560962360516   0.563963999145485   0.565306939686571
+
+  Columns 61 through 65
+
+   0.563649586645153   0.564222141011921   0.564742110568868   0.565290193765637   0.565733795443260
+
+  Columns 66 through 70
+
+   0.564275514680932   0.562748442989016   0.563447281710496   0.563874551244355   0.566540040771758
+
+  Columns 71 through 75
+
+   0.564621361767086   0.564937660331460   0.563997165037168   0.565078193973177   0.563424734311188
+
+  Columns 76 through 80
+
+   0.562787314578418   0.562767207622665   0.564677777457616   0.564012208391137   0.563993530059949
+
+  Columns 81 through 85
+
+   0.565608893698399   0.564481167921740   0.564387394601221   0.565777282637730   0.564215841804447
+
+  Columns 86 through 90
+
+   0.564886207963606   0.565024671712829   0.563945868407378   0.564405253634160   0.563023739616274
+
+  Columns 91 through 95
+
+   0.563041630768858   0.564294458263773   0.564911837579981   0.566775074800372   0.564457422495849
+
+  Columns 96 through 100
+
+   0.564376914572335   0.564107089122385   0.562816012261264   0.563750617393821   0.563125115616049
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m', 13)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m',13,0)">line 13</a>)
+nothing
+} 
+rs_conv
+{Unrecognized function or variable 'rs_conv'.
+} 
+init_weight
+
+init_weight =
+
+  Columns 1 through 5
+
+   0.564727250687302   0.566023468562351   0.564421236844077   0.565051756868124   0.564508348787615
+
+  Columns 6 through 10
+
+   0.563018733831340   0.563755991525451   0.564638485442032   0.567767980487482   0.566959020577641
+
+  Columns 11 through 15
+
+   0.565972706728966   0.567224507014088   0.564914987772702   0.564126528674567   0.564904326451582
+
+  Columns 16 through 20
+
+   0.563984617489456   0.564065439199540   0.565679281155542   0.565598618037557   0.565606775961186
+
+  Columns 21 through 25
+
+   0.564861080681364   0.563769281073369   0.564906822199085   0.565819818836921   0.564678477318068
+
+  Columns 26 through 30
+
+   0.565224276557674   0.564916468681140   0.563886142622970   0.564483455014853   0.563666095214107
+
+  Columns 31 through 35
+
+   0.565077979179514   0.563042513440787   0.563120713089588   0.563380084853331   0.563387871231957
+
+  Columns 36 through 40
+
+   0.565627963840571   0.564514774087213   0.563921873679808   0.565559882087851   0.563708103354364
+
+  Columns 41 through 45
+
+   0.564087341101671   0.563948136506149   0.564508790286922   0.564502442144394   0.563324703630432
+
+  Columns 46 through 50
+
+   0.564159532251560   0.564024704528547   0.564817290835285   0.565282849216796   0.565298856845371
+
+  Columns 51 through 55
+
+   0.563667959279651   0.564266942638887   0.562975466504141   0.563076082806270   0.564182734219653
+
+  Columns 56 through 60
+
+   0.565722213856041   0.564025814921434   0.564560962360516   0.563963999145485   0.565306939686571
+
+  Columns 61 through 65
+
+   0.563649586645153   0.564222141011921   0.564742110568868   0.565290193765637   0.565733795443260
+
+  Columns 66 through 70
+
+   0.564275514680932   0.562748442989016   0.563447281710496   0.563874551244355   0.566540040771758
+
+  Columns 71 through 75
+
+   0.564621361767086   0.564937660331460   0.563997165037168   0.565078193973177   0.563424734311188
+
+  Columns 76 through 80
+
+   0.562787314578418   0.562767207622665   0.564677777457616   0.564012208391137   0.563993530059949
+
+  Columns 81 through 85
+
+   0.565608893698399   0.564481167921740   0.564387394601221   0.565777282637730   0.564215841804447
+
+  Columns 86 through 90
+
+   0.564886207963606   0.565024671712829   0.563945868407378   0.564405253634160   0.563023739616274
+
+  Columns 91 through 95
+
+   0.563041630768858   0.564294458263773   0.564911837579981   0.566775074800372   0.564457422495849
+
+  Columns 96 through 100
+
+   0.564376914572335   0.564107089122385   0.562816012261264   0.563750617393821   0.563125115616049
+
+save('init_weight.m',init_weight)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('save')" style="font-weight:bold">save</a>
+Must be a text scalar.
+} 
+save('init_weight.m',init_weight)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('save')" style="font-weight:bold">save</a>
+Must be a text scalar.
+} 
+save('init_weight',init_weight)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('save')" style="font-weight:bold">save</a>
+Must be a text scalar.
+} 
+save('init_weight')
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file 'init_weight.m'. No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m', 14)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m',14,0)">line 14</a>)
+init_weight_ws = load('init_weight.m');
+} 
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m', 17)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m',17,0)">line 17</a>)
+nothing
+} 
