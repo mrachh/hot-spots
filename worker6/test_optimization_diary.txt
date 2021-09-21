@@ -1977,3 +1977,4 @@ plot(res.loss(5:))
                  ↑
 {Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
 } 
+plot(res.loss(5:end))
