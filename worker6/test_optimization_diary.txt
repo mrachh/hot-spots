@@ -1921,3 +1921,59 @@ test
 {Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m', 17)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker6\test.m',17,0)">line 17</a>)
 nothing
 } 
+plot(chnk_poly(init_weight))
+axis equal
+w = [0.45687524574929 0.850549578264854 1.55167414067624 0.958829079211484 0.958731283412947 1.55100383827166 0.850532493269806 0.455917605367896 0.307606601219568 0.305934337194442]
+
+w =
+
+   0.456875245749290   0.850549578264854   1.551674140676240   0.958829079211484   0.958731283412947   1.551003838271660   0.850532493269806   0.455917605367896   0.307606601219568   0.305934337194442
+
+plot(chnk_poly(w))
+w2 = [0.455215529945609 0.852641445414355 1.56714951556252 0.968385323769965 0.968282547139576 1.56644507402447 0.852624019402092 0.454272080079644 0.30622010546525 0.304546585562222]
+
+w2 =
+
+   0.455215529945609   0.852641445414355   1.567149515562520   0.968385323769965   0.968282547139576   1.566445074024470   0.852624019402092   0.454272080079644   0.306220105465250   0.304546585562222
+
+hold on
+plot(chnk_poly(w))
+hold on
+plot(chnk_poly(w2))
+axis equal
+res = load('gd.mat')
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+'gd.mat' is not found in the current folder or on the MATLAB path, but exists in:
+    C:\Users\charl\Documents\MATLAB\hot-spots\worker5
+    C:\Users\charl\Documents\MATLAB\hot-spots\draft1
+    C:\Users\charl\Documents\MATLAB\hot-spots\shape_optimization_dev
+
+Change the MATLAB current folder or add its folder to the MATLAB path.
+} 
+cd ../work
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cd')" style="font-weight:bold">cd</a>
+Unable to change current folder to 'C:\Users\charl\Documents\MATLAB\hot-spots\worker6\..\work' (Name is nonexistent or not a folder).
+} 
+cd ../worker5
+res = load('gd.mat')
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        loss: [101×1 double]
+        step: [101×1 double]
+    gradnorm: [101×1 double]
+         fdd: [101×1 double]
+        time: [101×1 double]
+      weight: [101×10 double]
+        grad: [101×10 double]
+
+plot(res.loss)
+clf;
+plot(res.loss)
+plot(res.loss(5:))
+ plot(res.loss(5:))
+                 ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
