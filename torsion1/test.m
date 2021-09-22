@@ -1,0 +1,2 @@
+clear;clc;addpath('../src')
+
