@@ -1,5 +1,9 @@
 clear;clc;addpath('../src');
 
+run('~/matlab_libs/startup.m');
+
+tic
+
 diary('test_optimization_diary.txt');
 
 num_verts = 10;
@@ -16,7 +20,7 @@ init_weight = [0.563945298879718   0.564851815720133   0.564865732303110   0.563
 
 % Gradient descent parameter
 gd_params = struct( ...
-    'maxiter',          100, ...
+    'maxiter',          1, ...
     'report',           1, ...
     'eps',              1e-7,   ...
     'hspace',           1e-4, ...
@@ -40,6 +44,8 @@ fprintf('Polygon polygon with %d vertices\n', num_verts);
 fprintf('optimal weight: %5.2e \n', opt);
 fprintf('optimal value: %5.2e \n', fun(opt));
 clear fun
+
+toc
 
 
 diary off;

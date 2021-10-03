@@ -1,0 +1,77 @@
+
+gd_params = 
+
+  struct with fields:
+
+             maxiter: 1
+              report: 1
+                 eps: 1.0000e-07
+              hspace: 1.0000e-04
+     line_search_eps: 1.0000e-06
+    line_search_beta: 0.5000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 10 vertices
+{Unrecognized function or variable 'chunkerpoly'.
+
+Error in chnk_poly (line 19)
+    chnkr = chunkerpoly(verts, cparams, pref);
+
+Error in loss (line 38)
+    [chnkr, center] = loss_params.chnk_fun(weight);
+
+Error in gd (line 59)
+            [loss, chebabs] = fun(opt, loss_params);
+
+Error in test2 (line 41)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 
+
+gd_params = 
+
+  struct with fields:
+
+             maxiter: 1
+              report: 1
+                 eps: 1.0000e-07
+              hspace: 1.0000e-04
+     line_search_eps: 1.0000e-06
+    line_search_beta: 0.5000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 10 vertices
+{Unrecognized function or variable 'chebfunpref'.
+
+Error in find_first_eig (line 7)
+    p = chebfunpref; p.chebfuneps = eps;
+
+Error in loss (line 52)
+        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr,
+        default_chebabs);
+
+Error in gd (line 59)
+            [loss, chebabs] = fun(opt, loss_params);
+
+Error in test2 (line 43)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 

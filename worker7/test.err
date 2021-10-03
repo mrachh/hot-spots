@@ -1,0 +1,15 @@
+{Unrecognized function or variable 'chebfunpref'.
+
+Error in find_first_eig (line 7)
+    p = chebfunpref; p.chebfuneps = eps;
+
+Error in loss (line 52)
+        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr,
+        default_chebabs);
+
+Error in gd (line 59)
+            [loss, chebabs] = fun(opt, loss_params);
+
+Error in test2 (line 43)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 
