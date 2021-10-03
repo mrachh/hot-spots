@@ -5,3 +5,19 @@ MATLAB is selecting SOFTWARE OPENGL rendering.
                   R2020a (9.8.0.1323502) 64-bit (glnxa64)
                              February 25, 2020
 
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+	Non-Degree Granting Education License -- for use at non-degree granting, nonprofit,
+	educational organizations only.  Not for government, commercial, or other organizational use.
+
+[Warning: Name is nonexistent or not a directory:
+/mnt/home/zwang/matlab_libs/chebfun-master] 
+[> In path (line 109)
+  In addpath (line 86)
+  In startup (line 2)
+  In run (line 91)
+  In test (line 2)] 
+paths added

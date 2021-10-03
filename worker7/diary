@@ -1,0 +1,10 @@
+[Warning: Name is nonexistent or not a directory:
+/mnt/home/zwang/matlab_libs/chebfun-master] 
+[> In path (line 109)
+  In addpath (line 86)
+  In startup (line 2)
+  In run (line 91)
+  In test (line 2)] 
+paths added{Error using test (line 4)
+This is an error
+} 
