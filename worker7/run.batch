@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --job-name=test_load_lib
+#SBATCH --output=test.out
+#SBATCH --error=test.err
+#SBATCH --time=00:01:00
+module load matlab
+matlab -nosplash -nodesktop "/mnt/home/zwang/github/hot-spots/worker7/test"
