@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=test_load_lib
+#SBATCH --job-name=10point
 #SBATCH --output=test.out
 #SBATCH --error=test.err
 #SBATCH --time=01-00:00:00
