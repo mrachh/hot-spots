@@ -3765,3 +3765,5094 @@ chebabs =
     3.2123    3.5504
 
 Compuing dx2...
+Time to find eigenvalue: 3.97e+01; Time to compute 2-norm: 1.14e+01
+
+chebabs =
+
+    3.2124    3.5505
+
+Time to find eigenvalue: 3.84e+01; Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+    3.2123    3.5505
+
+Compuing dx3...
+Time to find eigenvalue: 4.40e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.2124    3.5505
+
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.2123    3.5505
+
+Compuing dx4...
+Time to find eigenvalue: 4.71e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    3.2124    3.5506
+
+Time to find eigenvalue: 4.32e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    3.2122    3.5504
+
+Compuing dx5...
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    3.2124    3.5506
+
+Time to find eigenvalue: 4.79e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    3.2122    3.5504
+
+Compuing dx6...
+Time to find eigenvalue: 4.22e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.2124    3.5505
+
+Time to find eigenvalue: 4.16e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.2123    3.5505
+
+Compuing dx7...
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 1.10e+01
+
+chebabs =
+
+    3.2124    3.5505
+
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+    3.2123    3.5505
+
+Compuing dx8...
+Time to find eigenvalue: 3.95e+01; Time to compute 2-norm: 1.13e+01
+
+chebabs =
+
+    3.2124    3.5505
+
+Time to find eigenvalue: 3.82e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.804127e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+    3.2123    3.5504
+
+Compuing dx9...
+Time to find eigenvalue: 3.76e+01; Time to compute 2-norm: 1.10e+01
+
+chebabs =
+
+    3.2124    3.5505
+
+Time to find eigenvalue: 3.77e+01; Time to compute 2-norm: 1.10e+01
+
+chebabs =
+
+    3.2123    3.5504
+
+Compuing dx10...
+Time to find eigenvalue: 3.99e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.2124    3.5505
+
+Time to find eigenvalue: 3.90e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.2123    3.5504
+
+Gradient computed!
+Time to find eigenvalue: 4.52e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    3.2122    3.5504
+
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.2125    3.5506
+
+[Warning: Negative second derivative -3.36e-01] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4604    0.8246    1.4279    0.8824    0.8824    1.4277    0.8247
+
+  Columns 8 through 10
+
+    0.4595    0.3183    0.3160
+
+Time to find eigenvalue: 4.37e+01; Time to compute 2-norm: 1.44e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -0.3360
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0020   -0.0028   -0.0184    0.0307    0.0306   -0.0184   -0.0028
+
+  Columns 8 through 10
+
+    0.0019    0.0021    0.0021
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4623    0.8218    1.4095    0.8711    0.8710    1.4093    0.8219
+
+  Columns 8 through 10
+
+    0.4615    0.3204    0.3182
+
+Saving log file...
+iter: 17, loss: -3.65e-01, grad: 5.09e-02, 2nd-deri: -3.36e-01, time: 1.30e+03
+Current weight [0.460371008428347 0.824584968386445 1.42788518438556 0.882441417182156 0.882416599505924 1.42771508150153 0.824667448104482 0.459503639360974 0.318274584636697 0.316042219379768]
+Current gradient [0.0019504292508854 -0.00276706261764792 -0.0184237384287522 0.0306721064863291 0.0305819485948988 -0.0184219129184537 -0.00281583074468461 0.0019492440872515 0.00212444294683811 0.00212954347156291]
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.51e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1871    3.5226
+
+Time to find eigenvalue: 4.33e+01; Time to compute 2-norm: 1.42e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Compuing dx2...
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    3.1871    3.5226
+
+Time to find eigenvalue: 4.31e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Compuing dx3...
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.42e+01
+
+chebabs =
+
+    3.1871    3.5225
+
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Compuing dx4...
+Time to find eigenvalue: 4.51e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    3.1871    3.5226
+
+Time to find eigenvalue: 4.51e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1869    3.5224
+
+Compuing dx5...
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    3.1871    3.5226
+
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1869    3.5224
+
+Compuing dx6...
+Time to find eigenvalue: 4.34e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1871    3.5225
+
+Time to find eigenvalue: 4.51e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Compuing dx7...
+Time to find eigenvalue: 4.50e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1871    3.5226
+
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Compuing dx8...
+Time to find eigenvalue: 4.40e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    3.1871    3.5226
+
+Time to find eigenvalue: 4.37e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Compuing dx9...
+Time to find eigenvalue: 4.46e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    3.1871    3.5226
+
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Compuing dx10...
+Time to find eigenvalue: 4.53e+01; Time to compute 2-norm: 1.38e+01
+
+chebabs =
+
+    3.1871    3.5226
+
+Time to find eigenvalue: 4.51e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    3.1870    3.5225
+
+Gradient computed!
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    3.1869    3.5224
+
+Time to find eigenvalue: 4.52e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    3.1872    3.5226
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4603    0.8247    1.4287    0.8830    0.8829    1.4285    0.8248
+
+  Columns 8 through 10
+
+    0.4594    0.3182    0.3159
+
+Time to find eigenvalue: 4.61e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Some statistics before line search: 
+
+step =
+
+    0.0461
+
+
+fdd =
+
+   21.6900
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0019   -0.0027   -0.0180    0.0299    0.0298   -0.0180   -0.0027
+
+  Columns 8 through 10
+
+    0.0019    0.0020    0.0020
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4604    0.8246    1.4279    0.8824    0.8824    1.4277    0.8247
+
+  Columns 8 through 10
+
+    0.4595    0.3183    0.3160
+
+Saving log file...
+iter: 18, loss: -3.65e-01, grad: 4.96e-02, 2nd-deri: 2.17e+01, time: 1.39e+03
+Current weight [0.460283714659316 0.824709013199208 1.42871315956628 0.882953055051926 0.882928188598075 1.42854272235548 0.824791876352802 0.459415950467035 0.318180967739055 0.315948876730541]
+Current gradient [0.00189339902340047 -0.0026905279718048 -0.0179587548571059 0.0298854182437247 0.0298126776676622 -0.0179515033202349 -0.00269884467662962 0.00190196926985742 0.00203054747821563 0.00202459903897445]
+Time to find eigenvalue: 4.63e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1860    3.5213
+
+Time to find eigenvalue: 4.84e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.526676e-16.] 
+[> In id (line 120)
+  In ifmm (line 351)
+  In chunkerkerneval>chunkerkerneval_smooth (line 209)
+  In chunkerkerneval (line 95)
+  In u_norm (line 22)
+  In loss (line 47)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    3.1859    3.5212
+
+Compuing dx2...
+Time to find eigenvalue: 4.56e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    3.1859    3.5212
+
+Compuing dx3...
+Time to find eigenvalue: 4.75e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Time to find eigenvalue: 4.54e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Compuing dx4...
+Time to find eigenvalue: 4.84e+01; Time to compute 2-norm: 1.36e+01
+
+chebabs =
+
+    3.1860    3.5214
+
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1858    3.5212
+
+Compuing dx5...
+Time to find eigenvalue: 4.61e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1860    3.5214
+
+Time to find eigenvalue: 4.64e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.875004e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    3.1858    3.5212
+
+Compuing dx6...
+Time to find eigenvalue: 4.39e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Compuing dx7...
+Time to find eigenvalue: 4.36e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Time to find eigenvalue: 4.34e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1859    3.5212
+
+Compuing dx8...
+Time to find eigenvalue: 4.21e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1860    3.5213
+
+Time to find eigenvalue: 4.40e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1859    3.5212
+
+Compuing dx9...
+Time to find eigenvalue: 4.25e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Time to find eigenvalue: 4.41e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1859    3.5212
+
+Compuing dx10...
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1859    3.5213
+
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1859    3.5212
+
+Gradient computed!
+Time to find eigenvalue: 4.72e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    3.1858    3.5211
+
+Time to find eigenvalue: 4.74e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.641210e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 99)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1860    3.5214
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4597    0.8255    1.4338    0.8861    0.8861    1.4336    0.8256
+
+  Columns 8 through 10
+
+    0.4589    0.3176    0.3154
+
+Time to find eigenvalue: 3.73e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Some statistics before line search: 
+
+step =
+
+    0.2831
+
+
+fdd =
+
+    3.5324
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0019   -0.0027   -0.0179    0.0299    0.0298   -0.0179   -0.0027
+
+  Columns 8 through 10
+
+    0.0019    0.0020    0.0020
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4603    0.8247    1.4287    0.8830    0.8829    1.4285    0.8248
+
+  Columns 8 through 10
+
+    0.4594    0.3182    0.3159
+
+Saving log file...
+iter: 19, loss: -3.65e-01, grad: 4.95e-02, 2nd-deri: 3.53e+00, time: 1.40e+03
+Current weight [0.45974845867695 0.825470073416967 1.43379127513822 0.886091155761849 0.886066074682353 1.43361936686135 0.82555429542765 0.458877579501713 0.317608669426309 0.315377188882688]
+Current gradient [0.00189075987200304 -0.00268839988215586 -0.0179381407497403 0.0298549207858323 0.0297751999223106 -0.0179329442964726 -0.00269319996387685 0.00190176336373193 0.00202160969742238 0.00201945326655517]
+Time to find eigenvalue: 3.72e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.64e+01; Time to compute 2-norm: 1.08e+01
+
+chebabs =
+
+    3.1790    3.5137
+
+Time to find eigenvalue: 3.69e+01; Time to compute 2-norm: 1.06e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Compuing dx2...
+Time to find eigenvalue: 3.81e+01; Time to compute 2-norm: 1.10e+01
+
+chebabs =
+
+    3.1790    3.5137
+
+Time to find eigenvalue: 3.68e+01; Time to compute 2-norm: 1.06e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Compuing dx3...
+Time to find eigenvalue: 4.04e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Time to find eigenvalue: 4.14e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Compuing dx4...
+Time to find eigenvalue: 4.44e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    3.1791    3.5137
+
+Time to find eigenvalue: 4.37e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1789    3.5135
+
+Compuing dx5...
+Time to find eigenvalue: 4.60e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1791    3.5137
+
+Time to find eigenvalue: 4.40e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1789    3.5135
+
+Compuing dx6...
+Time to find eigenvalue: 4.25e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Time to find eigenvalue: 4.03e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Compuing dx7...
+Time to find eigenvalue: 3.62e+01; Time to compute 2-norm: 1.07e+01
+
+chebabs =
+
+    3.1790    3.5137
+
+Time to find eigenvalue: 3.72e+01; Time to compute 2-norm: 1.04e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Compuing dx8...
+Time to find eigenvalue: 3.60e+01; Time to compute 2-norm: 1.05e+01
+
+chebabs =
+
+    3.1790    3.5137
+
+Time to find eigenvalue: 3.72e+01; Time to compute 2-norm: 1.06e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Compuing dx9...
+Time to find eigenvalue: 3.87e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.692868e-16.] 
+[> In id (line 120)
+  In ifmm (line 351)
+  In chunkerkerneval>chunkerkerneval_smooth (line 209)
+  In chunkerkerneval (line 95)
+  In u_norm (line 22)
+  In loss (line 47)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.11e+01
+
+chebabs =
+
+    3.1790    3.5137
+
+Time to find eigenvalue: 3.84e+01; Time to compute 2-norm: 1.09e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Compuing dx10...
+Time to find eigenvalue: 3.79e+01; Time to compute 2-norm: 1.09e+01
+
+chebabs =
+
+    3.1790    3.5137
+
+Time to find eigenvalue: 3.84e+01; Time to compute 2-norm: 1.11e+01
+
+chebabs =
+
+    3.1790    3.5136
+
+Gradient computed!
+Time to find eigenvalue: 4.54e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.028461e-16.] 
+[> In id (line 120)
+  In ifmm (line 351)
+  In chunkerkerneval>chunkerkerneval_smooth (line 209)
+  In chunkerkerneval (line 95)
+  In u_norm (line 22)
+  In loss (line 47)
+  In gd (line 98)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    3.1789    3.5135
+
+Time to find eigenvalue: 4.82e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.182404e-16.] 
+[> In id (line 120)
+  In ifmm (line 351)
+  In chunkerkerneval>chunkerkerneval_smooth (line 209)
+  In chunkerkerneval (line 95)
+  In u_norm (line 22)
+  In loss (line 47)
+  In gd (line 99)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    3.1791    3.5138
+
+[Warning: Negative second derivative -2.73e-01] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4578    0.8281    1.4516    0.8971    0.8971    1.4514    0.8282
+
+  Columns 8 through 10
+
+    0.4570    0.3156    0.3134
+
+Time to find eigenvalue: 4.22e+01; Time to compute 2-norm: 1.14e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -0.2728
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0019   -0.0027   -0.0178    0.0296    0.0296   -0.0178   -0.0027
+
+  Columns 8 through 10
+
+    0.0019    0.0020    0.0020
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4597    0.8255    1.4338    0.8861    0.8861    1.4336    0.8256
+
+  Columns 8 through 10
+
+    0.4589    0.3176    0.3154
+
+Saving log file...
+iter: 20, loss: -3.65e-01, grad: 4.92e-02, 2nd-deri: -2.73e-01, time: 1.26e+03
+Current weight [0.457832041846723 0.828127327580341 1.45160388861078 0.897101154012625 0.897076813020565 1.45143705296872 0.828226317456843 0.456987184984956 0.31560710995148 0.313389094056144]
+Current gradient [0.0019164168302277 -0.00265725416337403 -0.0178126134725565 0.0296407952923849 0.0295743995440412 -0.0178176861073687 -0.00267202202919314 0.00189039451675699 0.00200155947482905 0.00198809482654383]
+Time to find eigenvalue: 4.21e+01; Time to compute 2-norm: 1.14e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.13e+01; Time to compute 2-norm: 1.13e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Time to find eigenvalue: 4.41e+01; Time to compute 2-norm: 1.14e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx2...
+Time to find eigenvalue: 3.94e+01; Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Time to find eigenvalue: 3.88e+01; Time to compute 2-norm: 1.10e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx3...
+Time to find eigenvalue: 4.60e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Time to find eigenvalue: 4.49e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx4...
+Time to find eigenvalue: 5.02e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    3.1551    3.4872
+
+Time to find eigenvalue: 4.91e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx5...
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    3.1551    3.4872
+
+Time to find eigenvalue: 5.12e+01; Time to compute 2-norm: 1.40e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx6...
+Time to find eigenvalue: 4.53e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx7...
+Time to find eigenvalue: 4.06e+01; Time to compute 2-norm: 1.13e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Time to find eigenvalue: 3.91e+01; Time to compute 2-norm: 1.10e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx8...
+Time to find eigenvalue: 4.09e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Time to find eigenvalue: 3.98e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.377721e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx9...
+Time to find eigenvalue: 4.11e+01; Time to compute 2-norm: 1.14e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Time to find eigenvalue: 4.05e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Compuing dx10...
+Time to find eigenvalue: 3.95e+01; Time to compute 2-norm: 1.10e+01
+
+chebabs =
+
+    3.1550    3.4871
+
+Time to find eigenvalue: 3.95e+01; Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+    3.1549    3.4870
+
+Gradient computed!
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1548    3.4869
+
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1551    3.4872
+
+[Warning: Negative second derivative -3.45e-02] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4560    0.8307    1.4690    0.9078    0.9078    1.4688    0.8308
+
+  Columns 8 through 10
+
+    0.4551    0.3137    0.3115
+
+Time to find eigenvalue: 4.18e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1318    3.4614
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -0.0345
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0018   -0.0026   -0.0174    0.0289    0.0289   -0.0174   -0.0026
+
+  Columns 8 through 10
+
+    0.0018    0.0019    0.0019
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4578    0.8281    1.4516    0.8971    0.8971    1.4514    0.8282
+
+  Columns 8 through 10
+
+    0.4570    0.3156    0.3134
+
+Saving log file...
+iter: 21, loss: -3.65e-01, grad: 4.80e-02, 2nd-deri: -3.45e-02, time: 1.35e+03
+Current weight [0.455996059463653 0.830698033816556 1.46899619726183 0.907848321176048 0.907822824157578 1.46882143809682 0.830803483534887 0.45513875913896 0.313695716477428 0.311479482322403]
+Current gradient [0.00183598238306937 -0.00257070623621569 -0.0173923086510541 0.0289235958514378 0.0288686244270808 -0.0173843851281053 -0.00257716607804381 0.00184842584599609 0.00191139347405223 0.00190961173374138]
+Time to find eigenvalue: 4.21e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1318    3.4614
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.20e+01; Time to compute 2-norm: 1.13e+01
+
+chebabs =
+
+    3.1318    3.4615
+
+Time to find eigenvalue: 4.31e+01; Time to compute 2-norm: 1.14e+01
+
+chebabs =
+
+    3.1317    3.4614
+
+Compuing dx2...
+Time to find eigenvalue: 4.20e+01; Time to compute 2-norm: 1.13e+01
+
+chebabs =
+
+    3.1318    3.4615
+
+Time to find eigenvalue: 4.33e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1317    3.4614
+
+Compuing dx3...
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1318    3.4615
+
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1318    3.4614
+
+Compuing dx4...
+Time to find eigenvalue: 4.54e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1319    3.4615
+
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1317    3.4613
+
+Compuing dx5...
+Time to find eigenvalue: 4.61e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    3.1319    3.4615
+
+Time to find eigenvalue: 4.61e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1317    3.4613
+
+Compuing dx6...
+Time to find eigenvalue: 4.33e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.1318    3.4615
+
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.1318    3.4614
+
+Compuing dx7...
+Time to find eigenvalue: 4.25e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    3.1318    3.4615
+
+Time to find eigenvalue: 4.24e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1317    3.4614
+
+Compuing dx8...
+Time to find eigenvalue: 4.31e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    3.1318    3.4615
+
+Time to find eigenvalue: 4.33e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    3.1317    3.4614
+
+Compuing dx9...
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1318    3.4615
+
+Time to find eigenvalue: 4.19e+01; Time to compute 2-norm: 1.14e+01
+
+chebabs =
+
+    3.1317    3.4614
+
+Compuing dx10...
+Time to find eigenvalue: 4.16e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1318    3.4615
+
+Time to find eigenvalue: 4.32e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    3.1317    3.4614
+
+Gradient computed!
+Time to find eigenvalue: 4.73e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.1317    3.4613
+
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.35e+01
+
+chebabs =
+
+    3.1319    3.4616
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4392    0.8540    1.6284    1.0064    1.0064    1.6282    0.8542
+
+  Columns 8 through 10
+
+    0.4382    0.2965    0.2943
+
+Time to find eigenvalue: 3.17e+02; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Some statistics before line search: 
+
+step =
+
+    9.3829
+
+
+fdd =
+
+    0.1066
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0018   -0.0025   -0.0170    0.0283    0.0282   -0.0170   -0.0025
+
+  Columns 8 through 10
+
+    0.0018    0.0018    0.0018
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4560    0.8307    1.4690    0.9078    0.9078    1.4688    0.8308
+
+  Columns 8 through 10
+
+    0.4551    0.3137    0.3115
+
+Saving log file...
+iter: 22, loss: -3.65e-01, grad: 4.69e-02, 2nd-deri: 1.07e-01, time: 1.69e+03
+Current weight [0.43915489624909 0.854036818153099 1.62844796495227 1.00638402014883 1.00635177933873 1.62822698315139 0.854183206819549 0.438234939478922 0.296500755007296 0.294309092482919]
+Current gradient [0.00179488584051146 -0.00248738480868038 -0.0169939401706287 0.0282696274944705 0.02821295462474 -0.0169890138865258 -0.00249174797156693 0.00180156359580463 0.00183259270619685 0.00182997392794704]
+Time to find eigenvalue: 4.87e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.96e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Time to find eigenvalue: 4.58e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.9325    3.2411
+
+Compuing dx2...
+Time to find eigenvalue: 4.75e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Time to find eigenvalue: 4.63e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.9325    3.2411
+
+Compuing dx3...
+Time to find eigenvalue: 4.71e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Time to find eigenvalue: 4.65e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Compuing dx4...
+Time to find eigenvalue: 4.72e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9326    3.2413
+
+Time to find eigenvalue: 4.78e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9324    3.2411
+
+Compuing dx5...
+Time to find eigenvalue: 4.99e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.9326    3.2413
+
+Time to find eigenvalue: 4.82e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9324    3.2411
+
+Compuing dx6...
+Time to find eigenvalue: 4.94e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.842441e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Time to find eigenvalue: 5.04e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Compuing dx7...
+Time to find eigenvalue: 4.85e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Time to find eigenvalue: 4.76e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9325    3.2411
+
+Compuing dx8...
+Time to find eigenvalue: 4.94e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Time to find eigenvalue: 4.91e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9325    3.2411
+
+Compuing dx9...
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Time to find eigenvalue: 4.90e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.9325    3.2411
+
+Compuing dx10...
+Time to find eigenvalue: 4.98e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.9325    3.2412
+
+Time to find eigenvalue: 4.75e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.9325    3.2411
+
+Gradient computed!
+Time to find eigenvalue: 4.96e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.9324    3.2411
+
+Time to find eigenvalue: 4.98e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.9326    3.2413
+
+[Warning: Negative second derivative -1.12e+00] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4377    0.8558    1.6424    1.0150    1.0150    1.6422    0.8560
+
+  Columns 8 through 10
+
+    0.4368    0.2953    0.2931
+
+Time to find eigenvalue: 4.66e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -1.1246
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0014   -0.0018   -0.0139    0.0231    0.0231   -0.0139   -0.0018
+
+  Columns 8 through 10
+
+    0.0014    0.0012    0.0012
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4392    0.8540    1.6284    1.0064    1.0064    1.6282    0.8542
+
+  Columns 8 through 10
+
+    0.4382    0.2965    0.2943
+
+Saving log file...
+iter: 23, loss: -3.65e-01, grad: 3.83e-02, 2nd-deri: -1.12e+00, time: 1.49e+03
+Current weight [0.437718369620328 0.855841107579576 1.6423774511995 1.01499147084953 1.01495833695601 1.64215034811376 0.855991626809695 0.436796030223009 0.295315024499072 0.293125266226173]
+Current gradient [0.00143652662876192 -0.00180428942647692 -0.0139294862472328 0.0231342275627822 0.0230684085517074 -0.0139233649623649 -0.0018084199901458 0.00143890925591306 0.00118573050822413 0.0011838262567454]
+Time to find eigenvalue: 4.70e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 5.00e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.9161    3.2231
+
+Time to find eigenvalue: 4.65e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Compuing dx2...
+Time to find eigenvalue: 4.65e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.9161    3.2231
+
+Time to find eigenvalue: 4.59e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Compuing dx3...
+Time to find eigenvalue: 5.00e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.9161    3.2231
+
+Time to find eigenvalue: 5.17e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Compuing dx4...
+Time to find eigenvalue: 4.79e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9162    3.2231
+
+Time to find eigenvalue: 5.30e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.9160    3.2230
+
+Compuing dx5...
+Time to find eigenvalue: 5.17e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.9162    3.2231
+
+Time to find eigenvalue: 4.82e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.9160    3.2230
+
+Compuing dx6...
+Time to find eigenvalue: 4.82e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.9161    3.2231
+
+Time to find eigenvalue: 4.77e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Compuing dx7...
+Time to find eigenvalue: 4.67e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.131857e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.9161    3.2231
+
+Time to find eigenvalue: 4.90e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Compuing dx8...
+Time to find eigenvalue: 4.91e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9161    3.2231
+
+Time to find eigenvalue: 4.65e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Compuing dx9...
+Time to find eigenvalue: 4.59e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9161    3.2231
+
+Time to find eigenvalue: 4.86e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Compuing dx10...
+Time to find eigenvalue: 5.02e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.9161    3.2231
+
+Time to find eigenvalue: 4.46e+01; Time to compute 2-norm: 1.48e+01
+
+chebabs =
+
+    2.9161    3.2230
+
+Gradient computed!
+Time to find eigenvalue: 4.81e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.9160    3.2229
+
+Time to find eigenvalue: 4.74e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.9162    3.2232
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4376    0.8560    1.6438    1.0159    1.0158    1.6435    0.8562
+
+  Columns 8 through 10
+
+    0.4367    0.2952    0.2930
+
+Time to find eigenvalue: 4.66e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9145    3.2212
+
+Some statistics before line search: 
+
+step =
+
+    0.1014
+
+
+fdd =
+
+    9.8586
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0014   -0.0018   -0.0137    0.0227    0.0227   -0.0137   -0.0018
+
+  Columns 8 through 10
+
+    0.0014    0.0012    0.0012
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4377    0.8558    1.6424    1.0150    1.0150    1.6422    0.8560
+
+  Columns 8 through 10
+
+    0.4368    0.2953    0.2931
+
+Saving log file...
+iter: 24, loss: -3.65e-01, grad: 3.77e-02, 2nd-deri: 9.86e+00, time: 1.49e+03
+Current weight [0.437573400316774 0.85602082503618 1.64376645264186 1.01585028124111 1.01581736997862 1.64354087549196 0.85617305846718 0.436654606656362 0.295197117854957 0.293008026151935]
+Current gradient [0.00142919675205633 -0.0017717654632321 -0.0136936323852366 0.0227432468194455 0.0226983002277192 -0.0137086760013116 -0.0017886651121346 0.00139424069206529 0.00116239637415472 0.00115582491744259]
+Time to find eigenvalue: 4.67e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.9145    3.2212
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.81e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 4.72e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9144    3.2212
+
+Compuing dx2...
+Time to find eigenvalue: 4.58e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.195733e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 4.64e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.9144    3.2212
+
+Compuing dx3...
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 4.70e+01; Time to compute 2-norm: 1.45e+01
+
+chebabs =
+
+    2.9145    3.2212
+
+Compuing dx4...
+Time to find eigenvalue: 4.84e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 5.07e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.9144    3.2212
+
+Compuing dx5...
+Time to find eigenvalue: 5.09e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 5.09e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.9144    3.2212
+
+Compuing dx6...
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 4.94e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.9145    3.2212
+
+Compuing dx7...
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 4.82e+01; Time to compute 2-norm: 1.45e+01
+
+chebabs =
+
+    2.9144    3.2212
+
+Compuing dx8...
+Time to find eigenvalue: 4.79e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.44e+01
+
+chebabs =
+
+    2.9144    3.2212
+
+Compuing dx9...
+Time to find eigenvalue: 4.53e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 4.68e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9144    3.2212
+
+Compuing dx10...
+Time to find eigenvalue: 4.70e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.9145    3.2213
+
+Time to find eigenvalue: 4.80e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.9144    3.2212
+
+Gradient computed!
+Time to find eigenvalue: 4.98e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.9144    3.2211
+
+Time to find eigenvalue: 4.98e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.9146    3.2214
+
+[Warning: Negative second derivative -5.05e+00] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4362    0.8578    1.6575    1.0243    1.0243    1.6572    0.8579
+
+  Columns 8 through 10
+
+    0.4352    0.2940    0.2919
+
+Time to find eigenvalue: 4.21e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -5.0457
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0014   -0.0018   -0.0137    0.0227    0.0227   -0.0137   -0.0018
+
+  Columns 8 through 10
+
+    0.0014    0.0012    0.0012
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4376    0.8560    1.6438    1.0159    1.0158    1.6435    0.8562
+
+  Columns 8 through 10
+
+    0.4367    0.2952    0.2930
+
+Saving log file...
+iter: 25, loss: -3.65e-01, grad: 3.76e-02, 2nd-deri: -5.05e+00, time: 1.48e+03
+Current weight [0.43615458325155 0.857785786360216 1.65745751996421 1.02431023893084 1.02427634683356 1.6572252200725 0.857940572577254 0.435245741803248 0.294038348099252 0.291852395277607]
+Current gradient [0.00141881706522407 -0.00176496132403559 -0.0136910673223523 0.0226758813812178 0.02267524674332 -0.0136843445805446 -0.0017675141100737 0.00140886485311409 0.00115876975570472 0.00115563087432768]
+Time to find eigenvalue: 4.22e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.18e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8986    3.2037
+
+Time to find eigenvalue: 4.34e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Compuing dx2...
+Time to find eigenvalue: 4.25e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    2.8986    3.2037
+
+Time to find eigenvalue: 4.22e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Compuing dx3...
+Time to find eigenvalue: 4.64e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Time to find eigenvalue: 4.49e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Compuing dx4...
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.8986    3.2037
+
+Time to find eigenvalue: 5.11e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.8984    3.2035
+
+Compuing dx5...
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.8986    3.2037
+
+Time to find eigenvalue: 4.80e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.8984    3.2035
+
+Compuing dx6...
+Time to find eigenvalue: 4.49e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Time to find eigenvalue: 4.46e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Compuing dx7...
+Time to find eigenvalue: 4.25e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.386479e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8986    3.2037
+
+Time to find eigenvalue: 4.22e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Compuing dx8...
+Time to find eigenvalue: 4.25e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    2.8986    3.2037
+
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Compuing dx9...
+Time to find eigenvalue: 4.11e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8985    3.2037
+
+Time to find eigenvalue: 4.19e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Compuing dx10...
+Time to find eigenvalue: 4.17e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8986    3.2037
+
+Time to find eigenvalue: 4.19e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8985    3.2036
+
+Gradient computed!
+Time to find eigenvalue: 4.49e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.8984    3.2035
+
+Time to find eigenvalue: 4.99e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.8986    3.2037
+
+[Warning: Negative second derivative -1.47e-01] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4348    0.8595    1.6709    1.0326    1.0326    1.6707    0.8597
+
+  Columns 8 through 10
+
+    0.4339    0.2929    0.2907
+
+Time to find eigenvalue: 4.24e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8830    3.1864
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -0.1470
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0014   -0.0017   -0.0135    0.0224    0.0223   -0.0135   -0.0017
+
+  Columns 8 through 10
+
+    0.0014    0.0011    0.0011
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4362    0.8578    1.6575    1.0243    1.0243    1.6572    0.8579
+
+  Columns 8 through 10
+
+    0.4352    0.2940    0.2919
+
+Saving log file...
+iter: 26, loss: -3.65e-01, grad: 3.71e-02, 2nd-deri: -1.47e-01, time: 1.38e+03
+Current weight [0.434764526768575 0.859527179683367 1.6709344891837 1.03263960081705 1.03260579325533 1.6707027687074 0.859681566487958 0.433857354331591 0.292903961676678 0.290722207535325]
+Current gradient [0.00139005648297497 -0.00174139332315137 -0.0134769692194947 0.022365360747012 0.0223292405399089 -0.0134775486348993 -0.00174099391070381 0.00138838747165693 0.00113438642257435 0.00113018774228202]
+Time to find eigenvalue: 4.31e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.901543e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 62)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8830    3.1864
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.19e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8830    3.1865
+
+Time to find eigenvalue: 4.20e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.035435e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8829    3.1864
+
+Compuing dx2...
+Time to find eigenvalue: 4.32e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8830    3.1865
+
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    2.8829    3.1864
+
+Compuing dx3...
+Time to find eigenvalue: 4.69e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.8830    3.1865
+
+Time to find eigenvalue: 4.61e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.8830    3.1864
+
+Compuing dx4...
+Time to find eigenvalue: 5.04e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.188649e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.8831    3.1865
+
+Time to find eigenvalue: 5.02e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.8829    3.1864
+
+Compuing dx5...
+Time to find eigenvalue: 5.28e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.8831    3.1865
+
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.8829    3.1864
+
+Compuing dx6...
+Time to find eigenvalue: 4.60e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8830    3.1865
+
+Time to find eigenvalue: 4.60e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.8830    3.1864
+
+Compuing dx7...
+Time to find eigenvalue: 4.15e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8830    3.1865
+
+Time to find eigenvalue: 4.21e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8829    3.1864
+
+Compuing dx8...
+Time to find eigenvalue: 4.07e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    2.8830    3.1865
+
+Time to find eigenvalue: 3.87e+01; Time to compute 2-norm: 1.13e+01
+
+chebabs =
+
+    2.8829    3.1864
+
+Compuing dx9...
+Time to find eigenvalue: 4.07e+01; Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+    2.8830    3.1865
+
+Time to find eigenvalue: 4.14e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    2.8830    3.1864
+
+Compuing dx10...
+Time to find eigenvalue: 4.00e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    2.8830    3.1865
+
+Time to find eigenvalue: 4.16e+01; Time to compute 2-norm: 1.15e+01
+
+chebabs =
+
+    2.8830    3.1864
+
+Gradient computed!
+Time to find eigenvalue: 5.21e+01; Time to compute 2-norm: 1.37e+01
+
+chebabs =
+
+    2.8829    3.1863
+
+Time to find eigenvalue: 5.10e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.8831    3.1866
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4293    0.8663    1.7237    1.0653    1.0652    1.7235    0.8665
+
+  Columns 8 through 10
+
+    0.4284    0.2885    0.2863
+
+Time to find eigenvalue: 4.39e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Some statistics before line search: 
+
+step =
+
+    3.9808
+
+
+fdd =
+
+    0.2512
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0014   -0.0017   -0.0133    0.0220    0.0220   -0.0133   -0.0017
+
+  Columns 8 through 10
+
+    0.0014    0.0011    0.0011
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4348    0.8595    1.6709    1.0326    1.0326    1.6707    0.8597
+
+  Columns 8 through 10
+
+    0.4339    0.2929    0.2907
+
+Saving log file...
+iter: 27, loss: -3.65e-01, grad: 3.65e-02, 2nd-deri: 2.51e-01, time: 1.40e+03
+Current weight [0.429312813037537 0.86633368455464 1.72370731074647 1.06527195987448 1.06524863362795 1.72354743027393 0.866480570765294 0.428413367802958 0.288480010241504 0.28630662556153]
+Current gradient [0.00136950056905949 -0.00170983157854465 -0.013256823950536 0.0220345408191713 0.0220038160805847 -0.0132748705558572 -0.00170794738796332 0.00136755945318034 0.00111132100966138 0.00110921855478452]
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.72e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.8235    3.1208
+
+Time to find eigenvalue: 4.46e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Compuing dx2...
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.8235    3.1208
+
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Compuing dx3...
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Time to find eigenvalue: 4.36e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Compuing dx4...
+Time to find eigenvalue: 4.76e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.8236    3.1208
+
+Time to find eigenvalue: 4.63e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.8234    3.1206
+
+Compuing dx5...
+Time to find eigenvalue: 4.73e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.8236    3.1208
+
+Time to find eigenvalue: 4.75e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.8234    3.1206
+
+Compuing dx6...
+Time to find eigenvalue: 4.79e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Time to find eigenvalue: 4.90e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Compuing dx7...
+Time to find eigenvalue: 4.39e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8235    3.1208
+
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Compuing dx8...
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8235    3.1208
+
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Compuing dx9...
+Time to find eigenvalue: 4.34e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.8235    3.1208
+
+Time to find eigenvalue: 4.29e+01; Time to compute 2-norm: 1.36e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Compuing dx10...
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.8235    3.1208
+
+Time to find eigenvalue: 4.21e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8235    3.1207
+
+Gradient computed!
+Time to find eigenvalue: 5.18e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.8234    3.1206
+
+Time to find eigenvalue: 4.96e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.8236    3.1208
+
+[Warning: Negative second derivative -3.59e+00] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4280    0.8679    1.7362    1.0730    1.0730    1.7361    0.8681
+
+  Columns 8 through 10
+
+    0.4271    0.2875    0.2853
+
+Time to find eigenvalue: 4.40e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -3.5860
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0013   -0.0016   -0.0125    0.0208    0.0208   -0.0125   -0.0016
+
+  Columns 8 through 10
+
+    0.0013    0.0010    0.0010
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4293    0.8663    1.7237    1.0653    1.0652    1.7235    0.8665
+
+  Columns 8 through 10
+
+    0.4284    0.2885    0.2863
+
+Saving log file...
+iter: 28, loss: -3.65e-01, grad: 3.45e-02, 2nd-deri: -3.59e+00, time: 1.42e+03
+Current weight [0.428018061438546 0.867930873050823 1.73623592699731 1.07301377988215 1.07298965604202 1.73607057973691 0.868075926415657 0.427125539435678 0.287462940548594 0.2852892260258]
+Current gradient [0.00129475159899028 -0.00159718849618296 -0.0125286162508398 0.020797496574354 0.0207547312874867 -0.0125231494629841 -0.00159535565036339 0.00128782836728014 0.00101706969291016 0.00101739953572988]
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.34e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.8098    3.1055
+
+Time to find eigenvalue: 4.28e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Compuing dx2...
+Time to find eigenvalue: 4.27e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8098    3.1055
+
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Compuing dx3...
+Time to find eigenvalue: 4.70e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Time to find eigenvalue: 5.04e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Compuing dx4...
+Time to find eigenvalue: 5.26e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.8098    3.1056
+
+Time to find eigenvalue: 5.06e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.8097    3.1054
+
+Compuing dx5...
+Time to find eigenvalue: 5.07e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.8098    3.1056
+
+Time to find eigenvalue: 4.94e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.8097    3.1054
+
+Compuing dx6...
+Time to find eigenvalue: 4.96e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Time to find eigenvalue: 4.83e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Compuing dx7...
+Time to find eigenvalue: 4.33e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.8098    3.1055
+
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Compuing dx8...
+Time to find eigenvalue: 4.53e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.8098    3.1055
+
+Time to find eigenvalue: 4.62e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.781336e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Compuing dx9...
+Time to find eigenvalue: 4.49e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    2.8098    3.1055
+
+Time to find eigenvalue: 4.19e+01; Time to compute 2-norm: 1.17e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Compuing dx10...
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.8098    3.1055
+
+Time to find eigenvalue: 4.55e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.8097    3.1055
+
+Gradient computed!
+Time to find eigenvalue: 5.24e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.8096    3.1054
+
+Time to find eigenvalue: 5.02e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.8098    3.1056
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4154    0.8836    1.8592    1.1490    1.1490    1.8591    0.8837
+
+  Columns 8 through 10
+
+    0.4145    0.2776    0.2754
+
+Time to find eigenvalue: 4.71e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.080055e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 127)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6807    2.9628
+
+Some statistics before line search: 
+
+step =
+
+    9.9451
+
+
+fdd =
+
+    0.1006
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0013   -0.0016   -0.0124    0.0205    0.0205   -0.0124   -0.0016
+
+  Columns 8 through 10
+
+    0.0013    0.0010    0.0010
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4280    0.8679    1.7362    1.0730    1.0730    1.7361    0.8681
+
+  Columns 8 through 10
+
+    0.4271    0.2875    0.2853
+
+Saving log file...
+iter: 29, loss: -3.65e-01, grad: 3.40e-02, 2nd-deri: 1.01e-01, time: 1.45e+03
+Current weight [0.415401048382353 0.883574945409022 1.85918622101533 1.14902581261502 1.14901687393174 1.85912495436869 0.883716626424535 0.414511388467491 0.277604564847142 0.275360546182591]
+Current gradient [0.00126866715827179 -0.00157304432785166 -0.0123629102566358 0.0205109357673261 0.0205296658312148 -0.0123733757809164 -0.00157270523104547 0.00126837936931246 0.000991280379170068 0.000998349608261062]
+Time to find eigenvalue: 4.63e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6807    2.9628
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.72e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+Time to find eigenvalue: 4.90e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Compuing dx2...
+Time to find eigenvalue: 4.77e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+Time to find eigenvalue: 4.75e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Compuing dx3...
+Time to find eigenvalue: 4.83e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6807    2.9628
+
+Time to find eigenvalue: 4.98e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6807    2.9628
+
+Compuing dx4...
+Time to find eigenvalue: 5.28e+01; Time to compute 2-norm: 1.34e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+Time to find eigenvalue: 5.04e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Compuing dx5...
+Time to find eigenvalue: 5.01e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+Time to find eigenvalue: 5.25e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Compuing dx6...
+Time to find eigenvalue: 4.99e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6807    2.9628
+
+Time to find eigenvalue: 5.14e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6807    2.9628
+
+Compuing dx7...
+Time to find eigenvalue: 4.71e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.180751e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+Time to find eigenvalue: 4.70e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Compuing dx8...
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+Time to find eigenvalue: 4.67e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Compuing dx9...
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+Time to find eigenvalue: 4.50e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Compuing dx10...
+Time to find eigenvalue: 4.67e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Gradient computed!
+Time to find eigenvalue: 4.66e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6806    2.9628
+
+Time to find eigenvalue: 4.92e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6807    2.9629
+
+[Warning: Negative second derivative -4.29e+00] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4143    0.8849    1.8701    1.1558    1.1558    1.8700    0.8851
+
+  Columns 8 through 10
+
+    0.4134    0.2768    0.2745
+
+Time to find eigenvalue: 4.65e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6697    2.9508
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -4.2859
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0011   -0.0013   -0.0109    0.0181    0.0181   -0.0109   -0.0013
+
+  Columns 8 through 10
+
+    0.0011    0.0008    0.0008
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4154    0.8836    1.8592    1.1490    1.1490    1.8591    0.8837
+
+  Columns 8 through 10
+
+    0.4145    0.2776    0.2754
+
+Saving log file...
+iter: 30, loss: -3.65e-01, grad: 3.00e-02, 2nd-deri: -4.29e+00, time: 1.49e+03
+Current weight [0.414295715944553 0.884920626078695 1.87008905422631 1.15576282997806 1.15575308532807 1.87002226340161 0.885061814466602 0.413410294579202 0.276792211302709 0.274545979649477]
+Current gradient [0.00110533243780075 -0.00134568066967322 -0.0109028332109795 0.0180969444776857 0.0180575947697492 -0.0108973090329201 -0.00134518804206785 0.00110109388828938 0.000812353544432654 0.000814566533113847]
+Time to find eigenvalue: 4.61e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6697    2.9508
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.59e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6698    2.9508
+
+Time to find eigenvalue: 4.48e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.642465e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Compuing dx2...
+Time to find eigenvalue: 4.73e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6698    2.9508
+
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Compuing dx3...
+Time to find eigenvalue: 4.95e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6697    2.9508
+
+Time to find eigenvalue: 4.75e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.004701e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6697    2.9508
+
+Compuing dx4...
+Time to find eigenvalue: 4.92e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6698    2.9508
+
+Time to find eigenvalue: 4.81e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Compuing dx5...
+Time to find eigenvalue: 5.06e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6698    2.9508
+
+Time to find eigenvalue: 5.16e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Compuing dx6...
+Time to find eigenvalue: 4.85e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6697    2.9508
+
+Time to find eigenvalue: 5.04e+01; Time to compute 2-norm: 1.36e+01
+
+chebabs =
+
+    2.6697    2.9508
+
+Compuing dx7...
+Time to find eigenvalue: 4.68e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6698    2.9508
+
+Time to find eigenvalue: 4.78e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Compuing dx8...
+Time to find eigenvalue: 4.70e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6698    2.9508
+
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Compuing dx9...
+Time to find eigenvalue: 4.56e+01; Time to compute 2-norm: 1.45e+01
+
+chebabs =
+
+    2.6698    2.9508
+
+Time to find eigenvalue: 4.58e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Compuing dx10...
+Time to find eigenvalue: 4.81e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6698    2.9508
+
+Time to find eigenvalue: 4.71e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Gradient computed!
+Time to find eigenvalue: 5.04e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6697    2.9507
+
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.6698    2.9509
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4142    0.8851    1.8713    1.1565    1.1565    1.8712    0.8852
+
+  Columns 8 through 10
+
+    0.4133    0.2767    0.2745
+
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Some statistics before line search: 
+
+step =
+
+    0.1104
+
+
+fdd =
+
+    9.0579
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0011   -0.0013   -0.0108    0.0179    0.0179   -0.0108   -0.0013
+
+  Columns 8 through 10
+
+    0.0011    0.0008    0.0008
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4143    0.8849    1.8701    1.1558    1.1558    1.8700    0.8851
+
+  Columns 8 through 10
+
+    0.4134    0.2768    0.2745
+
+Saving log file...
+iter: 31, loss: -3.65e-01, grad: 2.97e-02, 2nd-deri: 9.06e+00, time: 1.49e+03
+Current weight [0.414175185144561 0.885067365281702 1.87128013218605 1.15649849604322 1.1564884667411 1.87121139032664 0.885208509544522 0.413289956061677 0.276703801492023 0.274458003398583]
+Current gradient [0.00109175805784734 -0.0013291516134939 -0.0107886860467588 0.0179148489273806 0.0178690898097744 -0.0107710137350892 -0.00132875193209481 0.00109001637910167 0.000800808782619455 0.000796881633735591]
+Time to find eigenvalue: 4.37e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx2...
+Time to find eigenvalue: 4.35e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 4.44e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx3...
+Time to find eigenvalue: 4.71e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.798797e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 4.68e+01; Time to compute 2-norm: 1.48e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx4...
+Time to find eigenvalue: 5.39e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.047104e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 5.23e+01; Time to compute 2-norm: 1.35e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx5...
+Time to find eigenvalue: 4.94e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 5.19e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.153043e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx6...
+Time to find eigenvalue: 4.78e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 4.82e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx7...
+Time to find eigenvalue: 4.26e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 4.35e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx8...
+Time to find eigenvalue: 4.27e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 4.28e+01; Time to compute 2-norm: 1.43e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx9...
+Time to find eigenvalue: 4.33e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.905955e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 4.27e+01; Time to compute 2-norm: 1.44e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Compuing dx10...
+Time to find eigenvalue: 4.34e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+Time to find eigenvalue: 4.32e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Gradient computed!
+Time to find eigenvalue: 5.11e+01; Time to compute 2-norm: 1.56e+01
+
+chebabs =
+
+    2.6685    2.9494
+
+Time to find eigenvalue: 4.84e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6686    2.9495
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4109    0.8890    1.9032    1.1762    1.1762    1.9031    0.8891
+
+  Columns 8 through 10
+
+    0.4101    0.2744    0.2721
+
+Time to find eigenvalue: 4.28e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Some statistics before line search: 
+
+step =
+
+    2.9656
+
+
+fdd =
+
+    0.3372
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0011   -0.0013   -0.0108    0.0179    0.0178   -0.0108   -0.0013
+
+  Columns 8 through 10
+
+    0.0011    0.0008    0.0008
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4142    0.8851    1.8713    1.1565    1.1565    1.8712    0.8852
+
+  Columns 8 through 10
+
+    0.4133    0.2767    0.2745
+
+Saving log file...
+iter: 32, loss: -3.65e-01, grad: 2.96e-02, 2nd-deri: 3.37e-01, time: 1.44e+03
+Current weight [0.410930948644359 0.889033005352776 1.90323413238745 1.17624077926406 1.17622681021416 1.90313838709499 0.889134091227078 0.410077001979512 0.274355472173692 0.272108251961011]
+Current gradient [0.00109397369663089 -0.00133723479400771 -0.0107750577740817 0.0178963045782687 0.0178333901310057 -0.0107659520737213 -0.0013237268936539 0.00108342509991255 0.000791869059213468 0.0007923486053385]
+Time to find eigenvalue: 4.32e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.181686e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 62)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.16e+01; Time to compute 2-norm: 1.34e+01
+
+chebabs =
+
+    2.6371    2.9146
+
+Time to find eigenvalue: 4.24e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Compuing dx2...
+Time to find eigenvalue: 4.17e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6371    2.9146
+
+Time to find eigenvalue: 4.18e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Compuing dx3...
+Time to find eigenvalue: 4.52e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Time to find eigenvalue: 4.54e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Compuing dx4...
+Time to find eigenvalue: 4.71e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6371    2.9147
+
+Time to find eigenvalue: 5.06e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6370    2.9145
+
+Compuing dx5...
+Time to find eigenvalue: 4.89e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6371    2.9147
+
+Time to find eigenvalue: 5.04e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6370    2.9145
+
+Compuing dx6...
+Time to find eigenvalue: 4.60e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Time to find eigenvalue: 4.66e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.218215e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Compuing dx7...
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6371    2.9146
+
+Time to find eigenvalue: 4.33e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Compuing dx8...
+Time to find eigenvalue: 4.23e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6371    2.9146
+
+Time to find eigenvalue: 4.39e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Compuing dx9...
+Time to find eigenvalue: 4.24e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.995318e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Time to find eigenvalue: 4.09e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Compuing dx10...
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Time to find eigenvalue: 4.23e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6370    2.9146
+
+Gradient computed!
+Time to find eigenvalue: 4.81e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.6369    2.9145
+
+Time to find eigenvalue: 5.04e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6371    2.9147
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4101    0.8900    1.9112    1.1811    1.1811    1.9111    0.8901
+
+  Columns 8 through 10
+
+    0.4093    0.2738    0.2715
+
+Time to find eigenvalue: 4.33e+01; Time to compute 2-norm: 1.48e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Some statistics before line search: 
+
+step =
+
+    0.7591
+
+
+fdd =
+
+    1.3173
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0010   -0.0013   -0.0105    0.0173    0.0173   -0.0104   -0.0013
+
+  Columns 8 through 10
+
+    0.0011    0.0008    0.0008
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4109    0.8890    1.9032    1.1762    1.1762    1.9031    0.8891
+
+  Columns 8 through 10
+
+    0.4101    0.2744    0.2721
+
+Saving log file...
+iter: 33, loss: -3.65e-01, grad: 2.87e-02, 2nd-deri: 1.32e+00, time: 1.41e+03
+Current weight [0.410134806538411 0.890009447637724 1.91116706747831 1.181141774526 1.18112667562351 1.91106357806102 0.890120394780435 0.409274427815518 0.273779977748363 0.271517128806508]
+Current gradient [0.00104878775442074 -0.00128630391948992 -0.0104503519129939 0.0173454268220796 0.0173067558581486 -0.0104401502878937 -0.00129929453696054 0.00105726094490333 0.000758120317356781 0.000778708626469893]
+Time to find eigenvalue: 4.36e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.50e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Time to find eigenvalue: 4.27e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6293    2.9060
+
+Compuing dx2...
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Time to find eigenvalue: 4.33e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Compuing dx3...
+Time to find eigenvalue: 4.56e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Time to find eigenvalue: 4.43e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Compuing dx4...
+Time to find eigenvalue: 4.88e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.6294    2.9062
+
+Time to find eigenvalue: 4.86e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.6292    2.9060
+
+Compuing dx5...
+Time to find eigenvalue: 4.94e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6294    2.9062
+
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6292    2.9060
+
+Compuing dx6...
+Time to find eigenvalue: 4.79e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Time to find eigenvalue: 4.65e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.192379e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Compuing dx7...
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Time to find eigenvalue: 4.42e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Compuing dx8...
+Time to find eigenvalue: 4.50e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Time to find eigenvalue: 4.47e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6293    2.9060
+
+Compuing dx9...
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Time to find eigenvalue: 4.46e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Compuing dx10...
+Time to find eigenvalue: 4.55e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Time to find eigenvalue: 4.43e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6293    2.9061
+
+Gradient computed!
+Time to find eigenvalue: 4.61e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6292    2.9060
+
+Time to find eigenvalue: 4.85e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6294    2.9062
+
+[Warning: Negative second derivative -7.99e+00] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4091    0.8913    1.9215    1.1875    1.1875    1.9214    0.8914
+
+  Columns 8 through 10
+
+    0.4082    0.2730    0.2708
+
+Time to find eigenvalue: 5.03e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -7.9938
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0011   -0.0013   -0.0104    0.0172    0.0172   -0.0104   -0.0013
+
+  Columns 8 through 10
+
+    0.0011    0.0007    0.0008
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4101    0.8900    1.9112    1.1811    1.1811    1.9111    0.8901
+
+  Columns 8 through 10
+
+    0.4093    0.2738    0.2715
+
+Saving log file...
+iter: 34, loss: -3.65e-01, grad: 2.85e-02, 2nd-deri: -7.99e+00, time: 1.43e+03
+Current weight [0.409083899781517 0.891288782692839 1.92152458342822 1.18754611848005 1.18753290264269 1.92143400073135 0.891371871306733 0.40822149518471 0.273032304503658 0.270753231438092]
+Current gradient [0.00105090675689423 -0.00127933505511546 -0.0103575159499103 0.0172304209378193 0.0172098695644385 -0.010370422670325 -0.00125147652629831 0.0010529326308073 0.000747673244705371 0.000763897368416533]
+Time to find eigenvalue: 4.95e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 5.08e+01; Time to compute 2-norm: 1.34e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Time to find eigenvalue: 4.90e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Compuing dx2...
+Time to find eigenvalue: 4.88e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Time to find eigenvalue: 4.81e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Compuing dx3...
+Time to find eigenvalue: 4.88e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Time to find eigenvalue: 4.90e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Compuing dx4...
+Time to find eigenvalue: 4.96e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6194    2.8951
+
+Time to find eigenvalue: 4.99e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6192    2.8949
+
+Compuing dx5...
+Time to find eigenvalue: 5.11e+01; Time to compute 2-norm: 1.35e+01
+
+chebabs =
+
+    2.6194    2.8951
+
+Time to find eigenvalue: 5.03e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.6192    2.8949
+
+Compuing dx6...
+Time to find eigenvalue: 5.03e+01; Time to compute 2-norm: 1.59e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Time to find eigenvalue: 5.06e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Compuing dx7...
+Time to find eigenvalue: 5.02e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Time to find eigenvalue: 4.90e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.019431e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Compuing dx8...
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Time to find eigenvalue: 4.98e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Compuing dx9...
+Time to find eigenvalue: 5.02e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Time to find eigenvalue: 5.11e+01; Time to compute 2-norm: 1.42e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Compuing dx10...
+Time to find eigenvalue: 4.77e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.6193    2.8950
+
+Gradient computed!
+Time to find eigenvalue: 4.97e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.6192    2.8949
+
+Time to find eigenvalue: 5.04e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6194    2.8951
+
+[Warning: Negative second derivative -5.03e+00] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4080    0.8926    1.9318    1.1939    1.1939    1.9317    0.8926
+
+  Columns 8 through 10
+
+    0.4072    0.2723    0.2700
+
+Time to find eigenvalue: 4.49e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -5.0272
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0010   -0.0013   -0.0103    0.0171    0.0170   -0.0103   -0.0013
+
+  Columns 8 through 10
+
+    0.0010    0.0007    0.0007
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4091    0.8913    1.9215    1.1875    1.1875    1.9214    0.8914
+
+  Columns 8 through 10
+
+    0.4082    0.2730    0.2708
+
+Saving log file...
+iter: 35, loss: -3.65e-01, grad: 2.82e-02, 2nd-deri: -5.03e+00, time: 1.54e+03
+Current weight [0.408046477911163 0.892554964108666 1.93179752342439 1.19389398720604 1.19388005612385 1.9317020383665 0.89262846669753 0.407188738263617 0.272287277249879 0.270003290129594]
+Current gradient [0.00103742187035349 -0.00126618141582657 -0.0102729399961698 0.0170604212310077 0.0170095945586923 -0.0102680376351527 -0.00125659539079725 0.00103275692109328 0.000745027253779007 0.000749941308497704]
+Time to find eigenvalue: 4.49e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.41e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Time to find eigenvalue: 4.43e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Compuing dx2...
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Compuing dx3...
+Time to find eigenvalue: 4.56e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Time to find eigenvalue: 4.80e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.039969e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.53e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Compuing dx4...
+Time to find eigenvalue: 5.14e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.6095    2.8842
+
+Time to find eigenvalue: 5.05e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.6094    2.8840
+
+Compuing dx5...
+Time to find eigenvalue: 5.11e+01; Time to compute 2-norm: 1.34e+01
+
+chebabs =
+
+    2.6095    2.8842
+
+Time to find eigenvalue: 5.05e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.6094    2.8840
+
+Compuing dx6...
+Time to find eigenvalue: 5.08e+01; Time to compute 2-norm: 1.34e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Time to find eigenvalue: 4.86e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Compuing dx7...
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Time to find eigenvalue: 4.31e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Compuing dx8...
+Time to find eigenvalue: 4.38e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Time to find eigenvalue: 4.46e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Compuing dx9...
+Time to find eigenvalue: 4.27e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Time to find eigenvalue: 4.25e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Compuing dx10...
+Time to find eigenvalue: 4.30e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Time to find eigenvalue: 4.34e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    2.6094    2.8841
+
+Gradient computed!
+Time to find eigenvalue: 4.91e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.6093    2.8840
+
+Time to find eigenvalue: 5.18e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.6095    2.8842
+
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4032    0.8984    1.9792    1.2232    1.2232    1.9791    0.8985
+
+  Columns 8 through 10
+
+    0.4025    0.2688    0.2666
+
+Time to find eigenvalue: 4.60e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Some statistics before line search: 
+
+step =
+
+    4.6628
+
+
+fdd =
+
+    0.2145
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0010   -0.0012   -0.0102    0.0169    0.0168   -0.0102   -0.0013
+
+  Columns 8 through 10
+
+    0.0010    0.0007    0.0007
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4080    0.8926    1.9318    1.1939    1.1939    1.9317    0.8926
+
+  Columns 8 through 10
+
+    0.4072    0.2723    0.2700
+
+Saving log file...
+iter: 36, loss: -3.65e-01, grad: 2.80e-02, 2nd-deri: 2.14e-01, time: 1.45e+03
+Current weight [0.403228035861989 0.898378158491353 1.97923972840813 1.22320755967734 1.22318910321507 1.97911322593363 0.898465947537546 0.40253706757926 0.268843695018562 0.266579528106129]
+Current gradient [0.00103338656520791 -0.00124887064745227 -0.0101746864969443 0.0168971536609885 0.0168398553593296 -0.0101680343506105 -0.00125193459071804 0.000997619965525942 0.000738527428101321 0.000734276689728919]
+Time to find eigenvalue: 4.65e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.60e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Time to find eigenvalue: 4.71e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Compuing dx2...
+Time to find eigenvalue: 4.65e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Time to find eigenvalue: 4.67e+01; Time to compute 2-norm: 1.48e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Compuing dx3...
+Time to find eigenvalue: 5.25e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Time to find eigenvalue: 4.94e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Compuing dx4...
+Time to find eigenvalue: 4.89e+01; Time to compute 2-norm: 1.49e+01
+
+chebabs =
+
+    2.5648    2.8348
+
+Time to find eigenvalue: 4.77e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.5647    2.8346
+
+Compuing dx5...
+Time to find eigenvalue: 4.66e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.5648    2.8348
+
+Time to find eigenvalue: 4.81e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.5647    2.8346
+
+Compuing dx6...
+Time to find eigenvalue: 4.45e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Compuing dx7...
+Time to find eigenvalue: 4.66e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Time to find eigenvalue: 4.55e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Compuing dx8...
+Time to find eigenvalue: 4.63e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Time to find eigenvalue: 4.62e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Compuing dx9...
+Time to find eigenvalue: 4.69e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Time to find eigenvalue: 4.61e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Compuing dx10...
+Time to find eigenvalue: 4.50e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Time to find eigenvalue: 4.70e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.5647    2.8347
+
+Gradient computed!
+Time to find eigenvalue: 4.92e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.5646    2.8346
+
+Time to find eigenvalue: 4.74e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.5648    2.8348
+
+[Warning: Negative second derivative -1.81e+00] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4023    0.8996    1.9890    1.2292    1.2292    1.9889    0.8997
+
+  Columns 8 through 10
+
+    0.4016    0.2681    0.2659
+
+Time to find eigenvalue: 4.99e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -1.8119
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0010   -0.0012   -0.0097    0.0162    0.0162   -0.0097   -0.0012
+
+  Columns 8 through 10
+
+    0.0010    0.0007    0.0007
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4032    0.8984    1.9792    1.2232    1.2232    1.9791    0.8985
+
+  Columns 8 through 10
+
+    0.4025    0.2688    0.2666
+
+Saving log file...
+iter: 37, loss: -3.65e-01, grad: 2.68e-02, 2nd-deri: -1.81e+00, time: 1.48e+03
+Current weight [0.402263239604382 0.89955899098536 1.98898525034896 1.22922936276314 1.22921012719713 1.98885340781801 0.899657690951777 0.401565402239128 0.268140039403398 0.265895189180602]
+Current gradient [0.000964796257607592 -0.00118083249400769 -0.00974552194082934 0.016176325215167 0.0161989451757938 -0.00974018188437675 -0.00119174341423056 0.000971665340132599 0.000703655615164056 0.000684338925527328]
+Time to find eigenvalue: 5.12e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 5.08e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.5557    2.8248
+
+Time to find eigenvalue: 4.84e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Compuing dx2...
+Time to find eigenvalue: 4.96e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.5557    2.8248
+
+Time to find eigenvalue: 5.14e+01; Time to compute 2-norm: 1.57e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Compuing dx3...
+Time to find eigenvalue: 4.95e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Time to find eigenvalue: 5.07e+01; Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Compuing dx4...
+Time to find eigenvalue: 5.07e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.5558    2.8248
+
+Time to find eigenvalue: 5.22e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.5556    2.8247
+
+Compuing dx5...
+Time to find eigenvalue: 5.07e+01; Time to compute 2-norm: 1.33e+01
+
+chebabs =
+
+    2.5558    2.8248
+
+Time to find eigenvalue: 5.15e+01; Time to compute 2-norm: 1.37e+01
+
+chebabs =
+
+    2.5556    2.8247
+
+Compuing dx6...
+Time to find eigenvalue: 4.99e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Time to find eigenvalue: 5.02e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Compuing dx7...
+Time to find eigenvalue: 4.79e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.878974e-16.] 
+[> In id (line 120)
+  In ifmm (line 351)
+  In chunkerkerneval>chunkerkerneval_smooth (line 209)
+  In chunkerkerneval (line 95)
+  In u_norm (line 22)
+  In loss (line 47)
+  In gd (line 76)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.5557    2.8248
+
+Time to find eigenvalue: 4.82e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Compuing dx8...
+Time to find eigenvalue: 4.81e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.5557    2.8248
+
+Time to find eigenvalue: 4.67e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.020283e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Compuing dx9...
+Time to find eigenvalue: 4.67e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.5557    2.8248
+
+Time to find eigenvalue: 4.96e+01; Time to compute 2-norm: 1.30e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Compuing dx10...
+Time to find eigenvalue: 4.59e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.5557    2.8248
+
+Time to find eigenvalue: 4.66e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    2.5557    2.8247
+
+Gradient computed!
+Time to find eigenvalue: 4.95e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.5556    2.8247
+
+Time to find eigenvalue: 4.86e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.943363e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 99)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.5558    2.8248
+
+[Warning: Negative second derivative -4.68e-01] 
+[> In gd (line 107)
+  In test3 (line 43)] 
+
+num_directions_inward =
+
+     6
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test3 (line 43)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.4013    0.9007    1.9986    1.2352    1.2352    1.9985    0.9008
+
+  Columns 8 through 10
+
+    0.4006    0.2675    0.2652
+
+Time to find eigenvalue: 4.55e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    2.5468    2.8149
+
+Some statistics before line search: 
+
+step =
+
+     1
+
+
+fdd =
+
+   -0.4676
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0010   -0.0012   -0.0097    0.0160    0.0160   -0.0097   -0.0012
+
+  Columns 8 through 10
+
+    0.0010    0.0007    0.0007
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4023    0.8996    1.9890    1.2292    1.2292    1.9889    0.8997
+
+  Columns 8 through 10
+
+    0.4016    0.2681    0.2659
+
+Saving log file...
+iter: 38, loss: -3.65e-01, grad: 2.65e-02, 2nd-deri: -4.68e-01, time: 1.53e+03
+Current weight [0.401298005440396 0.900732594836406 1.99863949718925 1.23519517243982 1.23517541590645 1.99850408389489 0.900828374690615 0.400598935494161 0.267463048883643 0.265218162021267]
+Current gradient [0.000965234163985418 -0.0011736038510457 -0.00965424684029603 0.0159931568238791 0.0160049991229649 -0.00965067607688885 -0.00117068373883811 0.000966466744967143 0.000676990519754561 0.00067702715933482]
+Time to find eigenvalue: 4.58e+01; Time to compute 2-norm: 1.23e+01
+
+chebabs =
+
+    2.5468    2.8149
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.34e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.5469    2.8150
+
+Time to find eigenvalue: 4.57e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    2.5468    2.8149
+
+Compuing dx2...
+Time to find eigenvalue: 4.50e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.5469    2.8150
+
