@@ -1,2 +1,5 @@
 100 point experiment
-test
+
+weight initialization given by init_weight.mat
+
+h = 5e-4 (1e-3 was the ideal h according to derivative plot. I reduced it a bit since we have a lot of verts)

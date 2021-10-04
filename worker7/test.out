@@ -1327,3 +1327,91 @@ rs_conv =
 
     0.4803    0.3449    0.3427
 
+Time to find eigenvalue: 4.28e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.4812    3.8476
+
+Some statistics before line search: 
+
+step =
+
+    0.1166
+
+
+fdd =
+
+    8.5787
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0024   -0.0043   -0.0244    0.0408    0.0406   -0.0244   -0.0043
+
+  Columns 8 through 10
+
+    0.0025    0.0037    0.0037
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.4814    0.7915    1.2245    0.7568    0.7567    1.2244    0.7914
+
+  Columns 8 through 10
+
+    0.4806    0.3453    0.3431
+
+Saving log file...
+iter: 6, loss: -3.65e-01, grad: 6.76e-02, 2nd-deri: 8.58e+00, time: 1.34e+03
+Current weight [0.481134176211335 0.791990576592559 1.2273436688753 0.758512973983003 0.758496208149154 1.22722875414031 0.791856151487058 0.480313276446322 0.344871945683922 0.342652984663196]
+Current gradient [0.0024236494916563 -0.00426050957014201 -0.0243741547037435 0.0407644576194688 0.0405606531345137 -0.0243704385563537 -0.00426906005962513 0.00245351376493286 0.003679560910963 0.00368166605591025]
+Time to find eigenvalue: 4.20e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.910213e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 62)
+  In test3 (line 43)
+] 
+Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    3.4812    3.8476
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.11e+01; Time to compute 2-norm: 1.18e+01
+
+chebabs =
+
+    3.4812    3.8477
+
+Time to find eigenvalue: 4.18e+01; Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+    3.4811    3.8476
+
+Compuing dx2...
+Time to find eigenvalue: 4.26e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.4812    3.8477
+
+Time to find eigenvalue: 4.15e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.4812    3.8476
+
+Compuing dx3...
