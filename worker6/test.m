@@ -1,5 +1,7 @@
 clear;clc;addpath('../src');
 
+run('~/matlab_libs/startup.m');
+
 diary('test_optimization_diary.txt');
 
 num_verts = 100;
