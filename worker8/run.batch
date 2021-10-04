@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH --partition=ccm
 #SBATCH --job-name=gradcd
 #SBATCH --output=test.out
 #SBATCH --error=test.err

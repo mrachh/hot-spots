@@ -1,0 +1,10 @@
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
