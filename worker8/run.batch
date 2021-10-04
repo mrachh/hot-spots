@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --job-name=gradcd
+#SBATCH --output=test.out
+#SBATCH --error=test.err
+#SBATCH --time=01-00:00:00
+module load matlab
+matlab -nosplash -nodesktop -r "startup_cluster;test;exit"
