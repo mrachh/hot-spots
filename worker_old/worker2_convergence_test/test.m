@@ -20,7 +20,7 @@ loss_params = struct(...
 % Convergence test
 
 num_grads = 0;
-for logh = -1.5:-0.1:-5
+for logh = -2:-0.01:-4
     num_grads = num_grads + 1
     hspace = 10^(logh)
     h_arr(num_grads) = hspace;

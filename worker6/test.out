@@ -90,3 +90,42 @@ chebabs =
 
     4.0487    4.4749
 
+Time to find eigenvalue: 4.74e+02; Time to compute 2-norm: 1.69e+02
+
+chebabs =
+
+    4.0487    4.4748
+
+Compuing dx5...
+Time to find eigenvalue: 4.77e+02; Time to compute 2-norm: 1.69e+02
+
+chebabs =
+
+    4.0487    4.4749
+
+Time to find eigenvalue: 4.82e+02; Time to compute 2-norm: 1.68e+02
+
+chebabs =
+
+    4.0487    4.4748
+
+Compuing dx6...
+Time to find eigenvalue: 4.80e+02; Time to compute 2-norm: 1.67e+02
+
+chebabs =
+
+    4.0487    4.4749
+
+Time to find eigenvalue: 4.76e+02; Time to compute 2-norm: 1.69e+02
+
+chebabs =
+
+    4.0487    4.4748
+
+Compuing dx7...
+Time to find eigenvalue: 4.78e+02; Time to compute 2-norm: 1.71e+02
+
+chebabs =
+
+    4.0487    4.4749
+
