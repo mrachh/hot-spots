@@ -1,0 +1,8 @@
+Required packages:
+    1. chebfun
+    2. flam
+    3. chunkie
+
+See test.m for:
+    1. vanilla centered difference
+    2. centered difference and one step richardson
