@@ -152,3 +152,4 @@ chebabs =
 
     4.0487    4.4749
 
+Time to find eigenvalue: 4.75e+02; 

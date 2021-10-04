@@ -3368,3 +3368,10 @@ chebabs =
 
     3.2699    3.6141
 
+Time to find eigenvalue: 4.37e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    3.2698    3.6140
+
+Compuing dx9...

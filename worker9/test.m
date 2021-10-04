@@ -1,5 +1,7 @@
 clear;clc;addpath('../src');
 
+diary
+
 num_verts = 20;
 num_params = num_verts;
 
