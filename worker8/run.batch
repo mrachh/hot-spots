@@ -1,7 +1,0 @@
-#!/bin/bash
-#SBATCH --job-name=test_load_lib
-#SBATCH --output=test.out
-#SBATCH --error=test.err
-#SBATCH --time=00:50:00
-module load matlab
-matlab -nosplash -nodesktop -r "test2;exit"

@@ -45,3 +45,48 @@ chebabs =
 
 Computing 100 derivatives: 
 Compuing dx1...
+Time to find eigenvalue: 4.89e+02; Time to compute 2-norm: 1.73e+02
+
+chebabs =
+
+    4.0487    4.4749
+
+Time to find eigenvalue: 4.87e+02; Time to compute 2-norm: 1.75e+02
+
+chebabs =
+
+    4.0487    4.4748
+
+Compuing dx2...
+Time to find eigenvalue: 4.80e+02; Time to compute 2-norm: 1.68e+02
+
+chebabs =
+
+    4.0487    4.4749
+
+Time to find eigenvalue: 4.82e+02; Time to compute 2-norm: 1.66e+02
+
+chebabs =
+
+    4.0487    4.4748
+
+Compuing dx3...
+Time to find eigenvalue: 4.75e+02; Time to compute 2-norm: 1.68e+02
+
+chebabs =
+
+    4.0487    4.4749
+
+Time to find eigenvalue: 4.77e+02; Time to compute 2-norm: 1.70e+02
+
+chebabs =
+
+    4.0487    4.4748
+
+Compuing dx4...
+Time to find eigenvalue: 4.78e+02; Time to compute 2-norm: 1.69e+02
+
+chebabs =
+
+    4.0487    4.4749
+
