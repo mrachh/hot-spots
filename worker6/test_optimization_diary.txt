@@ -1470,3 +1470,27 @@ Error in gd (line 127)
 Error in test (line 42)
 [opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
 } 
+
+gd_params = 
+
+  struct with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-07
+              hspace: 5.000000000000000e-04
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 100 vertices
