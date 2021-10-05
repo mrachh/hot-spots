@@ -1,0 +1,13 @@
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', '/Users/zijianwang/Documents/MATLAB/hot-spots/worker11_40point/test.m', 16)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('/Users/zijianwang/Documents/MATLAB/hot-spots/worker11_40point/test.m',16,0)">line 16</a>)
+nothing
+} 
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', '/Users/zijianwang/Documents/MATLAB/hot-spots/worker11_40point/test.m', 20)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('/Users/zijianwang/Documents/MATLAB/hot-spots/worker11_40point/test.m',20,0)">line 20</a>)
+nothing
+} 
+length(init_weight)
+
+ans =
+
+    40
+

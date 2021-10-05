@@ -1,0 +1,15 @@
+{'normrnd' requires <a href="matlab:matlab.internal.addons.launchers.showExplorer('ErrorRecovery', 'identifier', 'ST', 'focused', 'normrnd');">Statistics and Machine Learning Toolbox</a>.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', '/Users/zijianwang/Documents/MATLAB/hot-spots/worker10_20point/test.m', 13)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('/Users/zijianwang/Documents/MATLAB/hot-spots/worker10_20point/test.m',13,0)">line 13</a>)
+init_weight = normrnd(1/sqrt(pi), rnd_sigma, 1, num_params);
+} 
+matlab.internal.addons.launchers.showExplorer('ErrorRecovery', 'identifier', 'ST', 'focused', 'normrnd');
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', '/Users/zijianwang/Documents/MATLAB/hot-spots/worker10_20point/test.m', 16)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('/Users/zijianwang/Documents/MATLAB/hot-spots/worker10_20point/test.m',16,0)">line 16</a>)
+nothing
+} 
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', '/Users/zijianwang/Documents/MATLAB/hot-spots/worker10_20point/test.m', 20)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('/Users/zijianwang/Documents/MATLAB/hot-spots/worker10_20point/test.m',20,0)">line 20</a>)
+nothing
+} 
+cd ../worker11_40point/
+test
