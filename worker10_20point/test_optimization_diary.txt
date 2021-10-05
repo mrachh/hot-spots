@@ -13,3 +13,27 @@ nothing
 } 
 cd ../worker11_40point/
 test
+
+gd_params = 
+
+  struct with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.0000e-07
+              hspace: 5.0000e-04
+     line_search_eps: 1.0000e-06
+    line_search_beta: 0.5000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 20 vertices

@@ -14125,3 +14125,130 @@ chebabs =
 
     2.4203    2.6751
 
+
+gd_params = 
+
+  struct with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.0000e-07
+              hspace: 1.0000e-04
+     line_search_eps: 1.0000e-06
+    line_search_beta: 0.5000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 10 vertices
+Time to find eigenvalue: 2.94e+02; Time to compute 2-norm: 1.37e+01
+
+chebabs =
+
+    2.4204    2.6751
+
+Computing 10 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 4.15e+01; Time to compute 2-norm: 1.20e+01
+
+chebabs =
+
+    2.4204    2.6751
+
+Time to find eigenvalue: 4.35e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.203201e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 45)
+  In gd (line 77)
+  In test3 (line 44)
+] 
+Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.4203    2.6751
+
+Compuing dx2...
+Time to find eigenvalue: 4.39e+01; Time to compute 2-norm: 1.22e+01
+
+chebabs =
+
+    2.4204    2.6751
+
+Time to find eigenvalue: 4.48e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.4203    2.6751
+
+Compuing dx3...
+Time to find eigenvalue: 4.71e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.4204    2.6751
+
+Time to find eigenvalue: 4.49e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.4203    2.6751
+
+Compuing dx4...
+Time to find eigenvalue: 5.15e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.4204    2.6752
+
+Time to find eigenvalue: 4.91e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    2.4203    2.6751
+
+Compuing dx5...
+Time to find eigenvalue: 4.89e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    2.4204    2.6752
+
+Time to find eigenvalue: 5.02e+01; Time to compute 2-norm: 1.31e+01
+
+chebabs =
+
+    2.4203    2.6751
+
+Compuing dx6...
+Time to find eigenvalue: 4.78e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.4204    2.6751
+
+Time to find eigenvalue: 4.77e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    2.4203    2.6751
+
+Compuing dx7...
+Time to find eigenvalue: 4.43e+01; Time to compute 2-norm: 1.21e+01
+
+chebabs =
+
+    2.4204    2.6751
+
