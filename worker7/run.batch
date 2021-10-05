@@ -2,6 +2,6 @@
 #SBATCH --job-name=10point
 #SBATCH --output=test.out
 #SBATCH --error=test.err
-#SBATCH --time=01-00:00:00
+#SBATCH --time=02-00:00:00
 module load matlab
 matlab -nosplash -nodesktop -r "test3;exit"
