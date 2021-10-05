@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH --partition=ccm
 #SBATCH --job-name=10point
 #SBATCH --output=test.out
 #SBATCH --error=test.err
