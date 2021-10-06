@@ -1849,3 +1849,901 @@ chebabs =
 
     3.7127    4.1035
 
+Time to find eigenvalue: 2.99e+02; Time to compute 2-norm: 3.82e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Compuing dx38...
+Time to find eigenvalue: 2.95e+02; Time to compute 2-norm: 3.96e+01
+
+chebabs =
+
+    3.7127    4.1035
+
+Time to find eigenvalue: 2.98e+02; Time to compute 2-norm: 3.92e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Compuing dx39...
+Time to find eigenvalue: 3.04e+02; Time to compute 2-norm: 4.08e+01
+
+chebabs =
+
+    3.7127    4.1035
+
+Time to find eigenvalue: 3.01e+02; Time to compute 2-norm: 3.81e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Compuing dx40...
+Time to find eigenvalue: 2.88e+02; Time to compute 2-norm: 4.02e+01
+
+chebabs =
+
+    3.7127    4.1035
+
+Time to find eigenvalue: 3.15e+02; Time to compute 2-norm: 3.94e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Gradient computed!
+Time to find eigenvalue: 3.62e+02; Time to compute 2-norm: 4.74e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Time to find eigenvalue: 3.49e+02; Time to compute 2-norm: 4.90e+01
+
+chebabs =
+
+    3.7127    4.1035
+
+[Warning: Negative second derivative -1.15e+04] 
+[> In gd (line 107)
+  In test (line 45)] 
+
+num_directions_inward =
+
+    17
+
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 126)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5602    0.5589    0.5620    0.5643    0.5648    0.5675    0.5700
+
+  Columns 8 through 14
+
+    0.5731    0.5792    0.5911    0.6191    0.6656    0.7373    0.7439
+
+  Columns 15 through 21
+
+    0.7674    0.8105    0.7722    0.7551    0.7564    0.7624    0.7849
+
+  Columns 22 through 28
+
+    0.7561    0.7472    0.6920    0.6595    0.6451    0.6032    0.5799
+
+  Columns 29 through 35
+
+    0.5718    0.5678    0.5633    0.5623    0.5596    0.5587    0.5592
+
+  Columns 36 through 40
+
+    0.5605    0.5576    0.5589    0.5583    0.5602
+
+Time to find eigenvalue: 2.87e+02; Time to compute 2-norm: 3.83e+01
+
+chebabs =
+
+    3.6137    3.9941
+
+Some statistics before line search: 
+
+step =
+
+    0.1517
+
+
+fdd =
+
+  -1.1474e+04
+
+
+grad =
+
+  Columns 1 through 7
+
+    0.0071    0.0085    0.0088    0.0093    0.0101    0.0104    0.0107
+
+  Columns 8 through 14
+
+    0.0111    0.0111    0.0103    0.0069    0.0027   -0.0001   -0.0032
+
+  Columns 15 through 21
+
+   -0.0064   -0.0057   -0.0201   -0.0410   -0.0537   -0.0520   -0.0302
+
+  Columns 22 through 28
+
+   -0.1566   -0.7874    3.8979   -0.2792   -0.5122   -0.1785   -0.0929
+
+  Columns 29 through 35
+
+   -0.0565   -0.0370   -0.0263   -0.0171   -0.0116   -0.0070   -0.0034
+
+  Columns 36 through 40
+
+   -0.0007    0.0015    0.0033    0.0049    0.0060
+
+
+opt =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5719    0.5674    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5608    0.5595    0.5627    0.5650    0.5655    0.5682    0.5708
+
+  Columns 8 through 14
+
+    0.5739    0.5800    0.5918    0.6196    0.6659    0.7373    0.7437
+
+  Columns 15 through 21
+
+    0.7669    0.8101    0.7704    0.7520    0.7523    0.7585    0.7826
+
+  Columns 22 through 28
+
+    0.7229    0.6875    0.6417    0.6158    0.6063    0.5809    0.5711
+
+  Columns 29 through 35
+
+    0.5675    0.5650    0.5613    0.5610    0.5587    0.5582    0.5589
+
+  Columns 36 through 40
+
+    0.5604    0.5577    0.5591    0.5587    0.5607
+
+Time to find eigenvalue: 2.82e+02; Time to compute 2-norm: 3.59e+01
+
+chebabs =
+
+    3.6600    4.0452
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5610    0.5599    0.5630    0.5653    0.5659    0.5686    0.5712
+
+  Columns 8 through 14
+
+    0.5744    0.5804    0.5921    0.6199    0.6660    0.7373    0.7436
+
+  Columns 15 through 21
+
+    0.7666    0.8099    0.7695    0.7505    0.7503    0.7565    0.7814
+
+  Columns 22 through 28
+
+    0.7054    0.6576    0.6164    0.5939    0.5869    0.5718    0.5676
+
+  Columns 29 through 35
+
+    0.5654    0.5636    0.5603    0.5604    0.5583    0.5579    0.5588
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5593    0.5589    0.5609
+
+Time to find eigenvalue: 2.69e+02; Time to compute 2-norm: 3.95e+01
+
+chebabs =
+
+    3.6854    4.0734
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5612    0.5600    0.5632    0.5655    0.5661    0.5688    0.5714
+
+  Columns 8 through 14
+
+    0.5746    0.5806    0.5923    0.6200    0.6660    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7665    0.8098    0.7690    0.7497    0.7493    0.7555    0.7809
+
+  Columns 22 through 28
+
+    0.6964    0.6427    0.6038    0.5829    0.5771    0.5684    0.5658
+
+  Columns 29 through 35
+
+    0.5643    0.5629    0.5598    0.5601    0.5581    0.5578    0.5588
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5593    0.5590    0.5610
+
+Time to find eigenvalue: 3.37e+02; Time to compute 2-norm: 4.64e+01
+
+chebabs =
+
+    3.6987    4.0881
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5612    0.5601    0.5633    0.5656    0.5662    0.5689    0.5715
+
+  Columns 8 through 14
+
+    0.5747    0.5807    0.5924    0.6201    0.6660    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7688    0.7493    0.7488    0.7550    0.7806
+
+  Columns 22 through 28
+
+    0.6918    0.6352    0.5975    0.5774    0.5723    0.5667    0.5650
+
+  Columns 29 through 35
+
+    0.5638    0.5626    0.5595    0.5599    0.5579    0.5577    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5590    0.5611
+
+Time to find eigenvalue: 3.31e+02; Time to compute 2-norm: 4.34e+01
+
+chebabs =
+
+    3.7056    4.0957
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5633    0.5656    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5747    0.5808    0.5924    0.6201    0.6660    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7687    0.7491    0.7485    0.7548    0.7804
+
+  Columns 22 through 28
+
+    0.6895    0.6315    0.5943    0.5747    0.5699    0.5659    0.5645
+
+  Columns 29 through 35
+
+    0.5635    0.5624    0.5594    0.5598    0.5579    0.5577    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.37e+02; Time to compute 2-norm: 4.19e+01
+
+chebabs =
+
+    3.7091    4.0995
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5633    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5747    0.5808    0.5924    0.6201    0.6660    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7686    0.7490    0.7484    0.7547    0.7804
+
+  Columns 22 through 28
+
+    0.6884    0.6296    0.5928    0.5733    0.5686    0.5654    0.5643
+
+  Columns 29 through 35
+
+    0.5634    0.5623    0.5593    0.5598    0.5579    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.50e+02; Time to compute 2-norm: 4.70e+01
+
+chebabs =
+
+    3.7109    4.1015
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6201    0.6660    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7686    0.7490    0.7483    0.7546    0.7803
+
+  Columns 22 through 28
+
+    0.6878    0.6287    0.5920    0.5726    0.5680    0.5652    0.5642
+
+  Columns 29 through 35
+
+    0.5633    0.5623    0.5593    0.5598    0.5579    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.27e+02; Time to compute 2-norm: 4.29e+01
+
+chebabs =
+
+    3.7118    4.1025
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6201    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7686    0.7490    0.7483    0.7546    0.7803
+
+  Columns 22 through 28
+
+    0.6875    0.6282    0.5916    0.5723    0.5677    0.5651    0.5641
+
+  Columns 29 through 35
+
+    0.5633    0.5623    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.55e+02; Time to compute 2-norm: 4.80e+01
+
+chebabs =
+
+    3.7122    4.1030
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7546    0.7803
+
+  Columns 22 through 28
+
+    0.6873    0.6280    0.5914    0.5721    0.5676    0.5651    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.28e+02; Time to compute 2-norm: 4.50e+01
+
+chebabs =
+
+    3.7124    4.1032
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6873    0.6279    0.5913    0.5720    0.5675    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.31e+02; Time to compute 2-norm: 4.40e+01
+
+chebabs =
+
+    3.7125    4.1033
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5720    0.5675    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.37e+02; Time to compute 2-norm: 4.08e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5720    0.5675    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.28e+02; Time to compute 2-norm: 3.85e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5719    0.5674    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.41e+02; Time to compute 2-norm: 3.98e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5719    0.5674    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.67e+02; Time to compute 2-norm: 4.01e+01
+
+chebabs =
+
+    3.7126    4.1034
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5719    0.5674    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.43e+02; Time to compute 2-norm: 4.49e+01
+
+chebabs =
+
+    3.7126    4.1035
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5719    0.5674    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.50e+02; Time to compute 2-norm: 4.10e+01
+
+chebabs =
+
+    3.7126    4.1035
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5719    0.5674    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.23e+02; Time to compute 2-norm: 4.52e+01
+
+chebabs =
+
+    3.7126    4.1035
+
+Line search iter 0
+[Warning: Shape has been convexified] 
+[> In check_convex (line 50)
+  In gd (line 143)
+  In test (line 45)] 
+Convexified weights
+rs_conv =
+
+  Columns 1 through 7
+
+    0.5613    0.5602    0.5634    0.5657    0.5663    0.5690    0.5716
+
+  Columns 8 through 14
+
+    0.5748    0.5808    0.5925    0.6202    0.6661    0.7372    0.7435
+
+  Columns 15 through 21
+
+    0.7664    0.8097    0.7685    0.7489    0.7483    0.7545    0.7803
+
+  Columns 22 through 28
+
+    0.6872    0.6278    0.5912    0.5719    0.5674    0.5650    0.5641
+
+  Columns 29 through 35
+
+    0.5632    0.5622    0.5593    0.5597    0.5578    0.5576    0.5587
+
+  Columns 36 through 40
+
+    0.5604    0.5578    0.5594    0.5591    0.5611
+
+Time to find eigenvalue: 3.53e+02; Time to compute 2-norm: 4.54e+01
+
+chebabs =
+
+    3.7126    4.1035
+
+Line search did not converge
+Saving log file...
+iter: 3, loss: -3.18e-01, grad: 4.03e+00, 2nd-deri: -1.15e+04, time: 3.49e+04
+Current weight [0.561316714322559 0.560190477928169 0.563365436378301 0.565673760752562 0.566301462080243 0.569033155293051 0.571641691333612 0.57477351437142 0.580835244679091 0.592465283357434 0.620152795635123 0.666052326896511 0.737246855723377 0.743466936157539 0.76638568054989 0.80967030525983 0.76853562142825 0.748927997183665 0.748262304420314 0.754536303080998 0.780292237728555 0.687194157839874 0.627753157931308 0.591174161463929 0.571930753764026 0.567432238230634 0.565015823479582 0.564070451781326 0.563228277131937 0.562229195977353 0.559283211700513 0.559738943516794 0.557839122542276 0.557621929013084 0.558691576126473 0.560395663125963 0.557848068750722 0.559393627331364 0.559086387042601 0.561115491971657]
+Current gradient [0.00709527556685963 0.00845513922986818 0.00881250516160392 0.00928235627639662 0.0101177135354291 0.0103629463474308 0.0106838997925851 0.0110631190287647 0.0110896025878882 0.0103237894682473 0.00688598908782367 0.00266534656606643 -0.000113975143323231 -0.00316831124824724 -0.00643691042023775 -0.00573646720586352 -0.020077128290219 -0.04099027742549 -0.0537142854099004 -0.0519536268149268 -0.0302496013370179 -0.156584163443663 -0.787431547454753 3.89789687919317 -0.27915809702328 -0.512201129428236 -0.178453502457876 -0.0928879755679457 -0.0564993581466666 -0.0370416216380343 -0.026317520067265 -0.0171203466923231 -0.011604116685382 -0.00703446885830239 -0.00340513218977101 -0.000669785063189821 0.00153132247321386 0.00328679101985196 0.00489582320728488 0.00595445319434562]
+gradient descent did not converge after 4 steps
+optimal weight: 5.61e-01 
+optimal weight: 5.60e-01 
+optimal weight: 5.63e-01 
+optimal weight: 5.66e-01 
+optimal weight: 5.66e-01 
+optimal weight: 5.69e-01 
+optimal weight: 5.72e-01 
+optimal weight: 5.75e-01 
+optimal weight: 5.81e-01 
+optimal weight: 5.92e-01 
+optimal weight: 6.20e-01 
+optimal weight: 6.66e-01 
+optimal weight: 7.37e-01 
+optimal weight: 7.43e-01 
+optimal weight: 7.66e-01 
+optimal weight: 8.10e-01 
+optimal weight: 7.69e-01 
+optimal weight: 7.49e-01 
+optimal weight: 7.48e-01 
+optimal weight: 7.55e-01 
+optimal weight: 7.80e-01 
+optimal weight: 6.87e-01 
+optimal weight: 6.28e-01 
+optimal weight: 5.91e-01 
+optimal weight: 5.72e-01 
+optimal weight: 5.67e-01 
+optimal weight: 5.65e-01 
+optimal weight: 5.64e-01 
+optimal weight: 5.63e-01 
+optimal weight: 5.62e-01 
+optimal weight: 5.59e-01 
+optimal weight: 5.60e-01 
+optimal weight: 5.58e-01 
+optimal weight: 5.58e-01 
+optimal weight: 5.59e-01 
+optimal weight: 5.60e-01 
+optimal weight: 5.58e-01 
+optimal weight: 5.59e-01 
+optimal weight: 5.59e-01 
+optimal weight: 5.61e-01 

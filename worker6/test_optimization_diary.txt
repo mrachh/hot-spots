@@ -2217,3 +2217,191 @@ chebabs =
    4.048666008166586   4.474841377447279
 
 Compuing dx56...
+Time to find eigenvalue: 4.76e+02; Time to compute 2-norm: 1.64e+02
+
+chebabs =
+
+   4.048734570242869   4.474917156584224
+
+Time to find eigenvalue: 4.80e+02; Time to compute 2-norm: 1.64e+02
+
+chebabs =
+
+   4.048668876041307   4.474844547203550
+
+Compuing dx57...
+Time to find eigenvalue: 4.77e+02; Time to compute 2-norm: 1.69e+02
+
+chebabs =
+
+   4.048738560369923   4.474921566724651
+
+Time to find eigenvalue: 4.79e+02; Time to compute 2-norm: 1.65e+02
+
+chebabs =
+
+   4.048664962907010   4.474840222160379
+
+Compuing dx58...
+Time to find eigenvalue: 4.82e+02; Time to compute 2-norm: 1.74e+02
+
+chebabs =
+
+   4.048737316573651   4.474920192002457
+
+Time to find eigenvalue: 4.80e+02; Time to compute 2-norm: 1.73e+02
+
+chebabs =
+
+   4.048666184490243   4.474841572331322
+
+Compuing dx59...
+Time to find eigenvalue: 4.77e+02; Time to compute 2-norm: 1.66e+02
+
+chebabs =
+
+   4.048738592421608   4.474921602150199
+
+Time to find eigenvalue: 4.78e+02; Time to compute 2-norm: 1.65e+02
+
+chebabs =
+
+   4.048664933240770   4.474840189371377
+
+Compuing dx60...
+Time to find eigenvalue: 4.76e+02; Time to compute 2-norm: 1.65e+02
+
+chebabs =
+
+   4.048735515931470   4.474918201818993
+
+Time to find eigenvalue: 4.74e+02; Time to compute 2-norm: 1.67e+02
+
+chebabs =
+
+   4.048667950492490   4.474843524228541
+
+Compuing dx61...
+Time to find eigenvalue: 4.74e+02; Time to compute 2-norm: 1.67e+02
+
+chebabs =
+
+   4.048739344511992   4.474922433407992
+
+Time to find eigenvalue: 4.77e+02; Time to compute 2-norm: 1.69e+02
+
+chebabs =
+
+   4.048664195695596   4.474839374189870
+
+Compuing dx62...
+Time to find eigenvalue: 4.81e+02; Time to compute 2-norm: 1.69e+02
+
+chebabs =
+
+   4.048738181698390   4.474921148192958
+
+Time to find eigenvalue: 4.81e+02; Time to compute 2-norm: 1.68e+02
+
+chebabs =
+
+   4.048665336534335   4.474840635116897
+
+Compuing dx63...
+Time to find eigenvalue: 4.73e+02; Time to compute 2-norm: 1.64e+02
+
+chebabs =
+
+   4.048737313200021   4.474920188273708
+
+Time to find eigenvalue: 4.70e+02; Time to compute 2-norm: 1.64e+02
+
+chebabs =
+
+   4.048666186935665   4.474841575034156
+
+Compuing dx64...
+Time to find eigenvalue: 4.74e+02; Time to compute 2-norm: 1.64e+02
+
+chebabs =
+
+   4.048736323864390   4.474919094797484
+
+Time to find eigenvalue: 4.72e+02; Time to compute 2-norm: 1.68e+02
+
+chebabs =
+
+   4.048667154943637   4.474842644937705
+
+Compuing dx65...
+Time to find eigenvalue: 4.69e+02; Time to compute 2-norm: 1.62e+02
+
+chebabs =
+
+   4.048735067588762   4.474917706282316
+
+Time to find eigenvalue: 4.77e+02; Time to compute 2-norm: 1.68e+02
+
+chebabs =
+
+   4.048668387862796   4.474844007637828
+
+Compuing dx66...
+Time to find eigenvalue: 4.75e+02; Time to compute 2-norm: 1.63e+02
+
+chebabs =
+
+   4.048737680621643   4.474920594371290
+
+Time to find eigenvalue: 4.72e+02; Time to compute 2-norm: 1.67e+02
+
+chebabs =
+
+   4.048665828200879   4.474841178537814
+
+Compuing dx67...
+Time to find eigenvalue: 4.85e+02; Time to compute 2-norm: 1.69e+02
+
+chebabs =
+
+   4.048740741907991   4.474923977898307
+
+Time to find eigenvalue: 4.81e+02; Time to compute 2-norm: 1.72e+02
+
+chebabs =
+
+   4.048662828548489   4.474837863132541
+
+Compuing dx68...
+Time to find eigenvalue: 4.78e+02; Time to compute 2-norm: 1.64e+02
+
+chebabs =
+
+   4.048739102833153   4.474922166289275
+
+Time to find eigenvalue: 4.74e+02; Time to compute 2-norm: 1.74e+02
+
+chebabs =
+
+   4.048664436760559   4.474839640630092
+
+Compuing dx69...
+Time to find eigenvalue: 4.72e+02; Time to compute 2-norm: 1.64e+02
+
+chebabs =
+
+   4.048738696530970   4.474921717218441
+
+Time to find eigenvalue: 4.73e+02; Time to compute 2-norm: 1.63e+02
+
+chebabs =
+
+   4.048664830951024   4.474840076314290
+
+Compuing dx70...
+Time to find eigenvalue: 4.79e+02; Time to compute 2-norm: 1.66e+02
+
+chebabs =
+
+   4.048733427728077   4.474915893804717
+
