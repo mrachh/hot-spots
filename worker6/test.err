@@ -1,0 +1,15 @@
+{Error using horzcat
+Dimensions of arrays being concatenated are not consistent.
+
+Error in ud_norm (line 31)
+        rr = [roots(pd) -1 1];
+
+Error in loss (line 55)
+        start = tic; [ud_p] = ud_norm(chnkr, zk, sigma, p);
+
+Error in gd (line 127)
+        [better_loss, chebabs] = fun(opt_next, loss_params, chebabs);
+
+Error in test (line 42)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 
