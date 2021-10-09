@@ -23,7 +23,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
     %         grad: gradient norms over iterations
     %         weight: weights "x" over iterations
 
-    %read gradient descent parameters
+    % Read gradient descent parameters
     maxiter = gd_params.maxiter;
     report = gd_params.report;
     eps = gd_params.eps;
@@ -33,6 +33,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
     savefn = gd_params.savefn;
     opt = init;
 
+    % Initialize log file
     gd_log = struct();
     gd_log.loss = nan(maxiter + 1,1);
     gd_log.step = nan(maxiter + 1,1);
@@ -62,7 +63,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             [loss, chebabs] = fun(opt, loss_params, chebabs);
         end
 
-        % Computes gradient
+        % Computes gradient using finite difference
         num_params = length(opt);
         grad = zeros(1, num_params);
 
@@ -71,11 +72,8 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             fprintf('Compuing dx%d...\n', param_idx);
             direction = zeros(1, num_params);
             direction(param_idx) = hspace;
-
-            % Change this if # of params gets big
             left = fun(opt - direction, loss_params, chebabs);
             right = fun(opt + direction, loss_params, chebabs);
-
             grad(param_idx) = (right - left) / (2 * hspace);
         end
         fprintf('Gradient computed!\n')
@@ -83,7 +81,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         % End of gradient computation
         
         grad_norm = norm(grad);
-        grad_direction = grad / grad_norm;
+        grad_direction = grad;
         gradient_descent_converged = (grad_norm < eps);
 
         if gradient_descent_converged
@@ -185,7 +183,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
     end
 
     % End of GD loop
-    
+
     if not(gradient_descent_converged & line_search_converged)
         fprintf('gradient descent did not converge after %d steps\n', ...
             epoch);
