@@ -1,0 +1,5227 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2020 The MathWorks, Inc.
+                  R2020a (9.8.0.1323502) 64-bit (glnxa64)
+                             February 25, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+	Non-Degree Granting Education License -- for use at non-degree granting, nonprofit,
+	educational organizations only.  Not for government, commercial, or other organizational use.
+
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Time to find eigenvalue: 4.06e+01; Time to compute 2-norm: 8.22e+00
+
+chebabs =
+
+   4.206381907420806   5.141133442403208
+
+
+num_grads =
+
+     1
+
+
+hspace =
+
+     1.000000000000000e-04
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206556752123519   5.141347141484301
+
+Time to find eigenvalue: 1.23e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.028610e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.79e+00
+
+chebabs =
+
+   4.206207090543228   5.140919777330613
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206538884767896   5.141325303605206
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206224953620305   5.140941609980373
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.71e+00
+
+chebabs =
+
+   4.206521421793498   5.141303959969831
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206242412697947   5.140962948853047
+
+
+num_grads =
+
+     2
+
+
+hspace =
+
+     9.772372209558111e-05
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.68e+00
+
+chebabs =
+
+   4.206552771861658   5.141342276719805
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206211069546564   5.140924640556912
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206535311260908   5.141320935985554
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206228526060031   5.140945976295594
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 8.86e+00
+
+chebabs =
+
+   4.206518245838827   5.141300078247456
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206245587767088   5.140966829493108
+
+
+num_grads =
+
+     3
+
+
+hspace =
+
+     9.549925860214369e-05
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206548882219288   5.141337522712463
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206214958005051   5.140929393117284
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.80e+00
+
+chebabs =
+
+   4.206531819108496   5.141316667799273
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206232017194901   5.140950243238212
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206515142180645   5.141296284887455
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206248690580964   5.140970621821179
+
+
+num_grads =
+
+     4
+
+
+hspace =
+
+     9.332543007969905e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.58e+00
+
+chebabs =
+
+   4.206545081120574   5.141332876925146
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.77e+00
+
+chebabs =
+
+   4.206218757953166   5.140934037498313
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206528406469636   5.141312496796222
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206235428874725   5.140954413069108
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206512109189556   5.141292577898346
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.73e+00
+
+chebabs =
+
+   4.206251722766866   5.140974327826170
+
+
+num_grads =
+
+     5
+
+
+hspace =
+
+     9.120108393559096e-05
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206541366569084   5.141328336917770
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206222471417250   5.140938576176639
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206525071519640   5.141308420746227
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   4.206238762906830   5.140958487997237
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206509145248591   5.141288955303834
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   4.206254685964534   5.140977949512208
+
+
+num_grads =
+
+     6
+
+
+hspace =
+
+     8.912509381337459e-05
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.66e+00
+
+chebabs =
+
+   4.206537736581553   5.141323900266343
+
+Time to find eigenvalue: 1.35e+01; Time to compute 2-norm: 7.72e+00
+
+chebabs =
+
+   4.206226100367101   5.140943011559790
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206521812487030   5.141304437484148
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206242021058108   5.140962470182132
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206506248776999   5.141285415171888
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206257581661888   5.140981488697864
+
+
+num_grads =
+
+     7
+
+
+hspace =
+
+     8.709635899560814e-05
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.84e+00
+
+chebabs =
+
+   4.206534189227171   5.141319564610987
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   4.206229646726114   5.140947345998584
+
+Time to find eigenvalue: 1.18e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.202156e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206518627658236   5.141300544915621
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206245205046882   5.140966361723967
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.58e+00
+
+chebabs =
+
+   4.206503418258234   5.141281955648953
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 9.60e+00
+
+chebabs =
+
+   4.206260411490842   5.140984947377696
+
+
+num_grads =
+
+     8
+
+
+hspace =
+
+     8.511380382023759e-05
+
+Time to find eigenvalue: 1.17e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.082410e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206530722626777   5.141315327654950
+
+Time to find eigenvalue: 1.29e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.078094e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206233112363113   5.140951581777138
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206515515324511   5.141296740952180
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.73e+00
+
+chebabs =
+
+   4.206248316579575   5.140970164708369
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.58e+00
+
+chebabs =
+
+   4.206500652168386   5.141278574872472
+
+Time to find eigenvalue: 1.36e+01; Time to compute 2-norm: 7.87e+00
+
+chebabs =
+
+   4.206263176901310   5.140988327323824
+
+
+num_grads =
+
+     9
+
+
+hspace =
+
+     8.317637711026709e-05
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206527334967537   5.141311187182545
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206236499137480   5.140955721168032
+
+Time to find eigenvalue: 1.18e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.210364e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206512473835246   5.141293023576411
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206251357292620   5.140973881135425
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206497949037693   5.141275271046069
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206265879398911   5.140991630376447
+
+
+num_grads =
+
+    10
+
+
+hspace =
+
+     8.128305161640996e-05
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206524024411975   5.141307140947970
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206239808816769   5.140959766331607
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206509501610634   5.141289390857441
+
+Time to find eigenvalue: 1.36e+01; Time to compute 2-norm: 7.74e+00
+
+chebabs =
+
+   4.206254328770530   5.140977512941760
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206495307455754   5.141272042445921
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206268520364906   5.140994858223774
+
+
+num_grads =
+
+    11
+
+
+hspace =
+
+     7.943282347242821e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206520789236014   5.141303186844017
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   4.206243043179285   5.140963719441348
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206506597036332   5.141285840822184
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206257232663000   5.140981062143666
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206492726040397   5.141268887382707
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206271101226132   5.140998012609717
+
+
+num_grads =
+
+    12
+
+
+hspace =
+
+     7.762471166286911e-05
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206517627701982   5.141299322746867
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206246203912545   5.140967582559777
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206503758593785   5.141282371614627
+
+Time to find eigenvalue: 1.29e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.718891e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.66e+00
+
+chebabs =
+
+   4.206260070449802   5.140984530549758
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   4.206490203337728   5.141265804079446
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206273623335401   5.141001095187713
+
+
+num_grads =
+
+    13
+
+
+hspace =
+
+     7.585775750291836e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206514538146735   5.141295546623788
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206249292713667   5.140971357761149
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   4.206500984766020   5.141278981380691
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.78e+00
+
+chebabs =
+
+   4.206262843630794   5.140987919993193
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206487738095755   5.141262791005923
+
+Time to find eigenvalue: 1.22e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.488593e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206276088062854   5.141004107632377
+
+
+num_grads =
+
+    14
+
+
+hspace =
+
+     7.413102413009176e-05
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206511518921453   5.141291856459555
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206252311220414   5.140975047047173
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206498274083556   5.141275668324346
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206265553694826   5.140991232293676
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.72e+00
+
+chebabs =
+
+   4.206485328960402   5.141259846507158
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206278496671848   5.141007051487814
+
+
+num_grads =
+
+    15
+
+
+hspace =
+
+     7.244359600749906e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206508568435237   5.141288250309734
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206255261018436   5.140978652355867
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206495625107149   5.141272430686517
+
+Time to find eigenvalue: 1.34e+01; Time to compute 2-norm: 7.78e+00
+
+chebabs =
+
+   4.206268202111955   5.140994469247945
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206482974678038   5.141256969050936
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206280850466871   5.141009928348398
+
+
+num_grads =
+
+    16
+
+
+hspace =
+
+     7.079457843841373e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206505685114712   5.141284726251316
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206258143673352   5.140982175600764
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.71e+00
+
+chebabs =
+
+   4.206493036457259   5.141269266781094
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206270790215775   5.140997632485947
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   4.206480674003900   5.141254157115878
+
+Time to find eigenvalue: 1.38e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.167701e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.79e+00
+
+chebabs =
+
+   4.206283150693078   5.141012739735985
+
+
+num_grads =
+
+    17
+
+
+hspace =
+
+     6.918309709189363e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206502867438740   5.141281282425127
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206260960739580   5.140985618681709
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.69e+00
+
+chebabs =
+
+   4.206490506707130   5.141266174864271
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206273319409028   5.141000723722146
+
+Time to find eigenvalue: 1.27e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.894122e-16.] 
+[> In id (line 120)
+  In ifmm (line 351)
+  In chunkerkerneval>chunkerkerneval_smooth (line 209)
+  In chunkerkerneval (line 95)
+  In u_norm (line 22)
+  In loss (line 44)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206478425684919   5.141251409170457
+
+Time to find eigenvalue: 1.42e+01; Time to compute 2-norm: 7.72e+00
+
+chebabs =
+
+   4.206285398585435   5.141015487159977
+
+
+num_grads =
+
+    18
+
+
+hspace =
+
+     6.760829753919819e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206500113913414   5.141277917005284
+
+Time to find eigenvalue: 1.18e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.177325e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206263713674080   5.140988983379431
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206488034557630   5.141263153348214
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206275791052567   5.141003744619804
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206476228565116   5.141248723801809
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206287595262911   5.141018171988002
+
+
+num_grads =
+
+    19
+
+
+hspace =
+
+     6.606934480075965e-05
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.68e+00
+
+chebabs =
+
+   4.206497423059781   5.141274628184177
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206266403938385   5.140992271480249
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206485618695812   5.141260200628214
+
+Time to find eigenvalue: 1.36e+01; Time to compute 2-norm: 7.74e+00
+
+chebabs =
+
+   4.206278206438843   5.141006696758586
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206474081439898   5.141246099537653
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206289741970572   5.141020795741810
+
+
+num_grads =
+
+    20
+
+
+hspace =
+
+     6.456542290346549e-05
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206494793460876   5.141271414229959
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206269032994308   5.140995484770822
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206483257829799   5.141257315125309
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206280566846649   5.141009581701460
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.72e+00
+
+chebabs =
+
+   4.206471983200495   5.141243535022827
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.68e+00
+
+chebabs =
+
+   4.206291839823010   5.141023359783680
+
+
+num_grads =
+
+    21
+
+
+hspace =
+
+     6.309573444801929e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206492223737068   5.141268273456417
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206271602196873   5.140998624907289
+
+Time to find eigenvalue: 1.35e+01; Time to compute 2-norm: 7.74e+00
+
+chebabs =
+
+   4.206480950694310   5.141254495293046
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.69e+00
+
+chebabs =
+
+   4.206282873532590   5.141012400984277
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206469932754423   5.141241028922074
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206293889914269   5.141025865450773
+
+
+num_grads =
+
+    22
+
+
+hspace =
+
+     6.165950018614822e-05
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206489712505433   5.141265204173306
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206274112920673   5.141001693569712
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206478696090780   5.141251739666509
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.78e+00
+
+chebabs =
+
+   4.206285127713222   5.141015156093939
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206467928957908   5.141238579837443
+
+Time to find eigenvalue: 1.19e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.134582e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206295893356241   5.141028314102073
+
+
+num_grads =
+
+    23
+
+
+hspace =
+
+     6.025595860743581e-05
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   4.206487258449880   5.141262204772076
+
+Time to find eigenvalue: 1.12e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206276566512773   5.141004692404501
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.74e+00
+
+chebabs =
+
+   4.206476492805234   5.141249046761953
+
+Time to find eigenvalue: 1.13e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206287330590206   5.141017848499141
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206465970792141   5.141236186523727
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206297851195743   5.141030707017019
+
+
+num_grads =
+
+    24
+
+
+hspace =
+
+     5.888436553555884e-05
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   4.206484860220861   5.141259273603275
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206278964247034   5.141007622968598
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.77e+00
+
+chebabs =
+
+   4.206474339704765   5.141246415194713
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206289483325978   5.141020479620640
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206464057199937   5.141233847688812
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206299764470560   5.141033045464019
+
+
+num_grads =
+
+    25
+
+
+hspace =
+
+     5.754399373371566e-05
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.73e+00
+
+chebabs =
+
+   4.206482516652583   5.141256409242046
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206281307413137   5.141010486838279
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206472235589461   5.141243843498230
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206291587088133   5.141023050885496
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206462187166979   5.141231562092974
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206301634187409   5.141035330673501
+
+
+num_grads =
+
+    26
+
+
+hspace =
+
+     5.623413251903491e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206480226412460   5.141253610059674
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.68e+00
+
+chebabs =
+
+   4.206283597254057   5.141013285532736
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206470179377912   5.141241330350781
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206293642920738   5.141025563569792
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206460359702764   5.141229328525601
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   4.206303461364443   5.141037563889874
+
+
+num_grads =
+
+    27
+
+
+hspace =
+
+     5.495408738576248e-05
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206477988291521   5.141250874578525
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.94e+00
+
+chebabs =
+
+   4.206285834966014   5.141016020514017
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 8.17e+00
+
+chebabs =
+
+   4.206468169982870   5.141238874423507
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   4.206295651996213   5.141028019106483
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   4.206458573833318   5.141227145796278
+
+Time to find eigenvalue: 1.24e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.113233e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206305246943384   5.141039746264137
+
+
+num_grads =
+
+    28
+
+
+hspace =
+
+     5.370317963702532e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206475801133947   5.141248201385936
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206288021747735   5.141018693247232
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206466206331737   5.141236474405457
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   4.206297615322007   5.141030418726897
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206456828637228   5.141225012778834
+
+Time to find eigenvalue: 1.36e+01; Time to compute 2-norm: 7.72e+00
+
+chebabs =
+
+   4.206306991881654   5.141041878966466
+
+
+num_grads =
+
+    29
+
+
+hspace =
+
+     5.248074602497723e-05
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206473663762115   5.141245589042584
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206290158756179   5.141021305146441
+
+Time to find eigenvalue: 1.39e+01; Time to compute 2-norm: 7.77e+00
+
+chebabs =
+
+   4.206464287361866   5.141234128997836
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206299533971932   5.141032763743473
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206455123149964   5.141222928294400
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.76e+00
+
+chebabs =
+
+   4.206308697107309   5.141043963131155
+
+
+num_grads =
+
+    30
+
+
+hspace =
+
+     5.128613839913648e-05
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 9.09e+00
+
+chebabs =
+
+   4.206471575047340   5.141243036168971
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206292247135715   5.141023857610318
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206462412100740   5.141231837012016
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206301408947798   5.141035055380642
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206453456531037   5.141220891315712
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.97e+00
+
+chebabs =
+
+   4.206310363517494   5.141045999854715
+
+
+num_grads =
+
+    31
+
+
+hspace =
+
+     5.011872336272724e-05
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206469533866468   5.141240541392349
+
+Time to find eigenvalue: 1.23e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.013633e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206294287966433   5.141026351958973
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206460579528592   5.141229597201613
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206303241236817   5.141037294844999
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.68e+00
+
+chebabs =
+
+   4.206451827792632   5.141218900635439
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206311991992830   5.141047990213459
+
+
+num_grads =
+
+    32
+
+
+hspace =
+
+     4.897788193684466e-05
+
+Time to find eigenvalue: 1.31e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.878175e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206467539181916   5.141238103444564
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206296282354649   5.141028789544571
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206458788667851   5.141227408371818
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206305031844813   5.141039483365882
+
+Time to find eigenvalue: 1.18e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.203608e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206450236147350   5.141216955291206
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206313583406493   5.141049935274602
+
+
+num_grads =
+
+    33
+
+
+hspace =
+
+     4.786300923226380e-05
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 8.45e+00
+
+chebabs =
+
+   4.206465589892680   5.141235720979942
+
+Time to find eigenvalue: 1.41e+01; Time to compute 2-norm: 7.76e+00
+
+chebabs =
+
+   4.206298231320689   5.141031171614176
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206457038566737   5.141225269359345
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206306781676786   5.141041622049405
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206448680743257   5.141215054241759
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.33e+00
+
+chebabs =
+
+   4.206315138598545   5.141051836064888
+
+
+num_grads =
+
+    34
+
+
+hspace =
+
+     4.677351412871982e-05
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206463684975569   5.141233392747918
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206300135971792   5.141033499521079
+
+Time to find eigenvalue: 1.34e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206455328328786   5.141223179068516
+
+Time to find eigenvalue: 1.40e+01; Time to compute 2-norm: 7.74e+00
+
+chebabs =
+
+   4.206308491690574   5.141043712066257
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206447160746851   5.141213196468374
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206316658399234   5.141053693599064
+
+
+num_grads =
+
+    35
+
+
+hspace =
+
+     4.570881896148752e-05
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206461823407430   5.141231117497971
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206301997244788   5.141035774410296
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   4.206453656996683   5.141221136329279
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.30e+00
+
+chebabs =
+
+   4.206310162785597   5.141045754515730
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206445675356692   5.141211380991512
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206318143593619   5.141055508836645
+
+
+num_grads =
+
+    36
+
+
+hspace =
+
+     4.466835921509635e-05
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.32e+00
+
+chebabs =
+
+   4.206460004250591   5.141228894084056
+
+Time to find eigenvalue: 1.14e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.505343e-16.] 
+[> In id (line 120)
+  In ifmm (line 351)
+  In chunkerkerneval>chunkerkerneval_smooth (line 209)
+  In chunkerkerneval (line 95)
+  In u_norm (line 22)
+  In loss (line 44)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206303816161205   5.141037997530362
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206452023723442   5.141219140106428
+
+Time to find eigenvalue: 1.22e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.352770e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206311795841283   5.141047750472680
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206444223771049   5.141209606831283
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206319594989243   5.141057282764631
+
+
+num_grads =
+
+    37
+
+
+hspace =
+
+     4.365158322401657e-05
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206458226482048   5.141226721255837
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206305593672815   5.141040170044552
+
+Time to find eigenvalue: 1.13e+01; Time to compute 2-norm: 7.32e+00
+
+chebabs =
+
+   4.206450427628935   5.141217189324254
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206313391709990   5.141049700978876
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.30e+00
+
+chebabs =
+
+   4.206442805234130   5.141207873063937
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.79e+00
+
+chebabs =
+
+   4.206321013365677   5.141059016335828
+
+
+num_grads =
+
+    38
+
+
+hspace =
+
+     4.265795188015926e-05
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206456489195245   5.141224597905299
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206307330729288   5.141042293113575
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206448867888120   5.141215282974369
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206314951270166   5.141051607107980
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206441418989068   5.141206178764417
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206322399424849   5.141060710408149
+
+
+num_grads =
+
+    39
+
+
+hspace =
+
+     4.168693834703355e-05
+
+Time to find eigenvalue: 1.46e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.214525e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 8.10e+00
+
+chebabs =
+
+   4.206454791451817   5.141222522885554
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206309028244524   5.141044367854419
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206447343615417   5.141213419974399
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206316475330720   5.141053469848658
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206440064306297   5.141204523041029
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206323753953340   5.141062365942971
+
+
+num_grads =
+
+    40
+
+
+hspace =
+
+     4.073802778041130e-05
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206453132345533   5.141220495088985
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206310687105553   5.141046395351232
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206445854064937   5.141211599412701
+
+Time to find eigenvalue: 1.31e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.801156e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206317964684300   5.141055290169700
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206438740475865   5.141202905026057
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.58e+00
+
+chebabs =
+
+   4.206325077646529   5.141063983790202
+
+
+num_grads =
+
+    41
+
+
+hspace =
+
+     3.981071705534969e-05
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206451511020248   5.141218513469192
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206312308252623   5.141048376753206
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206444398405437   5.141209820273312
+
+Time to find eigenvalue: 1.19e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.682151e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206319420169507   5.141057069096064
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206437446735585   5.141201323787937
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206326371217749   5.141065564821694
+
+
+num_grads =
+
+    42
+
+
+hspace =
+
+     3.890451449942805e-05
+
+Time to find eigenvalue: 1.12e+01; Time to compute 2-norm: 7.29e+00
+
+chebabs =
+
+   4.206449926606124   5.141216576963041
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206313892466729   5.141050313014890
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206442975908129   5.141208081665492
+
+Time to find eigenvalue: 1.11e+01; Time to compute 2-norm: 7.29e+00
+
+chebabs =
+
+   4.206320842517654   5.141058807521577
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206436182476002   5.141199778581781
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206327635338834   5.141067109858575
+
+
+num_grads =
+
+    43
+
+
+hspace =
+
+     3.801893963205612e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206448378247886   5.141214684525194
+
+Time to find eigenvalue: 1.28e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.700366e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206315440609870   5.141052205189840
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206441585774368   5.141206382613117
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206322232492044   5.141060506379165
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206434946975664   5.141198268525812
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206328870704105   5.141068619749462
+
+
+num_grads =
+
+    44
+
+
+hspace =
+
+     3.715352290971728e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206446865151356   5.141212835184992
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206316953554097   5.141054054343897
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206440227291950   5.141204722245718
+
+Time to find eigenvalue: 1.25e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.155947e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206323590816838   5.141062166553914
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206433739635582   5.141196792887933
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206330077949729   5.141070095271891
+
+
+num_grads =
+
+    45
+
+
+hspace =
+
+     3.630780547701010e-05
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206445386484683   5.141211027925723
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206318432045911   5.141055861389447
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206438899746403   5.141203099690048
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.66e+00
+
+chebabs =
+
+   4.206324918233371   5.141063788951898
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206432559762811   5.141195350821214
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 9.29e+00
+
+chebabs =
+
+   4.206331257676088   5.141071537159664
+
+
+num_grads =
+
+    46
+
+
+hspace =
+
+     3.548133892335753e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.29e+00
+
+chebabs =
+
+   4.206443941487324   5.141209261817840
+
+Time to find eigenvalue: 1.17e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.538066e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206319876877646   5.141057627294900
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206437602401588   5.141201514046386
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.65e+00
+
+chebabs =
+
+   4.206326215415558   5.141065374396793
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.32e+00
+
+chebabs =
+
+   4.206431406737224   5.141193941567718
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206332410569669   5.141072946251818
+
+
+num_grads =
+
+    47
+
+
+hspace =
+
+     3.467368504525317e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206442529369389   5.141207535895920
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206321288824100   5.141059353007233
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206436334608266   5.141199964521214
+
+Time to find eigenvalue: 1.22e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.803264e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206327483104497   5.141066923794385
+
+Time to find eigenvalue: 1.19e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.543046e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206430279967752   5.141192564405030
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.30e+00
+
+chebabs =
+
+   4.206333537235932   5.141074323288361
+
+
+num_grads =
+
+    48
+
+
+hspace =
+
+     3.388441561392028e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.32e+00
+
+chebabs =
+
+   4.206441149408156   5.141205849276635
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.30e+00
+
+chebabs =
+
+   4.206322668638064   5.141061039446523
+
+Time to find eigenvalue: 1.21e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.069211e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206435095647345   5.141198450235644
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206328721920360   5.141068437902662
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206429178849530   5.141191218593870
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206334638254736   5.141075668978011
+
+
+num_grads =
+
+    49
+
+
+hspace =
+
+     3.311311214825908e-05
+
+Time to find eigenvalue: 1.15e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.723034e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206439800871584   5.141204201065269
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206324017039822   5.141062687493116
+
+Time to find eigenvalue: 1.23e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.942501e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206433884899753   5.141196970433032
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206329932538152   5.141069917546631
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206428102793773   5.141189903414612
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206335714210587   5.141076984035162
+
+
+num_grads =
+
+    50
+
+
+hspace =
+
+     3.235936569296281e-05
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.33e+00
+
+chebabs =
+
+   4.206438483022645   5.141202590361011
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206325334761225   5.141064298041496
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206432701742193   5.141195524351569
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206331115594129   5.141071363503936
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206427051228161   5.141188618167752
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206336765660726   5.141078269140888
+
+
+num_grads =
+
+    51
+
+
+hspace =
+
+     3.162277660168380e-05
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206437195169396   5.141201016318150
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206326622481132   5.141065871921384
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.29e+00
+
+chebabs =
+
+   4.206431545481787   5.141194111144406
+
+Time to find eigenvalue: 1.18e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.854903e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206332271724005   5.141072776551561
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206426023613201   5.141187362193913
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206337793192974   5.141079525013635
+
+
+num_grads =
+
+    52
+
+
+hspace =
+
+     3.090295432513592e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.30e+00
+
+chebabs =
+
+   4.206435936638080   5.141199478113209
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.90e+00
+
+chebabs =
+
+   4.206327880879653   5.141067409964020
+
+Time to find eigenvalue: 1.12e+01; Time to compute 2-norm: 7.28e+00
+
+chebabs =
+
+   4.206430415555694   5.141192730123627
+
+Time to find eigenvalue: 1.17e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.695279e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206333401554586   5.141074157455605
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206425019383256   5.141186134801758
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206338797349173   5.141080752315657
+
+
+num_grads =
+
+    53
+
+
+hspace =
+
+     3.019951720402019e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206434706745225   5.141197974910830
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206329110646362   5.141068913012220
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206429311351211   5.141191380540370
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.30e+00
+
+chebabs =
+
+   4.206334505665941   5.141075506925040
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206424038003672   5.141184935337822
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206339778644848   5.141081951677037
+
+
+num_grads =
+
+    54
+
+
+hspace =
+
+     2.951209226666384e-05
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.71e+00
+
+chebabs =
+
+   4.206433504874788   5.141196505958074
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.93e+00
+
+chebabs =
+
+   4.206330312409612   5.141070381833971
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206428232279721   5.141190061675214
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206335584627837   5.141076825656246
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206423078994489   5.141183763215487
+
+Time to find eigenvalue: 1.14e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.105079e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.31e+00
+
+chebabs =
+
+   4.206340737567058   5.141083123693071
+
+
+num_grads =
+
+    55
+
+
+hspace =
+
+     2.884031503126606e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206432330341629   5.141195070417547
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206331486819693   5.141071817224070
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206427177776482   5.141188772837923
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206336639042393   5.141078114385147
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206422141796399   5.141182617751155
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206341674686765   5.141084269061602
+
+
+num_grads =
+
+    56
+
+
+hspace =
+
+     2.818382931264455e-05
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206431182545033   5.141193667555040
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206332634525598   5.141073219975731
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206426147280022   5.141187513342249
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.32e+00
+
+chebabs =
+
+   4.206337669463639   5.141079373788892
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206421225919886   5.141181498346527
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206342590483321   5.141085388368504
+
+
+num_grads =
+
+    57
+
+
+hspace =
+
+     2.754228703338163e-05
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.30e+00
+
+chebabs =
+
+   4.206430060891295   5.141192296644916
+
+Time to find eigenvalue: 1.19e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.997073e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 8.92e+00
+
+chebabs =
+
+   4.206333756088671   5.141074590775042
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206425140240136   5.141186282515722
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206338676413868   5.141080604505839
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206420330906851   5.141180404441707
+
+Time to find eigenvalue: 1.19e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.583628e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206343485424507   5.141086482185509
+
+
+num_grads =
+
+    58
+
+
+hspace =
+
+     2.691534803926914e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206428964754779   5.141190956922508
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206334852120245   5.141075930369188
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206424156096124   5.141185079673040
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206339660460116   5.141081807229030
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206419456265893   5.141179335436092
+
+Time to find eigenvalue: 1.36e+01; Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   4.206344360002968   5.141087551114739
+
+
+num_grads =
+
+    59
+
+
+hspace =
+
+     2.630267991895381e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206427893576572   5.141189647704699
+
+Time to find eigenvalue: 1.13e+01; Time to compute 2-norm: 7.33e+00
+
+chebabs =
+
+   4.206335923211610   5.141077239480857
+
+Time to find eigenvalue: 1.12e+01; Time to compute 2-norm: 7.26e+00
+
+chebabs =
+
+   4.206423194399052   5.141183904265509
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206340622085099   5.141082982548455
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.60e+00
+
+chebabs =
+
+   4.206418601513042   5.141178290738162
+
+Time to find eigenvalue: 1.19e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.710032e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206345214676063   5.141088595715189
+
+
+num_grads =
+
+    60
+
+
+hspace =
+
+     2.570395782768864e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206426846778784   5.141188368285181
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206336969917976   5.141078518788637
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206422254575642   5.141182755592452
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206341561837868   5.141084131135172
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206417766265372   5.141177269879900
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206346049881118   5.141089616521366
+
+
+num_grads =
+
+    61
+
+
+hspace =
+
+     2.511886431509582e-05
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206425823814927   5.141187117996022
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206337992798344   5.141079768975755
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206421336143078   5.141181633063762
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206342480201688   5.141085253579841
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206416950004431   5.141176272227638
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206346866084189   5.141090614102898
+
+
+num_grads =
+
+    62
+
+
+hspace =
+
+     2.454708915685029e-05
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206424824142540   5.141185896174216
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206338992402233   5.141080990713840
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 8.67e+00
+
+chebabs =
+
+   4.206420438615299   5.141180536085366
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206343377657686   5.141086350470506
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206416152339162   5.141175297303420
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206347663705857   5.141091588973825
+
+
+num_grads =
+
+    63
+
+
+hspace =
+
+     2.398832919019490e-05
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206423847204467   5.141184702138794
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206339969243812   5.141082184631326
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.28e+00
+
+chebabs =
+
+   4.206419561528024   5.141179464089808
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206344254695956   5.141087422406168
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206415372800014   5.141174344533351
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.31e+00
+
+chebabs =
+
+   4.206348443177293   5.141092541661136
+
+
+num_grads =
+
+    64
+
+
+hspace =
+
+     2.344228815319923e-05
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206422892529891   5.141183535314311
+
+Time to find eigenvalue: 1.12e+01; Time to compute 2-norm: 7.26e+00
+
+chebabs =
+
+   4.206340923859607   5.141083351383965
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.33e+00
+
+chebabs =
+
+   4.206418704401528   5.141178416490757
+
+Time to find eigenvalue: 1.18e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.441815e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206345111761883   5.141088469931191
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206414611039481   5.141173413492699
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206349204915357   5.141093472674325
+
+
+num_grads =
+
+    65
+
+
+hspace =
+
+     2.290867652767775e-05
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.32e+00
+
+chebabs =
+
+   4.206421959581194   5.141182395043681
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206341856749451   5.141084491582663
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206417866766565   5.141177392714691
+
+Time to find eigenvalue: 1.16e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.169940e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206345949316791   5.141089493609411
+
+Time to find eigenvalue: 1.14e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.563314e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.30e+00
+
+chebabs =
+
+   4.206413866581062   5.141172503599075
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206349949301642   5.141094382479785
+
+
+num_grads =
+
+    66
+
+
+hspace =
+
+     2.238721138568338e-05
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206421047863379   5.141181280721907
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206342768366544   5.141085605781331
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206417048225305   5.141176392275373
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206346767807271   5.141090493986665
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206413139094230   5.141171614448504
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206350676757584   5.141095271592603
+
+
+num_grads =
+
+    67
+
+
+hspace =
+
+     2.187761623949552e-05
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206420156914068   5.141180191783861
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206343659282910   5.141086694679112
+
+Time to find eigenvalue: 1.40e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206416248318865   5.141175414611946
+
+Time to find eigenvalue: 1.17e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.379403e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206347567668122   5.141091471594372
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206412428164954   5.141170745534943
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206351387629446   5.141096140435989
+
+
+num_grads =
+
+    68
+
+
+hspace =
+
+     2.137962089502233e-05
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206419286224690   5.141179127607955
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206344529903190   5.141087758770566
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206415466621680   5.141174459204275
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206348349321924   5.141092426949018
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206411733420892   5.141169896403313
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.58e+00
+
+chebabs =
+
+   4.206352082334019   5.141096989519356
+
+
+num_grads =
+
+    69
+
+
+hspace =
+
+     2.089296130854041e-05
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206418435366326   5.141178087669955
+
+Time to find eigenvalue: 1.23e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.685275e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206345380712765   5.141088798648935
+
+Time to find eigenvalue: 1.37e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.063603e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   4.206414702706747   5.141173525530468
+
+Time to find eigenvalue: 1.16e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.737276e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206349113193224   5.141093360569496
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206411054505394   5.141169066617704
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206352761228392   5.141097819279146
+
+
+num_grads =
+
+    70
+
+
+hspace =
+
+     2.041737944669527e-05
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206417603859035   5.141177071383265
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206346212145719   5.141089814844768
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206413956178555   5.141172613107123
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206349859654029   5.141094272910480
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206410391011346   5.141168255680534
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206353424673494   5.141098630156493
+
+
+num_grads =
+
+    71
+
+
+hspace =
+
+     1.995262314968879e-05
+
+Time to find eigenvalue: 1.14e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.696140e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.26e+00
+
+chebabs =
+
+   4.206416791314432   5.141176078273195
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206347024653401   5.141090807909713
+
+Time to find eigenvalue: 1.39e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206413226664480   5.141171721478810
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206350589147250   5.141095164513305
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206409742637482   5.141167463223590
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206354072996414   5.141099422551173
+
+
+num_grads =
+
+    72
+
+
+hspace =
+
+     1.949844599758046e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206415997250891   5.141175107751089
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206347818673129   5.141091778378270
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206412513731660   5.141170850116474
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206351302029803   5.141096035814203
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206409109018129   5.141166688799935
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.33e+00
+
+chebabs =
+
+   4.206354706576565   5.141100196926914
+
+
+num_grads =
+
+    73
+
+
+hspace =
+
+     1.905460717963248e-05
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206415221228168   5.141174159278872
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206348594622949   5.141092726761382
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206411817035717   5.141169998599209
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206351998686740   5.141096887283793
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206408489852053   5.141165932041398
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206355325735079   5.141100953676208
+
+
+num_grads =
+
+    74
+
+
+hspace =
+
+     1.862087136662866e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206414462930078   5.141173232470095
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206349352895143   5.141093653538508
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206411136185174   5.141169166448546
+
+Time to find eigenvalue: 1.29e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.053323e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206352679477734   5.141097719361675
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206407884731627   5.141165192449766
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206355930830463   5.141101693237232
+
+
+num_grads =
+
+    75
+
+
+hspace =
+
+     1.819700858609982e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206413721864430   5.141172326723193
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206350093916559   5.141094559231351
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206410470857630   5.141168353270437
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206353344789526   5.141098532520532
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206407293397711   5.141164469708314
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206356522088076   5.141102415885427
+
+
+num_grads =
+
+    76
+
+
+hspace =
+
+     1.778279410038923e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206412997669467   5.141171441596016
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206350818070168   5.141095444307982
+
+Time to find eigenvalue: 1.22e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.117702e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206409820656257   5.141167558579869
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206353994936666   5.141099327144814
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206406715536368   5.141163763433339
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.33e+00
+
+chebabs =
+
+   4.206357099926106   5.141103122131907
+
+
+num_grads =
+
+    77
+
+
+hspace =
+
+     1.737800828749376e-05
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206412289958160   5.141170576615529
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206351525743226   5.141096309241721
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206409185279248   5.141166782007970
+
+Time to find eigenvalue: 1.32e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206354630292713   5.141100103691094
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206406150823027   5.141163073228145
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206357664606723   5.141103812297106
+
+
+num_grads =
+
+    78
+
+
+hspace =
+
+     1.698243652461746e-05
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   4.206411598350243   5.141169731316964
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206352217302756   5.141097154481146
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206408564349585   5.141166023093937
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206355251184955   5.141100862559389
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206405598980696   5.141162398754185
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206358216439827   5.141104486759788
+
+
+num_grads =
+
+    79
+
+
+hspace =
+
+     1.659586907437560e-05
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206410922510390   5.141168905290477
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206352893118477   5.141097980478138
+
+Time to find eigenvalue: 1.28e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.977944e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 9.42e+00
+
+chebabs =
+
+   4.206407957579149   5.141165281485627
+
+Time to find eigenvalue: 1.36e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206355857942085   5.141101604151437
+
+Time to find eigenvalue: 1.36e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.862690e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.66e+00
+
+chebabs =
+
+   4.206405059690093   5.141161739621225
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206358755700750   5.141105145856472
+
+
+num_grads =
+
+    80
+
+
+hspace =
+
+     1.621810097358930e-05
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206410262030798   5.141168098037642
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206353553552179   5.141098787674886
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206407364574375   5.141164556702013
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.33e+00
+
+chebabs =
+
+   4.206356450905724   5.141102328884774
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206404532675560   5.141161095492351
+
+Time to find eigenvalue: 1.23e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.937902e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206359282693632   5.141105789958884
+
+
+num_grads =
+
+    81
+
+
+hspace =
+
+     1.584893192461114e-05
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206409616595693   5.141167309172514
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206354198959497   5.141099576506052
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206406785096421   5.141163848451182
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.31e+00
+
+chebabs =
+
+   4.206357030361177   5.141103037108105
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 9.40e+00
+
+chebabs =
+
+   4.206404017651345   5.141160466018311
+
+Time to find eigenvalue: 1.27e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.143028e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206359797679744   5.141106419386353
+
+
+num_grads =
+
+    82
+
+
+hspace =
+
+     1.548816618912480e-05
+
+Time to find eigenvalue: 1.17e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.938407e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206408985849385   5.141166538260360
+
+Time to find eigenvalue: 1.35e+01; Time to compute 2-norm: 7.62e+00
+
+chebabs =
+
+   4.206354829678138   5.141100347384391
+
+Time to find eigenvalue: 1.19e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.073548e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206406218796785   5.141163156307183
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.26e+00
+
+chebabs =
+
+   4.206357596625731   5.141103729209227
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206403514341555   5.141159850861901
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206360300961152   5.141107034508074
+
+
+num_grads =
+
+    83
+
+
+hspace =
+
+     1.513561248436207e-05
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.33e+00
+
+chebabs =
+
+   4.206408369458774   5.141165784894057
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206355446044491   5.141101100721045
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206405665409853   5.141162479945375
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206358150006458   5.141104405563448
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206403022510958   5.141159249735616
+
+Time to find eigenvalue: 1.35e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206360792807742   5.141107635653907
+
+
+num_grads =
+
+    84
+
+
+hspace =
+
+     1.479108388168207e-05
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206407767111465   5.141165048691791
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206356048375385   5.141101836903249
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   4.206405124586404   5.141161818938939
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206358690778837   5.141105066507467
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206402541870003   5.141158662285559
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 9.26e+00
+
+chebabs =
+
+   4.206361273402132   5.141108223047051
+
+
+num_grads =
+
+    85
+
+
+hspace =
+
+     1.445439770745928e-05
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.73e+00
+
+chebabs =
+
+   4.206407178465903   5.141164329236104
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206356636981265   5.141102556310436
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206404596095370   5.141161173005452
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 9.17e+00
+
+chebabs =
+
+   4.206359219249608   5.141105712416188
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206402072167855   5.141158088205157
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206361743079134   5.141108797096719
+
+
+num_grads =
+
+    86
+
+
+hspace =
+
+     1.412537544622755e-05
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206406603217148   5.141163626154292
+
+Time to find eigenvalue: 1.35e+01; Time to compute 2-norm: 7.72e+00
+
+chebabs =
+
+   4.206357212206107   5.141103259363019
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206404079640794   5.141160541783192
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.43e+00
+
+chebabs =
+
+   4.206359735695896   5.141106343628318
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206401613155363   5.141157527189889
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206362202075674   5.141109358092490
+
+
+num_grads =
+
+    87
+
+
+hspace =
+
+     1.380384264602884e-05
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206406041063830   5.141162939078015
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206357774325640   5.141103946398005
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206403574933327   5.141159924918511
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206360240379865   5.141106960464279
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206401164604340   5.141156978960860
+
+Time to find eigenvalue: 1.34e+01; Time to compute 2-norm: 7.64e+00
+
+chebabs =
+
+   4.206362650635521   5.141109906332304
+
+
+num_grads =
+
+    88
+
+
+hspace =
+
+     1.348962882591653e-05
+
+Time to find eigenvalue: 1.27e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.500690e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206405491687385   5.141162267617915
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206358323652124   5.141104617797041
+
+Time to find eigenvalue: 1.21e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.899707e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206403081723305   5.141159322106263
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206360733566552   5.141107563248007
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206400726251404   5.141156443196161
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206363088952619   5.141110442053201
+
+
+num_grads =
+
+    89
+
+
+hspace =
+
+     1.318256738556407e-05
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206404954861938   5.141161611497925
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206358860485472   5.141105273926688
+
+Time to find eigenvalue: 1.28e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206402599723973   5.141158732995968
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206361215541762   5.141108152328820
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206400297880617   5.141155919631864
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206363517319899   5.141110965613210
+
+
+num_grads =
+
+    90
+
+
+hspace =
+
+     1.288249551693135e-05
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206404430228520   5.141160970279302
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206359385097787   5.141105915119518
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.63e+00
+
+chebabs =
+
+   4.206402128704526   5.141158157305532
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206361686535616   5.141108727987976
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206399879257260   5.141155407981096
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   4.206363935936439   5.141111477255648
+
+
+num_grads =
+
+    91
+
+
+hspace =
+
+     1.258925411794166e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206403917549190   5.141160343671233
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206359897755262   5.141106541700876
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206401668415287   5.141157594729796
+
+Time to find eigenvalue: 1.37e+01; Time to compute 2-norm: 7.70e+00
+
+chebabs =
+
+   4.206362146806110   5.141109290540801
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206399470158316   5.141154907971275
+
+Time to find eigenvalue: 1.18e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.132349e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206364345003855   5.141111977226934
+
+
+num_grads =
+
+    92
+
+
+hspace =
+
+     1.230268770812381e-05
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.57e+00
+
+chebabs =
+
+   4.206403416525059   5.141159731308406
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206360398755187   5.141107154034118
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.61e+00
+
+chebabs =
+
+   4.206401218590353   5.141157044943766
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206362596622983   5.141109840316980
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206399070385545   5.141154419360110
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206364744766749   5.141112465826027
+
+
+num_grads =
+
+    93
+
+
+hspace =
+
+     1.202264434617413e-05
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206402926915827   5.141159132897122
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206360888351920   5.141107752430124
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206400779004022   5.141156507671582
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206363036195200   5.141110377571912
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206398679693529   5.141153941847647
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.32e+00
+
+chebabs =
+
+   4.206365135428129   5.141112943301047
+
+
+num_grads =
+
+    94
+
+
+hspace =
+
+     1.174897554939530e-05
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.55e+00
+
+chebabs =
+
+   4.206402448452321   5.141158548108392
+
+Time to find eigenvalue: 1.14e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206361366794966   5.141108337193848
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 9.29e+00
+
+chebabs =
+
+   4.206400349437564   5.141155982645912
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206363465747939   5.141110902580814
+
+Time to find eigenvalue: 1.25e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.160582e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 31)
+] 
+Time to compute 2-norm: 7.53e+00
+
+chebabs =
+
+   4.206398297919778   5.141153475235284
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206365517203791   5.141113409915745
+
+
+num_grads =
+
+    95
+
+
+hspace =
+
+     1.148153621496882e-05
+
+Time to find eigenvalue: 1.24e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206401980881242   5.141157976632629
+
+Time to find eigenvalue: 1.33e+01; Time to compute 2-norm: 7.58e+00
+
+chebabs =
+
+   4.206361834353025   5.141108908653698
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206399929644063   5.141155469564966
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206363885532460   5.141111415650785
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.44e+00
+
+chebabs =
+
+   4.206397924814036   5.141153019217155
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206365890285020   5.141113865903913
+
+
+num_grads =
+
+    96
+
+
+hspace =
+
+     1.122018454301963e-05
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206401523940727   5.141157418149778
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206362291272124   5.141109467110374
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.50e+00
+
+chebabs =
+
+   4.206399519400568   5.141154968156250
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206364295758815   5.141111917038552
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206397560220432   5.141152573602750
+
+Time to find eigenvalue: 1.21e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.646177e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 42)
+  In test4 (line 32)
+] 
+Time to compute 2-norm: 7.39e+00
+
+chebabs =
+
+   4.206366254879327   5.141114311519177
+
+
+num_grads =
+
+    97
+
+
+hspace =
+
+     1.096478196143185e-05
+
+Time to find eigenvalue: 1.30e+01; Time to compute 2-norm: 7.59e+00
+
+chebabs =
+
+   4.206401077400692   5.141156872378623
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206362737781126   5.141110012843599
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206399118498314   5.141154478164606
+
+Time to find eigenvalue: 1.23e+01; Time to compute 2-norm: 7.48e+00
+
+chebabs =
+
+   4.206364696660541   5.141112407029549
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206397203913778   5.141152138116841
+
+Time to find eigenvalue: 1.16e+01; Time to compute 2-norm: 7.36e+00
+
+chebabs =
+
+   4.206366611170322   5.141114746985949
+
+
+num_grads =
+
+    98
+
+
+hspace =
+
+     1.071519305237607e-05
+
+Time to find eigenvalue: 1.15e+01; Time to compute 2-norm: 7.34e+00
+
+chebabs =
+
+   4.206400641047923   5.141156339058573
+
+Time to find eigenvalue: 1.29e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206363174135424   5.141110546165518
+
+Time to find eigenvalue: 1.12e+01; Time to compute 2-norm: 7.28e+00
+
+chebabs =
+
+   4.206398726732129   5.141153999339269
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.45e+00
+
+chebabs =
+
+   4.206365088403706   5.141112885826752
+
+Time to find eigenvalue: 1.19e+01; Time to compute 2-norm: 7.46e+00
+
+chebabs =
+
+   4.206396855723914   5.141151712551451
+
+Time to find eigenvalue: 1.22e+01; Time to compute 2-norm: 7.49e+00
+
+chebabs =
+
+   4.206366959347091   5.141115172535333
+
+
+num_grads =
+
+    99
+
+
+hspace =
+
+     1.047128548050899e-05
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206400214613968   5.141155817861517
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.38e+00
+
+chebabs =
+
+   4.206363600554440   5.141111067344315
+
+Time to find eigenvalue: 1.17e+01; Time to compute 2-norm: 7.37e+00
+
+chebabs =
+
+   4.206398343863609   5.141153531388856
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206365471249262   5.141113353749097
+
+Time to find eigenvalue: 1.41e+01; Time to compute 2-norm: 7.74e+00
+
+chebabs =
+
+   4.206396515468134   5.141151296683275
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.42e+00
+
+chebabs =
+
+   4.206367299608917   5.141115588410899
+
+
+num_grads =
+
+   100
+
+
+hspace =
+
+     1.023292992280754e-05
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206399797867446   5.141155308504657
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.56e+00
+
+chebabs =
+
+   4.206364017260126   5.141111576651265
+
+Time to find eigenvalue: 1.52e+01; Time to compute 2-norm: 7.97e+00
+
+chebabs =
+
+   4.206397969696012   5.141153074072904
+
+Time to find eigenvalue: 1.20e+01; Time to compute 2-norm: 7.41e+00
+
+chebabs =
+
+   4.206365845375887   5.141113811014974
+
+Time to find eigenvalue: 1.27e+01; Time to compute 2-norm: 7.51e+00
+
+chebabs =
+
+   4.206396182931398   5.141150890249486
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206367632121906   5.141115994815664
+
+
+num_grads =
+
+   101
+
+
+hspace =
+
+     9.999999999999999e-06
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.35e+00
+
+chebabs =
+
+   4.206399390649714   5.141154810794095
+
+Time to find eigenvalue: 1.21e+01; Time to compute 2-norm: 7.47e+00
+
+chebabs =
+
+   4.206364424499781   5.141112074388621
+
+Time to find eigenvalue: 1.18e+01; Time to compute 2-norm: 7.40e+00
+
+chebabs =
+
+   4.206397604113745   5.141152627250133
+
+Time to find eigenvalue: 1.31e+01; Time to compute 2-norm: 7.67e+00
+
+chebabs =
+
+   4.206366210993494   5.141114257880937
+
+Time to find eigenvalue: 1.26e+01; Time to compute 2-norm: 7.54e+00
+
+chebabs =
+
+   4.206395857956132   5.141150493057495
+
+Time to find eigenvalue: 1.25e+01; Time to compute 2-norm: 7.52e+00
+
+chebabs =
+
+   4.206367957090300   5.141116391999256
+
