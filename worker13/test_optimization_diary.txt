@@ -5,3 +5,27 @@ test
 {Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker13\test.m', 18)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker13\test.m',18,0)">line 18</a>)
 nothing
 } 
+
+gd_params = 
+
+  struct with fields:
+
+             maxiter: 10
+              report: 1
+                 eps: 1.000000000000000e-07
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 8 vertices
