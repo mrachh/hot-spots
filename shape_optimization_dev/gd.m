@@ -112,7 +112,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
             step = 1.0 / fdd;
         end
 
-        %
+        % Make sure radii are positive
         max_steps = opt./(grad);
         max_steps = max_steps(max_steps>0);
         [~, num_directions_inward] = size(max_steps)
@@ -131,6 +131,8 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         fdd
         grad
         opt
+
+        
         line_search_iter = 0;
         while not(line_search_converged)
 
