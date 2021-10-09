@@ -81,7 +81,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         % End of gradient computation
         
         grad_norm = norm(grad);
-        grad_direction = grad;
+        grad_direction = grad/grad_norm;
         gradient_descent_converged = (grad_norm < eps);
 
         if gradient_descent_converged
