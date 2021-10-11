@@ -1,4 +1,4 @@
-function [loss, chebabs, zk] = loss(weight, loss_params, chebabs)
+function [loss, chebabs, zk] = loss(weight, loss_params, chebabs, idx)
     addpath('../src');
     % INPUT: weight, eigenvalue interval [a b] (OPTIONAL)
     % OUTPUT: loss, eigenvalue interval, 
@@ -31,8 +31,12 @@ function [loss, chebabs, zk] = loss(weight, loss_params, chebabs)
         chebabs = default_chebabs;
     end
 
+    if nargin < 4
+        [~, idx] = check_convex(weight);
+    end
+
     % Create chunker object
-    [chnkr, center] = loss_params.chnk_fun(weight);
+    [chnkr, center] = loss_params.chnk_fun(weight, idx);
 
     
     try
