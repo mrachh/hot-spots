@@ -1,0 +1,268 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2020 The MathWorks, Inc.
+                  R2020a (9.8.0.1323502) 64-bit (glnxa64)
+                             February 25, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+	Non-Degree Granting Education License -- for use at non-degree granting, nonprofit,
+	educational organizations only.  Not for government, commercial, or other organizational use.
+
+
+gd_params = 
+
+  struct with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 1.000000000000000e-07
+              hspace: 1.000000000000000e-03
+     line_search_eps: 1.000000000000000e-06
+    line_search_beta: 0.500000000000000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  struct with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 8 vertices
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.54e+02; Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+   2.291910043953612   2.801223387054415
+
+Computing 8 derivatives: 
+Compuing dx1...
+Time to find eigenvalue: 3.88e+01; Time to compute 2-norm: 9.93e+00
+
+chebabs =
+
+   2.292196822081551   2.801573893655229
+
+Time to find eigenvalue: 3.96e+01; Time to compute 2-norm: 9.96e+00
+
+chebabs =
+
+   2.291623844073257   2.800873587200648
+
+Compuing dx2...
+Time to find eigenvalue: 4.05e+01; Time to compute 2-norm: 1.02e+01
+
+chebabs =
+
+   2.292196822083987   2.801573893658207
+
+Time to find eigenvalue: 3.83e+01; Time to compute 2-norm: 9.63e+00
+
+chebabs =
+
+   2.291623844067860   2.800873587194050
+
+Compuing dx3...
+Time to find eigenvalue: 3.77e+01; Time to compute 2-norm: 9.77e+00
+
+chebabs =
+
+   2.292196822069165   2.801573893640091
+
+Time to find eigenvalue: 3.77e+01; Time to compute 2-norm: 9.66e+00
+
+chebabs =
+
+   2.291623844081867   2.800873587211171
+
+Compuing dx4...
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 9.59e+00
+
+chebabs =
+
+   2.292196822090105   2.801573893665685
+
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 9.69e+00
+
+chebabs =
+
+   2.291623844108651   2.800873587243907
+
+Compuing dx5...
+Time to find eigenvalue: 3.85e+01; Time to compute 2-norm: 9.68e+00
+
+chebabs =
+
+   2.292196822093665   2.801573893670035
+
+Time to find eigenvalue: 3.79e+01; Time to compute 2-norm: 9.62e+00
+
+chebabs =
+
+   2.291623844113728   2.800873587250113
+
+Compuing dx6...
+Time to find eigenvalue: 3.90e+01; Time to compute 2-norm: 9.70e+00
+
+chebabs =
+
+   2.292196822087661   2.801573893662697
+
+Time to find eigenvalue: 3.74e+01; Time to compute 2-norm: 9.64e+00
+
+chebabs =
+
+   2.291623844105232   2.800873587239728
+
+Compuing dx7...
+Time to find eigenvalue: 3.78e+01; Time to compute 2-norm: 9.52e+00
+
+chebabs =
+
+   2.292196822057398   2.801573893625709
+
+Time to find eigenvalue: 3.77e+01; Time to compute 2-norm: 9.65e+00
+
+chebabs =
+
+   2.291623844101562   2.800873587235243
+
+Compuing dx8...
+Time to find eigenvalue: 3.83e+01; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.958890e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 46)
+  In gd (line 84)
+  In test (line 41)
+] 
+Time to compute 2-norm: 9.56e+00
+
+chebabs =
+
+   2.292196822085488   2.801573893660041
+
+Time to find eigenvalue: 3.71e+01; Time to compute 2-norm: 9.53e+00
+
+chebabs =
+
+   2.291623844095407   2.800873587227720
+
+Gradient computed!
+Time to find eigenvalue: 3.79e+01; Time to compute 2-norm: 9.63e+00
+
+chebabs =
+
+   2.291956292506949   2.801279913064048
+
+Time to find eigenvalue: 3.82e+01; Time to compute 2-norm: 9.79e+00
+
+chebabs =
+
+   2.291863797261143   2.801166863319175
+
+
+num_directions_inward =
+
+     0
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 1.66e+02; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.654143e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 46)
+  In gd (line 134)
+  In test (line 41)
+] 
+Time to compute 2-norm: 1.16e+01
+
+chebabs =
+
+   2.070911431960129   2.531113972395714
+
+Some statistics before line search: 
+
+step =
+
+     1.812860345394685e+02
+
+
+fdd =
+
+   0.005516144707673
+
+
+grad =
+
+  Columns 1 through 3
+
+  -0.020178396522935  -0.020178136795113  -0.020178819332362
+
+  Columns 4 through 6
+
+  -0.020178517679686  -0.020178274268784  -0.020179895820510
+
+  Columns 7 through 8
+
+  -0.020178788007003  -0.020178281542133
+
+
+opt =
+
+     1     1     1     1     1     1     1     1
+
+Line search iter 1
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 7.20e+01; Time to compute 2-norm: 1.02e+01
+
+chebabs =
+
+   1.858390908132735   2.271366665495565
+
+Line search iter 2
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+[Warning: Function not resolved using 257 pts. Have you tried 'splitting on'?] 
+[> In chebfun.constructor>constructorNoSplit (line 120)
+  In chebfun/constructor (line 63)
+  In chebfun (line 219)
+  In find_first_eig (line 15)
+  In loss (line 53)
+  In gd (line 152)
+  In test (line 41)] 
