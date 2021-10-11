@@ -262,5 +262,15 @@ idx_conv =
 
      1     1     1     1     1     0     0     0     0     0
 
-cd ../worker14
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker14\test.m', 12)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker14\test.m',12,0)">line 12</a>)
+nothing
+} 
 test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker14\test.m', 18)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker14\test.m',18,0)">line 18</a>)
+nothing
+} 
