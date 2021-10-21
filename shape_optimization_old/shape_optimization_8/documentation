@@ -1,0 +1,20 @@
+test_optimization:
+    experiment 20 points
+    default p, q
+    initialize with ellipse
+
+got something nonconvex (with better loss though ~ -3.9)
+stopped optimization at 9-th iteration
+stored in gd_result.mat
+
+
+
+doc from child:
+
+generalize to \|grad u\|_p/(\lambda^\beta *\|u\|_q)
+where beta = 1/2-1/2p+1/q
+
+
+todo: 
+1. modify gradu_at_zero and u_p_norm by adding an 'inf' option
+2. compare numerical loss with theoretical (rect_true_loss)

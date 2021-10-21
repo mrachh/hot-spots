@@ -1,0 +1,9 @@
+slurmstepd: error: *** JOB 1139366 ON worker1047 CANCELLED AT 2021-10-04T17:46:18 DUE TO TIME LIMIT ***
+{Not enough input arguments.
+
+Error in loss (line 21)
+    default_chebabs = loss_params.default_chebabs;
+
+Error in test3 (line 46)
+fprintf('optimal value: %5.2e \n', fun(opt));
+} 

@@ -1,0 +1,8 @@
+a different parametrization that guarantees convexity
+
+old: r1, ... rn
+
+new: t1, ... tn
+this gives angles pi - t_i^2
+then use this to give radius
+alpha1 = theta

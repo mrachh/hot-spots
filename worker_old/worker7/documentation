@@ -1,0 +1,13 @@
+test1: test matlab on cluster
+test2: find run time for a single iteration 10 point: 1.45e+03 seconds
+test3: 10 point experiement worker1047 running
+
+10 point paused due to time limit
+
+result stored in grad_0.mat
+
+last rad:
+
+[0.386927796313667   0.918276960009773   2.143462283971090   1.324705903529868   1.324689438671268 2.143349432151309   0.918265938669922   0.386170218465028   0.257781815405923   0.255308857223825]
+
+init with this rad

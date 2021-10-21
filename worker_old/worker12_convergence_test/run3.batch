@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH --partition=ccm
+#SBATCH --job-name=triangle3
+#SBATCH --output=test3.out
+#SBATCH --error=test3.err
+#SBATCH --time=1-00:00:00
+module load matlab
+matlab -nosplash -nodesktop -r "startup_cluster;test3;exit"
