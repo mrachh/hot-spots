@@ -4,7 +4,8 @@ hs = [];
 
 % obtain physical and geometric parameters
 icase = 6;
-clmparams = clm.setup(icase);
+opts = [];
+clmparams = clm.setup(icase,opts);
 
 if isfield(clmparams,'k')
   k = clmparams.k;
@@ -62,8 +63,9 @@ end
 
 
 t1 = toc(start);
+opts = [];
 
-[chnkr,clmparams] = clm.get_geom_gui(icase);
+[chnkr,clmparams] = clm.get_geom_gui(icase,opts);
 
 %fprintf('%5.2e s : time to build geo\n',t1)
 
