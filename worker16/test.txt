@@ -1,0 +1,193 @@
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ones')" style="font-weight:bold">ones</a>
+Size inputs must be scalar.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker16\test.m', 14)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker16\test.m',14,0)">line 14</a>)
+rhos = ones(1,npoints);
+} 
+test
+{Unrecognized function or variable 'phis'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test>perturb_radii', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker16\test.m', 20)" style="font-weight:bold">test>perturb_radii</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker16\test.m',20,0)">line 20</a>)
+    rs = (1 + epsilon .* rhos .* v(phis, d)) .* rhos
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker16\test.m', 15)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker16\test.m',15,0)">line 15</a>)
+rs = perturb_radii(rhos, 1e-3, 3)
+} 
+test
+
+res =
+
+  Columns 1 through 4
+
+   0.031006276680300   0.248050213442399   0.837169470368095   1.984401707539188
+
+  Columns 5 through 8
+
+   3.875784585037477   6.697355762944761  10.635152901342837  15.875213660313506
+
+  Columns 9 through 10
+
+  22.603575699938567  31.006276680299816
+
+
+rs =
+
+  Columns 1 through 4
+
+   1.000031006276680   1.000248050213442   1.000837169470368   1.001984401707539
+
+  Columns 5 through 8
+
+   1.003875784585037   1.006697355762945   1.010635152901343   1.015875213660314
+
+  Columns 9 through 10
+
+   1.022603575699939   1.031006276680300
+
+
+rs =
+
+  Columns 1 through 4
+
+   1.000031006276680   1.000248050213442   1.000837169470368   1.001984401707539
+
+  Columns 5 through 8
+
+   1.003875784585037   1.006697355762945   1.010635152901343   1.015875213660314
+
+  Columns 9 through 10
+
+   1.022603575699939   1.031006276680300
+
+test
+
+res =
+
+  Columns 1 through 4
+
+   0.031006276680300   0.248050213442399   0.837169470368095   1.984401707539188
+
+  Columns 5 through 8
+
+   3.875784585037477   6.697355762944761  10.635152901342837  15.875213660313506
+
+  Columns 9 through 10
+
+  22.603575699938567  31.006276680299816
+
+
+rs =
+
+  Columns 1 through 4
+
+   1.000031006276680   1.000248050213442   1.000837169470368   1.001984401707539
+
+  Columns 5 through 8
+
+   1.003875784585037   1.006697355762945   1.010635152901343   1.015875213660314
+
+  Columns 9 through 10
+
+   1.022603575699939   1.031006276680300
+
+test
+
+rs =
+
+  Columns 1 through 4
+
+   1.000031006276680   1.000248050213442   1.000837169470368   1.001984401707539
+
+  Columns 5 through 8
+
+   1.003875784585037   1.006697355762945   1.010635152901343   1.015875213660314
+
+  Columns 9 through 10
+
+   1.022603575699939   1.031006276680300
+
+scatter(rs)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('scatter', 'C:\Program Files\MATLAB\R2021a\toolbox\matlab\graphics\scatter.m', 54)" style="font-weight:bold">scatter</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021a\toolbox\matlab\graphics\scatter.m',54,0)">line 54</a>)
+Not enough input arguments.
+} 
+plot(chnk_poly(rs))
+test
+
+rs =
+
+  Columns 1 through 4
+
+   1.000000000000000   1.000042532615474   1.000340260923789   1.001148380617789
+
+  Columns 5 through 8
+
+   1.002722087390314   1.005316576934208   1.009187044942311   1.014588687107466
+
+  Columns 9 through 10
+
+   1.021776699122515   1.031006276680300
+
+test
+
+rs =
+
+  Columns 1 through 4
+
+   1.000000000000000   1.000042532615474   1.000340260923789   1.001148380617789
+
+  Columns 5 through 8
+
+   1.002722087390314   1.005316576934208   1.009187044942311   1.014588687107466
+
+  Columns 9 through 10
+
+   1.021776699122515   1.031006276680300
+
+plot(chnk_poly(rhos))
+plot(chnk_poly(rs))
+hold on
+plot(chnk_poly(rhos))
+test
+
+rs =
+
+   0.996124215414963   0.999856452422776   1.000143547577224   1.003875784585037
+
+
+idx =
+
+     1     1     1     1
+
+Time to find eigenvalue: 7.44e+01; [Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =
+1.384580e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 56)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\+chnk\+flam\nproxy_square.m',56,0)">line 56</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\lib\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ud_norm', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker16\ud_norm.m', 7)" style="font-weight:bold">ud_norm</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker16\ud_norm.m',7,0)">line 7</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker16\loss.m', 46)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker16\loss.m',46,0)">line 46</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Documents\MATLAB\hot-spots\worker16\test.m', 25)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Documents\MATLAB\hot-spots\worker16\test.m',25,0)">line 25</a>)
+] 
+Time to compute 2-norm: 8.81e+00
+
+chebabs =
+
+  10.855611176801455  13.267969216090668
+
+
+ans =
+
+  -0.142121196598890
+
+save
+
+Saving to: C:\Users\charl\Documents\MATLAB\hot-spots\worker16\matlab.mat
+
+save
+
+Saving to: C:\Users\charl\Documents\MATLAB\hot-spots\worker16\matlab.mat
+
+save
+
+Saving to: C:\Users\charl\Documents\MATLAB\hot-spots\worker16\matlab.mat
+
