@@ -27,9 +27,9 @@ for d_idx = 1:num_ds
     for eps_idx = 1:num_epss
         for npoint_idx = 1:num_npoints
             % load setting
-            d = ds[d_idx];
-            epsilon = epss[eps_idx];
-            npoint = npoints[npoint_idx];
+            d = ds(d_idx);
+            epsilon = epss(eps_idx);
+            npoint = npoints(npoint_idx);
 
             % compute
             phis = find_phis(npoint);
@@ -39,10 +39,10 @@ for d_idx = 1:num_ds
 
             % record
             save;
-            res_npoint[idx] = npoint;
-            res_eps[idx] = epsilon;
-            res_d[idx] = d;
-            res_loss[idx] = res;
+            res_npoint(idx) = npoint;
+            res_eps(idx) = epsilon;
+            res_d(idx) = d;
+            res_loss(idx) = res;
 
             % update
             idx = idx + 1;
