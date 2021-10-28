@@ -1,0 +1,8 @@
+{Not enough input arguments.
+
+Error in loss (line 18)
+    default_chebabs = loss_params.default_chebabs;
+
+Error in test (line 45)
+fprintf('optimal value: %5.2e \n', fun(opt));
+} 
