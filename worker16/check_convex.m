@@ -1,7 +1,7 @@
 function [isconvex, idx_conv] = check_convex(rs, idx)
 
     if nargin < 2
-        idx = ones(size(rs))
+        idx = ones(size(rs));
     end
 
     % Compute vertices on the convex hull

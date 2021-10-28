@@ -8926,3 +8926,390 @@ idx =
 
      1     1     1     1     1     1     1     1
 
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+
+zk =
+
+  10.111735136358089
+
+
+err_nullvec =
+
+     4.504749118949234e-11
+
+Time to find eigenvalue: 1.37e+02; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.035501e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 48)
+  In test0 (line 13)
+] 
+
+ud_p =
+
+   0.100213324493020
+
+
+u_q =
+
+   0.021667844421586
+
+Time to compute 2-norm: 1.32e+01
+
+chebabs =
+
+   9.100561622722280  11.122908649993899
+
+
+res =
+
+  -0.045233312245748
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+
+zk =
+
+   4.888423463542894
+
+
+err_nullvec =
+
+     6.702323936175331e-11
+
+Time to find eigenvalue: 5.97e+01; 
+ud_p =
+
+   0.197476150729051
+
+
+u_q =
+
+   0.022604783394610
+
+Time to compute 2-norm: 1.19e+01
+
+chebabs =
+
+   4.399581117188605   5.377265809897184
+
+
+res =
+
+  -0.365575147106597
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+{Index exceeds the number of array elements (0).
+
+Error in find_first_eig (line 20)
+    zk = real(rts_real(1));
+
+Error in loss (line 55)
+        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr,
+        default_chebabs);
+
+Error in test0 (line 30)
+res = loss(rhos2, loss_params)
+} 
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+
+zk =
+
+   5.015416649448495
+
+
+err_nullvec =
+
+     4.789290363229865e-11
+
+Time to find eigenvalue: 1.27e+02; 
+ud_p =
+
+   0.189973037544657
+
+
+u_q =
+
+   0.020658618077936
+
+Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+   4.513874984503646   5.516958314393345
+
+
+res =
+
+  -0.365575148793876
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+{Index exceeds the number of array elements (0).
+
+Error in find_first_eig (line 20)
+    zk = real(rts_real(1));
+
+Error in loss (line 55)
+        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr,
+        default_chebabs);
+
+Error in test0 (line 23)
+res = loss(rhos2, loss_params)
+} 
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+
+zk =
+
+   6.913274760712693
+
+
+err_nullvec =
+
+     3.260071155021926e-11
+
+Time to find eigenvalue: 1.79e+02; 
+ud_p =
+
+   0.259817619583138
+
+
+u_q =
+
+   0.014870456416026
+
+Time to compute 2-norm: 1.12e+01
+
+chebabs =
+
+   6.221947284641424   7.604602236783963
+
+
+res =
+
+  -0.365575148826282
+
+
+idx =
+
+  Columns 1 through 13
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 14 through 26
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 27 through 39
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 40 through 52
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 53 through 65
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 66 through 78
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 79 through 91
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 92 through 104
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 105 through 117
+
+     1     1     1     1     1     1     1     1     1     1     1     1     1
+
+  Columns 118 through 128
+
+     1     1     1     1     1     1     1     1     1     1     1
+
+[Warning: Function not resolved using 257 pts. Have you tried 'splitting on'?] 
+[> In chebfun.constructor>constructorNoSplit (line 120)
+  In chebfun/constructor (line 63)
+  In chebfun (line 219)
+  In find_first_eig (line 15)
+  In loss (line 43)
+  In test0 (line 23)] 
+
+zk =
+
+   3.831902105805013
+
+
+err_nullvec =
+
+     7.369636968617655e-11
+
+Time to find eigenvalue: 4.41e+03; 
+ud_p =
+
+   0.037807413198990
+
+
+u_q =
+
+   0.007043052924628
+
+Time to compute 2-norm: 3.41e+02
+
+chebabs =
+
+   3.448711895224511   4.215092316385515
+
+
+res =
+
+  -0.365584017186819
+
+
+zk =
+
+  10.211670488671846
+
+
+err_nullvec =
+
+     7.017864647393275e-11
+
+Time to find eigenvalue: 2.75e+02; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.186623e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 48)
+  In test (line 38)
+] 
+
+ud_p =
+
+   0.443484665235588
+
+
+u_q =
+
+   0.019149518286580
+
+Time to compute 2-norm: 1.96e+01
+
+chebabs =
+
+   9.190503439804662  11.232837537539032
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     2
+
+
+d =
+
+     1
+
+
+epsilon =
+
+     0
+
+
+npoint =
+
+    16
+
+
+res =
+
+  -0.222089061489071
+
+
+zk =
+
+   3.846108078296322
+
+
+err_nullvec =
+
+     3.674970785943846e-11
+
+Time to find eigenvalue: 2.53e+02; 
+ud_p =
+
+   0.104831661604446
+
+
+u_q =
+
+   0.019384854464177
+
+Time to compute 2-norm: 1.87e+01
+
+chebabs =
+
+   3.461497270466690   4.230718886125955
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     2
+
+
+d =
+
+     1
+
+
+epsilon =
+
+     0
+
+
+npoint =
+
+    16
+
+
+res =
+
+  -0.365583811685080
+

@@ -3,6 +3,6 @@
 #SBATCH --job-name=critpt
 #SBATCH --output=test.out
 #SBATCH --error=test.err
-#SBATCH --time=1-00:00:00
+#SBATCH --time=2-00:00:00
 module load matlab
-matlab -nosplash -nodesktop -r "startup_cluster;test0;exit"
+matlab -nosplash -nodesktop -r "startup_cluster;test;exit"
