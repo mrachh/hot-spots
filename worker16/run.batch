@@ -5,4 +5,4 @@
 #SBATCH --error=test.err
 #SBATCH --time=1-00:00:00
 module load matlab
-matlab -nosplash -nodesktop -r "startup_cluster;test;exit"
+matlab -nosplash -nodesktop -r "startup_cluster;test0;exit"

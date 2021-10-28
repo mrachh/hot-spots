@@ -40,22 +40,22 @@ function [loss, chebabs, zk] = loss(weight, loss_params, chebabs, idx)
 
     
     try
-        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr, chebabs);
+        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr, chebabs)
         fprintf('Time to find eigenvalue: %5.2e; ', toc(start));
         
-        start = tic; [ud_p] = ud_norm(chnkr, zk, sigma, p);
+        start = tic; [ud_p] = ud_norm(chnkr, zk, sigma, p)
 
-        start = tic; u_q = u_norm(chnkr, zk, sigma, center, q);
+        start = tic; u_q = u_norm(chnkr, zk, sigma, center, q)
         fprintf('Time to compute 2-norm: %5.2e\n', toc(start));
 
         loss =  - ud_p/(u_q * (zk^(2*beta)));
     catch
-        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr, default_chebabs);
+        start = tic; [zk, err_nullvec, sigma] = find_first_eig(chnkr, default_chebabs)
         fprintf('Time to find eigenvalue: %5.2e; ', toc(start));
         
-        start = tic; [ud_p] = ud_norm(chnkr, zk, sigma, p);
+        start = tic; [ud_p] = ud_norm(chnkr, zk, sigma, p)
 
-        start = tic; u_q = u_norm(chnkr, zk, sigma, center, q);
+        start = tic; u_q = u_norm(chnkr, zk, sigma, center, q)
         fprintf('Time to compute 2-norm: %5.2e\n', toc(start));
 
         loss =  - ud_p/(u_q * (zk^(2*beta)));

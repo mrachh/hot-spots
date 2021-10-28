@@ -1,5 +1,1 @@
-{Error: File: /mnt/home/zwang/github/hot-spots/worker16/test.m Line: 30 Column:
-19
-Invalid expression. When calling a function or indexing a variable, use
-parentheses. Otherwise, check for mismatched delimiters.
-} 
+slurmstepd: error: *** JOB 1163394 ON worker5048 CANCELLED AT 2021-10-28T09:56:25 ***
