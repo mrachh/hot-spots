@@ -4,7 +4,7 @@ diary('test.txt');
 
 npoints = [16 64 256];
 epss = [0 5e-3 1e-3 5e-4 -5e-3 -1e-3 -5e-4];
-ds = [1 2 3];
+ds = [2 3];
 
 num_npoints = length(npoints);
 num_epss = length(epss);
