@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --partition=ccm
-#SBATCH --job-name=critpt
+#SBATCH --job-name=critpt2
 #SBATCH --output=test.out
 #SBATCH --error=test.err
 #SBATCH --time=4-00:00:00
