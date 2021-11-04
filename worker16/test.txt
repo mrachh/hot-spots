@@ -12520,3 +12520,607 @@ ud_p =
 
    0.027569757637305
 
+
+zk =
+
+   3.846108078296322
+
+
+err_nullvec =
+
+     3.674970785943846e-11
+
+Time to find eigenvalue: 2.54e+02; 
+ud_p =
+
+   0.104831661604446
+
+
+u_q =
+
+   0.019384854464177
+
+Time to compute 2-norm: 1.88e+01
+
+chebabs =
+
+   3.461497270466690   4.230718886125955
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     2
+
+
+d =
+
+     2
+
+
+epsilon =
+
+     0
+
+
+npoint =
+
+    16
+
+
+res =
+
+  -0.365583811685080
+
+
+zk =
+
+   3.832505407264782
+
+
+err_nullvec =
+
+     2.397486780478082e-10
+
+Time to find eigenvalue: 1.08e+03; 
+ud_p =
+
+   0.052336041184616
+
+
+u_q =
+
+   0.009746486812211
+
+Time to compute 2-norm: 9.88e+01
+
+chebabs =
+
+   3.449254866538304   4.215755947991260
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     3
+
+
+d =
+
+     2
+
+
+epsilon =
+
+     0
+
+
+npoint =
+
+    64
+
+
+res =
+
+  -0.365584030458377
+
+
+zk =
+
+   3.831754550203739
+
+
+err_nullvec =
+
+     4.122985163438590e-10
+
+Time to find eigenvalue: 5.57e+03; 
+ud_p =
+
+   0.026657253802359
+
+
+u_q =
+
+   0.004966298991687
+
+Time to compute 2-norm: 1.87e+03
+
+chebabs =
+
+   3.448579095183365   4.214930005224113
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     4
+
+
+d =
+
+     2
+
+
+epsilon =
+
+     0
+
+
+npoint =
+
+   256
+
+
+res =
+
+  -0.365584000548701
+
+
+zk =
+
+   3.839788947974736
+
+
+err_nullvec =
+
+     2.836680075530990e-11
+
+Time to find eigenvalue: 2.64e+02; [Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.112360e-16.] 
+[> In id (line 120)
+  In chnk.flam.nproxy_square (line 56)
+  In chunkerflam (line 176)
+  In helm_dprime (line 17)
+  In ud_norm (line 7)
+  In loss (line 48)
+  In test (line 38)
+] 
+
+ud_p =
+
+   0.103434931623428
+
+
+u_q =
+
+   0.019189792940140
+
+Time to compute 2-norm: 1.74e+01
+
+chebabs =
+
+   3.455810053177263   4.223767842772211
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     5
+
+
+d =
+
+     2
+
+
+epsilon =
+
+   0.005000000000000
+
+
+npoint =
+
+    16
+
+
+res =
+
+  -0.365579836698235
+
+
+zk =
+
+   3.826346151880200
+
+
+err_nullvec =
+
+     1.641910338408401e-10
+
+Time to find eigenvalue: 1.10e+03; 
+ud_p =
+
+   0.052263135504029
+
+
+u_q =
+
+   0.009764375395261
+
+Time to compute 2-norm: 9.26e+01
+
+chebabs =
+
+   3.443711536692180   4.208980767068221
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     6
+
+
+d =
+
+     2
+
+
+epsilon =
+
+   0.005000000000000
+
+
+npoint =
+
+    64
+
+
+res =
+
+  -0.365580044708280
+
+
+zk =
+
+   3.825603972970144
+
+
+err_nullvec =
+
+     1.154367936737121e-09
+
+Time to find eigenvalue: 5.41e+03; 
+ud_p =
+
+   0.026693500162913
+
+
+u_q =
+
+   0.004989107854006
+
+Time to compute 2-norm: 1.85e+03
+
+chebabs =
+
+   3.443043575673129   4.208164370267158
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     7
+
+
+d =
+
+     2
+
+
+epsilon =
+
+   0.005000000000000
+
+
+npoint =
+
+   256
+
+
+res =
+
+  -0.365580154340064
+
+
+zk =
+
+   3.844839534137400
+
+
+err_nullvec =
+
+     2.021010450634569e-11
+
+Time to find eigenvalue: 2.66e+02; 
+ud_p =
+
+   0.103919434256366
+
+
+u_q =
+
+   0.019228861415238
+
+Time to compute 2-norm: 1.81e+01
+
+chebabs =
+
+   3.460355580723660   4.229323487551140
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     8
+
+
+d =
+
+     2
+
+
+epsilon =
+
+     1.000000000000000e-03
+
+
+npoint =
+
+    16
+
+
+res =
+
+  -0.365583651378022
+
+
+zk =
+
+   3.831269074485566
+
+
+err_nullvec =
+
+     2.600818138930869e-10
+
+Time to find eigenvalue: 1.08e+03; 
+ud_p =
+
+   0.052669047850081
+
+
+u_q =
+
+   0.009814838496744
+
+Time to compute 2-norm: 9.27e+01
+
+chebabs =
+
+   3.448142167037009   4.214395981934123
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+     9
+
+
+d =
+
+     2
+
+
+epsilon =
+
+     1.000000000000000e-03
+
+
+npoint =
+
+    64
+
+
+res =
+
+  -0.365583849439439
+
+
+zk =
+
+   3.830519960030037
+
+
+err_nullvec =
+
+     8.061829845967969e-10
+
+Time to find eigenvalue: 5.60e+03; 
+ud_p =
+
+   0.026410608142797
+
+
+u_q =
+
+   0.004923520036436
+
+Time to compute 2-norm: 1.94e+03
+
+chebabs =
+
+   3.447467964027033   4.213571956033040
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+    10
+
+
+d =
+
+     2
+
+
+epsilon =
+
+     1.000000000000000e-03
+
+
+npoint =
+
+   256
+
+
+res =
+
+  -0.365584043967592
+
+
+zk =
+
+   3.845473509140767
+
+
+err_nullvec =
+
+     6.374872072863776e-11
+
+Time to find eigenvalue: 2.74e+02; 
+ud_p =
+
+   0.099841014811647
+
+
+u_q =
+
+   0.018468109049280
+
+Time to compute 2-norm: 1.82e+01
+
+chebabs =
+
+   3.460926158226690   4.230020860054844
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+    11
+
+
+d =
+
+     2
+
+
+epsilon =
+
+     5.000000000000000e-04
+
+
+npoint =
+
+    16
+
+
+res =
+
+  -0.365583771215687
+
+
+zk =
+
+   3.831886958388921
+
+
+err_nullvec =
+
+     5.314019294268281e-11
+
+Time to find eigenvalue: 1.05e+03; 
+ud_p =
+
+   0.053236892610322
+
+
+u_q =
+
+   0.009917453505066
+
+Time to compute 2-norm: 9.14e+01
+
+chebabs =
+
+   3.448698262550029   4.215075654227813
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16/matlab.mat
+
+
+idx =
+
+    12
+
+
+d =
+
+     2
+
+
+epsilon =
+
+     5.000000000000000e-04
+
+
+npoint =
+
+    64
+
+
+res =
+
+  -0.365583972341654
+
