@@ -12520,3 +12520,123 @@ ud_p =
 
    0.027569757637305
 
+
+zk =
+
+   3.831754551418651
+
+
+err_nullvec =
+
+     4.311368158505275e-10
+
+Time to find eigenvalue: 5.52e+03; 
+ud_p =
+
+   0.026657252478115
+
+
+u_q =
+
+   0.004966298990828
+
+Time to compute 2-norm: 1.87e+03
+
+chebabs =
+
+   3.448579096276786   4.214930006560516
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16-2/matlab.mat
+
+
+idx =
+
+     2
+
+
+d =
+
+     4
+
+
+epsilon =
+
+     0
+
+
+npoint =
+
+   256
+
+
+res =
+
+  -0.365583982219140
+
+
+zk =
+
+   3.831718052503117
+
+
+err_nullvec =
+
+     9.187372651833994e-10
+
+Time to find eigenvalue: 1.48e+04; 
+ud_p =
+
+   0.018849053521998
+
+
+u_q =
+
+   0.003511680076602
+
+Time to compute 2-norm: 1.19e+04
+
+chebabs =
+
+   3.448546247252806   4.214889857753430
+
+
+Saving to: /mnt/home/zwang/github/hot-spots/worker16-2/matlab.mat
+
+
+idx =
+
+     3
+
+
+d =
+
+     4
+
+
+epsilon =
+
+     0
+
+
+npoint =
+
+   512
+
+
+res =
+
+  -0.365584280693801
+
+{Error using chunker/refine (line 243)
+too many chunks
+
+Error in chnk_poly (line 30)
+    chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
+
+Error in loss (line 39)
+    [chnkr, center] = loss_params.chnk_fun(weight, idx);
+
+Error in test (line 38)
+            res = loss(rs, loss_params);
+} 

@@ -1,3 +1,12 @@
+Chunkie failed for 1000 points. (Maybe change refine arguments?)
+
+{Error using chunker/refine (line 243)
+too many chunks
+
+Error in chnk_poly (line 30)
+    chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
+
+########################
 Same experiment as worker 16 but with more points
 
 Noticed that in earlier experiments num of pts is not enough
