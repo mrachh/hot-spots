@@ -1,4 +1,4 @@
-function [ud_p] = gradu_norm(chnkr, zk, sigma, p)
+function [ud_p] = ud_norm(chnkr, zk, sigma, p)
 
     % Computes gradient at the origin
 
