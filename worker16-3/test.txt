@@ -1,0 +1,4131 @@
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 9)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',9,0)">line 9</a>)
+some error
+} 
+bet
+{Unrecognized function or variable 'bet'.
+} 
+beta
+
+beta =
+
+     1
+
+p
+
+p =
+
+   Inf
+
+q
+
+q =
+
+     2
+
+test
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk_poly', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m', 10)" style="font-weight:bold">chnk_poly</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m',10,0)">line 10</a>)
+        idx = ones(size(rs));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 10)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',10,0)">line 10</a>)
+chnk_fun = chnk_poly;
+} 
+test
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk_poly', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m', 10)" style="font-weight:bold">chnk_poly</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m',10,0)">line 10</a>)
+        idx = ones(size(rs));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 10)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',10,0)">line 10</a>)
+chnk_fun = chnk_poly;
+} 
+test
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk_poly', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m', 10)" style="font-weight:bold">chnk_poly</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m',10,0)">line 10</a>)
+        idx = ones(size(rs));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 10)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',10,0)">line 10</a>)
+chnk_fun = chnk_poly;
+} 
+test
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk_poly', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m', 10)" style="font-weight:bold">chnk_poly</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m',10,0)">line 10</a>)
+        idx = ones(size(rs));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 10)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',10,0)">line 10</a>)
+chnk_fun = chnk_poly;
+} 
+rs
+{Unrecognized function or variable 'rs'.
+} 
+test
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk_poly', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m', 10)" style="font-weight:bold">chnk_poly</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m',10,0)">line 10</a>)
+        idx = ones(size(rs));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 10)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',10,0)">line 10</a>)
+chnk_fun = chnk_poly;
+} 
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerpoly', 'C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerpoly.m', 186)" style="font-weight:bold">chunkerpoly</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\chunkie\chunkie\chunkerpoly.m',186,0)">line 186</a>)
+widths too large for side
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk_poly', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m', 27)" style="font-weight:bold">chnk_poly</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\chnk_poly.m',27,0)">line 27</a>)
+    chnkr = chunkerpoly(verts, cparams, pref);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 11)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',11,0)">line 11</a>)
+[chnkr, center] = chnk_poly(rs);
+} 
+rs
+
+rs =
+
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 13)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',13,0)">line 13</a>)
+some error
+} 
+plot(chnkr)
+axis equal
+center
+
+center =
+
+   -0.0000
+    0.5946
+
+plot(center)
+plot(chnkr);axis equal; hold on
+scatter(center(1), center(2))
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 16)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',16,0)">line 16</a>)
+nothing
+} 
+zk
+
+zk =
+
+    3.8461
+
+test
+
+ud_p =
+
+    0.1443
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 18)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',18,0)">line 18</a>)
+nothign
+} 
+test
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test>v')" style="font-weight:bold">test>v</a>
+Too many input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test>perturb_radii', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 42)" style="font-weight:bold">test>perturb_radii</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',42,0)">line 42</a>)
+    res = (1 + epsilon .* rhos .* v(phis, d)) .* rhos;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 13)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',13,0)">line 13</a>)
+rs = perturb_radii(rhos, phis, epsilon)
+} 
+test
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.6235   -0.2225   -0.9010   -0.9010   -0.2225
+
+  Columns 7 through 8
+
+    0.6235    1.0000
+
+
+rs =
+
+  Columns 1 through 6
+
+    1.0050    1.0031    0.9989    0.9955    0.9955    0.9989
+
+  Columns 7 through 8
+
+    1.0031    1.0050
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 17)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',17,0)">line 17</a>)
+nothing
+} 
+plot(chnkr)
+axis equal
+test
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.6235   -0.2225   -0.9010   -0.9010   -0.2225
+
+  Columns 7 through 8
+
+    0.6235    1.0000
+
+
+rs =
+
+  Columns 1 through 6
+
+    1.1000    1.0623    0.9777    0.9099    0.9099    0.9777
+
+  Columns 7 through 8
+
+    1.0623    1.1000
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 18)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',18,0)">line 18</a>)
+nothing
+} 
+plot(chnkr_original)
+axis equal
+hold on
+plot(chnkr)
+title(r'$cos(2\phi)$ perturbation epsilon = 0.1')
+ title(r'$cos(2\phi)$ perturbation epsilon = 0.1')
+         ↑
+{Error: Invalid text character. Check for unsupported symbol,
+invisible character, or pasting of non-ASCII characters.
+} 
+title('cos(2\phi) perturbation epsilon = 0.1')
+title('cos(2\phi) perturbation with $\epsilon = 0.1$')
+title('cos(2\phi) perturbation with \epsilon = 0.1')
+hold on
+scatter(center(0),center(1))
+{Array indices must be positive integers or logical values.
+} 
+test
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs =
+
+  Columns 1 through 6
+
+    1.1000    1.1000    1.0999    1.0997    1.0995    1.0992
+
+  Columns 7 through 12
+
+    1.0989    1.0985    1.0981    1.0976    1.0970    1.0963
+
+  Columns 13 through 18
+
+    1.0957    1.0949    1.0941    1.0932    1.0923    1.0914
+
+  Columns 19 through 24
+
+    1.0903    1.0892    1.0881    1.0869    1.0857    1.0844
+
+  Columns 25 through 30
+
+    1.0830    1.0816    1.0802    1.0787    1.0771    1.0755
+
+  Columns 31 through 36
+
+    1.0739    1.0722    1.0705    1.0687    1.0669    1.0651
+
+  Columns 37 through 42
+
+    1.0632    1.0612    1.0593    1.0573    1.0552    1.0532
+
+  Columns 43 through 48
+
+    1.0511    1.0489    1.0468    1.0446    1.0424    1.0401
+
+  Columns 49 through 54
+
+    1.0378    1.0355    1.0332    1.0309    1.0285    1.0262
+
+  Columns 55 through 60
+
+    1.0238    1.0214    1.0190    1.0166    1.0141    1.0117
+
+  Columns 61 through 66
+
+    1.0092    1.0068    1.0043    1.0018    0.9994    0.9969
+
+  Columns 67 through 72
+
+    0.9945    0.9920    0.9895    0.9871    0.9847    0.9822
+
+  Columns 73 through 78
+
+    0.9798    0.9774    0.9750    0.9726    0.9703    0.9679
+
+  Columns 79 through 84
+
+    0.9656    0.9633    0.9610    0.9588    0.9565    0.9543
+
+  Columns 85 through 90
+
+    0.9521    0.9500    0.9479    0.9458    0.9437    0.9417
+
+  Columns 91 through 96
+
+    0.9397    0.9378    0.9359    0.9340    0.9322    0.9304
+
+  Columns 97 through 102
+
+    0.9286    0.9269    0.9253    0.9237    0.9221    0.9206
+
+  Columns 103 through 108
+
+    0.9191    0.9177    0.9163    0.9150    0.9137    0.9125
+
+  Columns 109 through 114
+
+    0.9113    0.9102    0.9092    0.9082    0.9072    0.9063
+
+  Columns 115 through 120
+
+    0.9055    0.9047    0.9040    0.9033    0.9027    0.9022
+
+  Columns 121 through 126
+
+    0.9017    0.9013    0.9009    0.9006    0.9004    0.9002
+
+  Columns 127 through 132
+
+    0.9001    0.9000    0.9000    0.9001    0.9002    0.9004
+
+  Columns 133 through 138
+
+    0.9006    0.9009    0.9013    0.9017    0.9022    0.9027
+
+  Columns 139 through 144
+
+    0.9033    0.9040    0.9047    0.9055    0.9063    0.9072
+
+  Columns 145 through 150
+
+    0.9082    0.9092    0.9102    0.9113    0.9125    0.9137
+
+  Columns 151 through 156
+
+    0.9150    0.9163    0.9177    0.9191    0.9206    0.9221
+
+  Columns 157 through 162
+
+    0.9237    0.9253    0.9269    0.9286    0.9304    0.9322
+
+  Columns 163 through 168
+
+    0.9340    0.9359    0.9378    0.9397    0.9417    0.9437
+
+  Columns 169 through 174
+
+    0.9458    0.9479    0.9500    0.9521    0.9543    0.9565
+
+  Columns 175 through 180
+
+    0.9588    0.9610    0.9633    0.9656    0.9679    0.9703
+
+  Columns 181 through 186
+
+    0.9726    0.9750    0.9774    0.9798    0.9822    0.9847
+
+  Columns 187 through 192
+
+    0.9871    0.9895    0.9920    0.9945    0.9969    0.9994
+
+  Columns 193 through 198
+
+    1.0018    1.0043    1.0068    1.0092    1.0117    1.0141
+
+  Columns 199 through 204
+
+    1.0166    1.0190    1.0214    1.0238    1.0262    1.0285
+
+  Columns 205 through 210
+
+    1.0309    1.0332    1.0355    1.0378    1.0401    1.0424
+
+  Columns 211 through 216
+
+    1.0446    1.0468    1.0489    1.0511    1.0532    1.0552
+
+  Columns 217 through 222
+
+    1.0573    1.0593    1.0612    1.0632    1.0651    1.0669
+
+  Columns 223 through 228
+
+    1.0687    1.0705    1.0722    1.0739    1.0755    1.0771
+
+  Columns 229 through 234
+
+    1.0787    1.0802    1.0816    1.0830    1.0844    1.0857
+
+  Columns 235 through 240
+
+    1.0869    1.0881    1.0892    1.0903    1.0914    1.0923
+
+  Columns 241 through 246
+
+    1.0932    1.0941    1.0949    1.0957    1.0963    1.0970
+
+  Columns 247 through 252
+
+    1.0976    1.0981    1.0985    1.0989    1.0992    1.0995
+
+  Columns 253 through 256
+
+    1.0997    1.0999    1.1000    1.1000
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 18)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',18,0)">line 18</a>)
+nothing
+} 
+plot(chnkr_original)
+axis equal
+hold on
+plot(chnkr)
+title('cos(2\phi) perturbation with \epsilon = 0.1')
+sigma
+{'sigma' requires <a href="matlab:matlab.internal.language.introspective.showAddon('CT', 'sigma');">Control System Toolbox</a>.
+} 
+err_nullvec
+{Unrecognized function or variable 'err_nullvec'.
+} 
+test
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_plus =
+
+  Columns 1 through 6
+
+    1.0050    1.0050    1.0050    1.0050    1.0050    1.0050
+
+  Columns 7 through 12
+
+    1.0049    1.0049    1.0049    1.0049    1.0048    1.0048
+
+  Columns 13 through 18
+
+    1.0048    1.0047    1.0047    1.0047    1.0046    1.0046
+
+  Columns 19 through 24
+
+    1.0045    1.0045    1.0044    1.0043    1.0043    1.0042
+
+  Columns 25 through 30
+
+    1.0042    1.0041    1.0040    1.0039    1.0039    1.0038
+
+  Columns 31 through 36
+
+    1.0037    1.0036    1.0035    1.0034    1.0033    1.0033
+
+  Columns 37 through 42
+
+    1.0032    1.0031    1.0030    1.0029    1.0028    1.0027
+
+  Columns 43 through 48
+
+    1.0026    1.0024    1.0023    1.0022    1.0021    1.0020
+
+  Columns 49 through 54
+
+    1.0019    1.0018    1.0017    1.0015    1.0014    1.0013
+
+  Columns 55 through 60
+
+    1.0012    1.0011    1.0009    1.0008    1.0007    1.0006
+
+  Columns 61 through 66
+
+    1.0005    1.0003    1.0002    1.0001    1.0000    0.9998
+
+  Columns 67 through 72
+
+    0.9997    0.9996    0.9995    0.9994    0.9992    0.9991
+
+  Columns 73 through 78
+
+    0.9990    0.9989    0.9988    0.9986    0.9985    0.9984
+
+  Columns 79 through 84
+
+    0.9983    0.9982    0.9981    0.9979    0.9978    0.9977
+
+  Columns 85 through 90
+
+    0.9976    0.9975    0.9974    0.9973    0.9972    0.9971
+
+  Columns 91 through 96
+
+    0.9970    0.9969    0.9968    0.9967    0.9966    0.9965
+
+  Columns 97 through 102
+
+    0.9964    0.9963    0.9963    0.9962    0.9961    0.9960
+
+  Columns 103 through 108
+
+    0.9960    0.9959    0.9958    0.9957    0.9957    0.9956
+
+  Columns 109 through 114
+
+    0.9956    0.9955    0.9955    0.9954    0.9954    0.9953
+
+  Columns 115 through 120
+
+    0.9953    0.9952    0.9952    0.9952    0.9951    0.9951
+
+  Columns 121 through 126
+
+    0.9951    0.9951    0.9950    0.9950    0.9950    0.9950
+
+  Columns 127 through 132
+
+    0.9950    0.9950    0.9950    0.9950    0.9950    0.9950
+
+  Columns 133 through 138
+
+    0.9950    0.9950    0.9951    0.9951    0.9951    0.9951
+
+  Columns 139 through 144
+
+    0.9952    0.9952    0.9952    0.9953    0.9953    0.9954
+
+  Columns 145 through 150
+
+    0.9954    0.9955    0.9955    0.9956    0.9956    0.9957
+
+  Columns 151 through 156
+
+    0.9957    0.9958    0.9959    0.9960    0.9960    0.9961
+
+  Columns 157 through 162
+
+    0.9962    0.9963    0.9963    0.9964    0.9965    0.9966
+
+  Columns 163 through 168
+
+    0.9967    0.9968    0.9969    0.9970    0.9971    0.9972
+
+  Columns 169 through 174
+
+    0.9973    0.9974    0.9975    0.9976    0.9977    0.9978
+
+  Columns 175 through 180
+
+    0.9979    0.9981    0.9982    0.9983    0.9984    0.9985
+
+  Columns 181 through 186
+
+    0.9986    0.9988    0.9989    0.9990    0.9991    0.9992
+
+  Columns 187 through 192
+
+    0.9994    0.9995    0.9996    0.9997    0.9998    1.0000
+
+  Columns 193 through 198
+
+    1.0001    1.0002    1.0003    1.0005    1.0006    1.0007
+
+  Columns 199 through 204
+
+    1.0008    1.0009    1.0011    1.0012    1.0013    1.0014
+
+  Columns 205 through 210
+
+    1.0015    1.0017    1.0018    1.0019    1.0020    1.0021
+
+  Columns 211 through 216
+
+    1.0022    1.0023    1.0024    1.0026    1.0027    1.0028
+
+  Columns 217 through 222
+
+    1.0029    1.0030    1.0031    1.0032    1.0033    1.0033
+
+  Columns 223 through 228
+
+    1.0034    1.0035    1.0036    1.0037    1.0038    1.0039
+
+  Columns 229 through 234
+
+    1.0039    1.0040    1.0041    1.0042    1.0042    1.0043
+
+  Columns 235 through 240
+
+    1.0043    1.0044    1.0045    1.0045    1.0046    1.0046
+
+  Columns 241 through 246
+
+    1.0047    1.0047    1.0047    1.0048    1.0048    1.0048
+
+  Columns 247 through 252
+
+    1.0049    1.0049    1.0049    1.0049    1.0050    1.0050
+
+  Columns 253 through 256
+
+    1.0050    1.0050    1.0050    1.0050
+
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_minus =
+
+  Columns 1 through 6
+
+    0.9950    0.9950    0.9950    0.9950    0.9950    0.9950
+
+  Columns 7 through 12
+
+    0.9951    0.9951    0.9951    0.9951    0.9952    0.9952
+
+  Columns 13 through 18
+
+    0.9952    0.9953    0.9953    0.9953    0.9954    0.9954
+
+  Columns 19 through 24
+
+    0.9955    0.9955    0.9956    0.9957    0.9957    0.9958
+
+  Columns 25 through 30
+
+    0.9958    0.9959    0.9960    0.9961    0.9961    0.9962
+
+  Columns 31 through 36
+
+    0.9963    0.9964    0.9965    0.9966    0.9967    0.9967
+
+  Columns 37 through 42
+
+    0.9968    0.9969    0.9970    0.9971    0.9972    0.9973
+
+  Columns 43 through 48
+
+    0.9974    0.9976    0.9977    0.9978    0.9979    0.9980
+
+  Columns 49 through 54
+
+    0.9981    0.9982    0.9983    0.9985    0.9986    0.9987
+
+  Columns 55 through 60
+
+    0.9988    0.9989    0.9991    0.9992    0.9993    0.9994
+
+  Columns 61 through 66
+
+    0.9995    0.9997    0.9998    0.9999    1.0000    1.0002
+
+  Columns 67 through 72
+
+    1.0003    1.0004    1.0005    1.0006    1.0008    1.0009
+
+  Columns 73 through 78
+
+    1.0010    1.0011    1.0012    1.0014    1.0015    1.0016
+
+  Columns 79 through 84
+
+    1.0017    1.0018    1.0019    1.0021    1.0022    1.0023
+
+  Columns 85 through 90
+
+    1.0024    1.0025    1.0026    1.0027    1.0028    1.0029
+
+  Columns 91 through 96
+
+    1.0030    1.0031    1.0032    1.0033    1.0034    1.0035
+
+  Columns 97 through 102
+
+    1.0036    1.0037    1.0037    1.0038    1.0039    1.0040
+
+  Columns 103 through 108
+
+    1.0040    1.0041    1.0042    1.0043    1.0043    1.0044
+
+  Columns 109 through 114
+
+    1.0044    1.0045    1.0045    1.0046    1.0046    1.0047
+
+  Columns 115 through 120
+
+    1.0047    1.0048    1.0048    1.0048    1.0049    1.0049
+
+  Columns 121 through 126
+
+    1.0049    1.0049    1.0050    1.0050    1.0050    1.0050
+
+  Columns 127 through 132
+
+    1.0050    1.0050    1.0050    1.0050    1.0050    1.0050
+
+  Columns 133 through 138
+
+    1.0050    1.0050    1.0049    1.0049    1.0049    1.0049
+
+  Columns 139 through 144
+
+    1.0048    1.0048    1.0048    1.0047    1.0047    1.0046
+
+  Columns 145 through 150
+
+    1.0046    1.0045    1.0045    1.0044    1.0044    1.0043
+
+  Columns 151 through 156
+
+    1.0043    1.0042    1.0041    1.0040    1.0040    1.0039
+
+  Columns 157 through 162
+
+    1.0038    1.0037    1.0037    1.0036    1.0035    1.0034
+
+  Columns 163 through 168
+
+    1.0033    1.0032    1.0031    1.0030    1.0029    1.0028
+
+  Columns 169 through 174
+
+    1.0027    1.0026    1.0025    1.0024    1.0023    1.0022
+
+  Columns 175 through 180
+
+    1.0021    1.0019    1.0018    1.0017    1.0016    1.0015
+
+  Columns 181 through 186
+
+    1.0014    1.0012    1.0011    1.0010    1.0009    1.0008
+
+  Columns 187 through 192
+
+    1.0006    1.0005    1.0004    1.0003    1.0002    1.0000
+
+  Columns 193 through 198
+
+    0.9999    0.9998    0.9997    0.9995    0.9994    0.9993
+
+  Columns 199 through 204
+
+    0.9992    0.9991    0.9989    0.9988    0.9987    0.9986
+
+  Columns 205 through 210
+
+    0.9985    0.9983    0.9982    0.9981    0.9980    0.9979
+
+  Columns 211 through 216
+
+    0.9978    0.9977    0.9976    0.9974    0.9973    0.9972
+
+  Columns 217 through 222
+
+    0.9971    0.9970    0.9969    0.9968    0.9967    0.9967
+
+  Columns 223 through 228
+
+    0.9966    0.9965    0.9964    0.9963    0.9962    0.9961
+
+  Columns 229 through 234
+
+    0.9961    0.9960    0.9959    0.9958    0.9958    0.9957
+
+  Columns 235 through 240
+
+    0.9957    0.9956    0.9955    0.9955    0.9954    0.9954
+
+  Columns 241 through 246
+
+    0.9953    0.9953    0.9953    0.9952    0.9952    0.9952
+
+  Columns 247 through 252
+
+    0.9951    0.9951    0.9951    0.9951    0.9950    0.9950
+
+  Columns 253 through 256
+
+    0.9950    0.9950    0.9950    0.9950
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 20)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',20,0)">line 20</a>)
+nothing
+} 
+plot(chnkr_original)
+axis equal
+hold on
+plot(chnkr_plus)
+test
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_plus =
+
+  Columns 1 through 6
+
+    1.1000    1.1000    1.0999    1.0997    1.0995    1.0992
+
+  Columns 7 through 12
+
+    1.0989    1.0985    1.0981    1.0976    1.0970    1.0963
+
+  Columns 13 through 18
+
+    1.0957    1.0949    1.0941    1.0932    1.0923    1.0914
+
+  Columns 19 through 24
+
+    1.0903    1.0892    1.0881    1.0869    1.0857    1.0844
+
+  Columns 25 through 30
+
+    1.0830    1.0816    1.0802    1.0787    1.0771    1.0755
+
+  Columns 31 through 36
+
+    1.0739    1.0722    1.0705    1.0687    1.0669    1.0651
+
+  Columns 37 through 42
+
+    1.0632    1.0612    1.0593    1.0573    1.0552    1.0532
+
+  Columns 43 through 48
+
+    1.0511    1.0489    1.0468    1.0446    1.0424    1.0401
+
+  Columns 49 through 54
+
+    1.0378    1.0355    1.0332    1.0309    1.0285    1.0262
+
+  Columns 55 through 60
+
+    1.0238    1.0214    1.0190    1.0166    1.0141    1.0117
+
+  Columns 61 through 66
+
+    1.0092    1.0068    1.0043    1.0018    0.9994    0.9969
+
+  Columns 67 through 72
+
+    0.9945    0.9920    0.9895    0.9871    0.9847    0.9822
+
+  Columns 73 through 78
+
+    0.9798    0.9774    0.9750    0.9726    0.9703    0.9679
+
+  Columns 79 through 84
+
+    0.9656    0.9633    0.9610    0.9588    0.9565    0.9543
+
+  Columns 85 through 90
+
+    0.9521    0.9500    0.9479    0.9458    0.9437    0.9417
+
+  Columns 91 through 96
+
+    0.9397    0.9378    0.9359    0.9340    0.9322    0.9304
+
+  Columns 97 through 102
+
+    0.9286    0.9269    0.9253    0.9237    0.9221    0.9206
+
+  Columns 103 through 108
+
+    0.9191    0.9177    0.9163    0.9150    0.9137    0.9125
+
+  Columns 109 through 114
+
+    0.9113    0.9102    0.9092    0.9082    0.9072    0.9063
+
+  Columns 115 through 120
+
+    0.9055    0.9047    0.9040    0.9033    0.9027    0.9022
+
+  Columns 121 through 126
+
+    0.9017    0.9013    0.9009    0.9006    0.9004    0.9002
+
+  Columns 127 through 132
+
+    0.9001    0.9000    0.9000    0.9001    0.9002    0.9004
+
+  Columns 133 through 138
+
+    0.9006    0.9009    0.9013    0.9017    0.9022    0.9027
+
+  Columns 139 through 144
+
+    0.9033    0.9040    0.9047    0.9055    0.9063    0.9072
+
+  Columns 145 through 150
+
+    0.9082    0.9092    0.9102    0.9113    0.9125    0.9137
+
+  Columns 151 through 156
+
+    0.9150    0.9163    0.9177    0.9191    0.9206    0.9221
+
+  Columns 157 through 162
+
+    0.9237    0.9253    0.9269    0.9286    0.9304    0.9322
+
+  Columns 163 through 168
+
+    0.9340    0.9359    0.9378    0.9397    0.9417    0.9437
+
+  Columns 169 through 174
+
+    0.9458    0.9479    0.9500    0.9521    0.9543    0.9565
+
+  Columns 175 through 180
+
+    0.9588    0.9610    0.9633    0.9656    0.9679    0.9703
+
+  Columns 181 through 186
+
+    0.9726    0.9750    0.9774    0.9798    0.9822    0.9847
+
+  Columns 187 through 192
+
+    0.9871    0.9895    0.9920    0.9945    0.9969    0.9994
+
+  Columns 193 through 198
+
+    1.0018    1.0043    1.0068    1.0092    1.0117    1.0141
+
+  Columns 199 through 204
+
+    1.0166    1.0190    1.0214    1.0238    1.0262    1.0285
+
+  Columns 205 through 210
+
+    1.0309    1.0332    1.0355    1.0378    1.0401    1.0424
+
+  Columns 211 through 216
+
+    1.0446    1.0468    1.0489    1.0511    1.0532    1.0552
+
+  Columns 217 through 222
+
+    1.0573    1.0593    1.0612    1.0632    1.0651    1.0669
+
+  Columns 223 through 228
+
+    1.0687    1.0705    1.0722    1.0739    1.0755    1.0771
+
+  Columns 229 through 234
+
+    1.0787    1.0802    1.0816    1.0830    1.0844    1.0857
+
+  Columns 235 through 240
+
+    1.0869    1.0881    1.0892    1.0903    1.0914    1.0923
+
+  Columns 241 through 246
+
+    1.0932    1.0941    1.0949    1.0957    1.0963    1.0970
+
+  Columns 247 through 252
+
+    1.0976    1.0981    1.0985    1.0989    1.0992    1.0995
+
+  Columns 253 through 256
+
+    1.0997    1.0999    1.1000    1.1000
+
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_minus =
+
+  Columns 1 through 6
+
+    0.9000    0.9000    0.9001    0.9003    0.9005    0.9008
+
+  Columns 7 through 12
+
+    0.9011    0.9015    0.9019    0.9024    0.9030    0.9037
+
+  Columns 13 through 18
+
+    0.9043    0.9051    0.9059    0.9068    0.9077    0.9086
+
+  Columns 19 through 24
+
+    0.9097    0.9108    0.9119    0.9131    0.9143    0.9156
+
+  Columns 25 through 30
+
+    0.9170    0.9184    0.9198    0.9213    0.9229    0.9245
+
+  Columns 31 through 36
+
+    0.9261    0.9278    0.9295    0.9313    0.9331    0.9349
+
+  Columns 37 through 42
+
+    0.9368    0.9388    0.9407    0.9427    0.9448    0.9468
+
+  Columns 43 through 48
+
+    0.9489    0.9511    0.9532    0.9554    0.9576    0.9599
+
+  Columns 49 through 54
+
+    0.9622    0.9645    0.9668    0.9691    0.9715    0.9738
+
+  Columns 55 through 60
+
+    0.9762    0.9786    0.9810    0.9834    0.9859    0.9883
+
+  Columns 61 through 66
+
+    0.9908    0.9932    0.9957    0.9982    1.0006    1.0031
+
+  Columns 67 through 72
+
+    1.0055    1.0080    1.0105    1.0129    1.0153    1.0178
+
+  Columns 73 through 78
+
+    1.0202    1.0226    1.0250    1.0274    1.0297    1.0321
+
+  Columns 79 through 84
+
+    1.0344    1.0367    1.0390    1.0412    1.0435    1.0457
+
+  Columns 85 through 90
+
+    1.0479    1.0500    1.0521    1.0542    1.0563    1.0583
+
+  Columns 91 through 96
+
+    1.0603    1.0622    1.0641    1.0660    1.0678    1.0696
+
+  Columns 97 through 102
+
+    1.0714    1.0731    1.0747    1.0763    1.0779    1.0794
+
+  Columns 103 through 108
+
+    1.0809    1.0823    1.0837    1.0850    1.0863    1.0875
+
+  Columns 109 through 114
+
+    1.0887    1.0898    1.0908    1.0918    1.0928    1.0937
+
+  Columns 115 through 120
+
+    1.0945    1.0953    1.0960    1.0967    1.0973    1.0978
+
+  Columns 121 through 126
+
+    1.0983    1.0987    1.0991    1.0994    1.0996    1.0998
+
+  Columns 127 through 132
+
+    1.0999    1.1000    1.1000    1.0999    1.0998    1.0996
+
+  Columns 133 through 138
+
+    1.0994    1.0991    1.0987    1.0983    1.0978    1.0973
+
+  Columns 139 through 144
+
+    1.0967    1.0960    1.0953    1.0945    1.0937    1.0928
+
+  Columns 145 through 150
+
+    1.0918    1.0908    1.0898    1.0887    1.0875    1.0863
+
+  Columns 151 through 156
+
+    1.0850    1.0837    1.0823    1.0809    1.0794    1.0779
+
+  Columns 157 through 162
+
+    1.0763    1.0747    1.0731    1.0714    1.0696    1.0678
+
+  Columns 163 through 168
+
+    1.0660    1.0641    1.0622    1.0603    1.0583    1.0563
+
+  Columns 169 through 174
+
+    1.0542    1.0521    1.0500    1.0479    1.0457    1.0435
+
+  Columns 175 through 180
+
+    1.0412    1.0390    1.0367    1.0344    1.0321    1.0297
+
+  Columns 181 through 186
+
+    1.0274    1.0250    1.0226    1.0202    1.0178    1.0153
+
+  Columns 187 through 192
+
+    1.0129    1.0105    1.0080    1.0055    1.0031    1.0006
+
+  Columns 193 through 198
+
+    0.9982    0.9957    0.9932    0.9908    0.9883    0.9859
+
+  Columns 199 through 204
+
+    0.9834    0.9810    0.9786    0.9762    0.9738    0.9715
+
+  Columns 205 through 210
+
+    0.9691    0.9668    0.9645    0.9622    0.9599    0.9576
+
+  Columns 211 through 216
+
+    0.9554    0.9532    0.9511    0.9489    0.9468    0.9448
+
+  Columns 217 through 222
+
+    0.9427    0.9407    0.9388    0.9368    0.9349    0.9331
+
+  Columns 223 through 228
+
+    0.9313    0.9295    0.9278    0.9261    0.9245    0.9229
+
+  Columns 229 through 234
+
+    0.9213    0.9198    0.9184    0.9170    0.9156    0.9143
+
+  Columns 235 through 240
+
+    0.9131    0.9119    0.9108    0.9097    0.9086    0.9077
+
+  Columns 241 through 246
+
+    0.9068    0.9059    0.9051    0.9043    0.9037    0.9030
+
+  Columns 247 through 252
+
+    0.9024    0.9019    0.9015    0.9011    0.9008    0.9005
+
+  Columns 253 through 256
+
+    0.9003    0.9001    0.9000    0.9000
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 20)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',20,0)">line 20</a>)
+nothing
+} 
+test
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_plus =
+
+  Columns 1 through 6
+
+    1.1000    1.1000    1.0999    1.0997    1.0995    1.0992
+
+  Columns 7 through 12
+
+    1.0989    1.0985    1.0981    1.0976    1.0970    1.0963
+
+  Columns 13 through 18
+
+    1.0957    1.0949    1.0941    1.0932    1.0923    1.0914
+
+  Columns 19 through 24
+
+    1.0903    1.0892    1.0881    1.0869    1.0857    1.0844
+
+  Columns 25 through 30
+
+    1.0830    1.0816    1.0802    1.0787    1.0771    1.0755
+
+  Columns 31 through 36
+
+    1.0739    1.0722    1.0705    1.0687    1.0669    1.0651
+
+  Columns 37 through 42
+
+    1.0632    1.0612    1.0593    1.0573    1.0552    1.0532
+
+  Columns 43 through 48
+
+    1.0511    1.0489    1.0468    1.0446    1.0424    1.0401
+
+  Columns 49 through 54
+
+    1.0378    1.0355    1.0332    1.0309    1.0285    1.0262
+
+  Columns 55 through 60
+
+    1.0238    1.0214    1.0190    1.0166    1.0141    1.0117
+
+  Columns 61 through 66
+
+    1.0092    1.0068    1.0043    1.0018    0.9994    0.9969
+
+  Columns 67 through 72
+
+    0.9945    0.9920    0.9895    0.9871    0.9847    0.9822
+
+  Columns 73 through 78
+
+    0.9798    0.9774    0.9750    0.9726    0.9703    0.9679
+
+  Columns 79 through 84
+
+    0.9656    0.9633    0.9610    0.9588    0.9565    0.9543
+
+  Columns 85 through 90
+
+    0.9521    0.9500    0.9479    0.9458    0.9437    0.9417
+
+  Columns 91 through 96
+
+    0.9397    0.9378    0.9359    0.9340    0.9322    0.9304
+
+  Columns 97 through 102
+
+    0.9286    0.9269    0.9253    0.9237    0.9221    0.9206
+
+  Columns 103 through 108
+
+    0.9191    0.9177    0.9163    0.9150    0.9137    0.9125
+
+  Columns 109 through 114
+
+    0.9113    0.9102    0.9092    0.9082    0.9072    0.9063
+
+  Columns 115 through 120
+
+    0.9055    0.9047    0.9040    0.9033    0.9027    0.9022
+
+  Columns 121 through 126
+
+    0.9017    0.9013    0.9009    0.9006    0.9004    0.9002
+
+  Columns 127 through 132
+
+    0.9001    0.9000    0.9000    0.9001    0.9002    0.9004
+
+  Columns 133 through 138
+
+    0.9006    0.9009    0.9013    0.9017    0.9022    0.9027
+
+  Columns 139 through 144
+
+    0.9033    0.9040    0.9047    0.9055    0.9063    0.9072
+
+  Columns 145 through 150
+
+    0.9082    0.9092    0.9102    0.9113    0.9125    0.9137
+
+  Columns 151 through 156
+
+    0.9150    0.9163    0.9177    0.9191    0.9206    0.9221
+
+  Columns 157 through 162
+
+    0.9237    0.9253    0.9269    0.9286    0.9304    0.9322
+
+  Columns 163 through 168
+
+    0.9340    0.9359    0.9378    0.9397    0.9417    0.9437
+
+  Columns 169 through 174
+
+    0.9458    0.9479    0.9500    0.9521    0.9543    0.9565
+
+  Columns 175 through 180
+
+    0.9588    0.9610    0.9633    0.9656    0.9679    0.9703
+
+  Columns 181 through 186
+
+    0.9726    0.9750    0.9774    0.9798    0.9822    0.9847
+
+  Columns 187 through 192
+
+    0.9871    0.9895    0.9920    0.9945    0.9969    0.9994
+
+  Columns 193 through 198
+
+    1.0018    1.0043    1.0068    1.0092    1.0117    1.0141
+
+  Columns 199 through 204
+
+    1.0166    1.0190    1.0214    1.0238    1.0262    1.0285
+
+  Columns 205 through 210
+
+    1.0309    1.0332    1.0355    1.0378    1.0401    1.0424
+
+  Columns 211 through 216
+
+    1.0446    1.0468    1.0489    1.0511    1.0532    1.0552
+
+  Columns 217 through 222
+
+    1.0573    1.0593    1.0612    1.0632    1.0651    1.0669
+
+  Columns 223 through 228
+
+    1.0687    1.0705    1.0722    1.0739    1.0755    1.0771
+
+  Columns 229 through 234
+
+    1.0787    1.0802    1.0816    1.0830    1.0844    1.0857
+
+  Columns 235 through 240
+
+    1.0869    1.0881    1.0892    1.0903    1.0914    1.0923
+
+  Columns 241 through 246
+
+    1.0932    1.0941    1.0949    1.0957    1.0963    1.0970
+
+  Columns 247 through 252
+
+    1.0976    1.0981    1.0985    1.0989    1.0992    1.0995
+
+  Columns 253 through 256
+
+    1.0997    1.0999    1.1000    1.1000
+
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_minus =
+
+  Columns 1 through 6
+
+    0.9000    0.9000    0.9001    0.9003    0.9005    0.9008
+
+  Columns 7 through 12
+
+    0.9011    0.9015    0.9019    0.9024    0.9030    0.9037
+
+  Columns 13 through 18
+
+    0.9043    0.9051    0.9059    0.9068    0.9077    0.9086
+
+  Columns 19 through 24
+
+    0.9097    0.9108    0.9119    0.9131    0.9143    0.9156
+
+  Columns 25 through 30
+
+    0.9170    0.9184    0.9198    0.9213    0.9229    0.9245
+
+  Columns 31 through 36
+
+    0.9261    0.9278    0.9295    0.9313    0.9331    0.9349
+
+  Columns 37 through 42
+
+    0.9368    0.9388    0.9407    0.9427    0.9448    0.9468
+
+  Columns 43 through 48
+
+    0.9489    0.9511    0.9532    0.9554    0.9576    0.9599
+
+  Columns 49 through 54
+
+    0.9622    0.9645    0.9668    0.9691    0.9715    0.9738
+
+  Columns 55 through 60
+
+    0.9762    0.9786    0.9810    0.9834    0.9859    0.9883
+
+  Columns 61 through 66
+
+    0.9908    0.9932    0.9957    0.9982    1.0006    1.0031
+
+  Columns 67 through 72
+
+    1.0055    1.0080    1.0105    1.0129    1.0153    1.0178
+
+  Columns 73 through 78
+
+    1.0202    1.0226    1.0250    1.0274    1.0297    1.0321
+
+  Columns 79 through 84
+
+    1.0344    1.0367    1.0390    1.0412    1.0435    1.0457
+
+  Columns 85 through 90
+
+    1.0479    1.0500    1.0521    1.0542    1.0563    1.0583
+
+  Columns 91 through 96
+
+    1.0603    1.0622    1.0641    1.0660    1.0678    1.0696
+
+  Columns 97 through 102
+
+    1.0714    1.0731    1.0747    1.0763    1.0779    1.0794
+
+  Columns 103 through 108
+
+    1.0809    1.0823    1.0837    1.0850    1.0863    1.0875
+
+  Columns 109 through 114
+
+    1.0887    1.0898    1.0908    1.0918    1.0928    1.0937
+
+  Columns 115 through 120
+
+    1.0945    1.0953    1.0960    1.0967    1.0973    1.0978
+
+  Columns 121 through 126
+
+    1.0983    1.0987    1.0991    1.0994    1.0996    1.0998
+
+  Columns 127 through 132
+
+    1.0999    1.1000    1.1000    1.0999    1.0998    1.0996
+
+  Columns 133 through 138
+
+    1.0994    1.0991    1.0987    1.0983    1.0978    1.0973
+
+  Columns 139 through 144
+
+    1.0967    1.0960    1.0953    1.0945    1.0937    1.0928
+
+  Columns 145 through 150
+
+    1.0918    1.0908    1.0898    1.0887    1.0875    1.0863
+
+  Columns 151 through 156
+
+    1.0850    1.0837    1.0823    1.0809    1.0794    1.0779
+
+  Columns 157 through 162
+
+    1.0763    1.0747    1.0731    1.0714    1.0696    1.0678
+
+  Columns 163 through 168
+
+    1.0660    1.0641    1.0622    1.0603    1.0583    1.0563
+
+  Columns 169 through 174
+
+    1.0542    1.0521    1.0500    1.0479    1.0457    1.0435
+
+  Columns 175 through 180
+
+    1.0412    1.0390    1.0367    1.0344    1.0321    1.0297
+
+  Columns 181 through 186
+
+    1.0274    1.0250    1.0226    1.0202    1.0178    1.0153
+
+  Columns 187 through 192
+
+    1.0129    1.0105    1.0080    1.0055    1.0031    1.0006
+
+  Columns 193 through 198
+
+    0.9982    0.9957    0.9932    0.9908    0.9883    0.9859
+
+  Columns 199 through 204
+
+    0.9834    0.9810    0.9786    0.9762    0.9738    0.9715
+
+  Columns 205 through 210
+
+    0.9691    0.9668    0.9645    0.9622    0.9599    0.9576
+
+  Columns 211 through 216
+
+    0.9554    0.9532    0.9511    0.9489    0.9468    0.9448
+
+  Columns 217 through 222
+
+    0.9427    0.9407    0.9388    0.9368    0.9349    0.9331
+
+  Columns 223 through 228
+
+    0.9313    0.9295    0.9278    0.9261    0.9245    0.9229
+
+  Columns 229 through 234
+
+    0.9213    0.9198    0.9184    0.9170    0.9156    0.9143
+
+  Columns 235 through 240
+
+    0.9131    0.9119    0.9108    0.9097    0.9086    0.9077
+
+  Columns 241 through 246
+
+    0.9068    0.9059    0.9051    0.9043    0.9037    0.9030
+
+  Columns 247 through 252
+
+    0.9024    0.9019    0.9015    0.9011    0.9008    0.9005
+
+  Columns 253 through 256
+
+    0.9003    0.9001    0.9000    0.9000
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 31)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',31,0)">line 31</a>)
+nothing
+} 
+test
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_plus =
+
+  Columns 1 through 6
+
+    1.1000    1.1000    1.0999    1.0997    1.0995    1.0992
+
+  Columns 7 through 12
+
+    1.0989    1.0985    1.0981    1.0976    1.0970    1.0963
+
+  Columns 13 through 18
+
+    1.0957    1.0949    1.0941    1.0932    1.0923    1.0914
+
+  Columns 19 through 24
+
+    1.0903    1.0892    1.0881    1.0869    1.0857    1.0844
+
+  Columns 25 through 30
+
+    1.0830    1.0816    1.0802    1.0787    1.0771    1.0755
+
+  Columns 31 through 36
+
+    1.0739    1.0722    1.0705    1.0687    1.0669    1.0651
+
+  Columns 37 through 42
+
+    1.0632    1.0612    1.0593    1.0573    1.0552    1.0532
+
+  Columns 43 through 48
+
+    1.0511    1.0489    1.0468    1.0446    1.0424    1.0401
+
+  Columns 49 through 54
+
+    1.0378    1.0355    1.0332    1.0309    1.0285    1.0262
+
+  Columns 55 through 60
+
+    1.0238    1.0214    1.0190    1.0166    1.0141    1.0117
+
+  Columns 61 through 66
+
+    1.0092    1.0068    1.0043    1.0018    0.9994    0.9969
+
+  Columns 67 through 72
+
+    0.9945    0.9920    0.9895    0.9871    0.9847    0.9822
+
+  Columns 73 through 78
+
+    0.9798    0.9774    0.9750    0.9726    0.9703    0.9679
+
+  Columns 79 through 84
+
+    0.9656    0.9633    0.9610    0.9588    0.9565    0.9543
+
+  Columns 85 through 90
+
+    0.9521    0.9500    0.9479    0.9458    0.9437    0.9417
+
+  Columns 91 through 96
+
+    0.9397    0.9378    0.9359    0.9340    0.9322    0.9304
+
+  Columns 97 through 102
+
+    0.9286    0.9269    0.9253    0.9237    0.9221    0.9206
+
+  Columns 103 through 108
+
+    0.9191    0.9177    0.9163    0.9150    0.9137    0.9125
+
+  Columns 109 through 114
+
+    0.9113    0.9102    0.9092    0.9082    0.9072    0.9063
+
+  Columns 115 through 120
+
+    0.9055    0.9047    0.9040    0.9033    0.9027    0.9022
+
+  Columns 121 through 126
+
+    0.9017    0.9013    0.9009    0.9006    0.9004    0.9002
+
+  Columns 127 through 132
+
+    0.9001    0.9000    0.9000    0.9001    0.9002    0.9004
+
+  Columns 133 through 138
+
+    0.9006    0.9009    0.9013    0.9017    0.9022    0.9027
+
+  Columns 139 through 144
+
+    0.9033    0.9040    0.9047    0.9055    0.9063    0.9072
+
+  Columns 145 through 150
+
+    0.9082    0.9092    0.9102    0.9113    0.9125    0.9137
+
+  Columns 151 through 156
+
+    0.9150    0.9163    0.9177    0.9191    0.9206    0.9221
+
+  Columns 157 through 162
+
+    0.9237    0.9253    0.9269    0.9286    0.9304    0.9322
+
+  Columns 163 through 168
+
+    0.9340    0.9359    0.9378    0.9397    0.9417    0.9437
+
+  Columns 169 through 174
+
+    0.9458    0.9479    0.9500    0.9521    0.9543    0.9565
+
+  Columns 175 through 180
+
+    0.9588    0.9610    0.9633    0.9656    0.9679    0.9703
+
+  Columns 181 through 186
+
+    0.9726    0.9750    0.9774    0.9798    0.9822    0.9847
+
+  Columns 187 through 192
+
+    0.9871    0.9895    0.9920    0.9945    0.9969    0.9994
+
+  Columns 193 through 198
+
+    1.0018    1.0043    1.0068    1.0092    1.0117    1.0141
+
+  Columns 199 through 204
+
+    1.0166    1.0190    1.0214    1.0238    1.0262    1.0285
+
+  Columns 205 through 210
+
+    1.0309    1.0332    1.0355    1.0378    1.0401    1.0424
+
+  Columns 211 through 216
+
+    1.0446    1.0468    1.0489    1.0511    1.0532    1.0552
+
+  Columns 217 through 222
+
+    1.0573    1.0593    1.0612    1.0632    1.0651    1.0669
+
+  Columns 223 through 228
+
+    1.0687    1.0705    1.0722    1.0739    1.0755    1.0771
+
+  Columns 229 through 234
+
+    1.0787    1.0802    1.0816    1.0830    1.0844    1.0857
+
+  Columns 235 through 240
+
+    1.0869    1.0881    1.0892    1.0903    1.0914    1.0923
+
+  Columns 241 through 246
+
+    1.0932    1.0941    1.0949    1.0957    1.0963    1.0970
+
+  Columns 247 through 252
+
+    1.0976    1.0981    1.0985    1.0989    1.0992    1.0995
+
+  Columns 253 through 256
+
+    1.0997    1.0999    1.1000    1.1000
+
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_minus =
+
+  Columns 1 through 6
+
+    0.9000    0.9000    0.9001    0.9003    0.9005    0.9008
+
+  Columns 7 through 12
+
+    0.9011    0.9015    0.9019    0.9024    0.9030    0.9037
+
+  Columns 13 through 18
+
+    0.9043    0.9051    0.9059    0.9068    0.9077    0.9086
+
+  Columns 19 through 24
+
+    0.9097    0.9108    0.9119    0.9131    0.9143    0.9156
+
+  Columns 25 through 30
+
+    0.9170    0.9184    0.9198    0.9213    0.9229    0.9245
+
+  Columns 31 through 36
+
+    0.9261    0.9278    0.9295    0.9313    0.9331    0.9349
+
+  Columns 37 through 42
+
+    0.9368    0.9388    0.9407    0.9427    0.9448    0.9468
+
+  Columns 43 through 48
+
+    0.9489    0.9511    0.9532    0.9554    0.9576    0.9599
+
+  Columns 49 through 54
+
+    0.9622    0.9645    0.9668    0.9691    0.9715    0.9738
+
+  Columns 55 through 60
+
+    0.9762    0.9786    0.9810    0.9834    0.9859    0.9883
+
+  Columns 61 through 66
+
+    0.9908    0.9932    0.9957    0.9982    1.0006    1.0031
+
+  Columns 67 through 72
+
+    1.0055    1.0080    1.0105    1.0129    1.0153    1.0178
+
+  Columns 73 through 78
+
+    1.0202    1.0226    1.0250    1.0274    1.0297    1.0321
+
+  Columns 79 through 84
+
+    1.0344    1.0367    1.0390    1.0412    1.0435    1.0457
+
+  Columns 85 through 90
+
+    1.0479    1.0500    1.0521    1.0542    1.0563    1.0583
+
+  Columns 91 through 96
+
+    1.0603    1.0622    1.0641    1.0660    1.0678    1.0696
+
+  Columns 97 through 102
+
+    1.0714    1.0731    1.0747    1.0763    1.0779    1.0794
+
+  Columns 103 through 108
+
+    1.0809    1.0823    1.0837    1.0850    1.0863    1.0875
+
+  Columns 109 through 114
+
+    1.0887    1.0898    1.0908    1.0918    1.0928    1.0937
+
+  Columns 115 through 120
+
+    1.0945    1.0953    1.0960    1.0967    1.0973    1.0978
+
+  Columns 121 through 126
+
+    1.0983    1.0987    1.0991    1.0994    1.0996    1.0998
+
+  Columns 127 through 132
+
+    1.0999    1.1000    1.1000    1.0999    1.0998    1.0996
+
+  Columns 133 through 138
+
+    1.0994    1.0991    1.0987    1.0983    1.0978    1.0973
+
+  Columns 139 through 144
+
+    1.0967    1.0960    1.0953    1.0945    1.0937    1.0928
+
+  Columns 145 through 150
+
+    1.0918    1.0908    1.0898    1.0887    1.0875    1.0863
+
+  Columns 151 through 156
+
+    1.0850    1.0837    1.0823    1.0809    1.0794    1.0779
+
+  Columns 157 through 162
+
+    1.0763    1.0747    1.0731    1.0714    1.0696    1.0678
+
+  Columns 163 through 168
+
+    1.0660    1.0641    1.0622    1.0603    1.0583    1.0563
+
+  Columns 169 through 174
+
+    1.0542    1.0521    1.0500    1.0479    1.0457    1.0435
+
+  Columns 175 through 180
+
+    1.0412    1.0390    1.0367    1.0344    1.0321    1.0297
+
+  Columns 181 through 186
+
+    1.0274    1.0250    1.0226    1.0202    1.0178    1.0153
+
+  Columns 187 through 192
+
+    1.0129    1.0105    1.0080    1.0055    1.0031    1.0006
+
+  Columns 193 through 198
+
+    0.9982    0.9957    0.9932    0.9908    0.9883    0.9859
+
+  Columns 199 through 204
+
+    0.9834    0.9810    0.9786    0.9762    0.9738    0.9715
+
+  Columns 205 through 210
+
+    0.9691    0.9668    0.9645    0.9622    0.9599    0.9576
+
+  Columns 211 through 216
+
+    0.9554    0.9532    0.9511    0.9489    0.9468    0.9448
+
+  Columns 217 through 222
+
+    0.9427    0.9407    0.9388    0.9368    0.9349    0.9331
+
+  Columns 223 through 228
+
+    0.9313    0.9295    0.9278    0.9261    0.9245    0.9229
+
+  Columns 229 through 234
+
+    0.9213    0.9198    0.9184    0.9170    0.9156    0.9143
+
+  Columns 235 through 240
+
+    0.9131    0.9119    0.9108    0.9097    0.9086    0.9077
+
+  Columns 241 through 246
+
+    0.9068    0.9059    0.9051    0.9043    0.9037    0.9030
+
+  Columns 247 through 252
+
+    0.9024    0.9019    0.9015    0.9011    0.9008    0.9005
+
+  Columns 253 through 256
+
+    0.9003    0.9001    0.9000    0.9000
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 34)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',34,0)">line 34</a>)
+nothing
+} 
+title('cos(2\phi) perturbation with \epsilon = 0.1')
+save
+
+Saving to: C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\matlab.mat
+
+tic
+toc
+Elapsed time is 1.094724 seconds.
+test
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_plus =
+
+  Columns 1 through 6
+
+    1.0050    1.0050    1.0050    1.0050    1.0050    1.0050
+
+  Columns 7 through 12
+
+    1.0049    1.0049    1.0049    1.0049    1.0048    1.0048
+
+  Columns 13 through 18
+
+    1.0048    1.0047    1.0047    1.0047    1.0046    1.0046
+
+  Columns 19 through 24
+
+    1.0045    1.0045    1.0044    1.0043    1.0043    1.0042
+
+  Columns 25 through 30
+
+    1.0042    1.0041    1.0040    1.0039    1.0039    1.0038
+
+  Columns 31 through 36
+
+    1.0037    1.0036    1.0035    1.0034    1.0033    1.0033
+
+  Columns 37 through 42
+
+    1.0032    1.0031    1.0030    1.0029    1.0028    1.0027
+
+  Columns 43 through 48
+
+    1.0026    1.0024    1.0023    1.0022    1.0021    1.0020
+
+  Columns 49 through 54
+
+    1.0019    1.0018    1.0017    1.0015    1.0014    1.0013
+
+  Columns 55 through 60
+
+    1.0012    1.0011    1.0009    1.0008    1.0007    1.0006
+
+  Columns 61 through 66
+
+    1.0005    1.0003    1.0002    1.0001    1.0000    0.9998
+
+  Columns 67 through 72
+
+    0.9997    0.9996    0.9995    0.9994    0.9992    0.9991
+
+  Columns 73 through 78
+
+    0.9990    0.9989    0.9988    0.9986    0.9985    0.9984
+
+  Columns 79 through 84
+
+    0.9983    0.9982    0.9981    0.9979    0.9978    0.9977
+
+  Columns 85 through 90
+
+    0.9976    0.9975    0.9974    0.9973    0.9972    0.9971
+
+  Columns 91 through 96
+
+    0.9970    0.9969    0.9968    0.9967    0.9966    0.9965
+
+  Columns 97 through 102
+
+    0.9964    0.9963    0.9963    0.9962    0.9961    0.9960
+
+  Columns 103 through 108
+
+    0.9960    0.9959    0.9958    0.9957    0.9957    0.9956
+
+  Columns 109 through 114
+
+    0.9956    0.9955    0.9955    0.9954    0.9954    0.9953
+
+  Columns 115 through 120
+
+    0.9953    0.9952    0.9952    0.9952    0.9951    0.9951
+
+  Columns 121 through 126
+
+    0.9951    0.9951    0.9950    0.9950    0.9950    0.9950
+
+  Columns 127 through 132
+
+    0.9950    0.9950    0.9950    0.9950    0.9950    0.9950
+
+  Columns 133 through 138
+
+    0.9950    0.9950    0.9951    0.9951    0.9951    0.9951
+
+  Columns 139 through 144
+
+    0.9952    0.9952    0.9952    0.9953    0.9953    0.9954
+
+  Columns 145 through 150
+
+    0.9954    0.9955    0.9955    0.9956    0.9956    0.9957
+
+  Columns 151 through 156
+
+    0.9957    0.9958    0.9959    0.9960    0.9960    0.9961
+
+  Columns 157 through 162
+
+    0.9962    0.9963    0.9963    0.9964    0.9965    0.9966
+
+  Columns 163 through 168
+
+    0.9967    0.9968    0.9969    0.9970    0.9971    0.9972
+
+  Columns 169 through 174
+
+    0.9973    0.9974    0.9975    0.9976    0.9977    0.9978
+
+  Columns 175 through 180
+
+    0.9979    0.9981    0.9982    0.9983    0.9984    0.9985
+
+  Columns 181 through 186
+
+    0.9986    0.9988    0.9989    0.9990    0.9991    0.9992
+
+  Columns 187 through 192
+
+    0.9994    0.9995    0.9996    0.9997    0.9998    1.0000
+
+  Columns 193 through 198
+
+    1.0001    1.0002    1.0003    1.0005    1.0006    1.0007
+
+  Columns 199 through 204
+
+    1.0008    1.0009    1.0011    1.0012    1.0013    1.0014
+
+  Columns 205 through 210
+
+    1.0015    1.0017    1.0018    1.0019    1.0020    1.0021
+
+  Columns 211 through 216
+
+    1.0022    1.0023    1.0024    1.0026    1.0027    1.0028
+
+  Columns 217 through 222
+
+    1.0029    1.0030    1.0031    1.0032    1.0033    1.0033
+
+  Columns 223 through 228
+
+    1.0034    1.0035    1.0036    1.0037    1.0038    1.0039
+
+  Columns 229 through 234
+
+    1.0039    1.0040    1.0041    1.0042    1.0042    1.0043
+
+  Columns 235 through 240
+
+    1.0043    1.0044    1.0045    1.0045    1.0046    1.0046
+
+  Columns 241 through 246
+
+    1.0047    1.0047    1.0047    1.0048    1.0048    1.0048
+
+  Columns 247 through 252
+
+    1.0049    1.0049    1.0049    1.0049    1.0050    1.0050
+
+  Columns 253 through 256
+
+    1.0050    1.0050    1.0050    1.0050
+
+
+res =
+
+  Columns 1 through 6
+
+    1.0000    0.9997    0.9988    0.9973    0.9951    0.9924
+
+  Columns 7 through 12
+
+    0.9891    0.9852    0.9806    0.9755    0.9698    0.9635
+
+  Columns 13 through 18
+
+    0.9566    0.9491    0.9411    0.9325    0.9233    0.9135
+
+  Columns 19 through 24
+
+    0.9032    0.8924    0.8810    0.8691    0.8566    0.8437
+
+  Columns 25 through 30
+
+    0.8302    0.8162    0.8017    0.7867    0.7713    0.7554
+
+  Columns 31 through 36
+
+    0.7390    0.7222    0.7049    0.6872    0.6691    0.6506
+
+  Columns 37 through 42
+
+    0.6317    0.6124    0.5928    0.5727    0.5524    0.5317
+
+  Columns 43 through 48
+
+    0.5106    0.4893    0.4677    0.4457    0.4235    0.4011
+
+  Columns 49 through 54
+
+    0.3784    0.3555    0.3324    0.3090    0.2855    0.2618
+
+  Columns 55 through 60
+
+    0.2379    0.2139    0.1898    0.1656    0.1412    0.1168
+
+  Columns 61 through 66
+
+    0.0923    0.0677    0.0431    0.0185   -0.0062   -0.0308
+
+  Columns 67 through 72
+
+   -0.0554   -0.0800   -0.1045   -0.1290   -0.1534   -0.1777
+
+  Columns 73 through 78
+
+   -0.2019   -0.2260   -0.2499   -0.2737   -0.2973   -0.3207
+
+  Columns 79 through 84
+
+   -0.3439   -0.3670   -0.3898   -0.4124   -0.4347   -0.4567
+
+  Columns 85 through 90
+
+   -0.4785   -0.5000   -0.5212   -0.5421   -0.5626   -0.5828
+
+  Columns 91 through 96
+
+   -0.6026   -0.6221   -0.6412   -0.6599   -0.6782   -0.6961
+
+  Columns 97 through 102
+
+   -0.7136   -0.7307   -0.7473   -0.7634   -0.7791   -0.7943
+
+  Columns 103 through 108
+
+   -0.8090   -0.8233   -0.8370   -0.8502   -0.8629   -0.8751
+
+  Columns 109 through 114
+
+   -0.8868   -0.8979   -0.9085   -0.9185   -0.9280   -0.9369
+
+  Columns 115 through 120
+
+   -0.9452   -0.9529   -0.9601   -0.9667   -0.9727   -0.9781
+
+  Columns 121 through 126
+
+   -0.9830   -0.9872   -0.9908   -0.9939   -0.9963   -0.9981
+
+  Columns 127 through 132
+
+   -0.9993   -0.9999   -0.9999   -0.9993   -0.9981   -0.9963
+
+  Columns 133 through 138
+
+   -0.9939   -0.9908   -0.9872   -0.9830   -0.9781   -0.9727
+
+  Columns 139 through 144
+
+   -0.9667   -0.9601   -0.9529   -0.9452   -0.9369   -0.9280
+
+  Columns 145 through 150
+
+   -0.9185   -0.9085   -0.8979   -0.8868   -0.8751   -0.8629
+
+  Columns 151 through 156
+
+   -0.8502   -0.8370   -0.8233   -0.8090   -0.7943   -0.7791
+
+  Columns 157 through 162
+
+   -0.7634   -0.7473   -0.7307   -0.7136   -0.6961   -0.6782
+
+  Columns 163 through 168
+
+   -0.6599   -0.6412   -0.6221   -0.6026   -0.5828   -0.5626
+
+  Columns 169 through 174
+
+   -0.5421   -0.5212   -0.5000   -0.4785   -0.4567   -0.4347
+
+  Columns 175 through 180
+
+   -0.4124   -0.3898   -0.3670   -0.3439   -0.3207   -0.2973
+
+  Columns 181 through 186
+
+   -0.2737   -0.2499   -0.2260   -0.2019   -0.1777   -0.1534
+
+  Columns 187 through 192
+
+   -0.1290   -0.1045   -0.0800   -0.0554   -0.0308   -0.0062
+
+  Columns 193 through 198
+
+    0.0185    0.0431    0.0677    0.0923    0.1168    0.1412
+
+  Columns 199 through 204
+
+    0.1656    0.1898    0.2139    0.2379    0.2618    0.2855
+
+  Columns 205 through 210
+
+    0.3090    0.3324    0.3555    0.3784    0.4011    0.4235
+
+  Columns 211 through 216
+
+    0.4457    0.4677    0.4893    0.5106    0.5317    0.5524
+
+  Columns 217 through 222
+
+    0.5727    0.5928    0.6124    0.6317    0.6506    0.6691
+
+  Columns 223 through 228
+
+    0.6872    0.7049    0.7222    0.7390    0.7554    0.7713
+
+  Columns 229 through 234
+
+    0.7867    0.8017    0.8162    0.8302    0.8437    0.8566
+
+  Columns 235 through 240
+
+    0.8691    0.8810    0.8924    0.9032    0.9135    0.9233
+
+  Columns 241 through 246
+
+    0.9325    0.9411    0.9491    0.9566    0.9635    0.9698
+
+  Columns 247 through 252
+
+    0.9755    0.9806    0.9852    0.9891    0.9924    0.9951
+
+  Columns 253 through 256
+
+    0.9973    0.9988    0.9997    1.0000
+
+
+rs_minus =
+
+  Columns 1 through 6
+
+    0.9950    0.9950    0.9950    0.9950    0.9950    0.9950
+
+  Columns 7 through 12
+
+    0.9951    0.9951    0.9951    0.9951    0.9952    0.9952
+
+  Columns 13 through 18
+
+    0.9952    0.9953    0.9953    0.9953    0.9954    0.9954
+
+  Columns 19 through 24
+
+    0.9955    0.9955    0.9956    0.9957    0.9957    0.9958
+
+  Columns 25 through 30
+
+    0.9958    0.9959    0.9960    0.9961    0.9961    0.9962
+
+  Columns 31 through 36
+
+    0.9963    0.9964    0.9965    0.9966    0.9967    0.9967
+
+  Columns 37 through 42
+
+    0.9968    0.9969    0.9970    0.9971    0.9972    0.9973
+
+  Columns 43 through 48
+
+    0.9974    0.9976    0.9977    0.9978    0.9979    0.9980
+
+  Columns 49 through 54
+
+    0.9981    0.9982    0.9983    0.9985    0.9986    0.9987
+
+  Columns 55 through 60
+
+    0.9988    0.9989    0.9991    0.9992    0.9993    0.9994
+
+  Columns 61 through 66
+
+    0.9995    0.9997    0.9998    0.9999    1.0000    1.0002
+
+  Columns 67 through 72
+
+    1.0003    1.0004    1.0005    1.0006    1.0008    1.0009
+
+  Columns 73 through 78
+
+    1.0010    1.0011    1.0012    1.0014    1.0015    1.0016
+
+  Columns 79 through 84
+
+    1.0017    1.0018    1.0019    1.0021    1.0022    1.0023
+
+  Columns 85 through 90
+
+    1.0024    1.0025    1.0026    1.0027    1.0028    1.0029
+
+  Columns 91 through 96
+
+    1.0030    1.0031    1.0032    1.0033    1.0034    1.0035
+
+  Columns 97 through 102
+
+    1.0036    1.0037    1.0037    1.0038    1.0039    1.0040
+
+  Columns 103 through 108
+
+    1.0040    1.0041    1.0042    1.0043    1.0043    1.0044
+
+  Columns 109 through 114
+
+    1.0044    1.0045    1.0045    1.0046    1.0046    1.0047
+
+  Columns 115 through 120
+
+    1.0047    1.0048    1.0048    1.0048    1.0049    1.0049
+
+  Columns 121 through 126
+
+    1.0049    1.0049    1.0050    1.0050    1.0050    1.0050
+
+  Columns 127 through 132
+
+    1.0050    1.0050    1.0050    1.0050    1.0050    1.0050
+
+  Columns 133 through 138
+
+    1.0050    1.0050    1.0049    1.0049    1.0049    1.0049
+
+  Columns 139 through 144
+
+    1.0048    1.0048    1.0048    1.0047    1.0047    1.0046
+
+  Columns 145 through 150
+
+    1.0046    1.0045    1.0045    1.0044    1.0044    1.0043
+
+  Columns 151 through 156
+
+    1.0043    1.0042    1.0041    1.0040    1.0040    1.0039
+
+  Columns 157 through 162
+
+    1.0038    1.0037    1.0037    1.0036    1.0035    1.0034
+
+  Columns 163 through 168
+
+    1.0033    1.0032    1.0031    1.0030    1.0029    1.0028
+
+  Columns 169 through 174
+
+    1.0027    1.0026    1.0025    1.0024    1.0023    1.0022
+
+  Columns 175 through 180
+
+    1.0021    1.0019    1.0018    1.0017    1.0016    1.0015
+
+  Columns 181 through 186
+
+    1.0014    1.0012    1.0011    1.0010    1.0009    1.0008
+
+  Columns 187 through 192
+
+    1.0006    1.0005    1.0004    1.0003    1.0002    1.0000
+
+  Columns 193 through 198
+
+    0.9999    0.9998    0.9997    0.9995    0.9994    0.9993
+
+  Columns 199 through 204
+
+    0.9992    0.9991    0.9989    0.9988    0.9987    0.9986
+
+  Columns 205 through 210
+
+    0.9985    0.9983    0.9982    0.9981    0.9980    0.9979
+
+  Columns 211 through 216
+
+    0.9978    0.9977    0.9976    0.9974    0.9973    0.9972
+
+  Columns 217 through 222
+
+    0.9971    0.9970    0.9969    0.9968    0.9967    0.9967
+
+  Columns 223 through 228
+
+    0.9966    0.9965    0.9964    0.9963    0.9962    0.9961
+
+  Columns 229 through 234
+
+    0.9961    0.9960    0.9959    0.9958    0.9958    0.9957
+
+  Columns 235 through 240
+
+    0.9957    0.9956    0.9955    0.9955    0.9954    0.9954
+
+  Columns 241 through 246
+
+    0.9953    0.9953    0.9953    0.9952    0.9952    0.9952
+
+  Columns 247 through 252
+
+    0.9951    0.9951    0.9951    0.9951    0.9950    0.9950
+
+  Columns 253 through 256
+
+    0.9950    0.9950    0.9950    0.9950
+
+Elapsed time is 1466.765502 seconds.
+
+err_nullvec =
+
+   7.7034e-10
+
+
+err_nullvec =
+
+   9.9601e-10
+
+Elapsed time is 1465.593973 seconds.
+
+Saving to: C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\matlab.mat
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m', 51)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\zjw\Documents\MATLAB\hot-spots\worker16-3\test.m',51,0)">line 51</a>)
+nothing
+} 
