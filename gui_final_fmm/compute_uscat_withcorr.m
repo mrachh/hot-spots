@@ -15,6 +15,7 @@ function [uscat] = compute_uscat_withcorr(chnkr, zk, sol, out, targets,flag,corr
     srcinfo.dipvec = rnorms;
     eps = 1e-7;
     uscat = hfmm2d(eps,zk,srcinfo,targets(1:2,out));
+    uscat = uscat(:);
     uscat = uscat + corr*dens;
     %uscat = chunkerkerneval_withcorr(chnkr,fkern,sol,targets(:,out),flag,corr);
 end
