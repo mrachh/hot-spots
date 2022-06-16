@@ -62,6 +62,8 @@ targstau = reshape(targstau,2,chnkr.k*chnkr.nch);
 
 % compute boundary data
 srcinfo = []; srcinfo.r = targ0; targinfo = []; targinfo.r = chnkr.r;
+srcinfo.n = chnkr.n;
+srcinfo.n = reshape(srcinfo.n,2,chnkr.k*chnkr.nch);
 targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
 targinfo.d = chnkr.d;
 targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
@@ -78,6 +80,9 @@ targinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
 srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
 srcinfo.d = chnkr.d;
 srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
+srcinfo.n = chnkr.n;
+srcinfo.n = reshape(srcinfo.n,2,chnkr.k*chnkr.nch);
+
 temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'D').';
 
 % compute quadrature weights
@@ -109,6 +114,8 @@ srcinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
 srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
 srcinfo.d = chnkr.d;
 srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
+srcinfo.n = chnkr.n;
+srcinfo.n = reshape(srcinfo.n,2,chnkr.k*chnkr.nch);
 temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'D').';
 ws = weights(chnkr);
 ws = reshape(ws,chnkr.k*chnkr.nch, 1);
