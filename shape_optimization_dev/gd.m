@@ -94,7 +94,7 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         end
 
         % Make sure radii are positive
-        max_steps = (opt. - 0.1)/(grad);
+        max_steps = (opt - 0.1)./(grad);
         max_steps = max_steps(max_steps>0);
         [~, num_directions_inward] = size(max_steps)
         if num_directions_inward > 0
