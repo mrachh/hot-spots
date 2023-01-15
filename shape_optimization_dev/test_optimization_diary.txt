@@ -149,3 +149,985 @@ Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback
 Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\test.m', 30)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\test.m',30,0)">line 30</a>)
 [opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
 } 
+test
+
+gd_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             maxiter: 100
+              report: 1
+                 eps: 0.0100
+              hspace: 1.0000e-03
+     line_search_eps: 1.0000e-04
+    line_search_beta: 0.5000
+              savefn: 'gd.mat'
+
+
+loss_params = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    default_chebabs: [1 10]
+           chnk_fun: @chnk_poly
+         udnorm_ord: 'inf'
+          unorm_ord: '2'
+
+Polygon polygon with 8 vertices
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 9.02e+01; Time to compute 2-norm: 9.03e+00
+
+chebabs =
+
+    4.3123    4.7662
+
+
+loss =
+
+   -0.2776
+
+Computing 8 derivatives: 
+Compuing dx1...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.72e+01; Time to compute 2-norm: 9.43e+00
+
+chebabs =
+
+    4.3132    4.7672
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.73e+01; Time to compute 2-norm: 9.03e+00
+
+chebabs =
+
+    4.3113    4.7651
+
+Compuing dx2...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.72e+01; Time to compute 2-norm: 9.56e+00
+
+chebabs =
+
+    4.3132    4.7672
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.82e+01; Time to compute 2-norm: 9.37e+00
+
+chebabs =
+
+    4.3113    4.7651
+
+Compuing dx3...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.78e+01; Time to compute 2-norm: 9.77e+00
+
+chebabs =
+
+    4.3132    4.7672
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.86e+01; Time to compute 2-norm: 9.32e+00
+
+chebabs =
+
+    4.3113    4.7651
+
+Compuing dx4...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.75e+01; [Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.941931e-16.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('id', 'C:\Users\charl\Desktop\jm_shape_optimization\code\FLAM\core\id.m', 120)" style="font-weight:bold">id</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\FLAM\core\id.m',120,0)">line 120</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chnk.flam.nproxy_square', 'C:\Users\charl\Desktop\jm_shape_optimization\code\chunkie\chunkie\+chnk\+flam\nproxy_square.m', 58)" style="font-weight:bold">chnk.flam.nproxy_square</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\chunkie\chunkie\+chnk\+flam\nproxy_square.m',58,0)">line 58</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('chunkerflam', 'C:\Users\charl\Desktop\jm_shape_optimization\code\chunkie\chunkie\chunkerflam.m', 176)" style="font-weight:bold">chunkerflam</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\chunkie\chunkie\chunkerflam.m',176,0)">line 176</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('helm_dprime', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\src\helm_dprime.m', 17)" style="font-weight:bold">helm_dprime</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\src\helm_dprime.m',17,0)">line 17</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ud_norm', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\ud_norm.m', 7)" style="font-weight:bold">ud_norm</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\ud_norm.m',7,0)">line 7</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\loss.m', 46)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\loss.m',46,0)">line 46</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\gd.m', 68)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\gd.m',68,0)">line 68</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\test.m', 30)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\test.m',30,0)">line 30</a>)
+] 
+Time to compute 2-norm: 9.00e+00
+
+chebabs =
+
+    4.3132    4.7672
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.84e+01; Time to compute 2-norm: 9.16e+00
+
+chebabs =
+
+    4.3113    4.7651
+
+Compuing dx5...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.87e+01; Time to compute 2-norm: 9.40e+00
+
+chebabs =
+
+    4.3132    4.7672
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.94e+01; Time to compute 2-norm: 9.00e+00
+
+chebabs =
+
+    4.3113    4.7651
+
+Compuing dx6...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.67e+01; Time to compute 2-norm: 9.31e+00
+
+chebabs =
+
+    4.3132    4.7672
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.83e+01; Time to compute 2-norm: 8.91e+00
+
+chebabs =
+
+    4.3113    4.7651
+
+Compuing dx7...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.80e+01; Time to compute 2-norm: 9.20e+00
+
+chebabs =
+
+    4.3132    4.7672
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.87e+01; Time to compute 2-norm: 9.13e+00
+
+chebabs =
+
+    4.3113    4.7651
+
+Compuing dx8...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.80e+01; Time to compute 2-norm: 9.73e+00
+
+chebabs =
+
+    4.3132    4.7673
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.91e+01; Time to compute 2-norm: 1.01e+01
+
+chebabs =
+
+    4.3113    4.7651
+
+Gradient computed!
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 3.01e+01; Time to compute 2-norm: 9.67e+00
+
+chebabs =
+
+    4.3123    4.7662
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.82e+01; Time to compute 2-norm: 9.16e+00
+
+chebabs =
+
+    4.3123    4.7662
+
+
+num_directions_inward =
+
+     6
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 8.59e+01; Time to compute 2-norm: 1.29e+01
+
+chebabs =
+
+    4.1906    4.6317
+
+Some statistics before line search: 
+
+step =
+
+    5.5143
+
+
+fdd =
+
+    0.0464
+
+
+grad =
+
+   -0.1710    0.0103    0.0618    0.0224    0.0101   -0.1317    0.0982    0.1013
+
+
+opt =
+
+    0.5635    0.5628    0.5621    0.5614    0.5607    0.5600    0.5593    0.5585
+
+Saving log file...
+iter: 1, loss: -2.78e-01, grad: 2.66e-01, 2nd-deri: 4.64e-02, time: 8.89e+02
+Current weight [1.50645917659204 0.506020580552126 0.221038957836558 0.437913418092555 0.504963458284863 1.28611861213774 0.0178104742786961 1.01289408949157e-05]
+Current gradient [-0.171006160082782 0.0102930192763251 0.0618458408142286 0.0223882992642921 0.0101010468312734 -0.131687407006559 0.098189253204789 0.101289408949656]
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 8.31e+01; Time to compute 2-norm: 1.28e+01
+
+chebabs =
+
+    4.1906    4.6317
+
+
+loss =
+
+   -0.3649
+
+Computing 8 derivatives: 
+Compuing dx1...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.62e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    4.1913    4.6325
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.52e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    4.1899    4.6309
+
+Compuing dx2...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.45e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    4.1920    4.6333
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.66e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    4.1892    4.6301
+
+Compuing dx3...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.65e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    4.1906    4.6317
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.62e+01; Time to compute 2-norm: 1.27e+01
+
+chebabs =
+
+    4.1906    4.6317
+
+Compuing dx4...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.78e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    4.1918    4.6330
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.70e+01; Time to compute 2-norm: 1.24e+01
+
+chebabs =
+
+    4.1894    4.6304
+
+Compuing dx5...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.59e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    4.1917    4.6329
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.79e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    4.1895    4.6305
+
+Compuing dx6...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.63e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    4.1916    4.6328
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.63e+01; Time to compute 2-norm: 1.25e+01
+
+chebabs =
+
+    4.1896    4.6306
+
+Compuing dx7...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.60e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    4.1906    4.6317
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.62e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    4.1906    4.6317
+
+Compuing dx8...
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.60e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    4.1906    4.6317
+
+
+idx =
+
+     1     1     1     1     1     1     1     1
+
+Time to find eigenvalue: 2.62e+01; Time to compute 2-norm: 1.26e+01
+
+chebabs =
+
+    4.1906    4.6317
+
+Gradient computed!
+gradient descent converged after 2 steps
+optimal weight: 1.51e+00 
+optimal weight: 5.06e-01 
+optimal weight: 2.21e-01 
+optimal weight: 4.38e-01 
+optimal weight: 5.05e-01 
+optimal weight: 1.29e+00 
+optimal weight: 1.78e-02 
+optimal weight: 1.01e-05 
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('loss', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\loss.m', 18)" style="font-weight:bold">loss</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\loss.m',18,0)">line 18</a>)
+    default_chebabs = loss_params.default_chebabs;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\test.m', 32)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\test.m',32,0)">line 32</a>)
+fprintf('optimal value: %5.2e \n', fun(opt));
+} 
+
+
+
+load('gd.mat')
+grad
+
+grad =
+
+   -0.1710    0.0103    0.0618    0.0224    0.0101   -0.1317    0.0982    0.1013
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+
+init_weight
+
+init_weight =
+
+    0.5635    0.5628    0.5621    0.5614    0.5607    0.5600    0.5593    0.5585
+
+opt
+
+opt =
+
+    1.5065    0.5060    0.2210    0.4379    0.5050    1.2861    0.0178    0.0000
+
+chnkr
+{Unrecognized function or variable 'chnkr'.
+} 
+chnk_poly(opt)
+
+ans = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×130 double]
+          d: [2×16×130 double]
+         d2: [2×16×130 double]
+        adj: [2×130 double]
+          h: [130×1 double]
+          n: [2×16×130 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 130
+    nchstor: 256
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 2080
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+[chnkr, _, _] = chnk_poly(opt)
+ [chnkr, _, _] = chnk_poly(opt)
+         ↑
+{Error: Invalid text character. Check for unsupported symbol, invisible character, or pasting of non-ASCII characters.
+} 
+[chnkr, a, b] = chnk_poly(opt)
+
+chnkr = 
+
+  <a href="matlab:helpPopup chunker" style="font-weight:bold">chunker</a> with properties:
+
+          r: [2×16×130 double]
+          d: [2×16×130 double]
+         d2: [2×16×130 double]
+        adj: [2×130 double]
+          h: [130×1 double]
+          n: [2×16×130 double]
+       data: [0×16×0 double]
+     nchmax: 10000
+        nch: 130
+    nchstor: 256
+    hasdata: 0
+       vert: {}
+          k: 16
+        dim: 2
+        npt: 2080
+    datadim: 0
+      nvert: 0
+    vertdeg: []
+
+
+a =
+
+    0.0175
+   -0.0048
+
+
+b =
+
+    1.5065    0.3578    0.0000   -0.3097   -0.5050   -0.9094   -0.0000    0.0000
+         0    0.3578    0.2210    0.3097    0.0000   -0.9094   -0.0178   -0.0000
+
+scatter(b(1,:), b(2,:)0
+ scatter(b(1,:), b(2,:)0
+                       ↑
+{Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or other syntax error.
+To construct matrices, use brackets instead of parentheses.
+} 
+scatter(b(1,:), b(2,:))
+weight
+
+weight =
+
+    0.5635    0.5628    0.5621    0.5614    0.5607    0.5600    0.5593    0.5585
+    1.5065    0.5060    0.2210    0.4379    0.5050    1.2861    0.0178    0.0000
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+
+weight(:3,:)
+ weight(:3,:)
+         ↑
+{Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or other syntax error.
+To construct matrices, use brackets instead of parentheses.
+} 
+weight(1:3,:)
+
+ans =
+
+    0.5635    0.5628    0.5621    0.5614    0.5607    0.5600    0.5593    0.5585
+    1.5065    0.5060    0.2210    0.4379    0.5050    1.2861    0.0178    0.0000
+       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN
+
+fdd
+
+fdd =
+
+    0.0464
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+       NaN
+
+fdd(1:3)
+
+ans =
+
+    0.0464
+       NaN
+       NaN
+
+opt
+
+opt =
+
+    1.5065    0.5060    0.2210    0.4379    0.5050    1.2861    0.0178    0.0000
+
+opt - 0.4
+
+ans =
+
+    1.1065    0.1060   -0.1790    0.0379    0.1050    0.8861   -0.3822   -0.4000
+
+mean(opt)
+
+ans =
+
+    0.5600
+
+opt / mean(opt
+ opt / mean(opt
+               ↑
+{Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched
+delimiters.
+} 
+opt / mean(opt)
+
+ans =
+
+    2.6899    0.9035    0.3947    0.7819    0.9017    2.2965    0.0318    0.0000
+
