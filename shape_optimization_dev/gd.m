@@ -62,14 +62,12 @@ function [opt, gd_log] = gd(fun, init, gd_params, loss_params)
         grad = zeros(1, num_params);
         fprintf('Computing %d derivatives: \n', num_params);
         for param_idx = 1:num_params
-            if idx(param_idx)
-                fprintf('Compuing dx%d...\n', param_idx);
-                direction = zeros(1, num_params);
-                direction(param_idx) = hspace;
-                left = fun(opt - direction, loss_params, chebabs);
-                right = fun(opt + direction, loss_params, chebabs);
-                grad(param_idx) = (right - left) / (2 * hspace);
-            end
+            fprintf('Compuing dx%d...\n', param_idx);
+            direction = zeros(1, num_params);
+            direction(param_idx) = hspace;
+            left = fun(opt - direction, loss_params, chebabs);
+            right = fun(opt + direction, loss_params, chebabs);
+            grad(param_idx) = (right - left) / (2 * hspace);
         end
         fprintf('Gradient computed!\n')
         grad_norm = norm(grad);

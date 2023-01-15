@@ -129,3 +129,23 @@ idx =
 
      1     1     1     1     1     1     1     1
 
+Time to find eigenvalue: 8.97e+01; Time to compute 2-norm: 1.01e+01
+
+chebabs =
+
+    4.3123    4.7662
+
+
+loss =
+
+   -0.2776
+
+Computing 8 derivatives: 
+{Unrecognized function or variable 'idx'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('gd', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\gd.m', 65)" style="font-weight:bold">gd</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\gd.m',65,0)">line 65</a>)
+            if idx(param_idx)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', 'C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\test.m', 30)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('C:\Users\charl\Desktop\jm_shape_optimization\code\hot-spots\shape_optimization_dev\test.m',30,0)">line 30</a>)
+[opt, gd_log] = gd(@loss, init_weight, gd_params, loss_params);
+} 
