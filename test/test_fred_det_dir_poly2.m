@@ -3,15 +3,13 @@ clear;
 
 % Global parameters
 MAX_CHUNK_LEN = 1
-NUM_VERTS = 4
+NUM_VERTS = 6
 
 
 % Create polygon
 
-cparams = [];
-cparams.eps = 1.0e-5;
-pref = []; 
-pref.k = 16;
+cparams = [];cparams.eps = 1.0e-5;
+pref = []; pref.k = 16;
 
 % Create source and target location
 src0 = [0.3;0.21];
@@ -25,13 +23,11 @@ vert_angles = vert_angles(1:NUM_VERTS)
 vert_coords = ctr.' + modes .* cat(1, cos(vert_angles), 1/sqrt(3.0)*sin(vert_angles))
 chnkr = chunkerpoly(vert_coords, cparams, pref);
 
-
+error('nothing')
 
 % solve and visualize the solution
 
 % build double layer potential
-
-
 eps = 1e-7;
 p = chebfunpref; p.chebfuneps = eps;
 p.splitting = 0; p.maxLength=257;

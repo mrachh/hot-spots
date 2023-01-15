@@ -4,6 +4,7 @@ function [zk, err_nullvec, sigma] = find_first_eig(chnkr, chebabs)
 
     % Set eps
     eps = 1e-9;
+    eps_imag = 1e-4;
     p = chebfunpref; p.chebfuneps = eps;
     p.splitting = 0; p.maxLength=257;
 
@@ -15,7 +16,7 @@ function [zk, err_nullvec, sigma] = find_first_eig(chnkr, chebabs)
     detchebs = chebfun(detfun,chebabs,p);
     
     rts = roots(detchebs,'complex');
-    rts_real = rts(abs(imag(rts))<eps*10);
+    rts_real = rts(abs(imag(rts))<eps_imag);
 
     zk = real(rts_real(1));
     [d,F] = helm_dir_det(zk,chnkr,opts);

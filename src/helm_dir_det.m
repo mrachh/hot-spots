@@ -1,4 +1,4 @@
-function [detfun,varargout] = helm_neu_det(zk,chnkr,opts)
+function [detfun,varargout] = helm_dir_det(zk,chnkr,opts)
     
 %HELM_NEU_DET evaluates the Fredholm determinant for the interior 
 %Dirichlet problem for the helmholtz equation using the representation

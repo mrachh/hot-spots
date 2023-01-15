@@ -2,7 +2,7 @@ addpath('../src');
 
 % Global parameters
 MAX_CHUNK_LEN = .25
-NUM_VERTS = 3
+NUM_VERTS = 32
 
 % Create the polygon
 cparams = [];
