@@ -54,9 +54,10 @@ targstau = tangents(chnkr);
 targstau = reshape(targstau,2,chnkr.k*chnkr.nch);
 
 % compute boundary data
-srcinfo = []; srcinfo.r = targ0; targinfo = []; targinfo.r = chnkr.r;
+srcinfo = []; srcinfo.r = targ0; srcinfo.n = chnkr.n;
+targinfo = []; targinfo.r = chnkr.r; targinfo.d = chnkr.d;
+srcinfo.n = reshape(srcinfo.n,2,chnkr.k*chnkr.nch)
 targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
-targinfo.d = chnkr.d;
 targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
 ubdry = chnk.helm2d.kern(zk,srcinfo,targinfo,'s');
 
@@ -65,13 +66,12 @@ rhs = ubdry; rhs = rhs(:);
 start = tic; sol = gmres(sys,rhs,[],1e-14,100); t1 = toc(start);
 
 % compute D[sigma](x_in)
-targinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
+targinfo = []; targinfo.r = src0; 
+srcinfo = []; srcinfo.r = chnkr.r; srcinfo.d = chnkr.d; srcinfo.n = chnkr.n;
 srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
-srcinfo.d = chnkr.d;
 srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
+srcinfo.n = reshape(srcinfo.n,2,chnkr.k*chnkr.nch);
 temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'d').'
-
-% compute quadrature weights
 ws = weights(chnkr)
 ws = reshape(ws,chnkr.k*chnkr.nch, 1)
 ucomputed = sum(sol .* temp .* ws)
@@ -90,14 +90,13 @@ err_gmres =  norm(uex-ucomputed)/norm(uex);
 dval = -0.5;
 opts_flam = [];
 opts_flam.flamtype = 'rskelf';
-
 F = chunkerflam(chnkr,fkern,dval,opts_flam);
 sol2 = rskelf_sv(F,rhs);
 
 % compute D[sigma](x_in)
-srcinfo = []; srcinfo.r = src0; targinfo = []; targinfo.r = chnkr.r;
+srcinfo = []; srcinfo.r = src0; 
+targinfo = []; targinfo.r = chnkr.r; targinfo.d = chnkr.d;
 targinfo.r = reshape(targinfo.r,2,chnkr.k*chnkr.nch);
-targinfo.d = chnkr.d;
 targinfo.d = reshape(targinfo.d,2,chnkr.k*chnkr.nch);
 temp = chnk.helm2d.kern(zk,srcinfo,targinfo,'sprime')
 ws = weights(chnkr)

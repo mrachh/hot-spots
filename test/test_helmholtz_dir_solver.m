@@ -105,12 +105,12 @@ err_gmres =  norm(uex-ucomputed)/norm(uex);
 dval = -0.5;
 opts_flam = [];
 opts_flam.flamtype = 'rskelf';
-
 F = chunkerflam(chnkr,fkern,dval,opts_flam);
+
 sol2 = rskelf_sv(F,rhs);
 
 % compute D[sigma](x_in)
-srcinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
+targinfo = []; targinfo.r = src0; srcinfo = []; srcinfo.r = chnkr.r;
 srcinfo.r = reshape(srcinfo.r,2,chnkr.k*chnkr.nch);
 srcinfo.d = chnkr.d;
 srcinfo.d = reshape(srcinfo.d,2,chnkr.k*chnkr.nch);
