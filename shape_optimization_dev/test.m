@@ -2,7 +2,7 @@ clear;clc;addpath('../src');
 
 diary('test_optimization_diary.txt');
 
-num_verts = 8;
+num_verts = 64;
 num_params = num_verts;
 init_weight = (ones(1,num_verts) - [1:num_verts] / (num_verts * 1000))/sqrt(pi);
 % Gradient descent parameter

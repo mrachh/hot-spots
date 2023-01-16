@@ -1,4 +1,4 @@
-function [chnkr, center, verts] = chnk_poly(rs, idx)
+function [chnkr, center, verts] = chnk_poly(rs)
     % INPUT:  [r_1 r_2 ... r_M]
     % OUTPUT: chnkr object, center of chunker object
     % Vertices:
@@ -6,21 +6,15 @@ function [chnkr, center, verts] = chnk_poly(rs, idx)
     % where r_1,...,r_M are real numbers and 
     % theta_j = pi*(j-1)/(M-1).
 
-    if nargin < 2
-        idx = ones(size(rs));
-    end
-
     [~, M] = size(rs);
     num_verts = sum(idx);
     verts = zeros(2, num_verts);
     j = 1;
     for i = 1:M 
-        if idx(i)
-            angle_i = 2*pi*(i-1)/M;
-            verts(1,j) = rs(i)*cos(angle_i);
-            verts(2,j) = rs(i)*sin(angle_i);
-            j = j + 1;
-        end
+        angle_i = 2*pi*(i-1)/M;
+        verts(1,j) = rs(i)*cos(angle_i);
+        verts(2,j) = rs(i)*sin(angle_i);
+        j = j + 1;
     end
     cparams = []; cparams.eps = 1.0e-5;
     pref = []; pref.k = 16;
