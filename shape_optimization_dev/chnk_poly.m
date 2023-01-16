@@ -7,8 +7,7 @@ function [chnkr, center, verts] = chnk_poly(rs)
     % theta_j = pi*(j-1)/(M-1).
 
     [~, M] = size(rs);
-    num_verts = sum(idx);
-    verts = zeros(2, num_verts);
+    verts = zeros(2, M);
     j = 1;
     for i = 1:M 
         angle_i = 2*pi*(i-1)/M;
@@ -23,5 +22,5 @@ function [chnkr, center, verts] = chnk_poly(rs)
     refopts = []; refopts.maxchunklen = pi/7/2;
     chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
 
-    center = sum(verts, 2)/num_verts;
+    center = sum(verts, 2)/M;
 end
