@@ -1,0 +1,6 @@
+addpath('../../chunkie/chunkie')
+addpath('../../hot-spots/src')
+addpath('../../chebfun')
+addpath('../../FLAM')
+run('../../chunkie/startup.m')
+run('../../FLAM/startup.m')

@@ -1,0 +1,12 @@
+{Error using chunker/refine (line 243)
+too many chunks
+
+Error in chnk_poly (line 30)
+    chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
+
+Error in loss (line 39)
+    [chnkr, center] = loss_params.chnk_fun(weight, idx);
+
+Error in test (line 38)
+            res = loss(rs, loss_params);
+} 

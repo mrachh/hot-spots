@@ -1,0 +1,6 @@
+addpath('~/matlab_packages/chunkie/chunkie')
+addpath('~/matlab_packages/chebfun')
+addpath('~/matlab_packages/FLAM')
+addpath('src')
+run('~/matlab_packages/chunkie/startup.m')
+run('~/matlab_packages/FLAM/startup.m')

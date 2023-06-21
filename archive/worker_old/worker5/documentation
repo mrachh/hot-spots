@@ -1,0 +1,9 @@
+10 point experiment
+h = 1e-4
+
+need to initialize with asymmetric shape (at least not a circle)
+otherwise local max
+
+[0.563945298879718   0.564851815720133   0.564865732303110   0.563513505876953   0.564424234906898   0.566401525432045   0.563926851865282   0.564268141749132   0.564365857909443   0.563353533483639];
+
+drawn from normal(1/sqrt(pi), 1e-2)

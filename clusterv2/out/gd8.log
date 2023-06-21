@@ -1,0 +1,245 @@
+fortran compiler found at: /usr/bin/gfortran
+
+Fmm installation not in standard location
+Manual installation required
+iter_idx =
+
+     1
+
+
+rads =
+
+  Columns 1 through 7
+
+    1.1411    0.7628    0.8414    1.2547    1.2547    0.8414    0.7628
+
+  Column 8
+
+    1.1411
+
+
+iter_idx =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.948308e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_norm (line 7)
+In compute_loss (line 39)
+In gd (line 30)
+In gd8 (line 13)
+] 
+
+rads =
+
+  Columns 1 through 7
+
+    1.1422    0.7610    0.8415    1.2553    1.2553    0.8415    0.7611
+
+  Column 8
+
+    1.1422
+
+
+iter_idx =
+
+     3
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.550143e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_norm (line 7)
+In compute_loss (line 39)
+In gd (line 25)
+In gd8 (line 13)
+] 
+
+rads =
+
+  Columns 1 through 7
+
+    1.1423    0.7608    0.8415    1.2554    1.2553    0.8415    0.7608
+
+  Column 8
+
+    1.1423
+
+
+iter_idx =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.844289e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_norm (line 7)
+In compute_loss (line 39)
+In gd (line 25)
+In gd8 (line 13)
+] 
+
+rads =
+
+  Columns 1 through 7
+
+    1.1546    0.7409    0.8438    1.2624    1.2607    0.8421    0.7427
+
+  Column 8
+
+    1.1529
+
+
+iter_idx =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.100029e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_norm (line 7)
+In compute_loss (line 39)
+In gd (line 25)
+In gd8 (line 13)
+] 
+
+rads =
+
+  Columns 1 through 7
+
+    1.1559    0.7379    0.8449    1.2630    1.2607    0.8418    0.7426
+
+  Column 8
+
+    1.1532
+
+
+iter_idx =
+
+     6
+
+
+rads =
+
+  Columns 1 through 7
+
+    1.1566    0.7362    0.8455    1.2633    1.2607    0.8417    0.7425
+
+  Column 8
+
+    1.1534
+
+
+iter_idx =
+
+     7
+
+
+rads =
+
+  Columns 1 through 7
+
+    1.1568    0.7358    0.8456    1.2633    1.2607    0.8417    0.7425
+
+  Column 8
+
+    1.1535
+
+
+iter_idx =
+
+     8
+
+
+rads =
+
+  Columns 1 through 7
+
+    1.1568    0.7358    0.8456    1.2633    1.2607    0.8417    0.7425
+
+  Column 8
+
+    1.1535
+
+
+iter_idx =
+
+     9
+
+
+rads =
+
+  Columns 1 through 7
+
+    1.1568    0.7358    0.8456    1.2633    1.2607    0.8417    0.7425
+
+  Column 8
+
+    1.1535
+
+
+iter_idx =
+
+    10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.146046e-16.] 
+[> In id (line 120)
+In rskelf (line 213)
+In chunkerflam (line 185)
+In helm_dprime (line 17)
+In ud_norm (line 7)
+In compute_loss (line 39)
+In gd (line 25)
+In gd8 (line 13)
+] 
+
+rads =
+
+  Columns 1 through 7
+
+    1.1568    0.7358    0.8456    1.2633    1.2607    0.8417    0.7425
+
+  Column 8
+
+    1.1535
+
+
+iter_idx =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.604425e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_norm (line 7)
+In compute_loss (line 39)
+In gd (line 29)
+In gd8 (line 13)
+] 
+
+rads =
+
+  Columns 1 through 7
+
+    1.1568    0.7358    0.8456    1.2633    1.2607    0.8417    0.7425
+
+  Column 8
+
+    1.1535
+

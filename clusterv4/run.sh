@@ -1,0 +1,1 @@
+sbatch gd8.sbatch
