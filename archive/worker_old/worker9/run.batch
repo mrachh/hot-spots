@@ -1,8 +1,0 @@
-#!/bin/bash
-#SBATCH --partition=ccm
-#SBATCH --job-name=gdrich
-#SBATCH --output=test.out
-#SBATCH --error=test.err
-#SBATCH --time=05-00:00:00
-module load matlab
-matlab -nosplash -nodesktop -r "startup_cluster;test;exit"

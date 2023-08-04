@@ -1,4 +1,0 @@
-test.m: code that reproduce chunk newton failing warning
-diary.txt: contains stdout of test.m
-
-polysymeven_chnk.m: produce a symmetric 2n-gon with n radii r_1, ..., r_n

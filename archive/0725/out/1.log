@@ -1,0 +1,8473 @@
+fortran compiler found at: /usr/bin/gfortran
+
+Fmm installation not in standard location
+Manual installation required
+n =
+
+    16
+
+
+ry_ratio =
+
+                       0.5
+
+
+cy_ratio =
+
+                       0.9
+
+
+dump_idx =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.162764e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 17)
+In gd_ellipse (line 22)
+] 
+
+iter_idx =
+
+     1
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.571221724218041           1.0614002841877          1.28003528351403
+
+  Columns 4 through 6
+
+          1.27125980415751           1.1916558453652          1.11192863572416
+
+  Columns 7 through 9
+
+           1.0528199925023          1.01821244808889          1.00751589831287
+
+  Columns 10 through 12
+
+          1.01907220148287          1.04968855115262          1.09027776250331
+
+  Columns 13 through 15
+
+          1.11310223050958          1.04387711407798         0.759896727318622
+
+  Column 16
+
+         0.358035496884324
+
+
+f_zero =
+
+        -0.353624807017754
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.924423e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.102868e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.536762e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          6.33612566869885
+
+
+improvement =
+
+       0.00191904184714892
+
+
+iter_idx =
+
+     2
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.555394782241582          1.00420347651853           1.2227840424521
+
+  Columns 4 through 6
+
+          1.17197421288158          1.01615374401893         0.919023257842571
+
+  Columns 7 through 9
+
+           0.9489325746239          1.04873385796266          1.12931920402971
+
+  Columns 10 through 12
+
+          1.15237852730384          1.13935078798122          1.12840383435482
+
+  Columns 13 through 15
+
+          1.12084071136287          1.05130610508347         0.831688875021074
+
+  Column 16
+
+         0.559512006321136
+
+
+f_zero =
+
+        -0.355543848961478
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.408923e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.568091e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.911060e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     9
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.150806e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          4.48675821510601
+
+
+improvement =
+
+       0.00560762278621307
+
+
+iter_idx =
+
+     3
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.595324710860342          1.01175698931425           1.2173638485357
+
+  Columns 4 through 6
+
+          1.17366405847763          1.07724315167905          1.14438357383987
+
+  Columns 7 through 9
+
+          1.09463981316744          1.04381943401852          1.06503005250274
+
+  Columns 10 through 12
+
+           1.0506745559064          1.01122224636112          1.02245272327149
+
+  Columns 13 through 15
+
+          1.06450147707191          1.02149998886512         0.825897139941784
+
+  Column 16
+
+         0.580526236186655
+
+
+f_zero =
+
+        -0.361151473022608
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.136773e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.807691e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+          6.49087761363335
+
+
+improvement =
+
+     -0.000649812099225822
+
+
+step =
+
+          3.24543880681667
+
+
+improvement =
+
+       0.00285497453273537
+
+
+iter_idx =
+
+     4
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.601348857334632          1.00568282596506          1.20659119608736
+
+  Columns 4 through 6
+
+          1.14613435812071         0.997571569579388          1.10310872512961
+
+  Columns 7 through 9
+
+          1.05330117249926          1.02749001614821          1.07674662051372
+
+  Columns 10 through 12
+
+          1.08225485053457          1.07085732822695           1.0654056541716
+
+  Columns 13 through 15
+
+          1.07898366410491          1.03172932170194         0.848023458482509
+
+  Column 16
+
+         0.604770381399547
+
+
+f_zero =
+
+        -0.364006447360375
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.420581e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.707743e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.987232e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.067371e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.083562e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          25.9115777362123
+
+
+improvement =
+
+     -0.000891973068985308
+
+
+step =
+
+          12.9557888681061
+
+
+improvement =
+
+       0.00052975988827314
+
+
+iter_idx =
+
+     5
+
+
+rads =
+
+  Columns 1 through 3
+
+          0.66042489008125          1.01237314838087          1.19658883972354
+
+  Columns 4 through 6
+
+          1.13382648329577           1.0165365577719          1.09592229935151
+
+  Columns 7 through 9
+
+          1.04674268916597          1.02083724059751          1.03677321311431
+
+  Columns 10 through 12
+
+          1.02695712673334          1.02455797262722          1.04190835720539
+
+  Columns 13 through 15
+
+          1.07311418654624           1.0398270414426         0.902565410548475
+
+  Column 16
+
+         0.671044543414094
+
+
+f_zero =
+
+        -0.364536207139415
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.006568e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.517029e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.653775e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     9
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.045028e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.132459e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          5.79129863313177
+
+
+improvement =
+
+     -9.62914862202013e-05
+
+
+step =
+
+          2.89564931656588
+
+
+improvement =
+
+      0.000410873441699933
+
+
+iter_idx =
+
+     6
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.663847629159904           1.0091830029437          1.19229897020439
+
+  Columns 4 through 6
+
+          1.12235263962115         0.984127525130745           1.0814136095901
+
+  Columns 7 through 9
+
+          1.03330886988825          1.02093716545612          1.04504080315373
+
+  Columns 10 through 12
+
+          1.04199902637034          1.04135821504376          1.05241819978179
+
+  Columns 13 through 15
+
+          1.07734118558656          1.04359028214809         0.910980779614698
+
+  Column 16
+
+         0.679802096306673
+
+
+f_zero =
+
+        -0.364947080804735
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.907200e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.384212e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+           14.959937580523
+
+
+improvement =
+
+      7.67621564267129e-05
+
+
+iter_idx =
+
+     7
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.695954290642923          1.01057686892396          1.18273341630243
+
+  Columns 4 through 6
+
+          1.10653554659209         0.995754661379846          1.07698707350101
+
+  Columns 7 through 9
+
+          1.03638005548266          1.03580610888349          1.03842106431778
+
+  Columns 10 through 12
+
+          1.02261346752669          1.01632515036358          1.02700342295754
+
+  Columns 13 through 15
+
+          1.06324935658219          1.04280488009622         0.935357645276189
+
+  Column 16
+
+         0.713496991171393
+
+
+f_zero =
+
+        -0.365023843019464
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.055703e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.704181e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          5.35219095132513
+
+
+improvement =
+
+      2.72832498610098e-06
+
+
+iter_idx =
+
+     8
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.700807333084222          1.00722792512669           1.1773211774828
+
+  Columns 4 through 6
+
+          1.09201525903689         0.963471042677149           1.0598030293605
+
+  Columns 7 through 9
+
+          1.01618132918232          1.02745927069041          1.04233835684234
+
+  Columns 10 through 12
+
+          1.04128138490318          1.04187241685173          1.04477728051427
+
+  Columns 13 through 15
+
+          1.06968490237425          1.04771733813131         0.944712962686142
+
+  Column 16
+
+         0.723328991055784
+
+
+f_zero =
+
+        -0.365026571468189
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.175998e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.855215e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          4.72943078692783
+
+
+improvement =
+
+      6.86834788486967e-05
+
+
+iter_idx =
+
+     9
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.709114983959256           1.0095806077835          1.17615072125798
+
+  Columns 4 through 6
+
+          1.09439811202669          1.00361644338553          1.07173629739164
+
+  Columns 7 through 9
+
+          1.03161311962635          1.03156171629664          1.03237333603165
+
+  Columns 10 through 12
+
+          1.02206675287902          1.01913236062415          1.02367214494835
+
+  Columns 13 through 15
+
+          1.05804505928255           1.0428311706896         0.946087066308071
+
+  Column 16
+
+         0.728020107509011
+
+
+f_zero =
+
+        -0.365095254975639
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.808471e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.622068e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 56)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+           5.2741200187546
+
+
+improvement =
+
+      1.47859090386393e-05
+
+
+iter_idx =
+
+    10
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.712609058887032          1.00586217283377          1.17056552288154
+
+  Columns 4 through 6
+
+           1.0778622759854         0.970157176773858          1.05393821707922
+
+  Columns 7 through 9
+
+          1.01402083281617          1.02730316262901          1.03988234745751
+
+  Columns 10 through 12
+
+          1.04132066267691          1.04261726363176          1.04150268742931
+
+  Columns 13 through 15
+
+          1.06476803923394          1.04746074281433         0.953942877720133
+
+  Column 16
+
+         0.736186959150106
+
+
+f_zero =
+
+        -0.365110040907891
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.821590e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          5.24208749173225
+
+
+improvement =
+
+      1.15737358633572e-05
+
+
+iter_idx =
+
+    11
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.720686311718021          1.00836687329224          1.16945259123754
+
+  Columns 4 through 6
+
+          1.08115116231498          1.00924211969497          1.06787671326451
+
+  Columns 7 through 9
+
+          1.03227589560617          1.03265347783196          1.02976583804559
+
+  Columns 10 through 12
+
+          1.02097427416766          1.01866013541487           1.0189989574021
+
+  Columns 13 through 15
+
+          1.05221440254339          1.04223182530272         0.954984175472599
+
+  Column 16
+
+         0.740465246690698
+
+
+f_zero =
+
+        -0.365121614431527
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.247108e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.951640e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.082796e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.018322e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 38)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+          5.71323833263953
+
+
+improvement =
+
+     -4.42461403715178e-05
+
+
+step =
+
+          2.85661916631976
+
+
+improvement =
+
+      0.000204657335435954
+
+
+iter_idx =
+
+    12
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.722108204870858          1.00627883050882          1.16638261124114
+
+  Columns 4 through 6
+
+            1.071162885555         0.990629652641123          1.05704477585076
+
+  Columns 7 through 9
+
+          1.02175937578241          1.02983291718449          1.03436625425741
+
+  Columns 10 through 12
+
+          1.03236535389744           1.0324962040612          1.03049035581082
+
+  Columns 13 through 15
+
+          1.05682293151237          1.04500843095095         0.958886446839276
+
+  Column 16
+
+         0.744364769035938
+
+
+f_zero =
+
+        -0.365326271804641
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.188057e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.904418e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      1.01187596349694e-05
+
+
+iter_idx =
+
+    13
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.724190228246784          1.00631592590625          1.16539962189046
+
+  Columns 4 through 6
+
+          1.06933683682537         0.992102126115198          1.05703650259999
+
+  Columns 7 through 9
+
+          1.02233539605533          1.03012518283962          1.03364967730281
+
+  Columns 10 through 12
+
+          1.03133857624999          1.03148212128636          1.02930124909519
+
+  Columns 13 through 15
+
+          1.05581779745885          1.04490524617163         0.960295923447172
+
+  Column 16
+
+          0.74636758850899
+
+
+f_zero =
+
+        -0.365336390755522
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.863091e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.904906e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.055347e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+           12.792798473812
+
+
+improvement =
+
+      4.91970767716454e-05
+
+
+iter_idx =
+
+    14
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.736791200523033          1.00609014896111          1.15885712297917
+
+  Columns 4 through 6
+
+          1.05610736785005         0.996072544435722          1.05419799210321
+
+  Columns 7 through 9
+
+          1.02269536960272          1.03083794877076          1.03063422695187
+
+  Columns 10 through 12
+
+          1.02831788316166          1.02916379768756          1.02545549490536
+
+  Columns 13 through 15
+
+          1.05119431312315          1.04502823040658         0.969503818700762
+
+  Column 16
+
+         0.759052539837284
+
+
+f_zero =
+
+        -0.365385588127929
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.574670e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.858051e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.483437e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.122007e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.092041e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.640852e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 38)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+     2
+
+
+improvement =
+
+      7.15466664807929e-06
+
+
+iter_idx =
+
+    15
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.738401768933089          1.00598818804243          1.15785924738987
+
+  Columns 4 through 6
+
+          1.05389430950302         0.995749949970688          1.05314336687608
+
+  Columns 7 through 9
+
+          1.02191212163586          1.03053887856564          1.03056968698956
+
+  Columns 10 through 12
+
+          1.02876137949547          1.02981266512025          1.02580724062944
+
+  Columns 13 through 15
+
+          1.05090415344936          1.04515808226743         0.970756215608816
+
+  Column 16
+
+         0.760742745522979
+
+
+f_zero =
+
+        -0.365392743000828
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.024810e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.977489e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.459264e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.009755e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.891897808973049
+
+
+improvement =
+
+      2.67892437033623e-06
+
+
+iter_idx =
+
+    16
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.739125989219203          1.00597367904072          1.15744281888295
+
+  Columns 4 through 6
+
+          1.05304422715002         0.995921827103045          1.05285102471438
+
+  Columns 7 through 9
+
+          1.02176452632669          1.03047266236088          1.03046578913987
+
+  Columns 10 through 12
+
+          1.02876240831088           1.0298622947656          1.02574988923564
+
+  Columns 13 through 15
+
+          1.05066803703826          1.04516112482755         0.971270475085607
+
+  Column 16
+
+         0.761463226798678
+
+
+f_zero =
+
+        -0.365395422053053
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.798722e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.959056e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.174063e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.066104e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.937980703116316
+
+
+improvement =
+
+      2.74277319667338e-06
+
+
+iter_idx =
+
+    17
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.739882982916427          1.00596262303677          1.15701020574456
+
+  Columns 4 through 6
+
+          1.05217160173789          0.99613807645393           1.0525650170688
+
+  Columns 7 through 9
+
+          1.02163570246457          1.03041260320554          1.03035053443493
+
+  Columns 10 through 12
+
+          1.02874131787813          1.02988620155985          1.02566627111482
+
+  Columns 13 through 15
+
+          1.05040812903589          1.04515681447544         0.971801054987991
+
+  Column 16
+
+         0.762210863884454
+
+
+f_zero =
+
+        -0.365398164591505
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.768425e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          5.74363213338108
+
+
+improvement =
+
+      1.59310691946191e-05
+
+
+iter_idx =
+
+    18
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.744482871734666          1.00591464443318          1.15439045177951
+
+  Columns 4 through 6
+
+          1.04693807660467          0.99761148889682          1.05090820281308
+
+  Columns 7 through 9
+
+          1.02096666613238          1.03008906784655          1.02962501160359
+
+  Columns 10 through 12
+
+            1.028518392629          1.02991101031226          1.02505925656192
+
+  Columns 13 through 15
+
+          1.04877024031018          1.04509516182358         0.974991715575421
+
+  Column 16
+
+         0.766727740943199
+
+
+f_zero =
+
+        -0.365414095838133
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.954267e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      5.01457685858631e-06
+
+
+iter_idx =
+
+    19
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.746007742747115          1.00593095265586          1.15353242510455
+
+  Columns 4 through 6
+
+          1.04531937750734         0.998334981296044          1.05047137741005
+
+  Columns 7 through 9
+
+          1.02091395486158          1.03003922699007          1.02935062233622
+
+  Columns 10 through 12
+
+          1.02830512364954          1.02974112894023          1.02472088893944
+
+  Columns 13 through 15
+
+           1.0481378580355           1.0450171675007         0.975994183579976
+
+  Column 16
+
+          0.76818298844578
+
+
+f_zero =
+
+        -0.365419110554742
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.956088e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.147791e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.197670e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.813689e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.930206e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.242250e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 39)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+           24.796918921378
+
+
+improvement =
+
+      5.21454057281212e-05
+
+
+iter_idx =
+
+    20
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.764460002412834          1.00608519028953          1.14298081637689
+
+  Columns 4 through 6
+
+          1.02531022966328          1.00614623356342          1.04445219688622
+
+  Columns 7 through 9
+
+          1.01964883250158          1.02919325831339          1.02634855126907
+
+  Columns 10 through 12
+
+          1.02639492968986          1.02847875525942          1.02147866707425
+
+  Columns 13 through 15
+
+          1.04081706490079          1.04418126310786         0.988179685645642
+
+  Column 16
+
+         0.785844323045952
+
+
+f_zero =
+
+        -0.365471256255012
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.187023e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.945979e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.873738e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.127428e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 56)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+     2
+
+
+improvement =
+
+      2.64957051299142e-06
+
+
+iter_idx =
+
+    21
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.765636643963339          1.00615483295803          1.14229667799042
+
+  Columns 4 through 6
+
+          1.02434107408301          1.00670358255785          1.04392605114628
+
+  Columns 7 through 9
+
+          1.01947455571959          1.02899132449985          1.02613674921845
+
+  Columns 10 through 12
+
+           1.0262701405974          1.02842018809726          1.02142958745176
+
+  Columns 13 through 15
+
+          1.04036747288495          1.04407021715972         0.988872806170601
+
+  Column 16
+
+         0.786908095501499
+
+
+f_zero =
+
+        -0.365473906194186
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.844747e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.922509e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+       2.5400412542731e-06
+
+
+iter_idx =
+
+    22
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.766794022192627          1.00622478814511            1.141619919829
+
+  Columns 4 through 6
+
+          1.02340545237354          1.00725463144804          1.04342076965454
+
+  Columns 7 through 9
+
+          1.01934450375873          1.02882200370249          1.02594225413026
+
+  Columns 10 through 12
+
+          1.02613455755216          1.02833227433159          1.02135260764901
+
+  Columns 13 through 15
+
+          1.03990629806616          1.04394883324262         0.989546668772818
+
+  Column 16
+
+         0.787950415151303
+
+
+f_zero =
+
+        -0.365476447105397
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.023954e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.159619e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.165075e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.611323e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 56)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+         0.180552194151315
+
+
+improvement =
+
+      2.21150482149213e-07
+
+
+iter_idx =
+
+    23
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.766896759861584           1.0062310359411          1.14155937720405
+
+  Columns 4 through 6
+
+          1.02332339247611          1.00730272285519          1.04337596920979
+
+  Columns 7 through 9
+
+           1.0193349691294          1.02880848490111          1.02592606729381
+
+  Columns 10 through 12
+
+          1.02612233165932          1.02832330210848          1.02134485527722
+
+  Columns 13 through 15
+
+          1.03986458569805          1.04393739114654         0.989606025777835
+
+  Column 16
+
+         0.788042729460406
+
+
+f_zero =
+
+        -0.365476668834552
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.819309e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.915404e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.932107e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 39)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+        0.0994482611242145
+
+
+improvement =
+
+      1.21668603358938e-07
+
+
+iter_idx =
+
+    24
+
+
+rads =
+
+  Columns 1 through 3
+
+          0.76695327008343          1.00623446663436          1.14152606347325
+
+  Columns 4 through 6
+
+          1.02327830991153          1.00732913148786            1.043351316435
+
+  Columns 7 through 9
+
+          1.01932978015823          1.02880109582486          1.02591720221233
+
+  Columns 10 through 12
+
+          1.02611561337058          1.02831833712558          1.02134057886626
+
+  Columns 13 through 15
+
+          1.03984162247372          1.04393107513223         0.989638647142328
+
+  Column 16
+
+         0.788093489668456
+
+
+f_zero =
+
+         -0.36547678992009
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.177721e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.499080e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      2.42533068761652e-06
+
+
+iter_idx =
+
+    25
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.768088703180838          1.00630344795404          1.14085648114835
+
+  Columns 4 through 6
+
+          1.02237295640868          1.00785906442754          1.04285583452497
+
+  Columns 7 through 9
+
+          1.01922639244655          1.02865315353027          1.02573948087595
+
+  Columns 10 through 12
+
+          1.02598065800509          1.02821828041498          1.02125453510218
+
+  Columns 13 through 15
+
+          1.03938004589326          1.04380392045947         0.990293835087224
+
+  Column 16
+
+         0.789113210540596
+
+
+f_zero =
+
+        -0.365479215981143
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.115068e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.216159e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 38)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+         0.154361792238733
+
+
+improvement =
+
+      1.81391616227433e-07
+
+
+iter_idx =
+
+    26
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.768174881678264           1.0063087039674           1.1408052575604
+
+  Columns 4 through 6
+
+          1.02230510299167          1.00789854466948          1.04281803097723
+
+  Columns 7 through 9
+
+           1.0192196358781          1.02864263191468          1.02572663893857
+
+  Columns 10 through 12
+
+          1.02597040940048          1.02821014814681          1.02124775094354
+
+  Columns 13 through 15
+
+          1.03934467202566          1.04379384556102         0.990343254868597
+
+  Column 16
+
+         0.789190490478087
+
+
+f_zero =
+
+        -0.365479397892061
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.522967e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.022593e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.910300e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.096323e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+           1.0893719800313
+
+
+improvement =
+
+      1.27212334710691e-06
+
+
+iter_idx =
+
+    27
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.768782267729234           1.0063457688197          1.14044399860817
+
+  Columns 4 through 6
+
+          1.02182736631652          1.00817644818607          1.04255149547104
+
+  Columns 7 through 9
+
+           1.0191724327204          1.02856864721779          1.02563630172982
+
+  Columns 10 through 12
+
+          1.02589819801881          1.02815265988722          1.02119993700387
+
+  Columns 13 through 15
+
+          1.03909530871748          1.04372264955234         0.990691433658978
+
+  Column 16
+
+         0.789735086362552
+
+
+f_zero =
+
+        -0.365480669213241
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.838351e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      2.27729111135222e-06
+
+
+iter_idx =
+
+    28
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.769887430115077          1.00641330338655          1.13978401984199
+
+  Columns 4 through 6
+
+           1.0209644917621          1.00867749800809          1.04206479890594
+
+  Columns 7 through 9
+
+           1.0190921768416           1.0284369545472          1.02547511482421
+
+  Columns 10 through 12
+
+          1.02576687115288          1.02804563810457          1.02111276499258
+
+  Columns 13 through 15
+
+          1.03864019842584          1.04359064325506         0.991322917206178
+
+  Column 16
+
+         0.790725178630123
+
+
+f_zero =
+
+        -0.365482946583411
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.070512e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.072877e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.513028e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      2.19149462393764e-06
+
+
+iter_idx =
+
+    29
+
+
+rads =
+
+  Columns 1 through 3
+
+          0.77097465744861          1.00648020193263          1.13913005100989
+
+  Columns 4 through 6
+
+          1.02012872526605          1.00916256099261          1.04158323850486
+
+  Columns 7 through 9
+
+          1.01902205968248          1.02831116299985          1.02532105993132
+
+  Columns 10 through 12
+
+          1.02563768586521           1.0279360332064          1.02102715131354
+
+  Columns 13 through 15
+
+          1.03819061334956          1.04345650486882         0.991940566276824
+
+  Column 16
+
+         0.791697727351375
+
+
+f_zero =
+
+        -0.365485137386384
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.926140e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.871306e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+     2
+
+
+improvement =
+
+      2.11016260603936e-06
+
+
+iter_idx =
+
+    30
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.772044483468909          1.00654647093945          1.13848201923893
+
+  Columns 4 through 6
+
+          1.01931998610926          1.00963329695846          1.04110705162765
+
+  Columns 7 through 9
+
+          1.01896021185177          1.02818886639837          1.02517247443149
+
+  Columns 10 through 12
+
+          1.02551018305853          1.02782462749768          1.02094397490103
+
+  Columns 13 through 15
+
+          1.03774718579197          1.04332063915623         0.992545042913643
+
+  Column 16
+
+         0.792653485656614
+
+
+f_zero =
+
+        -0.365487247375405
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.998067e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.209719e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.877917e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 38)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+          0.54912380006333
+
+
+improvement =
+
+      5.61786590136393e-07
+
+
+iter_idx =
+
+    31
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.772333655682031          1.00656446917667          1.13830568400915
+
+  Columns 4 through 6
+
+          1.01910534754523           1.0097589139297          1.04097772259825
+
+  Columns 7 through 9
+
+          1.01894506782228          1.02815587595843          1.02513289630293
+
+  Columns 10 through 12
+
+           1.0254756014232          1.02779367153365          1.02092198209644
+
+  Columns 13 through 15
+
+          1.03762722460556          1.04328295318787         0.992707548460248
+
+  Column 16
+
+          0.79291138566837
+
+
+f_zero =
+
+        -0.365487808900833
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.153819e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.119558e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.868971e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.182542e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.728148e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 38)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+          2.86806000297161
+
+
+improvement =
+
+      2.87267102344613e-06
+
+
+iter_idx =
+
+    32
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.773837413768622           1.0066582321683           1.1373869436561
+
+  Columns 4 through 6
+
+          1.01799474330616          1.01040986096788          1.04030429449676
+
+  Columns 7 through 9
+
+          1.01886815690223          1.02798420690144          1.02492761028804
+
+  Columns 10 through 12
+
+          1.02529572480222          1.02763194301855          1.02080849919903
+
+  Columns 13 through 15
+
+          1.03700338316423          1.04308556879237         0.993551271401051
+
+  Column 16
+
+         0.794252147167005
+
+
+f_zero =
+
+        -0.365490681625083
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.176374e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.465729855285221
+
+
+improvement =
+
+      4.46028808553933e-07
+
+
+iter_idx =
+
+    33
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.774076224008316          1.00667327274682          1.13723962223448
+
+  Columns 4 through 6
+
+          1.01782338848979          1.01051162809621          1.04019678824202
+
+  Columns 7 through 9
+
+          1.01885754225294          1.02795665278424          1.02489538887878
+
+  Columns 10 through 12
+
+          1.02526691587591          1.02760529140026          1.02079107199411
+
+  Columns 13 through 15
+
+          1.03690428482513          1.04305308516655         0.993684230041533
+
+  Column 16
+
+         0.794464612962923
+
+
+f_zero =
+
+        -0.365491128657964
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.840093e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.177778e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.902620e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.845235e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          1.35292216547991
+
+
+improvement =
+
+      1.28322631265387e-06
+
+
+iter_idx =
+
+    34
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.774767492667262          1.00671682203414          1.13681251781461
+
+  Columns 4 through 6
+
+          1.01732953892906          1.01080536051155          1.03988524061695
+
+  Columns 7 through 9
+
+          1.01882739954395          1.02787670710924          1.02480228379268
+
+  Columns 10 through 12
+
+           1.0251835080192          1.02752789337672           1.0207409702334
+
+  Columns 13 through 15
+
+           1.0366175281247          1.04295863746781         0.994068622828016
+
+  Column 16
+
+         0.795079476930717
+
+
+f_zero =
+
+        -0.365492411766839
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.069785e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.832255e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      1.84529934788014e-06
+
+
+iter_idx =
+
+    35
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.775778960911233          1.00678072732399          1.13618446194609
+
+  Columns 4 through 6
+
+          1.01661679177802          1.01123168416565          1.03942826207704
+
+  Columns 7 through 9
+
+          1.01878569922356          1.02775869668325          1.02466670454984
+
+  Columns 10 through 12
+
+          1.02506127566449          1.02741332308857          1.02066940349103
+
+  Columns 13 through 15
+
+          1.03619837403276          1.04281838464866         0.994629049738393
+
+  Column 16
+
+         0.795978200677418
+
+
+f_zero =
+
+        -0.365494257246137
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.906794e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.738398e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.103274e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.900305e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.227063418858083
+
+
+improvement =
+
+      2.03293641698465e-07
+
+
+iter_idx =
+
+    36
+
+
+rads =
+
+  Columns 1 through 3
+
+          0.77589203546362          1.00678789197033          1.13611375741793
+
+  Columns 4 through 6
+
+          1.01653872763563          1.01127883365821          1.03937699986416
+
+  Columns 7 through 9
+
+          1.01878141880052           1.0277453012593          1.02465162023661
+
+  Columns 10 through 12
+
+          1.02504757307088          1.02740028367098          1.02066165435146
+
+  Columns 13 through 15
+
+          1.03615156361156           1.0428023680389         0.994691402394789
+
+  Column 16
+
+         0.796078568555111
+
+
+f_zero =
+
+        -0.365494460598844
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.437296e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.138523e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+       1.7721346069477e-06
+
+
+iter_idx =
+
+    37
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.776886382248012          1.00685094708163          1.13549168791838
+
+  Columns 4 through 6
+
+          1.01585392730456          1.01169281832667          1.03892614966742
+
+  Columns 7 through 9
+
+          1.01874408209005          1.02762728465344          1.02451906185957
+
+  Columns 10 through 12
+
+          1.02492704948815          1.02728534292192          1.02059380236151
+
+  Columns 13 through 15
+
+          1.03574003496354          1.04266114623465          0.99523930773785
+
+  Column 16
+
+         0.796960975142652
+
+
+f_zero =
+
+        -0.365496233521408
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.952642e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+          0.21157224822724
+
+
+improvement =
+
+      1.80904282942596e-07
+
+
+iter_idx =
+
+    38
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.776990006215443          1.00685752617318          1.13542639284871
+
+  Columns 4 through 6
+
+          1.01578408361633          1.01173548979942          1.03887905293325
+
+  Columns 7 through 9
+
+          1.01874051622558          1.02761478682562          1.02450531170553
+
+  Columns 10 through 12
+
+          1.02491442523308          1.02727316051129          1.02058695539092
+
+  Columns 13 through 15
+
+          1.03569722481747          1.04264611635499         0.995296111440139
+
+  Column 16
+
+         0.797052839909034
+
+
+f_zero =
+
+        -0.365496415406801
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.671571e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.039129e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.719264e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     9
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.900703e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.946354e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.971656e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      1.70503834717728e-06
+
+
+iter_idx =
+
+    39
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.777968051971328          1.00691967638708          1.13480969966062
+
+  Columns 4 through 6
+
+           1.0151264208359          1.01213773371697          1.03843428250628
+
+  Columns 7 through 9
+
+          1.01870717767488          1.02749661528909          1.02437550990856
+
+  Columns 10 through 12
+
+          1.02479552850028          1.02715803633531          1.02052254873079
+
+  Columns 13 through 15
+
+          1.03529330260519          1.04250387172012         0.995831983407261
+
+  Column 16
+
+         0.797919560750334
+
+
+f_zero =
+
+         -0.36549812054784
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.846690e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.165043e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.688188e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.473579253521829
+
+
+improvement =
+
+      3.91568806379361e-07
+
+
+iter_idx =
+
+    40
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.778196223164731          1.00693418267451          1.13466479931548
+
+  Columns 4 through 6
+
+          1.01497624012957          1.01223053266266          1.03833030704582
+
+  Columns 7 through 9
+
+          1.01870005459534          1.02746857278485          1.02434539766958
+
+  Columns 10 through 12
+
+          1.02476770553685          1.02713074547329          1.02050800176936
+
+  Columns 13 through 15
+
+          1.03519924670832          1.04247001735229         0.995956392890664
+
+  Column 16
+
+          0.79812158022669
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.033688e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 27)
+In gd_ellipse (line 22)
+] 
+
+f_zero =
+
+        -0.365498512639328
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.679981e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.150546720897433
+
+
+improvement =
+
+      1.23987656197588e-07
+
+
+iter_idx =
+
+    41
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.778268508529529          1.00693876673494            1.134618815387
+
+  Columns 4 through 6
+
+          1.01492889461143          1.01225986283322          1.03829735310478
+
+  Columns 7 through 9
+
+          1.01869784293903          1.02745964934663          1.02433586691195
+
+  Columns 10 through 12
+
+          1.02475890323112          1.02712207425179          1.02050344781999
+
+  Columns 13 through 15
+
+            1.035169468907          1.04245925495877         0.995995745769302
+
+  Column 16
+
+         0.798185544663519
+
+
+f_zero =
+
+        -0.365498636801114
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.735618e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.603605e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.492913e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 39)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+     2
+
+
+improvement =
+
+      1.62815836945995e-06
+
+
+iter_idx =
+
+    42
+
+
+rads =
+
+  Columns 1 through 3
+
+          0.77922754196756          1.00699965616847          1.13400826473031
+
+  Columns 4 through 6
+
+          1.01430176362225          1.01264866903437          1.03786008479669
+
+  Columns 7 through 9
+
+          1.01866867119533          1.02734127220503          1.02420942620244
+
+  Columns 10 through 12
+
+          1.02464198689403          1.02700679703786          1.02044310503636
+
+  Columns 13 through 15
+
+          1.03477444550338          1.04231620246526         0.996517874766229
+
+  Column 16
+
+         0.799034238374446
+
+
+f_zero =
+
+        -0.365500266020571
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.644721e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.550801e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.885179e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.160583e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.384255e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    16
+
+
+step =
+
+        0.0515495997906044
+
+
+improvement =
+
+      3.94805136916254e-08
+
+
+iter_idx =
+
+    43
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.779251904696215          1.00700120115409          1.13399264496965
+
+  Columns 4 through 6
+
+          1.01428618330646          1.01265843189506          1.03784896179231
+
+  Columns 7 through 9
+
+          1.01866799518516          1.02733821441164          1.02420622426571
+
+  Columns 10 through 12
+
+          1.02463901236847          1.02700381947034          1.02044162376191
+
+  Columns 13 through 15
+
+          1.03476444027872          1.04231250141829         0.996531067335458
+
+  Column 16
+
+         0.799055773690505
+
+
+f_zero =
+
+        -0.365500305398559
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.998235e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.703469e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      1.57203616879542e-06
+
+
+iter_idx =
+
+    44
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.780196658719304          1.00706110073443          1.13338675040072
+
+  Columns 4 through 6
+
+          1.01368213975568          1.01303707489876           1.0374177201956
+
+  Columns 7 through 9
+
+          1.01864180374856          1.02721958086758          1.02408214273009
+
+  Columns 10 through 12
+
+          1.02452344343847          1.02688850283897          1.02038420708112
+
+  Columns 13 through 15
+
+          1.03437642796397          1.04216881470972         0.997042777703796
+
+  Column 16
+
+         0.799890854213249
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.198045e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 27)
+In gd_ellipse (line 22)
+] 
+
+f_zero =
+
+        -0.365501876788008
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.760382e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+       1.5200535954385e-06
+
+
+iter_idx =
+
+    45
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.781127679573674          1.00712001793657          1.13278520670054
+
+  Columns 4 through 6
+
+          1.01309997401528          1.01340614951652          1.03699185964626
+
+  Columns 7 through 9
+
+          1.01861814268264          1.02710063004879          1.02396063432305
+
+  Columns 10 through 12
+
+          1.02440942634597            1.026773250299          1.02032981794463
+
+  Columns 13 through 15
+
+          1.03399500460465          1.04202471960369         0.997544517932594
+
+  Column 16
+
+         0.800712968826158
+
+
+f_zero =
+
+        -0.365503396400427
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.106611e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.974077e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.094223e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.914951e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      1.46810352785742e-06
+
+
+iter_idx =
+
+    46
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.782045457132425          1.00717781423349           1.1321877864281
+
+  Columns 4 through 6
+
+          1.01253910579442          1.01376554303215          1.03657195915478
+
+  Columns 7 through 9
+
+          1.01859700883891          1.02698158022455          1.02384122818305
+
+  Columns 10 through 12
+
+          1.02429721700571          1.02665803809939          1.02027795827716
+
+  Columns 13 through 15
+
+          1.03362009857404          1.04188002288107         0.998036736239659
+
+  Column 16
+
+         0.801522445901099
+
+
+f_zero =
+
+        -0.365504865341578
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.945535e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.205214214148195
+
+
+improvement =
+
+      1.47757783286462e-07
+
+
+iter_idx =
+
+    47
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.782138286433896          1.00718363711335          1.13212689092257
+
+  Columns 4 through 6
+
+          1.01248364000802          1.01380145622748           1.0365294943159
+
+  Columns 7 through 9
+
+          1.01859508902231          1.02696935535075          1.02382921923888
+
+  Columns 10 through 12
+
+          1.02428588305381           1.0266462487833          1.02027289522877
+
+  Columns 13 through 15
+
+          1.03358227883478          1.04186509846222         0.998086280263619
+
+  Column 16
+
+         0.801604246740341
+
+
+f_zero =
+
+        -0.365505012145828
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.702474e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.127758344799365
+
+
+improvement =
+
+      9.09009446048437e-08
+
+
+iter_idx =
+
+    48
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.782195993223266          1.00718724631026          1.13208901543248
+
+  Columns 4 through 6
+
+          1.01244923345438          1.01382375190003          1.03650308733799
+
+  Columns 7 through 9
+
+          1.01859390156776          1.02696173301648          1.02382175828564
+
+  Columns 10 through 12
+
+           1.0242788332981          1.02663891207872          1.02026976337518
+
+  Columns 13 through 15
+
+          1.03355878902216          1.04185582139204         0.998117065088097
+
+  Column 16
+
+         0.801655095217417
+
+
+f_zero =
+
+        -0.365505103351193
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.043153e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+
+step =
+
+         0.159505194931999
+
+
+improvement =
+
+      1.13826278680396e-07
+
+
+iter_idx =
+
+    49
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.782267977405924          1.00719175060151          1.13204173376718
+
+  Columns 4 through 6
+
+          1.01240637529467          1.01385153896855          1.03647014612878
+
+  Columns 7 through 9
+
+          1.01859242996998          1.02695222512888          1.02381245921992
+
+  Columns 10 through 12
+
+          1.02427004225171          1.02662975051285          1.02026586651534
+
+  Columns 13 through 15
+
+           1.0335294939821           1.0418442388377         0.998155452747506
+
+  Column 16
+
+         0.801718518667409
+
+
+f_zero =
+
+        -0.365505217144394
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.165625e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.523974e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.418630e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    16
+
+
+step =
+
+     2
+
+
+improvement =
+
+      1.40931125525157e-06
+
+
+iter_idx =
+
+    50
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.783169503025811          1.00724797726049          1.13144931506761
+
+  Columns 4 through 6
+
+          1.01187058330914          1.01419911295665          1.03605767100321
+
+  Columns 7 through 9
+
+          1.01857421038822          1.02683295221171          1.02369608672047
+
+  Columns 10 through 12
+
+          1.02415982992691          1.02651490589051          1.02021716879644
+
+  Columns 13 through 15
+
+          1.03316275423118          1.04169902121381          0.99863616135336
+
+  Column 16
+
+         0.802512746644481
+
+
+f_zero =
+
+        -0.365506625476966
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.892380e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.832041e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.141081e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.473473e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 38)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+     2
+
+
+improvement =
+
+      1.36509149251118e-06
+
+
+iter_idx =
+
+    51
+
+
+rads =
+
+  Columns 1 through 3
+
+          0.78405842231296          1.00730325887386          1.13086057540375
+
+  Columns 4 through 6
+
+          1.01135417152368          1.01453807723364          1.03565102257986
+
+  Columns 7 through 9
+
+          1.01855803067781          1.02671342996978          1.02358187997728
+
+  Columns 10 through 12
+
+          1.02405128627814           1.0264001586922          1.02017078934878
+
+  Columns 13 through 15
+
+          1.03280242906422           1.0415534112781         0.999107876071497
+
+  Column 16
+
+         0.803295180714443
+
+
+f_zero =
+
+        -0.365507991261332
+
+
+rad_index =
+
+     1
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.883015e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.909256e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.092687e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 56)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+        0.0960463466487521
+
+
+improvement =
+
+      6.19665220247256e-08
+
+
+iter_idx =
+
+    52
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.784100516975253          1.00730585371115          1.13083246471753
+
+  Columns 4 through 6
+
+          1.01133027839752          1.01455391181309          1.03563177879001
+
+  Columns 7 through 9
+
+          1.01855735059004          1.02670770312349          1.02357650461155
+
+  Columns 10 through 12
+
+          1.02404615050793          1.02639466897192          1.02016868291525
+
+  Columns 13 through 15
+
+          1.03278542390363          1.04154640060344         0.999130110504648
+
+  Column 16
+
+         0.803332199863549
+
+
+f_zero =
+
+        -0.365508054586041
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+
+rad_index =
+
+     3
+
+
+rad_index =
+
+     4
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.038469e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
+
+rad_index =
+
+    16
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.841271e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 56)
+In gd_ellipse (line 22)
+] 
+
+step =
+
+         0.161336987680873
+
+
+improvement =
+
+      1.07056603526612e-07
+
+
+iter_idx =
+
+    53
+
+
+rads =
+
+  Columns 1 through 3
+
+         0.784171182539897          1.00731021304312          1.13078526423463
+
+  Columns 4 through 6
+
+          1.01129020671877          1.01458048205376          1.03559946770996
+
+  Columns 7 through 9
+
+          1.01855621830987          1.02669807651517          1.02356748540992
+
+  Columns 10 through 12
+
+           1.0240375143324          1.02638545988164          1.02016515360354
+
+  Columns 13 through 15
+
+          1.03275689485081          1.04153463116373         0.999167422331131
+
+  Column 16
+
+         0.803394327301664
+
+
+f_zero =
+
+        -0.365508162668076
+
+
+rad_index =
+
+     1
+
+
+rad_index =
+
+     2
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.549879e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     3
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.897040e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 35)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     4
+
+
+rad_index =
+
+     5
+
+
+rad_index =
+
+     6
+
+
+rad_index =
+
+     7
+
+
+rad_index =
+
+     8
+
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.355912e-16.] 
+[> In id (line 120)
+In chnk.flam.nproxy_square (line 58)
+In chunkerflam (line 176)
+In helm_dprime (line 17)
+In ud_origin (line 4)
+In compute_loss (line 39)
+In gd (line 34)
+In gd_ellipse (line 22)
+] 
+
+rad_index =
+
+     9
+
+
+rad_index =
+
+    10
+
+
+rad_index =
+
+    11
+
+
+rad_index =
+
+    12
+
+
+rad_index =
+
+    13
+
+
+rad_index =
+
+    14
+
+
+rad_index =
+
+    15
+
