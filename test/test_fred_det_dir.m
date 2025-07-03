@@ -1,5 +1,4 @@
 addpath('../src');
-clear;
 % Create the unit disk
 
 cparams = [];
@@ -21,6 +20,7 @@ chnkr = chunkerfunc(@(t) chnk.curves.bymode(t,modes,ctr),cparams,pref);
 
 
 
+
 % solve and visualize the solution
 
 % build double layer potential
@@ -36,6 +36,8 @@ chebabs = [2,5];
 assert(checkadjinfo(chnkr) == 0);
 refopts = []; refopts.maxchunklen = pi/chebabs(2)/2;
 chnkr = chnkr.refine(refopts); chnkr = chnkr.sort();
+%chnkr = chnkr.refine(); chnkr = chnkr.sort();
+
 
 
 % plot geometry and data
@@ -47,19 +49,101 @@ hold on
 quiver(chnkr,'r')
 axis equal
 
+r = chnkr.r;
+x = r(1,:);
+y = r(2,:);
+x = x(:);
+y = y(:);
+uval = x + sin(y/10) + 1 + 1j*(cos(2*x) + 3*y);
+vval = 4*y + cos(2*x/10) + 1+ 1j*(sin(3*y) + 2*x);
+
+
+ww = randnfun2(1);
+uval = ww(x,y);
+ww2 = randnfun2(1);
+vval = ww2(x,y);
+
+
+
 
 opts = [];
 opts.flam = true;
 opts.eps = eps;
 
 detfun = @(zk) helm_dir_det(zk,chnkr,opts);
+detfun2 = @(zk) helm_dir_randinv(zk,chnkr,opts);
 
-detchebs = chebfun(detfun,chebabs,p);
+%detchebs = chebfun(detfun,chebabs,p);
+detchebs11 = chebfun(detfun2,chebabs,p);
+return
+
 figure(2)
-plot(abs(detchebs))
+plot(real(detchebs2),'k-'); hold on;
+plot(imag(detchebs2),'r-');
+
+figure(3)
+clf;
+plot(real(detchebs3),'k-'); hold on;
+plot(imag(detchebs3),'r-');
+
+figure(4)
+clf;
+plot(real(detchebs4),'k-'); hold on;
+plot(imag(detchebs4),'r-');
+
+figure(5)
+clf
+plot(real(detchebs5),'k-'); hold on;
+plot(imag(detchebs5),'r-');
+
+
+figure(6)
+clf
+plot(real(detchebs6),'k-'); hold on;
+plot(imag(detchebs6),'r-');
+
+figure(7)
+clf
+plot(real(detchebs7),'k-'); hold on;
+plot(imag(detchebs7),'r-');
+
+figure(8)
+clf
+plot(real(detchebs8),'k-'); hold on;
+plot(imag(detchebs8),'r-');
+
+figure(9)
+clf
+plot(real(detchebs9),'k-'); hold on;
+plot(imag(detchebs9),'r-');
+
+figure(10)
+clf
+plot(real(detchebs10),'k-'); hold on;
+plot(imag(detchebs10),'r-');
+
+
+figure(11)
+clf
+plot(real(detchebs11),'k-'); hold on;
+plot(imag(detchebs11),'r-');
+
+
+
+
 
 rts = roots(detchebs,'complex');
 rts_real = rts(abs(imag(rts))<eps*10);
+
+rts2 = roots(detchebs2,'complex');
+rts2_real = rts2(abs(imag(rts2))<eps*10);
+
+rts3 = roots(detchebs3,'complex');
+rts3_real = rts3(abs(imag(rts3))<eps*10);
+
+rts4 = roots(detchebs4,'complex');
+rts4_real = rts4(abs(imag(rts4))<eps*10000);
+
 
 zk = real(rts_real(1));
 [d,F] = helm_dir_det(zk,chnkr,opts);
@@ -69,6 +153,8 @@ xnrm = norm(xnull,'fro');
 xnrm_mv = norm(rskelf_mv(F,xnull),'fro');
 err_nullvec = xnrm_mv/xnrm;
 fprintf('Error in null vector: %5.2e\n',err_nullvec);
+
+return
 
 
 

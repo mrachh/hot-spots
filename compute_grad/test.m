@@ -4,12 +4,6 @@ clear;clc;addpath('../src');
 num_verts = 3;
 num_params = num_verts;
 
-% Specify radii
-radii = ones(1, num_params)/sqrt(pi/2);
-
-% Specify step size for centered difference
-hspace = 1e-3;
-
 % Parameters for loss/objective function
 % Modify default_chebabs if you have a good guess of zk
 loss_params = struct(...
@@ -18,6 +12,31 @@ loss_params = struct(...
     'udnorm_ord',              'inf', ...
     'unorm_ord',                  '2' ...
 )
+
+
+% Specify radii
+radii = ones(1, num_params)/sqrt(pi/2);
+[chnkr, center] = loss_params.chnk_fun(radii);
+
+hspace = 1e-3;
+direction = zeros(1, num_params);
+direction(1) = hspace;
+
+
+[chnkr2, center2] = loss_params.chnk_fun(radii+direction);
+
+figure(1)
+plot(chnkr)
+
+
+figure(2)
+plot(chnkr2)
+
+return
+
+% Specify step size for centered difference
+
+
 
 % Initialize zk interval with a single loss evaluation
 [~, chebab] = loss(radii,loss_params);
