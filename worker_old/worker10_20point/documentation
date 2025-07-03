@@ -1,7 +1,0 @@
-100 point experiment
-
-weight initialization given by init_weight.mat worker1077
-
-h = 5e-4 (1e-3 was the ideal h according to derivative plot. I reduced it a bit since we have a lot of verts)
-
-eigen time 1.64e+03
