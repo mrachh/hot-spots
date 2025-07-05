@@ -1,4 +1,4 @@
-function [loss, zk, ud_p, u_q, err_nullvec] = compute_loss(verts, loss_params, chebabs, maxchunklen)
+function [loss, chebabs, zk, ud_p, u_q, err_nullvec] = compute_loss(verts, loss_params, chebabs, maxchunklen)
     % INPUT: weight, eigenvalue interval [a b] (OPTIONAL)
     % OUTPUT: loss, eigenvalue interval, 
     % Example:
@@ -7,6 +7,10 @@ function [loss, zk, ud_p, u_q, err_nullvec] = compute_loss(verts, loss_params, c
     % 'udnorm_ord',              'inf', ...
     % 'unorm_ord',                  '2' ...
     % );
+
+
+    cheb_left = 0.8;
+    cheb_right = 1.2;
 
     % Reads loss parameters
     default_chebabs = loss_params.default_chebabs;
@@ -41,6 +45,8 @@ function [loss, zk, ud_p, u_q, err_nullvec] = compute_loss(verts, loss_params, c
 
     % Compute objective
     loss =  - ud_p/(u_q * (zk^(2*beta)));
+    % Update eigenvalue interval
+    chebabs = [zk*cheb_left, zk*cheb_right];
 
 end
 

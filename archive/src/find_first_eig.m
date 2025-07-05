@@ -3,10 +3,10 @@ function [zk, err_nullvec, sigma] = find_first_eig(chnkr, chebabs)
     % OUTPUT: zk, error in null vector, density sigma
 
     % Set eps
-    eps = 1e-10;
+    eps = 1e-9;
     eps_imag = 1e-4;
     p = chebfunpref; p.chebfuneps = eps;
-    p.splitting = 0; p.maxLength=8192;
+    p.splitting = 0; p.maxLength=257;
 
     opts = [];
     opts.flam = true;
@@ -16,7 +16,6 @@ function [zk, err_nullvec, sigma] = find_first_eig(chnkr, chebabs)
     detchebs = chebfun(detfun,chebabs,p);
     
     rts = roots(detchebs,'complex');
-    rts
     rts_real = rts(abs(imag(rts))<eps_imag);
 
     zk = real(rts_real(1));
