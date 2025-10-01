@@ -1,13 +1,13 @@
+clearvars; close all;
+
 addpath ../src
 addpath ../archive/src
 addpath ../src_shaper_ders/
 
-ry_ratio = 1.5;
-cy_ratio = 0.5;
+cluster_startup;
+
+rx = 1; ry_ratio = 1.5; cy_ratio = 0.5; cx = 0.1; n = 8;
 dump_idx = 1;
-cx = 0.1;
-rx = 1;
-n = 4;
 ry = rx*ry_ratio;
 cy = cy_ratio*ry;
 
@@ -117,6 +117,10 @@ fprintf('Time to compute grad fast    = %d\n',tend)
 % fprintf('Time to compute grad densely = %d\n',tend2)
 
 % fprintf('error in dvals               = %d\n', norm(dvals-dvals2))
+% --- verification against previous run
+fprintf('val = %.12e\n', val);
+fprintf('zk  = %.12e\n', zk);
+fprintf('norm(dvals) = %.12e\n', norm(dvals));
 
 
 function [grad] = vertgrad(chnkr, igall, nvert)
