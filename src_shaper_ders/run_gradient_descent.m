@@ -44,7 +44,9 @@ function run_gradient_descent(n, ncheb, ycenter, maxiter, stepsize, zk0, savefil
         times(end+1) = toc(t_iter);
 
         iter = it;
-        save(savefile, 'rads', 'angles', 'prev_zk', 'iter', 'vals', 'zks', 'times');
+        save(savefile, 'rads', 'angles', 'prev_zk', 'iter', ...
+             'vals', 'zks', 'times', ...
+             'n', 'ncheb', 'ycenter', 'maxiter', 'stepsize', 'zk0', 'resume');
     end
 
     verts_final = compute_polygon_vertices(angles, rads);
