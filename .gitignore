@@ -1,2 +1,5 @@
 
 .DS_Store
+jobs_*.txt
+*.sh
+.vscode/
