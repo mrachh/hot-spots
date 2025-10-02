@@ -31,10 +31,25 @@ def monitor_loop():
             except Exception:
                 continue
 
-            iter_val = int(S.get("iter", [[0]])[0][0])
-            val      = float(S.get("vals", [[0]])[0][-1])
-            n        = int(S.get("n", [[0]])[0][0])
-            rads     = np.array(S.get("rads", [[0]])[0])
+            iter_arr = S.get("iter")
+            vals_arr = S.get("vals")
+            n_arr    = S.get("n")
+            rads_arr = S.get("rads")
+
+            if iter_arr is None or vals_arr is None or n_arr is None or rads_arr is None:
+                continue
+
+            if iter_arr.size == 0 or vals_arr.size == 0 or n_arr.size == 0 or rads_arr.size == 0:
+                continue
+
+            iter_val = int(np.squeeze(iter_arr))
+            val      = float(np.squeeze(vals_arr)[-1])
+            n        = int(np.squeeze(n_arr))
+            rads     = np.squeeze(rads_arr)
+
+            if len(rads) != n:
+                print(f"Warning: mismatch in rads vs n for {fname}, skipping")
+                continue
 
             diff     = val - OPTIMAL_VAL
             diff_log = float("-inf") if diff <= 0 else np.log10(diff)
@@ -49,12 +64,18 @@ def monitor_loop():
 
             fig = make_polygon_image(rads, n)
 
+            time_arr = S.get("time_per_step")
+            if time_arr is not None and time_arr.size > 0:
+                step_time = float(np.squeeze(time_arr)[-1])
+            else:
+                step_time = 0.0
+
             metrics = {
                 "iteration": iter_val,
                 "val": val,
                 "diff": diff,
                 "diff_log10": diff_log,
-                "time_per_step": float(S.get("time_per_step", [[0]])[0][-1]),
+                "time_per_step": step_time,
                 "polygon": wandb.Image(fig, caption=f"iter {iter_val}")
             }
 
