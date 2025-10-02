@@ -1,86 +1,84 @@
 import os
+import shutil
 import time
-import scipy.io
 import numpy as np
 import wandb
-import matplotlib.pyplot as plt
+from scipy.io import loadmat
+from datetime import datetime
+from wandb import Api
 
+PROJECT     = "so251002"
+BASE_DIR    = "/home/zw395/project/shape_optimization_results/circle1002"
 INTERVAL    = 30
 OPTIMAL_VAL = 0.3655840228073865
-base_dir    = "/home/zw395/project/shape_optimization_results/circle1002"
+WANDB_DIR   = os.path.join(os.path.dirname(__file__), "wandb")
 
-def make_polygon_image(rads, n):
-    angles = np.linspace(0, np.pi, n)
-    x = rads * np.cos(angles)
-    y = rads * np.sin(angles)
-    fig, ax = plt.subplots()
-    ax.plot(x, y, '-o')
-    ax.axis("equal")
-    ax.set_title("Polygon")
-    return fig
+def purge_project(project):
+    api = Api()
+    for run in api.runs(f"zijian-wang_yale/{project}"):
+        run.delete()
+    print(f"[{datetime.now()}] purged wandb project {project}")
+
+    if os.path.exists(WANDB_DIR):
+        shutil.rmtree(WANDB_DIR)
+        print(f"[{datetime.now()}] removed local wandb dir {WANDB_DIR}")
+
+def safe_scalar(x):
+    return float(np.ravel(x)[0]) if np.size(x) > 0 else 0.0
+
+def log_checkpoint(run, ckpt_path):
+    try:
+        S = loadmat(ckpt_path)
+        val    = safe_scalar(S["val"])
+        zk     = safe_scalar(S["zk"])
+        it     = int(np.ravel(S["iter"])[0])
+        tstep  = safe_scalar(S.get("tstep", [0.0]))
+        ttotal = safe_scalar(S.get("time", [0.0]))  # <-- total runtime
+
+        diff  = val - OPTIMAL_VAL
+        log10diff = np.log10(abs(diff)) if diff != 0 else -np.inf
+
+        metrics = {
+            "val": val,
+            "zk": zk,
+            "iter": it,
+            "tstep": tstep,
+            "time_total": ttotal,
+            "diff_from_optimal": diff,
+            "log10_diff": log10diff,
+        }
+        run.log(metrics, step=it)
+        print(f"[{datetime.now()}] logged {ckpt_path} iter={it} val={val:.6f}")
+        return True
+    except Exception as e:
+        print(f"[{datetime.now()}] skip {ckpt_path}, err={e}")
+        return False
 
 def monitor_loop():
+    purge_project(PROJECT)
     runs = {}
+    seen = {}
+
     while True:
-        for fname in os.listdir(base_dir):
-            if not fname.endswith(".mat"):
-                continue
-            fpath = os.path.join(base_dir, fname)
-            try:
-                S = scipy.io.loadmat(fpath)
-            except Exception:
-                continue
+        ckpt_dirs = [d for d in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, d))]
+        print(f"[{datetime.now()}] checking {len(ckpt_dirs)} checkpoint dirs...")
 
-            iter_arr = S.get("iter")
-            vals_arr = S.get("vals")
-            n_arr    = S.get("n")
-            rads_arr = S.get("rads")
+        for d in ckpt_dirs:
+            dpath = os.path.join(BASE_DIR, d)
+            if d not in runs:
+                print(f"[{datetime.now()}] start run {d}")
+                runs[d] = wandb.init(project=PROJECT, name=d, reinit=True, dir=WANDB_DIR)
+                seen[d] = set()
 
-            if iter_arr is None or vals_arr is None or n_arr is None or rads_arr is None:
-                continue
+            run = runs[d]
+            files = sorted([f for f in os.listdir(dpath) if f.endswith(".mat")],
+                           key=lambda x: int(os.path.splitext(x)[0]))
 
-            if iter_arr.size == 0 or vals_arr.size == 0 or n_arr.size == 0 or rads_arr.size == 0:
-                continue
-
-            iter_val = int(np.squeeze(iter_arr))
-            val      = float(np.squeeze(vals_arr)[-1])
-            n        = int(np.squeeze(n_arr))
-            rads     = np.squeeze(rads_arr)
-
-            if len(rads) != n:
-                print(f"Warning: mismatch in rads vs n for {fname}, skipping")
-                continue
-
-            diff     = val - OPTIMAL_VAL
-            diff_log = float("-inf") if diff <= 0 else np.log10(diff)
-
-            if fname not in runs:
-                runs[fname] = wandb.init(
-                    project="so251002",
-                    name=fname,
-                    resume="allow",
-                    reinit=True
-                )
-
-            fig = make_polygon_image(rads, n)
-
-            time_arr = S.get("time_per_step")
-            if time_arr is not None and time_arr.size > 0:
-                step_time = float(np.squeeze(time_arr)[-1])
-            else:
-                step_time = 0.0
-
-            metrics = {
-                "iteration": iter_val,
-                "val": val,
-                "diff": diff,
-                "diff_log10": diff_log,
-                "time_per_step": step_time,
-                "polygon": wandb.Image(fig, caption=f"iter {iter_val}")
-            }
-
-            runs[fname].log(metrics)
-            plt.close(fig)
+            for f in files:
+                fpath = os.path.join(dpath, f)
+                if fpath not in seen[d]:
+                    if log_checkpoint(run, fpath):
+                        seen[d].add(fpath)
 
         time.sleep(INTERVAL)
 
