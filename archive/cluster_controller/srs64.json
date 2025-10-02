@@ -1,0 +1,14 @@
+{
+    "SHAPE": "srsquare",
+    "NUM_VERTS": 64,
+    "CODE_DIR": "/home/zw395/shape_optimization",
+    "PROJECT_DIR": "/home/zw395/palmer_scratch/so250227v3_srsquare64",
+    "PARTITION": "scavenge",
+    "MEMORY": "32G",
+    "TIME": "8:00:00",
+    "MAXCHUNKLEN": 0.2,
+    "USE_BFGS": true,
+    "VERBOSE": false,
+    "MAX_ITER": 1000,
+    "NONCONVEX_PENALTY_FACTOR":0.0
+}
