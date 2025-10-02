@@ -1,6 +1,6 @@
 clearvars; close all;
 
-addpath ../src
+% addpath ../src
 addpath ../archive/src
 addpath ../src_shaper_ders/
 cluster_startup;
