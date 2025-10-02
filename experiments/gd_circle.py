@@ -17,15 +17,25 @@ maxiter_list  = [10_000]
 stepsize_list = [0.1, 0.5, 1.0, 2.0]
 zk0_list      = [2.0]
 ncheb_list    = [32]
-resume_list   = [False]
 
-def gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savefile, resume):
-    resume_str = "true" if resume else "false"
+RESUME = False
+
+def fmt_float(x):
+    rounded = round(x, 2)
+    if abs(x - rounded) > 1e-12:
+        raise ValueError(f"Invalid float {x}: must be representable with 2 decimals")
+    return f"{rounded:.2f}"
+
+def gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savefile, resume_flag):
+    ycenter_str  = fmt_float(ycenter)
+    stepsize_str = fmt_float(stepsize)
+    zk0_str      = fmt_float(zk0)
+    resume_str   = "true" if resume_flag else "false"
     return (
         f"module load MATLAB/2022b;"
         f"matlab -nodisplay -nosplash -r "
         f"\"addpath ../src; addpath ../src_shaper_ders; cluster_startup;"
-        f"run_gradient_descent({n},{ncheb},{ycenter},{maxiter},{stepsize},{zk0},'{savefile}',{resume_str}); exit\""
+        f"run_gradient_descent({n},{ncheb},{ycenter_str},{maxiter},{stepsize_str},{zk0_str},'{savefile}',{resume_str}); exit\""
     )
 
 def submit_job_list(job_list, job_idx):
@@ -41,18 +51,34 @@ def submit_job_list(job_list, job_idx):
     print(f"submitted {len(job_list)} jobs")
 
 def submit_all_jobs():
-    param_list = [n_list, ycenter_list, maxiter_list, stepsize_list, zk0_list, ncheb_list, resume_list]
+    param_list = [n_list, ycenter_list, maxiter_list, stepsize_list, zk0_list, ncheb_list]
     job_list = []
     job_idx = 0
     for params in product(*param_list):
-        n, ycenter, maxiter, stepsize, zk0, ncheb, resume = params
-        savefile = os.path.join(base_dir, f"checkpoint_n{n}_yc{ycenter}_it{maxiter}_zk{zk0}_step{stepsize}.mat")
-        if not os.path.isfile(savefile):
-            job_list.append(gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savefile, resume))
+        n, ycenter, maxiter, stepsize, zk0, ncheb = params
+        ycenter_str  = fmt_float(ycenter)
+        stepsize_str = fmt_float(stepsize)
+        zk0_str      = fmt_float(zk0)
+
+        savefile = os.path.join(
+            base_dir,
+            f"checkpoint_n{n}_yc{ycenter_str}_it{maxiter}_zk{zk0_str}_step{stepsize_str}.mat"
+        )
+
+        if RESUME:
+            resume_flag = os.path.isfile(savefile)
+        else:
+            if os.path.isfile(savefile):
+                os.remove(savefile)
+            resume_flag = False
+
+        job_list.append(gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savefile, resume_flag))
+
         if len(job_list) >= 100:
             submit_job_list(job_list, job_idx)
             job_list = []
             job_idx += 1
+
     if job_list:
         submit_job_list(job_list, job_idx)
 
