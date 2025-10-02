@@ -5,3 +5,4 @@ jobs_*.txt
 *.sh
 .vscode/
 *.tsv
+*/wandb/
