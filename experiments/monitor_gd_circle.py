@@ -21,7 +21,7 @@ def purge_project(project):
     print(f"[{datetime.now()}] purged wandb project {project}")
 
     if os.path.exists(WANDB_DIR):
-        shutil.rmtree(WANDB_DIR)
+        shutil.rmtree(WANDB_DIR, ignore_errors=True)
         print(f"[{datetime.now()}] removed local wandb dir {WANDB_DIR}")
 
 def safe_scalar(x):
@@ -73,40 +73,43 @@ def log_checkpoint(run, ckpt_path):
         return False
 
 def monitor_loop():
-    purge_project(PROJECT)
-    runs = {}
-    seen = {}
+    last_counts = {}
 
     while True:
         ckpt_dirs = [d for d in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, d))]
         print(f"[{datetime.now()}] checking {len(ckpt_dirs)} checkpoint dirs...")
 
+        # check if any new files
+        changed = False
+        current_counts = {}
         for d in ckpt_dirs:
             dpath = os.path.join(BASE_DIR, d)
-            if d not in runs:
-                print(f"[{datetime.now()}] start run {d}")
-                runs[d] = wandb.init(project=PROJECT, name=d, reinit=True, dir=WANDB_DIR)
-                seen[d] = set()
+            files = [f for f in os.listdir(dpath) if f.endswith(".mat")]
+            current_counts[d] = len(files)
+            if last_counts.get(d, 0) < len(files):
+                changed = True
 
-                # backfill all existing files
-                files = sorted([f for f in os.listdir(dpath) if f.endswith(".mat")],
-                               key=lambda x: int(os.path.splitext(x)[0]))
-                for f in files:
-                    fpath = os.path.join(dpath, f)
-                    if log_checkpoint(runs[d], fpath):
-                        seen[d].add(fpath)
+        if not changed:
+            print(f"[{datetime.now()}] no new files detected, skipping purge+reload")
+            time.sleep(INTERVAL)
+            continue
 
-            else:
-                # only check for new files
-                run = runs[d]
-                files = sorted([f for f in os.listdir(dpath) if f.endswith(".mat")],
-                               key=lambda x: int(os.path.splitext(x)[0]))
-                for f in files:
-                    fpath = os.path.join(dpath, f)
-                    if fpath not in seen[d]:
-                        if log_checkpoint(run, fpath):
-                            seen[d].add(fpath)
+        # purge and reload everything
+        purge_project(PROJECT)
+        for d in ckpt_dirs:
+            dpath = os.path.join(BASE_DIR, d)
+            print(f"[{datetime.now()}] start run {d}")
+            run = wandb.init(project=PROJECT, name=d, reinit=True, dir=WANDB_DIR)
 
+            files = sorted([f for f in os.listdir(dpath) if f.endswith(".mat")],
+                           key=lambda x: int(os.path.splitext(x)[0]))
+            for f in files:
+                fpath = os.path.join(dpath, f)
+                log_checkpoint(run, fpath)
+
+            run.finish()
+
+        last_counts = current_counts
         time.sleep(INTERVAL)
 
 if __name__ == "__main__":
