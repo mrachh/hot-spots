@@ -6,6 +6,7 @@ import wandb
 from scipy.io import loadmat
 from datetime import datetime
 from wandb import Api
+import matplotlib.pyplot as plt
 
 PROJECT     = "so251002"
 BASE_DIR    = "/home/zw395/project/shape_optimization_results/circle1002"
@@ -26,6 +27,17 @@ def purge_project(project):
 def safe_scalar(x):
     return float(np.ravel(x)[0]) if np.size(x) > 0 else 0.0
 
+def make_polygon_image(rads, angles):
+    x = rads * np.cos(angles)
+    y = rads * np.sin(angles)
+    # close the polygon
+    x = np.append(x, x[0])
+    y = np.append(y, y[0])
+    fig, ax = plt.subplots()
+    ax.plot(x, y, "-o")
+    ax.set_aspect("equal")
+    return fig
+
 def log_checkpoint(run, ckpt_path):
     try:
         S = loadmat(ckpt_path)
@@ -33,7 +45,9 @@ def log_checkpoint(run, ckpt_path):
         zk     = safe_scalar(S["zk"])
         it     = int(np.ravel(S["iter"])[0])
         tstep  = safe_scalar(S.get("tstep", [0.0]))
-        ttotal = safe_scalar(S.get("time", [0.0]))  # <-- total runtime
+        ttotal = safe_scalar(S.get("time", [0.0]))
+        rads   = np.ravel(S["rads"])
+        angles = np.ravel(S["angles"])
 
         diff  = val - OPTIMAL_VAL
         log10diff = np.log10(abs(diff)) if diff != 0 else -np.inf
@@ -47,7 +61,11 @@ def log_checkpoint(run, ckpt_path):
             "diff_from_optimal": diff,
             "log10_diff": log10diff,
         }
-        run.log(metrics, step=it)
+
+        fig = make_polygon_image(rads, angles)
+        run.log({"metrics": metrics, "polygon": wandb.Image(fig)}, step=it)
+        plt.close(fig)
+
         print(f"[{datetime.now()}] logged {ckpt_path} iter={it} val={val:.6f}")
         return True
     except Exception as e:
@@ -70,15 +88,24 @@ def monitor_loop():
                 runs[d] = wandb.init(project=PROJECT, name=d, reinit=True, dir=WANDB_DIR)
                 seen[d] = set()
 
-            run = runs[d]
-            files = sorted([f for f in os.listdir(dpath) if f.endswith(".mat")],
-                           key=lambda x: int(os.path.splitext(x)[0]))
-
-            for f in files:
-                fpath = os.path.join(dpath, f)
-                if fpath not in seen[d]:
-                    if log_checkpoint(run, fpath):
+                # backfill all existing files
+                files = sorted([f for f in os.listdir(dpath) if f.endswith(".mat")],
+                               key=lambda x: int(os.path.splitext(x)[0]))
+                for f in files:
+                    fpath = os.path.join(dpath, f)
+                    if log_checkpoint(runs[d], fpath):
                         seen[d].add(fpath)
+
+            else:
+                # only check for new files
+                run = runs[d]
+                files = sorted([f for f in os.listdir(dpath) if f.endswith(".mat")],
+                               key=lambda x: int(os.path.splitext(x)[0]))
+                for f in files:
+                    fpath = os.path.join(dpath, f)
+                    if fpath not in seen[d]:
+                        if log_checkpoint(run, fpath):
+                            seen[d].add(fpath)
 
         time.sleep(INTERVAL)
 
