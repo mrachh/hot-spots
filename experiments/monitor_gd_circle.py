@@ -9,7 +9,7 @@ from wandb import Api
 import matplotlib.pyplot as plt
 
 PROJECT     = "so251010"
-BASE_DIR    = "/home/zw395/project/shape_optimization_results/circle1010"
+BASE_DIR    = "/home/zw395/palmer_scratch/shape_optimization_results/circle1010"
 INTERVAL    = 15 * 60
 OPTIMAL_VAL = 0.3655840228073865
 WANDB_DIR   = os.path.join(os.path.dirname(__file__), "wandb")

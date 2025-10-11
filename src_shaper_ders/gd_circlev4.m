@@ -36,7 +36,7 @@ function gd_circlev4(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume)
     for it = start_iter:maxiter
         tstart = tic;
         [val, dvals, zk, dzks] = compute_obj_and_grads(rads, prev_zk, ncheb, true, cheb_factor, cheb_factor_fallback);
-        if it>3
+        if it-start_iter>2
             yv  = dvals - prev_dvals;
             sv  = rads_change;
             if abs(yv' * sv) < 1e-12
