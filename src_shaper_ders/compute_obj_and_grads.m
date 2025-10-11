@@ -1,8 +1,13 @@
-function [val, dvals, zk, dzks] = compute_obj_and_grads(verts, prev_zk, ncheb, with_grads)
+function [val, dvals, zk, dzks] = compute_obj_and_grads(rads, cheb_center, ncheb, with_grads, cheb_width, cheb_width_fallback)
+    
+    rads_size = length(rads);
+    angles = initialize_angles(rads_size);
+    verts = compute_polygon_vertices(angles, rads);
+
     [chnkr, nv, tn, ichn] = build_chunker(verts);
 
-    amin = prev_zk/2;
-    bmin = prev_zk*2;
+    amin = cheb_center * (1-cheb_width);
+    bmin = cheb_center * (1+cheb_width);
 
     success = false;
     while ~success
@@ -11,15 +16,18 @@ function [val, dvals, zk, dzks] = compute_obj_and_grads(verts, prev_zk, ncheb, w
             success = true;
         catch
             fprintf('Bracket [%g, %g] failed, expanding...\n', amin, bmin);
-            amin = amin/2;
-            bmin = bmin*2;
+            amin = amin * (1-cheb_width_fallback);
+            bmin = bmin * (1+cheb_width_fallback);
         end
     end
 
     if with_grads
         [dvals, dzks] = get_grads_fmm(chnkr, tn, ichn, sig, mu, zk, bie_norm, F, nv);
+        dvals = cartesian_to_radial(dvals, angles);
+        dzks = cartesian_to_radial(dzks, angles);
     else
         dvals = [];
         dzks  = [];
     end
+
 end

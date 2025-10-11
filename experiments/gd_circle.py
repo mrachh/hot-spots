@@ -6,17 +6,16 @@ MEM_PER_CPU = "128g"
 TIME        = "23:00:00"
 VERBOSE     = True
 
-base_dir = "/home/zw395/project/shape_optimization_results/circle1002"
+base_dir = "/home/zw395/project/shape_optimization_results/circle1010"
 os.makedirs(base_dir, exist_ok=True)
 
-n_list        = [8,16,32,64,128,256]
-# n_list = [8]
+n_list        = [8,32,128,512]
 ycenter_list  = [0.98]
 maxiter_list  = [10000]
-stepsize_list = [0.5,1.0,2.0]
+stepsize_list = [1.0]
 # stepsize_list = [1.0]
 zk0_list      = [2.5]
-ncheb_list    = [32]
+ncheb_list    = [8,16,32]
 resume_list   = [False]
 
 def gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume):

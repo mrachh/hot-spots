@@ -1,4 +1,4 @@
-function run_gradient_descent(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume)
+function gd_circlev2(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume)
     clearvars -except n ncheb ycenter maxiter stepsize zk0 savedir resume;
     clc;
 
@@ -17,42 +17,45 @@ function run_gradient_descent(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir
             latest = fullfile(savedir, matfiles(idx).name);
             S = load(latest);
             rads    = S.rads;
-            angles  = S.angles;
             prev_zk = S.zk;
             start_iter = S.iter + 1;
         else
-            [rads, angles, prev_zk] = init_run(n, ycenter, zk0);
+            [rads, prev_zk] = init_run(n, ycenter, zk0);
             start_iter = 1;
         end
     else
         delete(fullfile(savedir, '*.mat'));
-        [rads, angles, prev_zk] = init_run(n, ycenter, zk0);
+        [rads, prev_zk] = init_run(n, ycenter, zk0);
         start_iter = 1;
     end
 
+    cheb_factor = 0.5;
+    cheb_factor_fallback = 0.5;
+
     for it = start_iter:maxiter
-        verts = compute_polygon_vertices(angles, rads);
         tstart = tic;
-        [val, dvals, zk, dzks] = compute_obj_and_grads(verts, prev_zk, ncheb, true);
+        [val, dvals, zk, dzks] = compute_obj_and_grads(rads, prev_zk, ncheb, true, cheb_factor, cheb_factor_fallback);
         tstep = toc(tstart);
 
-        drads = cartesian_to_radial(dvals, angles);
-        rads = rads + stepsize * drads(:).';
+        % end of my new code
+        rads_change = stepsize * dvals;
+        rads = rads + rads_change;
 
         iter = it;       % save iteration number
         time = tstep;    % save runtime
 
-        save(fullfile(savedir, sprintf('%d.mat', it)), ...
-            'angles', 'rads', 'val', 'zk', 'iter', 'time');
+        fprintf('itv2 %3d | val: %.8f | zk: %.8f | ||dvals||: %.8f | time: %.2fs| step: %.4f\n', ...
+                iter, val, zk, norm(dvals), time, stepsize);
 
-        fprintf('%3d | %.8f | %.8f | %.8f\n', it, val, zk, norm(drads));
+        fprintf('%3d | %.8f | %.8f | %.8f | %.2fs\n', it, val, zk, norm(dvals), time);
 
-        prev_zk = zk;
+        prev_zk = zk + dot(dzks, rads_change);
+        cheb_factor = 0.05;
+
     end
 end
 
-function [rads, angles, zk] = init_run(n, ycenter, zk0)
+function [rads, zk] = init_run(n, ycenter, zk0)
     rads   = initialize_circle(n, ycenter);
-    angles = initialize_angles(n);
     zk     = zk0;
 end

@@ -5,14 +5,14 @@ addpath ../src_shaper_ders/
 cluster_startup;
 
 % parameters
-n        = 32;
+n        = 6;
 ncheb    = 32;
 ycenter  = 0.98;
 maxiter  = 100;
 stepsize = 1.0;
 zk0      = 2.0;
-savedir = 'checkpoint';
+savedir = 'checkpoint3';
 resume   = false;   % set true to resume, false to restart
 
-gd_circle(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume);
+gd_circlev3(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume);
 

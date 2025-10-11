@@ -1,0 +1,3 @@
+gd_circle: gd fix step size, cheb interval with prev zk
+gd_circlev2: gd fix step size, cheb interval with zk with grad pred. smaller cheb interval
+gd_circlev3: with line search
