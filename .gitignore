@@ -6,3 +6,4 @@ jobs_*.txt
 .vscode/
 *.tsv
 **/wandb/
+*.mat
