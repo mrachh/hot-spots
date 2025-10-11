@@ -1,12 +1,12 @@
 import os
 from itertools import product
 
-PARTITION   = "day"
+PARTITION   = "week"
 MEM_PER_CPU = "128g"
-TIME        = "23:00:00"
+TIME        = "6-23:00:00"
 VERBOSE     = True
 
-base_dir = "/home/zw395/project/shape_optimization_results/circle1010"
+base_dir = "/home/zw395/palmer_scratch/shape_optimization_results/circle1010"
 os.makedirs(base_dir, exist_ok=True)
 
 n_list        = [8,32,128,512]
@@ -24,7 +24,7 @@ def gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume):
         f"module load MATLAB/2022b;"
         f"matlab -nodisplay -nosplash -r "
         f"\"addpath ../src; addpath ../src_shaper_ders; cluster_startup;"
-        f"run_gradient_descent({n},{ncheb},{ycenter},{maxiter},{stepsize},{zk0},'{savedir}',{resume_str}); exit\""
+        f"gd_circlev4({n},{ncheb},{ycenter},{maxiter},{stepsize},{zk0},'{savedir}',{resume_str}); exit\""
     )
 
 def submit_job_list(job_list, job_idx):
