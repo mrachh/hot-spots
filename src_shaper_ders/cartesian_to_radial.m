@@ -7,6 +7,6 @@ function drads = cartesian_to_radial(dvals, angles)
     ery = sin(angles(:));
     
     drads = gx(:).*erx + gy(:).*ery;
-    drads = drads';
+    drads = drads(:)';
 end
     

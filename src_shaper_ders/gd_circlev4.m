@@ -36,9 +36,9 @@ function gd_circlev4(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume)
     for it = start_iter:maxiter
         tstart = tic;
         [val, dvals, zk, dzks] = compute_obj_and_grads(rads, prev_zk, ncheb, true, cheb_factor, cheb_factor_fallback);
-        if it-start_iter>2
-            yv  = dvals - prev_dvals;
-            sv  = rads_change;
+        if it>start_iter
+            yv  = (dvals - prev_dvals)';
+            sv  = rads_change';
             if abs(yv' * sv) < 1e-12
                 rho = 0;
             else
@@ -46,19 +46,19 @@ function gd_circlev4(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume)
             end
             idm = eye(length(sv));
             hinv = (idm - rho * (sv * yv')) * hinv * (idm - rho * (yv * sv')) + rho * (sv * sv');
-            search_direction = hinv * dvals;
+            search_direction = -(hinv * dvals(:))';
         else
             search_direction = dvals;
         end
         fallback_step_size = norm(search_direction);
         search_direction = search_direction./norm(search_direction);
-        h_fdd = 1e-4;
+        h_fdd = 1e-3;
         fbrads_change = h_fdd.*search_direction;
         zk_width = abs(dot(fbrads_change, dzks)/zk);
         frads = rads + fbrads_change;
         brads = rads - fbrads_change;
-        [fval, ~, ~, ~] = compute_obj_and_grads(frads, zk, ncheb, false, zk_width*10, 1e-1);
-        [bval, ~, ~, ~] = compute_obj_and_grads(brads, zk, ncheb, false, zk_width*10, 1e-1);
+        [fval, ~, ~, ~] = compute_obj_and_grads(frads, zk, 8, false, zk_width*10, 1e-1);
+        [bval, ~, ~, ~] = compute_obj_and_grads(brads, zk, 8, false, zk_width*10, 1e-1);
         % minimize -ah^2+bh+c.
         coef_a = -(fval+bval-2*val)/(h_fdd^2);
         coef_b = (fval-bval)/(2*h_fdd);
@@ -75,7 +75,7 @@ function gd_circlev4(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume)
         time = toc(tstart); 
 
         save(fullfile(savedir, sprintf('%d.mat', it)), ...
-            'rads', 'val', 'zk', 'iter', 'time','stepsize','dvals','dzks');
+            'rads', 'val', 'zk', 'iter', 'time','stepsize','dvals','dzks', 'n', 'ncheb', 'ycenter', 'maxiter', 'stepsize', 'zk0', 'savedir', 'resume');
 
         fprintf('itv4 %3d | val: %.8f | zk: %.8f | ||dvals||: %.8f | time: %.2fs| step: %.4f\n', ...
                 it, val, zk, norm(dvals), time, stepsize);
