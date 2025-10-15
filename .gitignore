@@ -7,3 +7,4 @@ jobs_*.txt
 *.tsv
 **/wandb/
 *.mat
+*.pyc
