@@ -72,4 +72,4 @@ def submit_all_jobs():
 if __name__ == "__main__":
     submit_all_jobs()
     import monitor_gd_circle
-    monitor_gd_circle.main()
+    monitor_gd_circle.monitor_loop()
