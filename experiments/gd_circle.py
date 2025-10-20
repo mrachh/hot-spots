@@ -17,20 +17,21 @@ os.makedirs(base_dir, exist_ok=True)
 
 
 n_list        = [128]
-ycenter_list  = [0.98, 0.93]
+ycenter_list  = [0.97, 0.93]
 maxiter_list  = [100]
 stepsize_list = [1.0]
 zk0_list      = [2.5]
 ncheb_list    = [64,96]
-resume_list   = [False]
+resume_list   = [True]
+version_list = ['v4', 'v5']
 
-def gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume):
+def gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume, version):
     resume_str = "true" if resume else "false"
     return (
         f"module load MATLAB/2022b;"
         f"matlab -nodisplay -nosplash -r "
         f"\"addpath ../src; addpath ../src_shaper_ders; cluster_startup;"
-        f"gd_circlev4({n},{ncheb},{ycenter},{maxiter},{stepsize},{zk0},'{savedir}',{resume_str}); exit\""
+        f"gd_circle{version}({n},{ncheb},{ycenter},{maxiter},{stepsize},{zk0},'{savedir}',{resume_str}); exit\""
     )
 
 def submit_job_list(job_list, job_idx):
@@ -46,18 +47,18 @@ def submit_job_list(job_list, job_idx):
     print(f"submitted {len(job_list)} jobs")
 
 def submit_all_jobs():
-    param_list = [n_list, ycenter_list, maxiter_list, stepsize_list, zk0_list, ncheb_list, resume_list]
+    param_list = [n_list, ycenter_list, maxiter_list, stepsize_list, zk0_list, ncheb_list, resume_list, version_list]
     job_list = []
     job_idx = START_IDX
     run_idx = 0
 
     for params in product(*param_list):
-        n, ycenter, maxiter, stepsize, zk0, ncheb, resume = params
+        n, ycenter, maxiter, stepsize, zk0, ncheb, resume, version = params
         save_dir = os.path.join(base_dir, f"run_{run_idx}")
         os.makedirs(save_dir, exist_ok=True)
 
         if not (resume and any(f.endswith(".mat") for f in os.listdir(save_dir))):
-            job_list.append(gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, save_dir, resume))
+            job_list.append(gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, save_dir, resume, version))
 
         if len(job_list) >= 100:
             submit_job_list(job_list, job_idx)
