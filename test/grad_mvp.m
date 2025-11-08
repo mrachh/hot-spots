@@ -16,7 +16,7 @@ verts = compute_polygon_vertices(angles, rads);
 %% compute
 tobj = tic;
 [val, zk, sig, mu, bie_norm, F] = obj_fun_flam(chnkr, tn, ichn, amin, bmin, ncheb);
-tobj = tic(tobj);
+tobj = toc(tobj);
 tgrad = tic(tgrad);
 [dvals, dzks] = get_grads_fmm(chnkr, tn, ichn, sig, mu, zk, bie_norm, F, nv);
 tgrad = toc(tgrad);
