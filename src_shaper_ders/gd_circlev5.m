@@ -18,7 +18,7 @@ function gd_circlev5(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume)
             S = load(latest);
             rads    = S.rads;
             prev_zk = S.zk;
-            hinv = S.hinv;
+            hinv   = eye(n);
             start_iter = S.iter + 1;
         else
             [rads, prev_zk, hinv] = init_run(n, ycenter, zk0);
@@ -93,5 +93,4 @@ end
 function [rads, zk, hinv] = init_run(n, ycenter, zk0)
     rads   = initialize_circle(n, ycenter);
     zk     = zk0;
-    hinv   = eye(n);
 end

@@ -5,7 +5,7 @@ PARTITION   = "week"
 MEM_PER_CPU = "16g"
 NUM_CPUS = "12"
 TIME        = "6-23:00:00"
-PURGE       = True
+PURGE       = False
 VERBOSE     = True
 START_IDX = 0
 
@@ -21,9 +21,9 @@ ycenter_list  = [0.97, 0.93]
 maxiter_list  = [100]
 stepsize_list = [1.0]
 zk0_list      = [2.5]
-ncheb_list    = [64,96]
+ncheb_list    = [32,64]
 resume_list   = [True]
-version_list = ['v4', 'v5']
+version_list = ['v4','v5']
 
 def gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, savedir, resume, version):
     resume_str = "true" if resume else "false"
@@ -54,11 +54,10 @@ def submit_all_jobs():
 
     for params in product(*param_list):
         n, ycenter, maxiter, stepsize, zk0, ncheb, resume, version = params
-        save_dir = os.path.join(base_dir, f"run_{run_idx}")
+        save_dir = os.path.join(base_dir, f"run_{run_idx}_{version}")
         os.makedirs(save_dir, exist_ok=True)
 
-        if not (resume and any(f.endswith(".mat") for f in os.listdir(save_dir))):
-            job_list.append(gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, save_dir, resume, version))
+        job_list.append(gen_single_job(n, ncheb, ycenter, maxiter, stepsize, zk0, save_dir, resume, version))
 
         if len(job_list) >= 100:
             submit_job_list(job_list, job_idx)
