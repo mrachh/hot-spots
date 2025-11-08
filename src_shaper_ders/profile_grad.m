@@ -1,5 +1,4 @@
 function profile_grad(n, ncheb, runid, savefn)
-    clear; clc;
     addpath ../src
     addpath ../src_shaper_ders/
     %% replace with your startup to load necessary libs (chunkie etc.)

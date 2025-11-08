@@ -27,7 +27,7 @@ def gen_single_job(n, ncheb, runid, savefn):
         f"module load MATLAB/2022b;"
         f"matlab -nodisplay -nosplash -r "
         f"\"addpath ../src; addpath ../src_shaper_ders; cluster_startup;"
-        f"profile_grad({n},{ncheb},{savefn},{runid}); exit\""
+        f"profile_grad({n},{ncheb},{runid},'{savefn}'); exit\""
     )
 
 def submit_job_list(job_list, job_idx):
