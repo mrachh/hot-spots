@@ -26,8 +26,12 @@ function [val, zk, sig, mu, bie_norm, F, varargout] = obj_fun_flam(chnkr0, ...
     
     opts_flam = [];
     opts_flam.eps = eps;
+    opts_flam.rank_or_tol = eps;
     opts_flam.flamtype = 'rskelf';
     opts_flam.forceproxy = true;
+    % opts_flam.verb = 'true';
+    opts_flam.proxybylevel = 'true';
+    opts_flam.occ = 1000;
     
     dval = 1.0;
     if ~isfield(opts, 'zk')

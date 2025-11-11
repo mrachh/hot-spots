@@ -7,8 +7,9 @@ function [chnkr, nv, tn, ichn] = build_chunker(verts)
     cparams.smoothwidths = true;
     
     [chnkr0, igrad0] = chunkerpoly(verts, cparams, p);
-    refopts = []; refopts.maxchunklen = 0.1;
+    refopts = []; 
     chnkr0 = sort(refine(chnkr0, refopts));
+    
     
     [~, nv] = size(verts);
     [~,~,~,~,tn,ichn] = nearest(chnkr0, [0;0]);
