@@ -1,4 +1,4 @@
-function profile_grad(n, ncheb, runid, savefn)
+function profile_grad(n, ncheb, flam_occ, runid, savefn)
     addpath ../src
     addpath ../src_shaper_ders/
     %% replace with your startup to load necessary libs (chunkie etc.)
@@ -17,7 +17,7 @@ function profile_grad(n, ncheb, runid, savefn)
     tchunk = toc(tchunk);
     %% compute
     tobj = tic;
-    [val, zk, sig, mu, bie_norm, F] = obj_fun_flam(chnkr, tn, ichn, amin, bmin, ncheb);
+    [val, zk, sig, mu, bie_norm, F] = obj_fun_flam(chnkr, tn, ichn, amin, bmin, ncheb, flam_occ);
     tobj = toc(tobj);
     tgrad = tic;
     [dvals, dzks] = get_grads_fmm(chnkr, tn, ichn, sig, mu, zk, bie_norm, F, nv);

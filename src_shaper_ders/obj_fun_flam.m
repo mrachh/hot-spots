@@ -1,5 +1,5 @@
 function [val, zk, sig, mu, bie_norm, F, varargout] = obj_fun_flam(chnkr0, ...
-                                        tn, ichn, amin, bmin, ncheb, opts)
+                                        tn, ichn, amin, bmin, ncheb, flam_occ, opts)
 %
 %  This function computes the laplacian eigenvalue on the interval
 %  [amin, bmin] using ncheb points and returns, 
@@ -15,7 +15,7 @@ function [val, zk, sig, mu, bie_norm, F, varargout] = obj_fun_flam(chnkr0, ...
 %
 %
 
-    if nargin < 7
+    if nargin < 8
         opts = [];
     end
     
@@ -31,7 +31,8 @@ function [val, zk, sig, mu, bie_norm, F, varargout] = obj_fun_flam(chnkr0, ...
     opts_flam.forceproxy = true;
     % opts_flam.verb = 'true';
     opts_flam.proxybylevel = 'true';
-    opts_flam.occ = 1000;
+    % default occ is 1000
+    opts_flam.occ = flam_occ;
     
     dval = 1.0;
     if ~isfield(opts, 'zk')

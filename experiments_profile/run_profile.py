@@ -9,7 +9,7 @@ PURGE       = False
 VERBOSE     = True
 START_IDX = 0
 
-BASE_DIR = "/home/zw395/palmer_scratch/shape_optimization_results/profile1108"
+BASE_DIR = "/home/zw395/palmer_scratch/shape_optimization_results/profile1111"
 if PURGE:
     if os.path.exists(BASE_DIR):
         shutil.rmtree(BASE_DIR)
@@ -18,16 +18,17 @@ os.makedirs(BASE_DIR, exist_ok=True)
 
 n_list        = [i*16 for i in range(1,9)]
 ncheb_list    = [i*4 for i in range(4,11)]
+flam_occ_list = [500, 1000, 2000]
 runid_list    = [i for i in range(5)]
 
 
 
-def gen_single_job(n, ncheb, runid, savefn):
+def gen_single_job(n, ncheb, runid, flam_occ, savefn):
     return (
         f"module load MATLAB/2022b;"
         f"matlab -nodisplay -nosplash -r "
         f"\"addpath ../src; addpath ../src_shaper_ders; cluster_startup;"
-        f"profile_grad({n},{ncheb},{runid},'{savefn}'); exit\""
+        f"profile_grad({n},{ncheb},{flam_occ},{runid},'{savefn}'); exit\""
     )
 
 def submit_job_list(job_list, job_idx):
@@ -43,14 +44,14 @@ def submit_job_list(job_list, job_idx):
     print(f"submitted {len(job_list)} jobs")
 
 def submit_all_jobs():
-    param_list = [n_list, ncheb_list, runid_list]
+    param_list = [n_list, ncheb_list, flam_occ_list, runid_list]
     job_list = []
     job_idx = START_IDX
     run_idx = 0
     for params in product(*param_list):
-        n, ncheb, runid = params
+        n, ncheb, flam_occ, runid = params
         savefn = os.path.join(BASE_DIR, f"{run_idx}.mat")
-        job_list.append(gen_single_job(n, ncheb, runid, savefn))
+        job_list.append(gen_single_job(n, ncheb, flam_occ, runid, savefn))
         if len(job_list) >= 100:
             submit_job_list(job_list, job_idx)
             job_list = []
