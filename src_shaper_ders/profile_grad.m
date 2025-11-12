@@ -24,5 +24,5 @@ function profile_grad(n, ncheb, flam_occ, runid, savefn)
     tgrad = toc(tgrad);
     ttotal = tobj+tgrad+tchunk;
     fprintf('chunk : %.2fs| objective : %.2fs| gradient : %.2fs| total : %.2fs', tchunk, tobj, tgrad, ttotal);
-    save(savefn, 'n', 'ncheb', 'savefn','zk','val','dvals','dzks','tobj','tgrad','ttotal','tchunk','runid');
+    save(savefn, 'n', 'ncheb', 'flam_occ', 'savefn','zk','val','dvals','dzks','tobj','tgrad','ttotal','tchunk','runid');
 end

@@ -4,12 +4,12 @@ from itertools import product
 PARTITION   = "scavenge"
 MEM_PER_CPU = "16g"
 NUM_CPUS = "12"
-TIME        = "8:00:00"
+TIME        = "6:00:00"
 PURGE       = False
 VERBOSE     = True
 START_IDX = 0
 
-BASE_DIR = "/home/zw395/palmer_scratch/shape_optimization_results/profile1111"
+BASE_DIR = "/home/zw395/palmer_scratch/shape_optimization_results/profile1112"
 if PURGE:
     if os.path.exists(BASE_DIR):
         shutil.rmtree(BASE_DIR)
@@ -17,13 +17,13 @@ os.makedirs(BASE_DIR, exist_ok=True)
 
 
 n_list        = [i*16 for i in range(1,9)]
-ncheb_list    = [i*4 for i in range(4,11)]
+ncheb_list    = [32]
 flam_occ_list = [500, 1000, 2000]
-runid_list    = [i for i in range(5)]
+runid_list    = [0,1,2]
 
 
 
-def gen_single_job(n, ncheb, runid, flam_occ, savefn):
+def gen_single_job(n, ncheb, flam_occ, runid, savefn):
     return (
         f"module load MATLAB/2022b;"
         f"matlab -nodisplay -nosplash -r "
