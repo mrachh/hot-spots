@@ -53,7 +53,7 @@ def submit_all_jobs():
     for params in product(*param_list):
         n, ncheb, flam_occ, runid, num_cpus = params
         mem_per_cpu = 128//num_cpus
-        savefn = os.path.join(BASE_DIR, f"{num_cpus}_{mem_per_cpu}.mat")
+        savefn = os.path.join(BASE_DIR, f"{num_cpus}_{mem_per_cpu}_{runid}.mat")
         job_list.append(gen_single_job(n, ncheb, flam_occ, runid, savefn))
         submit_job_list(job_list, job_idx, num_cpus, mem_per_cpu)
         job_list = []
