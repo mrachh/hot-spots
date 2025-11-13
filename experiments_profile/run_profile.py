@@ -41,7 +41,7 @@ def submit_job_list(job_list, job_idx, num_cpus = NUM_CPUS, mem_per_cpu = MEM_PE
     os.system(
         f"dsq --job-file jobs_{job_idx}.txt --batch-file {job_idx}.sh "
         f"{output_option}--partition {PARTITION} --cpus-per-task {num_cpus} "
-        f"--mem-per-cpu {mem_per_cpu} -t {TIME} --requeue --submit"
+        f"--mem-per-cpu {mem_per_cpu}g -t {TIME} --requeue --submit"
     )
     print(f"submitted {len(job_list)} jobs")
 
