@@ -21,7 +21,7 @@ n_list        = [128]
 ncheb_list    = [32]
 flam_occ_list = [1000]
 runid_list    = [0,1,2]
-ncpu_list = np.arange(16)
+ncpu_list = np.arange(1,17)
 
 
 
@@ -52,10 +52,11 @@ def submit_all_jobs():
     # run_idx = 0
     for params in product(*param_list):
         n, ncheb, flam_occ, runid, num_cpus = params
-        mem_per_cpu = 12*16//num_cpus
+        mem_per_cpu = 128//num_cpus
         savefn = os.path.join(BASE_DIR, f"{num_cpus}_{mem_per_cpu}.mat")
         job_list.append(gen_single_job(n, ncheb, flam_occ, runid, savefn))
         submit_job_list(job_list, job_idx, num_cpus, mem_per_cpu)
+        job_list = []
         job_idx += 1
         # if len(job_list) >= 100:
         #     submit_job_list(job_list, job_idx)
