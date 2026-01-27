@@ -92,7 +92,7 @@ rhs = 2*Mtotsig + dzk*2*SpDksig;
 v = sig.*wts(:);
 u = mu(:);
 A = @(x) rskelf_plus_mv(x,F,u,v);
-dsig = gmres(A, rhs, [], 1e-10, 200);
+[~, dsig] = evalc('gmres(A, rhs, [], 1e-10, 200)');
 err_dsig = sqrt(sum(abs(imag(dsig)).^2.*wts(:)));
 dsig = real(dsig);
 
